@@ -1,0 +1,385 @@
+[
+  [
+    -8580128.64874994,
+    4692621.98302173,
+    2000,
+    "House",
+    "Alexandria, VA",
+    "Del Ray Alexandria",
+    null
+  ],
+  [
+    -8580128.64874994,
+    4692621.98302173,
+    2001,
+    "House",
+    "Alexandria, VA",
+    "Current Home",
+    null
+  ],
+  [
+    935340.745355984,
+    6355167.39540948,
+    1967,
+    "Star",
+    "Ludwigshafen am Rhein, Deutschland",
+    "Birth Place",
+    "On my Grandma's couch."
+  ],
+  [
+    1289660.50347398,
+    6123877.56885318,
+    1986,
+    "House",
+    "München, Deutschland",
+    "College Home",
+    null
+  ],
+  [
+    5503891.65964827,
+    927226.1352421789,
+    1989,
+    "House",
+    "Mutterstadt, Deutschland",
+    null,
+    null
+  ],
+  [
+    5321146.577935781,
+    1455050.9499048712,
+    null,
+    "Car",
+    "Salzburg, Österreich",
+    null,
+    null
+  ],
+  [
+    935340.745355984,
+    6355167.39540948,
+    1967,
+    "Star",
+    "Ludwigshafen am Rhein, Deutschland",
+    "Birth Place",
+    "On my Grandma's couch."
+  ],
+  [
+    919509.012706611,
+    6304277.16708722,
+    1974,
+    "House",
+    "Hassloch, Deutschland",
+    null,
+    null
+  ],
+  [
+    937852.572357999,
+    6314842.39546031,
+    1975,
+    "House",
+    "Neuhofen, Deutschland",
+    null,
+    null
+  ],
+  [
+    1289660.50347398,
+    6123877.56885318,
+    1986,
+    "House",
+    "München, Deutschland",
+    "College Home",
+    null
+  ],
+  [
+    930116.646984302,
+    6317764.91762003,
+    1989,
+    "House",
+    "Mutterstadt, Deutschland",
+    null,
+    null
+  ],
+  [
+    5589834.7593203,
+    3015709.83647861,
+    1990,
+    "House",
+    " الخبر  المملكة العربية السعودية‎",
+    "al-Kobar, Saudi Arabia",
+    null
+  ],
+  [
+    942518.194856126,
+    6325315.78913828,
+    1991,
+    "House",
+    "Mannheim, Deutschland",
+    null,
+    null
+  ],
+  [-10616515.7919444, 3451589.22445871, 1995, "Car", "Houston, TX", null, null],
+  [
+    -10855916.1492597,
+    4203416.22334696,
+    1995,
+    "Car",
+    "Oklahoma City, OK",
+    null,
+    null
+  ],
+  [
+    -13627692.4331738,
+    4521810.54821791,
+    1997,
+    "Car",
+    "San Francisco, CA",
+    null,
+    null
+  ],
+  [
+    -9145835.70516971,
+    4277597.03954796,
+    1997,
+    "Car",
+    "Bakersville, CA",
+    null,
+    null
+  ],
+  [
+    -12817323.2756307,
+    4299082.25621007,
+    1997,
+    "Car",
+    "Las Vegas, NV",
+    null,
+    null
+  ],
+  [
+    -10835347.0903484,
+    4509175.56360434,
+    1998,
+    "House",
+    "Wichita, KS",
+    null,
+    null
+  ],
+  [
+    -10040963.9682807,
+    4641810.35880009,
+    1998,
+    "Car",
+    "Saint Louis, MO",
+    null,
+    null
+  ],
+  [
+    -8466871.85942171,
+    4379444.01344344,
+    1999,
+    "House",
+    "Virginia Beach, VA",
+    null,
+    null
+  ],
+  [
+    -13704991.5743857,
+    6286775.83016057,
+    1999,
+    "Car",
+    "Vancouver, Canada",
+    null,
+    null
+  ],
+  [
+    -8580128.64874994,
+    4692621.98302173,
+    2000,
+    "House",
+    "Alexandria, VA",
+    "Del Ray Alexandria",
+    null
+  ],
+  [
+    -8580128.64874994,
+    4692621.98302173,
+    2001,
+    "House",
+    "Alexandria, VA",
+    "Current Home",
+    null
+  ],
+  [-7909995.55013091, 5186055.97163965, 2007, "Car", "Boston, MA", null, null],
+  [-8238435.35875465, 4942450.79811091, 2009, "Car", "NYC, NY", null, null],
+  [-8931988.62564653, 2947009.61501013, 2009, "Car", "Miami, FL", null, null],
+  [
+    -9021265.18747037,
+    3380738.29927994,
+    2009,
+    "Car",
+    "Daytona Beach, FL",
+    null,
+    null
+  ],
+  [
+    -9106004.36684948,
+    2803343.35264467,
+    2009,
+    "Car",
+    "Key West, FL",
+    null,
+    null
+  ],
+  [
+    1408922.92758942,
+    5436613.52983406,
+    null,
+    "Car",
+    "Riccione, Italia",
+    null,
+    null
+  ],
+  [
+    1371288.59073948,
+    5660325.1116261,
+    null,
+    "Car",
+    "Venice, Italia",
+    null,
+    null
+  ],
+  [1157662.59172501, 5391131.05209177, null, "Car", "Pisa, Italia", null, null],
+  [
+    1399285.44267399,
+    5444295.8476828,
+    null,
+    "Car",
+    "Rimini, Italia",
+    null,
+    null
+  ],
+  [
+    861215.448157805,
+    6172688.25622849,
+    null,
+    "Car",
+    "Strasbourg, France",
+    null,
+    null
+  ],
+  [
+    688330.156383858,
+    6190235.19923827,
+    null,
+    "Car",
+    "Nancy, France",
+    null,
+    null
+  ],
+  [
+    885225.392529552,
+    6248915.02799073,
+    null,
+    "Car",
+    "Wissembourg, France",
+    null,
+    null
+  ],
+  [
+    316908.222572469,
+    5087442.59073934,
+    1986,
+    "Car",
+    "Lloret de Mar, Spain",
+    null,
+    null
+  ],
+  [
+    1379946.46413593,
+    6053262.01866928,
+    null,
+    "Car",
+    "Chiemsee, Germany",
+    null,
+    null
+  ],
+  [
+    1451982.08586469,
+    6042087.96459608,
+    null,
+    "Car",
+    "Salzburg, Österreich",
+    null,
+    null
+  ],
+  [
+    1239648.28349935,
+    7294567.81279163,
+    1997,
+    "Car",
+    "Nakskov, Kongeriget Danmark",
+    null,
+    null
+  ],
+  [
+    774233.181039211,
+    6577779.98785928,
+    null,
+    "Car",
+    "K&ouml;ln, Deutschland",
+    null,
+    null
+  ],
+  [
+    752959.469751162,
+    6664535.30610182,
+    1995,
+    "Car",
+    "Duisburg, Deutschland",
+    null,
+    null
+  ],
+  [
+    780419.205142593,
+    6668166.42849857,
+    null,
+    "Car",
+    "Essen, Deutschland",
+    null,
+    null
+  ],
+  [
+    484204.71931114,
+    6561362.83341567,
+    null,
+    "Car",
+    "Bruxelles, België",
+    null,
+    null
+  ],
+  [
+    498539.33014059,
+    6752527.65816104,
+    null,
+    "Car",
+    "Rotterdam, Nederland",
+    null,
+    null
+  ],
+  [
+    544707.975752192,
+    6834009.40468276,
+    null,
+    "Car",
+    "Amsterdam, Nederland",
+    null,
+    null
+  ],
+  [
+    -14153.6053374199,
+    6677885.93745051,
+    null,
+    "Car",
+    "London, England",
+    null,
+    null
+  ]
+]

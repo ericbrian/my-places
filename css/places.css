@@ -1,0 +1,65 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+
+
+html, body 
+{
+    width: 100%; 
+    height: 100%; 
+    margin: 0;
+}
+
+#borderContainer
+{
+    width: 100%; 
+    height: 100%; 
+    border: none;
+}
+
+.header
+{
+    max-height: 50px; 
+    background-color: #874E21;
+    color: white;
+    padding: 40px 40px;
+}
+
+.footer
+{
+    height: 70px; 
+    background-color: #FFECB7;
+}
+#timeSliderDiv
+{
+    top: -80px;
+    position: relative;
+    width: 700px;
+    height: 30px;
+    margin: auto;
+}
+
+#info
+{
+    font-size: 80%; 
+    text-align: right; 
+    color: black;
+    font-weight: bold;
+}
+
+h1
+{
+    font-size: 180%
+}
+
+
+
+/*
+    FOR THE SLIDER
+*/
+p { clear:both; }
+form { margin: 0 5px;}
+fieldset { border:0; margin-top: .1em;}
+label {font-weight: normal; float: left; margin-right: .5em; font-size: 1.1em; visibility: hidden;}
+select {margin-right: 1em; float: left; visibility: hidden;}
+.ui-slider {clear: both; top: 5em;}
+
