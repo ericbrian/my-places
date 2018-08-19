@@ -19,19 +19,14 @@ $(document).ready(function() {
     .done(myplaces => {
       console.log(myplaces);
       for (var i = 0; i < myplaces.length; i++) {
-        var x = myplaces[i][0],
-          y = myplaces[i][1],
-          line1 = myplaces[i][4],
-          line2 = myplaces[i][5],
-          line =
-            line2 != null && line2.length > 0
-              ? line1 + "<br />(" + line2 + ")"
-              : line1;
-
+        var x = myplaces[i][1],
+          y = myplaces[i][2],
+          title = myplaces[i][0],
+          popupinfo = myplaces[i][5];
         var marker = new google.maps.Marker({
           position: { lat: x, lng: y },
           map: map,
-          title: line
+          title: title
         });
       }
     })
