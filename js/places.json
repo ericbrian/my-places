@@ -204,7 +204,7 @@
   ["Worms, Germany", 49.634137, 8.350718, "Pleasure", "Worms, Germany"],
   ["Orlando, FL", 28.538336, -81.379236, "Pleasure", "Orlando, FL"],
   ["Cape Coral, FL", 26.562854, -81.949533, "Pleasure", "Cape Coral, FL"],
-  ["Juniper, FL", 26.934225, -80.094209, "Work", "Juniper, FL"],
+  ["Jupiter, FL", 26.934225, -80.094209, "Work", "Juniper, FL"],
   [
     "Sanibel Island, FL",
     26.443397,
@@ -218,6 +218,13 @@
     -81.271155,
     "Pleasure",
     "St. Augustine Beach, FL"
+  ],
+  [
+    "Newburgh, Orange County, New York",
+    41.50499,
+    74.078933,
+    "Pleasure",
+    "Newburgh, Orange County, New York<br />Visit Orange County Choppers showroom."
   ],
   [
     "Limburgerhof, Germany",
