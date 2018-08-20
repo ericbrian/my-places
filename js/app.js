@@ -1,12 +1,28 @@
 var map;
+var icons = {
+  Birth:
+    "https://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|FFFF00",
+  Pleasure:
+    "https://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|FF0000",
+  Work:
+    "https://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|0000FF",
+  Home:
+    "https://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|800080"
+};
 
-function initMap() {
+initMap = () => {
   console.log("Init Map.");
   map = new google.maps.Map(document.getElementById("mapid"), {
     center: { lat: 36.5, lng: 36.0 },
     zoom: 2
   });
-}
+  var markerGroups = new google.maps.MVCObject();
+  markerGroups.set("Home", map);
+  markerGroups.set("Pleasure", map);
+  markerGroups.set("Birth", map);
+  markerGroups.set("Work", map);
+};
+
 // http://jsfiddle.net/EricBrian/w96a0yrs/
 $(document).ready(function() {
   console.log("document is ready");
@@ -22,12 +38,17 @@ $(document).ready(function() {
         var x = myplaces[i][1],
           y = myplaces[i][2],
           title = myplaces[i][0],
-          popupinfo = myplaces[i][5];
+          activityicon = icons[myplaces[i][3]],
+          category = myplaces[i][3],
+          popupinfo = myplaces[i][4];
+        console.log(x, y, title, activityicon, popupinfo);
         var marker = new google.maps.Marker({
           position: { lat: x, lng: y },
-          map: map,
-          title: title
+          icon: activityicon,
+          title: title,
+          map: map
         });
+        //marker.bindTo(map, markerGroups, category);
       }
     })
     .fail((jqXHR, textStatus, errorThrown) => {
