@@ -206,6 +206,20 @@
   ["Cape Coral, FL", 26.562854, -81.949533, "Pleasure", "Cape Coral, FL"],
   ["Juniper, FL", 26.934225, -80.094209, "Work", "Juniper, FL"],
   [
+    "Sanibel Island, FL",
+    26.443397,
+    -82.111512,
+    "Pleasure",
+    "Sanibel Island, FL<br />J.N. 'Ding' Darling National Wildlife Refuge"
+  ],
+  [
+    "St. Augustine Beach, FL",
+    29.843983,
+    -81.271155,
+    "Pleasure",
+    "St. Augustine Beach, FL"
+  ],
+  [
     "Limburgerhof, Germany",
     49.420761,
     8.390031,
