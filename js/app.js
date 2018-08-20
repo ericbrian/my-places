@@ -1,4 +1,6 @@
 var map;
+var locationInfo;
+
 var icons = {
   Birth:
     "https://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|FFFF00",
@@ -40,15 +42,26 @@ $(document).ready(function() {
           title = myplaces[i][0],
           activityicon = icons[myplaces[i][3]],
           category = myplaces[i][3],
-          popupinfo = myplaces[i][4];
-        console.log(x, y, title, activityicon, popupinfo);
+          content = myplaces[i][4];
+
         var marker = new google.maps.Marker({
           position: { lat: x, lng: y },
           icon: activityicon,
           title: title,
           map: map
         });
-        //marker.bindTo(map, markerGroups, category);
+
+        var infowindow = new google.maps.InfoWindow();
+        google.maps.event.addListener(
+          marker,
+          "click",
+          (function(marker, content, infowindow) {
+            return function() {
+              infowindow.setContent(content);
+              infowindow.open(map, marker);
+            };
+          })(marker, content, infowindow)
+        );
       }
     })
     .fail((jqXHR, textStatus, errorThrown) => {
