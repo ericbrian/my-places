@@ -4,24 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Places</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <title>Eric's Places</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.css' rel='stylesheet' />
+    <script src='/js/places.js'></script>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .marker {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: 1px solid yellow;
+        }
+
+        .marker-work {
+            background-color: orange;
+        }
+
+        .marker-pleasure {
+            background-color: pink;
+        }
+
+        .marker-home {
+            background-color: lime;
+        }
+
+        .marker-birth {
+            background-color: plum;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="mapid"></div>
+    <div id='map' style="width:100%;height:100%;"></div>
+    <script>
+        mapboxgl.accessToken =
+            'pk.eyJ1IjoiZXJpY2Nvb2wiLCJhIjoiY2s3czdvNGd6MGdkODNlbnI4cnZrNHpxeCJ9._qWghVW-BLTf6lumxxEvlw';
 
-    <!--
-    <div role="button" tabindex="0" title="Show street map" aria-label="Show street map" aria-pressed="true" draggable="false"
-        style="direction: ltr; overflow: hidden; text-align: center; height: 40px; display: table-cell; vertical-align: middle; position: absolute; color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; user-select: none; font-size: 18px; background-color: rgb(255, 255, 255); padding: 0px 23px; border-bottom-left-radius: 2px; border-top-left-radius: 2px; background-clip: padding-box; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; min-width: 36px; font-weight: 500;top: 200px;">Home</div>
-    -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBedANdRL7ecB2hpQmCgeUNyy8CMYdDMoY&callback=initMap" async
-        defer></script>
-    <script src="/js/app.js"></script>
+        const map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [-42.5200714, 39.5876049],
+            zoom: 2
+        });
+        map.addControl(new mapboxgl.NavigationControl(), "top-left");
+
+        const addMarkers = () => {
+            locations.forEach((location, x) => {
+                console.log(location[3]);
+                const el = document.createElement('div');
+                el.id = "marker-" + x;
+                el.className = "marker marker-" + location[3].toLowerCase();
+                el.title = location[0];
+
+                /**
+                 * Create a marker using the div element
+                 * defined above and add it to the map.
+                 **/
+                new mapboxgl.Marker(el, {})
+                    .setLngLat([location[2], location[1]])
+                    .addTo(map);
+            });
+        }
+        addMarkers();
+    </script>
 </body>
 
 </html>
