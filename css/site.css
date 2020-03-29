@@ -1,0 +1,28 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.marker {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid yellow;
+}
+
+.marker-work {
+    background-color: orange;
+}
+
+.marker-pleasure {
+    background-color: pink;
+}
+
+.marker-home {
+    background-color: lime;
+}
+
+.marker-birth {
+    background-color: plum;
+}
