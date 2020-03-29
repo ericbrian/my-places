@@ -21,6 +21,12 @@ const locations = [
     "<strong>Alexandria, VA</strong>"
   ],
   [
+    "Strasburg, VA",
+    38.9926675, -78.3543833,
+    "Pleasure",
+    "<strong>Strasburg, VA</strong>"
+  ],
+  [
     "Altrip, Germany",
     49.431436,
     8.494974,
