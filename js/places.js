@@ -1,4 +1,17 @@
-const locations = [
+const geoJsonWorkLocations = [{
+  "type": "Feature",
+  "properties": {
+    "name": "<strong> الخبر المملكة العربية السعودية‎</strong><br />al-Kobar, Saudi Arabia",
+    "amenity": "Work Location",
+    "popupContent": "This is where the Rockies play!"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [26.217191, 50.197138, ]
+  }
+}];
+
+const workLocations = [
   [
     " الخبر المملكة العربية السعودية‎",
     26.217191,
@@ -7,12 +20,86 @@ const locations = [
     "<strong> الخبر المملكة العربية السعودية‎</strong><br />al-Kobar, Saudi Arabia"
   ],
   [
-    "Albany, NY",
-    42.651897,
-    -73.755912,
-    "Pleasure",
-    "<strong>Albany, NY</strong>"
+    "Anapolis, MD",
+    38.978445,
+    -76.492183,
+    "Work",
+    "<strong>Anapolis, MD</strong>"
   ],
+  [
+    "Bolder, Colorado",
+    40.014986,
+    -105.270546,
+    "Work",
+    "<strong>Bolder, Colorado</strong>"
+  ],
+  ["Boston, MA", 42.360083, -71.05888, "Work", "<strong>Boston, MA</strong>"],
+  [
+    "Bruxelles, België",
+    50.850346,
+    4.351721,
+    "Work",
+    "<strong>Bruxelles, België</strong>"
+  ],
+  [
+    "Chicago, Illinois",
+    41.878114,
+    -87.629798,
+    "Work",
+    "<strong>Chicago, Illinois</strong>"
+  ],
+  [
+    "Denver, Colorado",
+    39.739236,
+    -104.990251,
+    "Work",
+    "<strong>Denver, Colorado</strong>"
+  ],
+  [
+    "Juniper, FL",
+    26.934225,
+    -80.094209,
+    "Work",
+    "<strong>Juniper, FL</strong>"
+  ],
+  [
+    "Liege, Belgium",
+    50.632557,
+    5.579666,
+    "Work",
+    "<strong>Liege, Belgium</strong>"
+  ],
+  [
+    "Olive Branch, MS",
+    34.96176,
+    -89.829532,
+    "Work",
+    "<strong>Olive Branch, MS</strong><br />Science Conference"
+  ],
+  [
+    "Pisa, Italia",
+    43.722839,
+    10.401689,
+    "Work",
+    "<strong>Pisa, Italia</strong>"
+  ],
+  [
+    "Verona, Italy",
+    45.438619,
+    10.993313,
+    "Work",
+    "<strong>Verona, Italy</strong>"
+  ],
+  [
+    "Vicenza, Italy",
+    45.545479,
+    11.535421,
+    "Work",
+    "<strong>Vicenza, Italy</strong>"
+  ],
+];
+
+const homeLocations = [
   [
     "Alexandria, VA",
     38.804836,
@@ -20,6 +107,73 @@ const locations = [
     "Home",
     "<strong>Alexandria, VA</strong>"
   ],
+  [
+    "Haßloch, Deutschland",
+    49.361015,
+    8.257806,
+    "Home",
+    "<strong>Haßloch, Deutschland</strong>"
+  ],
+  [
+    "Mannheim, Deutschland",
+    49.487459,
+    8.466039,
+    "Home",
+    "<strong>Mannheim, Deutschland</strong>"
+  ],
+  [
+    "München, Deutschland",
+    48.135125,
+    11.58198,
+    "Home",
+    "<strong>München, Deutschland</strong><br />College Home"
+  ],
+  [
+    "Mutterstadt, Deutschland",
+    49.44197,
+    8.35527,
+    "Home",
+    "<strong>Mutterstadt, Deutschland</strong>"
+  ],
+  [
+    "Neuhofen, Deutschland",
+    49.422421,
+    8.423456,
+    "Home",
+    "<strong>Neuhofen, Deutschland</strong>"
+  ],
+  [
+    "Virginia Beach, VA",
+    36.852926,
+    -75.977985,
+    "Home",
+    "<strong>Virginia Beach, VA</strong>"
+  ],
+  [
+    "Wichita, KS",
+    37.687176,
+    -97.330053,
+    "Home",
+    "<strong>Wichita, KS</strong>"
+  ],
+  [
+    "Ludwigshafen am Rhein, Deutschland",
+    49.47741,
+    8.44518,
+    "Birth",
+    "<strong>Ludwigshafen am Rhein, Deutschland</strong><br />Birth Place"
+  ],
+];
+
+const pleasureLocations = [
+  [
+    "Albany, NY",
+    42.651897,
+    -73.755912,
+    "Pleasure",
+    "<strong>Albany, NY</strong>"
+  ],
+
   [
     "Strasburg, VA",
     38.9926675, -78.3543833,
@@ -40,13 +194,7 @@ const locations = [
     "Pleasure",
     "<strong>Amsterdam, Nederland</strong>"
   ],
-  [
-    "Anapolis, MD",
-    38.978445,
-    -76.492183,
-    "Work",
-    "<strong>Anapolis, MD</strong>"
-  ],
+
   [
     "Bakersville, CA",
     35.373292,
@@ -61,21 +209,7 @@ const locations = [
     "Pleasure",
     "<strong>Bernau am Chiemsee, Germany</strong>"
   ],
-  [
-    "Bolder, Colorado",
-    40.014986,
-    -105.270546,
-    "Work",
-    "<strong>Bolder, Colorado</strong>"
-  ],
-  ["Boston, MA", 42.360083, -71.05888, "Work", "<strong>Boston, MA</strong>"],
-  [
-    "Bruxelles, België",
-    50.850346,
-    4.351721,
-    "Work",
-    "<strong>Bruxelles, België</strong>"
-  ],
+
   [
     "Cape Coral, FL",
     26.562854,
@@ -83,13 +217,7 @@ const locations = [
     "Pleasure",
     "<strong>Cape Coral, FL</strong>"
   ],
-  [
-    "Chicago, Illinois",
-    41.878114,
-    -87.629798,
-    "Work",
-    "<strong>Chicago, Illinois</strong>"
-  ],
+
   [
     "Daytona Beach, FL",
     29.210815,
@@ -97,13 +225,7 @@ const locations = [
     "Pleasure",
     "<strong>Daytona Beach, FL</strong>"
   ],
-  [
-    "Denver, Colorado",
-    39.739236,
-    -104.990251,
-    "Work",
-    "<strong>Denver, Colorado</strong>"
-  ],
+
   [
     "Duisburg, Deutschland",
     51.434408,
@@ -132,13 +254,7 @@ const locations = [
     "Pleasure",
     "<strong>Frankfurt, Germany</strong>"
   ],
-  [
-    "Haßloch, Deutschland",
-    49.361015,
-    8.257806,
-    "Home",
-    "<strong>Haßloch, Deutschland</strong>"
-  ],
+
   [
     "Heidelberg, Germany",
     49.398752,
@@ -160,13 +276,7 @@ const locations = [
     "Pleasure",
     "<strong>Houston, TX</strong>"
   ],
-  [
-    "Juniper, FL",
-    26.934225,
-    -80.094209,
-    "Work",
-    "<strong>Juniper, FL</strong>"
-  ],
+
   [
     "Key West, FL",
     24.555059,
@@ -188,13 +298,7 @@ const locations = [
     "Pleasure",
     "<strong>Las Vegas, NV</strong>"
   ],
-  [
-    "Liege, Belgium",
-    50.632557,
-    5.579666,
-    "Work",
-    "<strong>Liege, Belgium</strong>"
-  ],
+
   [
     "Limburgerhof, Germany",
     49.420761,
@@ -231,26 +335,13 @@ const locations = [
     "<strong>Long Beach, California</strong>"
   ],
   [
-    "Ludwigshafen am Rhein, Deutschland",
-    49.47741,
-    8.44518,
-    "Birth",
-    "<strong>Ludwigshafen am Rhein, Deutschland</strong><br />Birth Place"
-  ],
-  [
     "Mainz, Germany",
     49.992862,
     8.247253,
     "Pleasure",
     "<strong>Mainz, Germany</strong>"
   ],
-  [
-    "Mannheim, Deutschland",
-    49.487459,
-    8.466039,
-    "Home",
-    "<strong>Mannheim, Deutschland</strong>"
-  ],
+
   [
     "Metz, France",
     49.119309,
@@ -259,20 +350,7 @@ const locations = [
     "<strong>Metz, France</strong>"
   ],
   ["Miami, FL", 25.76168, -80.19179, "Pleasure", "<strong>Miami, FL</strong>"],
-  [
-    "München, Deutschland",
-    48.135125,
-    11.58198,
-    "Home",
-    "<strong>München, Deutschland</strong><br />College Home"
-  ],
-  [
-    "Mutterstadt, Deutschland",
-    49.44197,
-    8.35527,
-    "Home",
-    "<strong>Mutterstadt, Deutschland</strong>"
-  ],
+
   [
     "Nakskov, Danmark",
     54.833406,
@@ -287,13 +365,7 @@ const locations = [
     "Pleasure",
     "<strong>Nancy, France</strong>"
   ],
-  [
-    "Neuhofen, Deutschland",
-    49.422421,
-    8.423456,
-    "Home",
-    "<strong>Neuhofen, Deutschland</strong>"
-  ],
+
   [
     "New York, NY",
     40.712775,
@@ -315,13 +387,7 @@ const locations = [
     "Pleasure",
     "<strong>Oklahoma City, OK</strong>"
   ],
-  [
-    "Olive Branch, MS",
-    34.96176,
-    -89.829532,
-    "Work",
-    "<strong>Olive Branch, MS</strong><br />Science Conference"
-  ],
+
   [
     "Omaha, NE",
     41.256537,
@@ -350,13 +416,7 @@ const locations = [
     "Pleasure",
     "<strong>Pesaro, Italy</strong>"
   ],
-  [
-    "Pisa, Italia",
-    43.722839,
-    10.401689,
-    "Work",
-    "<strong>Pisa, Italia</strong>"
-  ],
+
   [
     "Riccione, Italia",
     43.992109,
@@ -490,40 +550,13 @@ const locations = [
     "Pleasure",
     "<strong>Ventura, CA</strong>"
   ],
-  [
-    "Verona, Italy",
-    45.438619,
-    10.993313,
-    "Work",
-    "<strong>Verona, Italy</strong>"
-  ],
-  [
-    "Vicenza, Italy",
-    45.545479,
-    11.535421,
-    "Work",
-    "<strong>Vicenza, Italy</strong>"
-  ],
-  [
-    "Virginia Beach, VA",
-    36.852926,
-    -75.977985,
-    "Home",
-    "<strong>Virginia Beach, VA</strong>"
-  ],
+
   [
     "Washington, DC",
     38.907192,
     -77.036871,
     "Pleasure",
     "<strong>Washington, DC</strong>"
-  ],
-  [
-    "Wichita, KS",
-    37.687176,
-    -97.330053,
-    "Home",
-    "<strong>Wichita, KS</strong>"
   ],
   [
     "Wissembourg, France",
@@ -560,4 +593,10 @@ const locations = [
     "Pleasure",
     "<strong>Andechs Germany</strong><br />Visit Andechs Monastery."
   ]
+];
+
+const locations = [
+  ...workLocations,
+  ...homeLocations,
+  ...pleasureLocations,
 ]
