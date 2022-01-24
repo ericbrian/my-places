@@ -10,19 +10,20 @@ const map = new mapboxgl.Map({
 map.addControl(new mapboxgl.NavigationControl(), "top-left");
 
 const addMarkers = () => {
-    locations.forEach((location, x) => {
-        console.log(location[3]);
+    geoJson.forEach((location, x) => {
         const el = document.createElement('div');
         el.id = "marker-" + x;
-        el.className = "marker marker-" + location[3].toLowerCase();
-        el.title = location[0];
+        el.className = "marker marker-" + location.properties.placeType.toLowerCase();
+        el.title = location.properties.place;
 
         /**
          * Create a marker using the div element
          * defined above and add it to the map.
          **/
+        const lat = location.geometry.coordinates[1];
+        const long = location.geometry.coordinates[0];
         new mapboxgl.Marker(el, {})
-            .setLngLat([location[2], location[1]])
+            .setLngLat([long, lat])
             .addTo(map);
     });
 }
