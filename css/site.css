@@ -27,3 +27,8 @@ body {
 .marker-birth {
     background-color: rgb(223, 18, 223);
 }
+
+.mapboxgl-popup {
+    max-width: 400px;
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}

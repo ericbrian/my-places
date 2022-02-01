@@ -1,30 +1,58 @@
-mapboxgl.accessToken =
-    'pk.eyJ1IjoiZXJpY2Nvb2wiLCJhIjoiY2s3czdvNGd6MGdkODNlbnI4cnZrNHpxeCJ9._qWghVW-BLTf6lumxxEvlw';
-
-const map = new mapboxgl.Map({
+mapboxgl.accessToken = 'pk.eyJ1IjoiZXJpY2JyaWFuIiwiYSI6ImNreXJobHN3eTB1MnoydXBla2lzOXFtOGQifQ.f2fiVNRwiVNqpi_RjeGEBg';
+var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v11',
     center: [-42.5200714, 39.5876049],
     zoom: 2
 });
-map.addControl(new mapboxgl.NavigationControl(), "top-left");
 
-const addMarkers = () => {
-    geoJson.forEach((location, x) => {
-        const el = document.createElement('div');
-        el.id = "marker-" + x;
-        el.className = "marker marker-" + location.properties.placeType.toLowerCase();
-        el.title = location.properties.place;
+// Add zoom and rotation controls to the map.
+map.addControl(new mapboxgl.NavigationControl());
 
-        /**
-         * Create a marker using the div element
-         * defined above and add it to the map.
-         **/
-        const lat = location.geometry.coordinates[1];
-        const long = location.geometry.coordinates[0];
-        new mapboxgl.Marker(el, {})
-            .setLngLat([long, lat])
+map.on('load', () => {
+    map.addSource('places', {
+        type: 'geojson',
+        data: geoJson
+    });
+
+    // Add a layer showing the places.
+    map.addLayer({
+        'id': 'places',
+        'type': 'symbol',
+        'source': 'places',
+        'layout': {
+            'icon-image': '{icon}',
+            'icon-allow-overlap': true
+        }
+    });
+
+    // When a click event occurs on a feature in the places layer, open a popup at the
+    // location of the feature, with description HTML from its properties.
+    map.on('click', 'places', (e) => {
+        // Copy coordinates array.
+        const coordinates = e.features[0].geometry.coordinates.slice();
+        const description = e.features[0].properties.description;
+
+        // Ensure that if the map is zoomed out such that multiple
+        // copies of the feature are visible, the popup appears
+        // over the copy being pointed to.
+        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
+
+        new mapboxgl.Popup()
+            .setLngLat(coordinates)
+            .setHTML(description)
             .addTo(map);
     });
-}
-addMarkers();
+
+    // Change the cursor to a pointer when the mouse is over the places layer.
+    map.on('mouseenter', 'places', () => {
+        map.getCanvas().style.cursor = 'pointer';
+    });
+
+    // Change it back to a pointer when it leaves.
+    map.on('mouseleave', 'places', () => {
+        map.getCanvas().style.cursor = '';
+    });
+});
