@@ -4,8 +4,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Alexandria, VA, USA',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'house-fill',
+                'icon': 'house-fill',
                 'description': `<h3>Alexandria, VA, USA</h3>`
             },
             'geometry': {
@@ -17,8 +17,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Hassloch, Germany',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'house-fill',
+                'icon': 'house-fill',
                 'description': `<h3>Hassloch, Germany</h3><h6>Haßloch</h6>`
             },
             'geometry': {
@@ -30,8 +30,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Ludwigshafen am Rhein, Germany',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'asterisk',
+                'icon': 'asterisk',
                 'description': `<h3>Ludwigshafen am Rhein, Germany</h3>`
             },
             'geometry': {
@@ -43,8 +43,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Mannheim, Germany',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'house-fill',
+                'icon': 'house-fill',
                 'description': `<h3>Mannheim, Germany</h3>`
             },
             'geometry': {
@@ -56,8 +56,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Munich, Germany',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'house-fill',
+                'icon': 'house-fill',
                 'description': `<h3>Munich, Germany</h3><h6>München</h6>`
             },
             'geometry': {
@@ -69,8 +69,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Mutterstadt, Germany',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'house-fill',
+                'icon': 'house-fill',
                 'description': `<h3>Mutterstadt, Germany</h3>`
             },
             'geometry': {
@@ -82,8 +82,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Neuhofen, Germany',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'house-fill',
+                'icon': 'house-fill',
                 'description': `<h3>Neuhofen, Germany</h3>`
             },
             'geometry': {
@@ -95,8 +95,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Virginia Beach, VA, USA',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'house-fill',
+                'icon': 'house-fill',
                 'description': `<h3>Virginia Beach, VA, USA</h3>`
             },
             'geometry': {
@@ -108,8 +108,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Wichita, KS, USA',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'house-fill',
+                'icon': 'house-fill',
                 'description': `<h3>Wichita, KS, USA</h3>`
             },
             'geometry': {
@@ -121,8 +121,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Albany, NY, USA',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Albany, NY, USA</h3>`
             },
             'geometry': {
@@ -134,8 +134,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Altrip, Germany',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Altrip, Germany</h3>`
             },
             'geometry': {
@@ -147,8 +147,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Amsterdam, Netherlands',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Amsterdam, Netherlands</h3>`
             },
             'geometry': {
@@ -160,8 +160,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Andechs, Germany',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Andechs, Germany</h3>`
             },
             'geometry': {
@@ -173,8 +173,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Bakersville, CA, USA',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Bakersville, CA, USA</h3>`
             },
             'geometry': {
@@ -186,8 +186,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Bernau am Chiemsee, Germany',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Bernau am Chiemsee, Germany</h3>`
             },
             'geometry': {
@@ -199,8 +199,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Cape Coral, FL, USA',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Cape Coral, FL, USA</h3>`
             },
             'geometry': {
@@ -212,8 +212,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Cologne, Germany',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Cologne, Germany</h3><h6>Köln</h6>`
             },
             'geometry': {
@@ -225,8 +225,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Daytona Beach, FL, USA',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Daytona Beach, FL, USA</h3>`
             },
             'geometry': {
@@ -238,8 +238,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Duisburg, Germany',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Duisburg, Germany</h3>`
             },
             'geometry': {
@@ -251,8 +251,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Essen, Germany',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Essen, Germany</h3>`
             },
             'geometry': {
@@ -264,8 +264,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Frankenthal, Germany',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Frankenthal, Germany</h3>`
             },
             'geometry': {
@@ -277,8 +277,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Frankfurt, Germany',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Frankfurt, Germany</h3>`
             },
             'geometry': {
@@ -290,8 +290,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Heidelberg, Germany',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Heidelberg, Germany</h3>`
             },
             'geometry': {
@@ -303,8 +303,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Houston, TX, USA',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Houston, TX, USA</h3>`
             },
             'geometry': {
@@ -316,8 +316,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Ingolstadt, Germany',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Ingolstadt, Germany</h3>`
             },
             'geometry': {
@@ -329,8 +329,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Key West, FL, USA',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Key West, FL, USA</h3>`
             },
             'geometry': {
@@ -342,8 +342,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Las Vegas, NV, USA',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Las Vegas, NV, USA</h3>`
             },
             'geometry': {
@@ -355,8 +355,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Limburgerhof, Germany',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Limburgerhof, Germany</h3>`
             },
             'geometry': {
@@ -368,8 +368,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Little Rock, AR, USA',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Little Rock, AR, USA</h3>`
             },
             'geometry': {
@@ -381,8 +381,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Lloret de Mar, Spain',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Lloret de Mar, Spain</h3>`
             },
             'geometry': {
@@ -394,8 +394,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'London, England',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>London, England</h3>`
             },
             'geometry': {
@@ -407,8 +407,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Long Beach, California',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Long Beach, California</h3>`
             },
             'geometry': {
@@ -420,8 +420,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Mainz, Germany',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Mainz, Germany</h3>`
             },
             'geometry': {
@@ -433,8 +433,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Metz, France',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Metz, France</h3>`
             },
             'geometry': {
@@ -446,8 +446,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Miami, FL, USA',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Miami, FL, USA</h3>`
             },
             'geometry': {
@@ -459,8 +459,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Nakskov, Denmark',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Nakskov, Denmark</h3>`
             },
             'geometry': {
@@ -472,8 +472,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Nancy, France',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Nancy, France</h3>`
             },
             'geometry': {
@@ -485,8 +485,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'New York, NY, USA',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>New York, NY, USA</h3>`
             },
             'geometry': {
@@ -498,8 +498,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Newburgh, NY, USA',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Newburgh, NY, USA</h3>`
             },
             'geometry': {
@@ -511,8 +511,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Oklahoma City, OK, USA',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Oklahoma City, OK, USA</h3>`
             },
             'geometry': {
@@ -524,8 +524,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Omaha, NE, USA',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Omaha, NE, USA</h3>`
             },
             'geometry': {
@@ -537,8 +537,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Orlando, FL, USA',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Orlando, FL, USA</h3>`
             },
             'geometry': {
@@ -550,8 +550,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Partnachklamm, Germany',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Partnachklamm, Germany</h3>`
             },
             'geometry': {
@@ -563,8 +563,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Pesaro, Italy',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Pesaro, Italy</h3>`
             },
             'geometry': {
@@ -576,8 +576,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Riccione, Italy',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Riccione, Italy</h3>`
             },
             'geometry': {
@@ -589,8 +589,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Rimini, Italy',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Rimini, Italy</h3>`
             },
             'geometry': {
@@ -602,8 +602,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Rothenburg ob der Tauber, Germany',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Rothenburg ob der Tauber, Germany</h3>`
             },
             'geometry': {
@@ -615,8 +615,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Rotterdam, Nederland',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Rotterdam, Nederland</h3>`
             },
             'geometry': {
@@ -628,8 +628,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Saint Louis, MO, USA',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Saint Louis, MO, USA</h3>`
             },
             'geometry': {
@@ -641,8 +641,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Salinas, CA, USA',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Salinas, CA, USA</h3>`
             },
             'geometry': {
@@ -654,8 +654,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Salzburg, Austria',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Salzburg, Austria</h3>`
             },
             'geometry': {
@@ -667,8 +667,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'San Francisco, CA, USA',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>San Francisco, CA, USA</h3>`
             },
             'geometry': {
@@ -680,8 +680,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'San Marino',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>San Marino</h3>`
             },
             'geometry': {
@@ -693,8 +693,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Sanibel Island, FL, USA',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Sanibel Island, FL, USA</h3>`
             },
             'geometry': {
@@ -706,8 +706,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Santa Barbara, CA, USA',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Santa Barbara, CA, USA</h3>`
             },
             'geometry': {
@@ -719,8 +719,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Speyer, Germany',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Speyer, Germany</h3>`
             },
             'geometry': {
@@ -732,8 +732,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'St. Augustine Beach, FL, USA',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>St. Augustine Beach, FL, USA</h3>`
             },
             'geometry': {
@@ -745,8 +745,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Strasbourg, France',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Strasbourg, France</h3>`
             },
             'geometry': {
@@ -758,8 +758,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Strasburg, VA, USA',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Strasburg, VA, USA</h3>`
             },
             'geometry': {
@@ -771,8 +771,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Stuttgart, Germany',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Stuttgart, Germany</h3>`
             },
             'geometry': {
@@ -784,8 +784,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Trier, Germany',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Trier, Germany</h3>`
             },
             'geometry': {
@@ -797,8 +797,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Vancouver, Canada',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Vancouver, Canada</h3>`
             },
             'geometry': {
@@ -810,8 +810,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Venice, Italy',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Venice, Italy</h3>`
             },
             'geometry': {
@@ -823,8 +823,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Ventura, CA, USA',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Ventura, CA, USA</h3>`
             },
             'geometry': {
@@ -836,8 +836,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Washington, DC, USA',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Washington, DC, USA</h3>`
             },
             'geometry': {
@@ -849,8 +849,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Wissembourg, France',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Wissembourg, France</h3>`
             },
             'geometry': {
@@ -862,8 +862,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Worms, Germany',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
                 'description': `<h3>Worms, Germany</h3>`
             },
             'geometry': {
@@ -875,8 +875,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'al-Kobar, Saudi Arabia',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'building',
+                'icon': 'building',
                 'description': `<h3>al-Kobar, Saudi Arabia</h3><h6>الخبر المملكة العربية السعودية‎</h6>`
             },
             'geometry': {
@@ -888,8 +888,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Anapolis, MD, USA',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'building',
+                'icon': 'building',
                 'description': `<h3>Anapolis, MD, USA</h3>`
             },
             'geometry': {
@@ -901,8 +901,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Bolder, Colorado',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'building',
+                'icon': 'building',
                 'description': `<h3>Bolder, Colorado</h3>`
             },
             'geometry': {
@@ -914,8 +914,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Boston, MA, USA',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'building',
+                'icon': 'building',
                 'description': `<h3>Boston, MA, USA</h3>`
             },
             'geometry': {
@@ -927,8 +927,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Brussels, Belgium',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'building',
+                'icon': 'building',
                 'description': `<h3>Brussels, Belgium</h3><h6>Bruxelles</h6>`
             },
             'geometry': {
@@ -940,8 +940,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Chicago, Illinois',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'building',
+                'icon': 'building',
                 'description': `<h3>Chicago, Illinois</h3>`
             },
             'geometry': {
@@ -953,8 +953,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Denver, Colorado',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'building',
+                'icon': 'building',
                 'description': `<h3>Denver, Colorado</h3>`
             },
             'geometry': {
@@ -966,8 +966,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Juniper, FL, USA',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'building',
+                'icon': 'building',
                 'description': `<h3>Juniper, FL, USA</h3>`
             },
             'geometry': {
@@ -979,8 +979,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Liege, Belgium',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'building',
+                'icon': 'building',
                 'description': `<h3>Liege, Belgium</h3>`
             },
             'geometry': {
@@ -992,8 +992,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Olive Branch, MS, USA',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'building',
+                'icon': 'building',
                 'description': `<h3>Olive Branch, MS, USA</h3>`
             },
             'geometry': {
@@ -1005,8 +1005,8 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Pisa, Italy',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'building',
+                'icon': 'building',
                 'description': `<h3>Pisa, Italy</h3>`
             },
             'geometry': {
@@ -1018,13 +1018,26 @@ const geoJson = {
             'type': 'Feature',
             'properties': {
                 'place': 'Verona, Italy',
-                'placeType': 'theatre-15',
-                'icon': 'theatre-15',
+                'placeType': 'building',
+                'icon': 'building',
                 'description': `<h3>Verona, Italy</h3>`
             },
             'geometry': {
                 'type': 'Point',
                 'coordinates': [10.993313, 45.438619, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Vicenza, Italy',
+                'placeType': 'building',
+                'icon': 'building',
+                'description': `<h3>Vicenza, Italy</h3>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [11.535421, 45.545479, ]
             }
         },
     ]
