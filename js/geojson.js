@@ -3,7 +3,8 @@ const geoJson = [{
         'properties': {
             'place': 'Alexandria, VA, USA',
             'placeType': 'Home',
-            'popupContent': ``
+            'icon': 'Home',
+            'description': `<h3>Alexandria, VA, USA</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -15,7 +16,8 @@ const geoJson = [{
         'properties': {
             'place': 'Hassloch, Germany',
             'placeType': 'Home',
-            'popupContent': ``
+            'icon': 'Home',
+            'description': `<h3>Hassloch, Germany</h3><h6>Haßloch</h6>`
         },
         'geometry': {
             'type': 'Point',
@@ -27,7 +29,8 @@ const geoJson = [{
         'properties': {
             'place': 'Ludwigshafen am Rhein, Germany',
             'placeType': 'Home',
-            'popupContent': ``
+            'icon': 'Home',
+            'description': `<h3>Ludwigshafen am Rhein, Germany</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -39,7 +42,8 @@ const geoJson = [{
         'properties': {
             'place': 'Mannheim, Germany',
             'placeType': 'Home',
-            'popupContent': ``
+            'icon': 'Home',
+            'description': `<h3>Mannheim, Germany</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -51,7 +55,8 @@ const geoJson = [{
         'properties': {
             'place': 'Munich, Germany',
             'placeType': 'Home',
-            'popupContent': ``
+            'icon': 'Home',
+            'description': `<h3>Munich, Germany</h3><h6>München</h6>`
         },
         'geometry': {
             'type': 'Point',
@@ -63,7 +68,8 @@ const geoJson = [{
         'properties': {
             'place': 'Mutterstadt, Germany',
             'placeType': 'Home',
-            'popupContent': ``
+            'icon': 'Home',
+            'description': `<h3>Mutterstadt, Germany</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -75,7 +81,8 @@ const geoJson = [{
         'properties': {
             'place': 'Neuhofen, Germany',
             'placeType': 'Home',
-            'popupContent': ``
+            'icon': 'Home',
+            'description': `<h3>Neuhofen, Germany</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -87,7 +94,8 @@ const geoJson = [{
         'properties': {
             'place': 'Virginia Beach, VA, USA',
             'placeType': 'Home',
-            'popupContent': ``
+            'icon': 'Home',
+            'description': `<h3>Virginia Beach, VA, USA</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -99,7 +107,8 @@ const geoJson = [{
         'properties': {
             'place': 'Wichita, KS, USA',
             'placeType': 'Home',
-            'popupContent': ``
+            'icon': 'Home',
+            'description': `<h3>Wichita, KS, USA</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -111,7 +120,8 @@ const geoJson = [{
         'properties': {
             'place': 'Albany, NY, USA',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Albany, NY, USA</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -123,7 +133,8 @@ const geoJson = [{
         'properties': {
             'place': 'Altrip, Germany',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Altrip, Germany</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -135,7 +146,8 @@ const geoJson = [{
         'properties': {
             'place': 'Amsterdam, Netherlands',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Amsterdam, Netherlands</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -145,9 +157,10 @@ const geoJson = [{
     {
         'type': 'Feature',
         'properties': {
-            'place': 'Andechs Germany',
+            'place': 'Andechs, Germany',
             'placeType': 'Pleasure',
-            'popupContent': `Visit Andechs Monastery.`
+            'icon': 'Pleasure',
+            'description': `<h3>Andechs, Germany</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -159,7 +172,8 @@ const geoJson = [{
         'properties': {
             'place': 'Bakersville, CA, USA',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Bakersville, CA, USA</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -171,7 +185,8 @@ const geoJson = [{
         'properties': {
             'place': 'Bernau am Chiemsee, Germany',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Bernau am Chiemsee, Germany</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -183,7 +198,8 @@ const geoJson = [{
         'properties': {
             'place': 'Cape Coral, FL, USA',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Cape Coral, FL, USA</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -195,7 +211,8 @@ const geoJson = [{
         'properties': {
             'place': 'Cologne, Germany',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Cologne, Germany</h3><h6>Köln</h6>`
         },
         'geometry': {
             'type': 'Point',
@@ -207,7 +224,8 @@ const geoJson = [{
         'properties': {
             'place': 'Daytona Beach, FL, USA',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Daytona Beach, FL, USA</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -219,7 +237,8 @@ const geoJson = [{
         'properties': {
             'place': 'Duisburg, Germany',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Duisburg, Germany</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -231,7 +250,8 @@ const geoJson = [{
         'properties': {
             'place': 'Essen, Germany',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Essen, Germany</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -243,7 +263,8 @@ const geoJson = [{
         'properties': {
             'place': 'Frankenthal, Germany',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Frankenthal, Germany</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -255,7 +276,8 @@ const geoJson = [{
         'properties': {
             'place': 'Frankfurt, Germany',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Frankfurt, Germany</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -267,7 +289,8 @@ const geoJson = [{
         'properties': {
             'place': 'Heidelberg, Germany',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Heidelberg, Germany</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -279,7 +302,8 @@ const geoJson = [{
         'properties': {
             'place': 'Houston, TX, USA',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Houston, TX, USA</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -289,9 +313,10 @@ const geoJson = [{
     {
         'type': 'Feature',
         'properties': {
-            'place': 'Ingolstadt Germany',
+            'place': 'Ingolstadt, Germany',
             'placeType': 'Pleasure',
-            'popupContent': `Visit archaeological sites.`
+            'icon': 'Pleasure',
+            'description': `<h3>Ingolstadt, Germany</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -303,7 +328,8 @@ const geoJson = [{
         'properties': {
             'place': 'Key West, FL, USA',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Key West, FL, USA</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -315,7 +341,8 @@ const geoJson = [{
         'properties': {
             'place': 'Las Vegas, NV, USA',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Las Vegas, NV, USA</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -327,7 +354,8 @@ const geoJson = [{
         'properties': {
             'place': 'Limburgerhof, Germany',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Limburgerhof, Germany</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -339,7 +367,8 @@ const geoJson = [{
         'properties': {
             'place': 'Little Rock, AR, USA',
             'placeType': 'Pleasure',
-            'popupContent': `Visited William J. Clinton Presidential Library and Museum.`
+            'icon': 'Pleasure',
+            'description': `<h3>Little Rock, AR, USA</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -351,7 +380,8 @@ const geoJson = [{
         'properties': {
             'place': 'Lloret de Mar, Spain',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Lloret de Mar, Spain</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -363,7 +393,8 @@ const geoJson = [{
         'properties': {
             'place': 'London, England',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>London, England</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -375,7 +406,8 @@ const geoJson = [{
         'properties': {
             'place': 'Long Beach, California',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Long Beach, California</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -387,7 +419,8 @@ const geoJson = [{
         'properties': {
             'place': 'Mainz, Germany',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Mainz, Germany</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -399,7 +432,8 @@ const geoJson = [{
         'properties': {
             'place': 'Metz, France',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Metz, France</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -411,7 +445,8 @@ const geoJson = [{
         'properties': {
             'place': 'Miami, FL, USA',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Miami, FL, USA</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -423,7 +458,8 @@ const geoJson = [{
         'properties': {
             'place': 'Nakskov, Denmark',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Nakskov, Denmark</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -435,7 +471,8 @@ const geoJson = [{
         'properties': {
             'place': 'Nancy, France',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Nancy, France</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -447,7 +484,8 @@ const geoJson = [{
         'properties': {
             'place': 'New York, NY, USA',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>New York, NY, USA</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -459,7 +497,8 @@ const geoJson = [{
         'properties': {
             'place': 'Newburgh, NY, USA',
             'placeType': 'Pleasure',
-            'popupContent': `Visit Orange County Choppers showroom.`
+            'icon': 'Pleasure',
+            'description': `<h3>Newburgh, NY, USA</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -471,7 +510,8 @@ const geoJson = [{
         'properties': {
             'place': 'Oklahoma City, OK, USA',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Oklahoma City, OK, USA</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -483,7 +523,8 @@ const geoJson = [{
         'properties': {
             'place': 'Omaha, NE, USA',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Omaha, NE, USA</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -495,7 +536,8 @@ const geoJson = [{
         'properties': {
             'place': 'Orlando, FL, USA',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Orlando, FL, USA</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -507,7 +549,8 @@ const geoJson = [{
         'properties': {
             'place': 'Partnachklamm, Germany',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Partnachklamm, Germany</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -519,7 +562,8 @@ const geoJson = [{
         'properties': {
             'place': 'Pesaro, Italy',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Pesaro, Italy</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -531,7 +575,8 @@ const geoJson = [{
         'properties': {
             'place': 'Riccione, Italy',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Riccione, Italy</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -543,7 +588,8 @@ const geoJson = [{
         'properties': {
             'place': 'Rimini, Italy',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Rimini, Italy</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -555,7 +601,8 @@ const geoJson = [{
         'properties': {
             'place': 'Rothenburg ob der Tauber, Germany',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Rothenburg ob der Tauber, Germany</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -567,7 +614,8 @@ const geoJson = [{
         'properties': {
             'place': 'Rotterdam, Nederland',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Rotterdam, Nederland</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -579,7 +627,8 @@ const geoJson = [{
         'properties': {
             'place': 'Saint Louis, MO, USA',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Saint Louis, MO, USA</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -591,7 +640,8 @@ const geoJson = [{
         'properties': {
             'place': 'Salinas, CA, USA',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Salinas, CA, USA</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -603,7 +653,8 @@ const geoJson = [{
         'properties': {
             'place': 'Salzburg, Austria',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Salzburg, Austria</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -615,7 +666,8 @@ const geoJson = [{
         'properties': {
             'place': 'San Francisco, CA, USA',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>San Francisco, CA, USA</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -627,7 +679,8 @@ const geoJson = [{
         'properties': {
             'place': 'San Marino',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>San Marino</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -639,7 +692,8 @@ const geoJson = [{
         'properties': {
             'place': 'Sanibel Island, FL, USA',
             'placeType': 'Pleasure',
-            'popupContent': `Visited J.N. 'Ding' Darling National Wildlife Refuge`
+            'icon': 'Pleasure',
+            'description': `<h3>Sanibel Island, FL, USA</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -651,7 +705,8 @@ const geoJson = [{
         'properties': {
             'place': 'Santa Barbara, CA, USA',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Santa Barbara, CA, USA</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -663,7 +718,8 @@ const geoJson = [{
         'properties': {
             'place': 'Speyer, Germany',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Speyer, Germany</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -675,7 +731,8 @@ const geoJson = [{
         'properties': {
             'place': 'St. Augustine Beach, FL, USA',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>St. Augustine Beach, FL, USA</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -687,7 +744,8 @@ const geoJson = [{
         'properties': {
             'place': 'Strasbourg, France',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Strasbourg, France</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -699,7 +757,8 @@ const geoJson = [{
         'properties': {
             'place': 'Strasburg, VA, USA',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Strasburg, VA, USA</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -711,7 +770,8 @@ const geoJson = [{
         'properties': {
             'place': 'Stuttgart, Germany',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Stuttgart, Germany</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -723,7 +783,8 @@ const geoJson = [{
         'properties': {
             'place': 'Trier, Germany',
             'placeType': 'Pleasure',
-            'popupContent': `Visit archaeological sites and Roman structures.`
+            'icon': 'Pleasure',
+            'description': `<h3>Trier, Germany</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -735,7 +796,8 @@ const geoJson = [{
         'properties': {
             'place': 'Vancouver, Canada',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Vancouver, Canada</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -747,7 +809,8 @@ const geoJson = [{
         'properties': {
             'place': 'Venice, Italy',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Venice, Italy</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -759,7 +822,8 @@ const geoJson = [{
         'properties': {
             'place': 'Ventura, CA, USA',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Ventura, CA, USA</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -771,7 +835,8 @@ const geoJson = [{
         'properties': {
             'place': 'Washington, DC, USA',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Washington, DC, USA</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -783,7 +848,8 @@ const geoJson = [{
         'properties': {
             'place': 'Wissembourg, France',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Wissembourg, France</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -795,7 +861,8 @@ const geoJson = [{
         'properties': {
             'place': 'Worms, Germany',
             'placeType': 'Pleasure',
-            'popupContent': ``
+            'icon': 'Pleasure',
+            'description': `<h3>Worms, Germany</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -807,7 +874,8 @@ const geoJson = [{
         'properties': {
             'place': 'al-Kobar, Saudi Arabia',
             'placeType': 'Work',
-            'popupContent': ``
+            'icon': 'Work',
+            'description': `<h3>al-Kobar, Saudi Arabia</h3><h6>الخبر المملكة العربية السعودية‎</h6>`
         },
         'geometry': {
             'type': 'Point',
@@ -819,7 +887,8 @@ const geoJson = [{
         'properties': {
             'place': 'Anapolis, MD, USA',
             'placeType': 'Work',
-            'popupContent': ``
+            'icon': 'Work',
+            'description': `<h3>Anapolis, MD, USA</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -831,7 +900,8 @@ const geoJson = [{
         'properties': {
             'place': 'Bolder, Colorado',
             'placeType': 'Work',
-            'popupContent': ``
+            'icon': 'Work',
+            'description': `<h3>Bolder, Colorado</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -843,7 +913,8 @@ const geoJson = [{
         'properties': {
             'place': 'Boston, MA, USA',
             'placeType': 'Work',
-            'popupContent': ``
+            'icon': 'Work',
+            'description': `<h3>Boston, MA, USA</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -855,7 +926,8 @@ const geoJson = [{
         'properties': {
             'place': 'Brussels, Belgium',
             'placeType': 'Work',
-            'popupContent': ``
+            'icon': 'Work',
+            'description': `<h3>Brussels, Belgium</h3><h6>Bruxelles</h6>`
         },
         'geometry': {
             'type': 'Point',
@@ -867,7 +939,8 @@ const geoJson = [{
         'properties': {
             'place': 'Chicago, Illinois',
             'placeType': 'Work',
-            'popupContent': ``
+            'icon': 'Work',
+            'description': `<h3>Chicago, Illinois</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -879,7 +952,8 @@ const geoJson = [{
         'properties': {
             'place': 'Denver, Colorado',
             'placeType': 'Work',
-            'popupContent': ``
+            'icon': 'Work',
+            'description': `<h3>Denver, Colorado</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -891,7 +965,8 @@ const geoJson = [{
         'properties': {
             'place': 'Juniper, FL, USA',
             'placeType': 'Work',
-            'popupContent': ``
+            'icon': 'Work',
+            'description': `<h3>Juniper, FL, USA</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -903,7 +978,8 @@ const geoJson = [{
         'properties': {
             'place': 'Liege, Belgium',
             'placeType': 'Work',
-            'popupContent': ``
+            'icon': 'Work',
+            'description': `<h3>Liege, Belgium</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -915,7 +991,8 @@ const geoJson = [{
         'properties': {
             'place': 'Olive Branch, MS, USA',
             'placeType': 'Work',
-            'popupContent': `TNC Science Conference`
+            'icon': 'Work',
+            'description': `<h3>Olive Branch, MS, USA</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -927,7 +1004,8 @@ const geoJson = [{
         'properties': {
             'place': 'Pisa, Italy',
             'placeType': 'Work',
-            'popupContent': ``
+            'icon': 'Work',
+            'description': `<h3>Pisa, Italy</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -939,7 +1017,8 @@ const geoJson = [{
         'properties': {
             'place': 'Verona, Italy',
             'placeType': 'Work',
-            'popupContent': ``
+            'icon': 'Work',
+            'description': `<h3>Verona, Italy</h3>`
         },
         'geometry': {
             'type': 'Point',
@@ -951,7 +1030,8 @@ const geoJson = [{
         'properties': {
             'place': 'Vicenza, Italy',
             'placeType': 'Work',
-            'popupContent': ``
+            'icon': 'Work',
+            'description': `<h3>Vicenza, Italy</h3>`
         },
         'geometry': {
             'type': 'Point',
