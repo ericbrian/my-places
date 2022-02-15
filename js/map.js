@@ -12,23 +12,25 @@ map.addControl(new mapboxgl.NavigationControl());
 map.on('load', () => {
     map.addSource('places', {
         type: 'geojson',
-        data: geoJson
+        data: geoJson,
+        generateId: true // This ensures that all features have unique IDs
     });
 
     // Add a layer showing the places.
     map.addLayer({
-        'id': 'places',
-        'type': 'symbol',
+        'id': 'place-viz',
+        'type': 'circle',
         'source': 'places',
-        'layout': {
-            'icon-image': '{icon}',
-            'icon-allow-overlap': true
+        'paint': {
+            'circle-stroke-color': '#000',
+            'circle-stroke-width': 1,
+            'circle-color': '#0ff'
         }
     });
 
     // When a click event occurs on a feature in the places layer, open a popup at the
     // location of the feature, with description HTML from its properties.
-    map.on('click', 'places', (e) => {
+    map.on('click', 'place-viz', (e) => {
         // Copy coordinates array.
         const coordinates = e.features[0].geometry.coordinates.slice();
         const description = e.features[0].properties.description;
@@ -45,6 +47,7 @@ map.on('load', () => {
             .setHTML(description)
             .addTo(map);
     });
+
 
     // Change the cursor to a pointer when the mouse is over the places layer.
     map.on('mouseenter', 'places', () => {
