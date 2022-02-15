@@ -22,9 +22,9 @@ map.on('load', () => {
         'type': 'circle',
         'source': 'places',
         'paint': {
-            'circle-stroke-color': '#000',
+            'circle-stroke-color': '#FFEA00',
             'circle-stroke-width': 1,
-            'circle-color': '#0ff'
+            'circle-color': '#f00'
         }
     });
 
