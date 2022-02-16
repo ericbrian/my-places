@@ -6,7 +6,7 @@ const geoJson = {
                 'place': 'Alexandria, VA, USA',
                 'placeType': 'house',
                 'icon': 'house',
-                'description': `<div class='content-header'><div class='title'>Alexandria, VA, USA</div><div class='location-info'>I currently live in Virginia, Alexandia, Fairfax County (and not Alexandria City).</div></div>`
+                'description': `<div class='content-header'><div class='title'>Alexandria, VA, USA</div></div><div class='location-info'>I currently live in Virginia, Alexandia, Fairfax County (and not Alexandria City).</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -19,7 +19,7 @@ const geoJson = {
                 'place': 'Hassloch, Germany',
                 'placeType': 'house',
                 'icon': 'house',
-                'description': `<div class='content-header'><div class='title'>Hassloch, Germany</div><div class='subtitle'>Haßloch</div><div class='location-info'>Haßloch, at one point, was Germany's smallest city, and it is where my family moved to in 1974.</div></div>`
+                'description': `<div class='content-header'><div class='title'>Hassloch, Germany</div><div class='subtitle'>Haßloch</div></div><div class='location-info'>Haßloch, at one point, was Germany's smallest city, and it is where my family moved to in 1974.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -32,7 +32,7 @@ const geoJson = {
                 'place': 'Ludwigshafen am Rhein, Germany',
                 'placeType': 'asterisk-gold',
                 'icon': 'asterisk-gold',
-                'description': `<div class='content-header'><div class='title'>Ludwigshafen am Rhein, Germany</div><div class='location-info'>Ludwigshafen is where I was born... on my Oma's couch. ☺</div></div>`
+                'description': `<div class='content-header'><div class='title'>Ludwigshafen am Rhein, Germany</div></div><div class='location-info'>Ludwigshafen is where I was born... on my Oma's couch. ☺</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -45,7 +45,7 @@ const geoJson = {
                 'place': 'Mannheim, Germany',
                 'placeType': 'house',
                 'icon': 'house',
-                'description': `<div class='content-header'><div class='title'>Mannheim, Germany</div><div class='location-info'>Mannheim is where I moved to when I left Mutterstadt. It wasn't a great appartment but it was my first own place and really enjoyed being free!</div></div>`
+                'description': `<div class='content-header'><div class='title'>Mannheim, Germany</div></div><div class='location-info'>Mannheim is where I moved to when I left Mutterstadt. It wasn't a great appartment but it was my first own place and really enjoyed being free!</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -58,7 +58,7 @@ const geoJson = {
                 'place': 'Munich, Germany',
                 'placeType': 'house',
                 'icon': 'house',
-                'description': `<div class='content-header'><div class='title'>Munich, Germany</div><div class='subtitle'>München</div><div class='location-info'>I moved to Munich to attend college. One of my favorite cities in the whole world.</div></div>`
+                'description': `<div class='content-header'><div class='title'>Munich, Germany</div><div class='subtitle'>München</div></div><div class='location-info'>I moved to Munich to attend college. One of my favorite cities in the whole world.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -71,7 +71,7 @@ const geoJson = {
                 'place': 'Mutterstadt, Germany',
                 'placeType': 'house',
                 'icon': 'house',
-                'description': `<div class='content-header'><div class='title'>Mutterstadt, Germany</div><div class='location-info'>Cute little city I lived in briefly when I left Munich.</div></div>`
+                'description': `<div class='content-header'><div class='title'>Mutterstadt, Germany</div></div><div class='location-info'>Cute little city I lived in briefly when I left Munich.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -97,7 +97,7 @@ const geoJson = {
                 'place': 'Virginia Beach, VA, USA',
                 'placeType': 'house',
                 'icon': 'house',
-                'description': `<div class='content-header'><div class='title'>Virginia Beach, VA, USA</div><div class='location-info'>After telling my big boss at Raytheon that I need to be moved out of Wichita, this is where I moved to. Better but still not a place a civilized person would want to live.</div></div>`
+                'description': `<div class='content-header'><div class='title'>Virginia Beach, VA, USA</div></div><div class='location-info'>After telling my big boss at Raytheon that I need to be moved out of Wichita, this is where I moved to. Better but still not a place a civilized person would want to live.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -110,7 +110,7 @@ const geoJson = {
                 'place': 'Wichita, KS, USA',
                 'placeType': 'house',
                 'icon': 'house',
-                'description': `<div class='content-header'><div class='title'>Wichita, KS, USA</div><div class='location-info'>When Raytheon Aerospace moved me to the USA, this horrible city is where they sent me to.</div></div>`
+                'description': `<div class='content-header'><div class='title'>Wichita, KS, USA</div></div><div class='location-info'>When Raytheon Aerospace moved me to the USA, this horrible city is where they sent me to.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -123,7 +123,7 @@ const geoJson = {
                 'place': 'Albany, NY, USA',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Albany, NY, USA</div><div class='location-info'>This was a simple trip I took with Ute and Michael.</div></div>`
+                'description': `<div class='content-header'><div class='title'>Albany, NY, USA</div></div><div class='location-info'>This was a simple trip I took with Ute and Michael.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -136,7 +136,7 @@ const geoJson = {
                 'place': 'Altrip, Germany',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Altrip, Germany</div><div class='location-info'>This is a smal little town where my Opa's family used own a restaurant.</div></div>`
+                'description': `<div class='content-header'><div class='title'>Altrip, Germany</div></div><div class='location-info'>This is a smal little town where my Opa's family used own a restaurant.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -149,7 +149,7 @@ const geoJson = {
                 'place': 'Amsterdam, Netherlands',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Amsterdam, Netherlands</div><div class='location-info'>I visited Amsterdam a couple of times with my school's band. I used to play clarinet and tenor sax. And, no, I was not good at it.... merely decent.</div></div>`
+                'description': `<div class='content-header'><div class='title'>Amsterdam, Netherlands</div></div><div class='location-info'>I visited Amsterdam a couple of times with my school's band. I used to play clarinet and tenor sax. And, no, I was not good at it.... merely decent.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -162,7 +162,7 @@ const geoJson = {
                 'place': 'Andechs, Germany',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Andechs, Germany</div><div class='location-info'>The monestary (Klosterbrauerei Andechs) in this town is where my German professor, Dr. Schmalzbauer, took a group of students for a German lesson with beer! ☺</div></div>`
+                'description': `<div class='content-header'><div class='title'>Andechs, Germany</div></div><div class='location-info'>The monestary (Klosterbrauerei Andechs) in this town is where my German professor, Dr. Schmalzbauer, took a group of students for a German lesson with beer! ☺</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -175,7 +175,7 @@ const geoJson = {
                 'place': 'Bakersville, CA, USA',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Bakersville, CA, USA</div><div class='location-info'>My Uncle Robert and I visited my American family in Bakersville.</div></div>`
+                'description': `<div class='content-header'><div class='title'>Bakersville, CA, USA</div></div><div class='location-info'>My Uncle Robert and I visited my American family in Bakersville.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -188,7 +188,7 @@ const geoJson = {
                 'place': 'Bernau am Chiemsee, Germany',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Bernau am Chiemsee, Germany</div><div class='location-info'>My family and I vacationed at Chiemsee a couple of times when I was a boy.</div></div>`
+                'description': `<div class='content-header'><div class='title'>Bernau am Chiemsee, Germany</div></div><div class='location-info'>My family and I vacationed at Chiemsee a couple of times when I was a boy.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -201,7 +201,7 @@ const geoJson = {
                 'place': 'Cape Coral, FL, USA',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Cape Coral, FL, USA</div><div class='location-info'>Ute, Michael and I vacationed here.</div></div>`
+                'description': `<div class='content-header'><div class='title'>Cape Coral, FL, USA</div></div><div class='location-info'>Ute, Michael and I vacationed here.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -214,7 +214,7 @@ const geoJson = {
                 'place': 'Cologne, Germany',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Cologne, Germany</div><div class='subtitle'>Köln</div><div class='location-info'>In my 20s, Friends and I visited Cologne once a year for a 'excessive' long weekend.</div></div>`
+                'description': `<div class='content-header'><div class='title'>Cologne, Germany</div><div class='subtitle'>Köln</div></div><div class='location-info'>In my 20s, Friends and I visited Cologne once a year for a 'excessive' long weekend.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -227,7 +227,7 @@ const geoJson = {
                 'place': 'Daytona Beach, FL, USA',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Daytona Beach, FL, USA</div><div class='location-info'>Ute, Michael and I visited some of Ute's friends who have a condo in Daytona.</div></div>`
+                'description': `<div class='content-header'><div class='title'>Daytona Beach, FL, USA</div></div><div class='location-info'>Ute, Michael and I visited some of Ute's friends who have a condo in Daytona.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -240,7 +240,7 @@ const geoJson = {
                 'place': 'Duisburg, Germany',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Duisburg, Germany</div><div class='location-info'>A friend of mine lived in Duisburg. I loved visiting here because he took me to types of places I'd never been bofore. And, I won't tell what type.</div></div>`
+                'description': `<div class='content-header'><div class='title'>Duisburg, Germany</div></div><div class='location-info'>A friend of mine lived in Duisburg. I loved visiting here because he took me to types of places I'd never been bofore. And, I won't tell what type.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -253,7 +253,7 @@ const geoJson = {
                 'place': 'Essen, Germany',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Essen, Germany</div><div class='location-info'>My Brother Bruce used to stay at a hotel in Essen while working for Continental Airlines.</div></div>`
+                'description': `<div class='content-header'><div class='title'>Essen, Germany</div></div><div class='location-info'>My Brother Bruce used to stay at a hotel in Essen while working for Continental Airlines.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -266,7 +266,7 @@ const geoJson = {
                 'place': 'Frankenthal, Germany',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Frankenthal, Germany</div><div class='location-info'>My friend Ron used to live here and I used to visit him often.</div></div>`
+                'description': `<div class='content-header'><div class='title'>Frankenthal, Germany</div></div><div class='location-info'>My friend Ron used to live here and I used to visit him often.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -279,7 +279,7 @@ const geoJson = {
                 'place': 'Frankfurt, Germany',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Frankfurt, Germany</div><div class='location-info'>Friends and I used to visit Frankfurt for simple day trips. But also, this is where the American Embassy was.</div></div>`
+                'description': `<div class='content-header'><div class='title'>Frankfurt, Germany</div></div><div class='location-info'>Friends and I used to visit Frankfurt for simple day trips. But also, this is where the American Embassy was.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -292,7 +292,7 @@ const geoJson = {
                 'place': 'Heidelberg, Germany',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Heidelberg, Germany</div><div class='location-info'>I worked here a couple of times; went out at Friday nights; visited the castle; and so much more.</div></div>`
+                'description': `<div class='content-header'><div class='title'>Heidelberg, Germany</div></div><div class='location-info'>I worked here a couple of times; went out at Friday nights; visited the castle; and so much more.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -305,7 +305,7 @@ const geoJson = {
                 'place': 'Houston, TX, USA',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Houston, TX, USA</div><div class='location-info'>I visited Houston with my Brother Bruce.</div></div>`
+                'description': `<div class='content-header'><div class='title'>Houston, TX, USA</div></div><div class='location-info'>I visited Houston with my Brother Bruce.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -318,7 +318,7 @@ const geoJson = {
                 'place': 'Ingolstadt, Germany',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Ingolstadt, Germany</div><div class='location-info'>I took some Archeology classes and the professor brought us to Ingolstadt to look at some sites.</div></div>`
+                'description': `<div class='content-header'><div class='title'>Ingolstadt, Germany</div></div><div class='location-info'>I took some Archeology classes and the professor brought us to Ingolstadt to look at some sites.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -331,7 +331,7 @@ const geoJson = {
                 'place': 'Key West, FL, USA',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Key West, FL, USA</div><div class='location-info'>Ute, Michael and I vacationed here.</div></div>`
+                'description': `<div class='content-header'><div class='title'>Key West, FL, USA</div></div><div class='location-info'>Ute, Michael and I vacationed here.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -344,7 +344,7 @@ const geoJson = {
                 'place': 'Las Vegas, NV, USA',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Las Vegas, NV, USA</div><div class='location-info'>My Uncle Robert and I visited Las Vegas. I did not like it there and won't be going back.</div></div>`
+                'description': `<div class='content-header'><div class='title'>Las Vegas, NV, USA</div></div><div class='location-info'>My Uncle Robert and I visited Las Vegas. I did not like it there and won't be going back.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -357,7 +357,7 @@ const geoJson = {
                 'place': 'Limburgerhof, Germany',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Limburgerhof, Germany</div><div class='location-info'>Ute and Michael live here.</div></div>`
+                'description': `<div class='content-header'><div class='title'>Limburgerhof, Germany</div></div><div class='location-info'>Ute and Michael live here.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -370,7 +370,7 @@ const geoJson = {
                 'place': 'Little Rock, AR, USA',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Little Rock, AR, USA</div><div class='location-info'>Visited William J. Clinton Presidential Library and Museum.</div></div>`
+                'description': `<div class='content-header'><div class='title'>Little Rock, AR, USA</div></div><div class='location-info'>Visited William J. Clinton Presidential Library and Museum.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -383,7 +383,7 @@ const geoJson = {
                 'place': 'Lloret de Mar, Spain',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Lloret de Mar, Spain</div><div class='location-info'>Class mates and I went here vor vacation.</div></div>`
+                'description': `<div class='content-header'><div class='title'>Lloret de Mar, Spain</div></div><div class='location-info'>Class mates and I went here vor vacation.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -396,7 +396,7 @@ const geoJson = {
                 'place': 'London, England',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>London, England</div><div class='location-info'>I visited London and met up with my friend Christian.</div></div>`
+                'description': `<div class='content-header'><div class='title'>London, England</div></div><div class='location-info'>I visited London and met up with my friend Christian.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -409,7 +409,7 @@ const geoJson = {
                 'place': 'Long Beach, California',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Long Beach, California</div><div class='location-info'>My Uncle Robert and I visited my grandmother here before she passed away.</div></div>`
+                'description': `<div class='content-header'><div class='title'>Long Beach, California</div></div><div class='location-info'>My Uncle Robert and I visited my grandmother here before she passed away.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -422,7 +422,7 @@ const geoJson = {
                 'place': 'Mainz, Germany',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Mainz, Germany</div><div class='location-info'>Simple visit</div></div>`
+                'description': `<div class='content-header'><div class='title'>Mainz, Germany</div></div><div class='location-info'>Simple visit</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -435,7 +435,7 @@ const geoJson = {
                 'place': 'Metz, France',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Metz, France</div><div class='location-info'>I visited Metz with my school's band.</div></div>`
+                'description': `<div class='content-header'><div class='title'>Metz, France</div></div><div class='location-info'>I visited Metz with my school's band.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -448,7 +448,7 @@ const geoJson = {
                 'place': 'Miami, FL, USA',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Miami, FL, USA</div><div class='location-info'>Ute, Michael and I vacationed here.</div></div>`
+                'description': `<div class='content-header'><div class='title'>Miami, FL, USA</div></div><div class='location-info'>Ute, Michael and I vacationed here.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -474,7 +474,7 @@ const geoJson = {
                 'place': 'Nancy, France',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Nancy, France</div><div class='location-info'>I visited Nancy with my school's band.</div></div>`
+                'description': `<div class='content-header'><div class='title'>Nancy, France</div></div><div class='location-info'>I visited Nancy with my school's band.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -500,7 +500,7 @@ const geoJson = {
                 'place': 'Newburgh, NY, USA',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Newburgh, NY, USA</div><div class='location-info'>Ute, Michael and I visited  Orange County Choppers showroom.</div></div>`
+                'description': `<div class='content-header'><div class='title'>Newburgh, NY, USA</div></div><div class='location-info'>Ute, Michael and I visited  Orange County Choppers showroom.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -539,7 +539,7 @@ const geoJson = {
                 'place': 'Orlando, FL, USA',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Orlando, FL, USA</div><div class='location-info'>Ute, Michael and I vacationed here.</div></div>`
+                'description': `<div class='content-header'><div class='title'>Orlando, FL, USA</div></div><div class='location-info'>Ute, Michael and I vacationed here.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -695,7 +695,7 @@ const geoJson = {
                 'place': 'Sanibel Island, FL, USA',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Sanibel Island, FL, USA</div><div class='location-info'>Visited J.N. 'Ding' Darling National Wildlife Refuge</div></div>`
+                'description': `<div class='content-header'><div class='title'>Sanibel Island, FL, USA</div></div><div class='location-info'>Visited J.N. 'Ding' Darling National Wildlife Refuge</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -734,7 +734,7 @@ const geoJson = {
                 'place': 'St. Augustine Beach, FL, USA',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>St. Augustine Beach, FL, USA</div><div class='location-info'>Ute, Michael and I vacationed here.</div></div>`
+                'description': `<div class='content-header'><div class='title'>St. Augustine Beach, FL, USA</div></div><div class='location-info'>Ute, Michael and I vacationed here.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -786,7 +786,7 @@ const geoJson = {
                 'place': 'Trier, Germany',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Trier, Germany</div><div class='location-info'>Visit archaeological sites and Roman structures.</div></div>`
+                'description': `<div class='content-header'><div class='title'>Trier, Germany</div></div><div class='location-info'>Visit archaeological sites and Roman structures.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -877,7 +877,7 @@ const geoJson = {
                 'place': 'al-Kobar, Saudi Arabia',
                 'placeType': 'building',
                 'icon': 'building',
-                'description': `<div class='content-header'><div class='title'>al-Kobar, Saudi Arabia</div><div class='subtitle'>الخبر المملكة العربية السعودية‎</div><div class='location-info'>During the 1st Gulf War and while working for Agust Aerospace, this is where I lived while doing the books for the personel deplyed in support of that war.</div></div>`
+                'description': `<div class='content-header'><div class='title'>al-Kobar, Saudi Arabia</div><div class='subtitle'>الخبر المملكة العربية السعودية‎</div></div><div class='location-info'>During the 1st Gulf War and while working for Agust Aerospace, this is where I lived while doing the books for the personel deplyed in support of that war.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -994,7 +994,7 @@ const geoJson = {
                 'place': 'Olive Branch, MS, USA',
                 'placeType': 'building',
                 'icon': 'building',
-                'description': `<div class='content-header'><div class='title'>Olive Branch, MS, USA</div><div class='location-info'>TNC Science Conference</div></div>`
+                'description': `<div class='content-header'><div class='title'>Olive Branch, MS, USA</div></div><div class='location-info'>TNC Science Conference</div>`
             },
             'geometry': {
                 'type': 'Point',
