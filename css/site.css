@@ -32,3 +32,17 @@ body {
     max-width: 400px;
     font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
+
+.content-header {
+    border-bottom: 1px solid #ababab;
+}
+
+.content-header .title {
+    font-size: 140%;
+}
+
+.content-header .subtitle {
+    font-size: 110%;
+}
+
+.content-header .location-info {}
