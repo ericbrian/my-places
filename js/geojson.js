@@ -406,6 +406,19 @@ const geoJson = {
         {
             'type': 'Feature',
             'properties': {
+                'place': 'Des Moines, Iowa',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
+                'description': `<div class='content-header'><div class='title'>Des Moines, Iowa</div></div><div class='location-info'>Met up with an school friend here on my way back home from Omaha.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-93.6058276, 41.5912062, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
                 'place': 'Long Beach, California',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
