@@ -419,6 +419,19 @@ const geoJson = {
         {
             'type': 'Feature',
             'properties': {
+                'place': 'Balimore, Maryland',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
+                'description': `<div class='content-header'><div class='title'>Balimore, Maryland</div></div><div class='location-info'>Ute and I went here back in 1997 while we were on vacation in the US. Then when I moved to the US, went here a couple of times.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-76.6171139, 39.2827433, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
                 'place': 'Long Beach, California',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
