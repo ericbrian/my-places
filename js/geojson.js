@@ -1,4 +1,4 @@
-const geoJson = {
+const geoJsonMerged = {
     "type": "FeatureCollection",
     "features": [{
             'type': 'Feature',
@@ -406,32 +406,6 @@ const geoJson = {
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Des Moines, Iowa',
-                'placeType': 'binoculars-fill',
-                'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Des Moines, Iowa</div></div><div class='location-info'>Met up with an school friend here on my way back home from Omaha.</div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [-93.6058276, 41.5912062, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Balimore, Maryland',
-                'placeType': 'binoculars-fill',
-                'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Balimore, Maryland</div></div><div class='location-info'>Ute and I went here back in 1997 while we were on vacation in the US. Then when I moved to the US, went here a couple of times.</div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [-76.6171139, 39.2827433, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
                 'place': 'Long Beach, California',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
@@ -487,7 +461,7 @@ const geoJson = {
                 'place': 'Nakskov, Denmark',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Nakskov, Denmark</div></div>`
+                'description': `<div class='content-header'><div class='title'>Nakskov, Denmark</div></div><div class='location-info'>My reason for being here is none of your business.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -900,6 +874,32 @@ const geoJson = {
         {
             'type': 'Feature',
             'properties': {
+                'place': 'Des Moines, Iowa',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
+                'description': `<div class='content-header'><div class='title'>Des Moines, Iowa</div></div><div class='location-info'>Met up with an school friend here on my way back home from Omaha.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-93.6058276, 41.5912062, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Balimore, Maryland',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
+                'description': `<div class='content-header'><div class='title'>Balimore, Maryland</div></div><div class='location-info'>Ute and I went to Inner Harbor back in 1997 while we were on vacation in the US. Then when I moved to the US, went here a couple of times.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-76.6171139, 39.2827433, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
                 'place': 'al-Kobar, Saudi Arabia',
                 'placeType': 'building',
                 'icon': 'building',
@@ -1064,6 +1064,292 @@ const geoJson = {
             'geometry': {
                 'type': 'Point',
                 'coordinates': [11.535421, 45.545479, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Berlin, Germany',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Berlin, Germany</div></div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [13.38698, 52.51573, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Helsinki, Finland',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Helsinki, Finland</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [24.93837, 60.16985, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Oslo, Norway',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Oslo, Norway</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [10.75224, 59.91386, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Stockholm, Sweden',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Stockholm, Sweden</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [18.06858, 59.32932, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Bath, England',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Bath, England</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-2.35968, 51.3781, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Dublin, Ireland',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Dublin, Ireland</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-6.2603, 53.3498, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Belfast, Northern Ireland',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Belfast, Northern Ireland</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-5.93012, 54.59728, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Cardiff, Wales',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Cardiff, Wales</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-3.16809, 51.4837, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Glasgow, Scotland',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Glasgow, Scotland</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-4.2518, 55.86423, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Hanoi, Vietnam',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Hanoi, Vietnam</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [105.83415, 21.02776, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Bangkok, Thailand',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Bangkok, Thailand</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [100.50176, 13.75633, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Tokyo, Japan',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Tokyo, Japan</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [139.65031, 35.67619, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Ho Chi Minh City, Vietnam',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Ho Chi Minh City, Vietnam</div><div class='subtitle'>Saigon</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [106.62966, 10.82309, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Seoul, South Korea',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Seoul, South Korea</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [126.97796, 37.56653, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Lisbon, Portugal',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Lisbon, Portugal</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-9.13933, 38.72225, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Mexico City, Mexico',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Mexico City, Mexico</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-99.1332, 19.4326, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Paris, France',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Paris, France</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [2.35222, 48.85661, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Marrakesh, Morocco',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Marrakesh, Morocco</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-7.98108, 31.62947, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Mount Kilimanjaro, Tanzania',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Mount Kilimanjaro, Tanzania</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [37.35562, -3.06742, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Gaborone, Botswana',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Gaborone, Botswana</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [25.92314, -24.6282, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Accra, Ghana',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Accra, Ghana</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-0.18696, 5.60371, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Istanbul, Turkey',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Istanbul, Turkey</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [28.97835, 41.00823, ]
             }
         },
     ]
