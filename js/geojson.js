@@ -3,118 +3,27 @@ const geoJsonMerged = {
     "features": [{
             'type': 'Feature',
             'properties': {
-                'place': 'Alexandria, Virginia',
-                'placeType': 'house',
-                'icon': 'house',
-                'description': `<div class='content-header'><div class='title'>Alexandria, Virginia</div></div><div class='location-info'>I currently live in Virginia, Alexandia, Fairfax County (and not Alexandria City).</div>`
+                'place': 'Accra, Ghana',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Accra, Ghana</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
             },
             'geometry': {
                 'type': 'Point',
-                'coordinates': [-77.046921, 38.804836, ]
+                'coordinates': [-0.18696, 5.60371, ]
             }
         },
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Hassloch, Germany',
-                'placeType': 'house',
-                'icon': 'house',
-                'description': `<div class='content-header'><div class='title'>Hassloch, Germany</div><div class='subtitle'>Haßloch</div></div><div class='location-info'>Haßloch, at one point, was Germany's smallest city, and it is where my family moved to in 1974.</div>`
+                'place': 'al-Kobar, Saudi Arabia',
+                'placeType': 'building',
+                'icon': 'building',
+                'description': `<div class='content-header'><div class='title'>al-Kobar, Saudi Arabia</div><div class='subtitle'>الخبر المملكة العربية السعودية‎</div></div><div class='location-info'>During the 1st Gulf War and while working for Agust Aerospace, this is where I lived while doing the books for the personel deplyed in support of that war.</div>`
             },
             'geometry': {
                 'type': 'Point',
-                'coordinates': [8.257806, 49.361015, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Ludwigshafen am Rhein, Germany',
-                'placeType': 'asterisk-gold',
-                'icon': 'asterisk-gold',
-                'description': `<div class='content-header'><div class='title'>Ludwigshafen am Rhein, Germany</div></div><div class='location-info'>Ludwigshafen is where I was born... on my Oma's couch. ☺</div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [8.44518, 49.47741, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Mannheim, Germany',
-                'placeType': 'house',
-                'icon': 'house',
-                'description': `<div class='content-header'><div class='title'>Mannheim, Germany</div></div><div class='location-info'>Mannheim is where I moved to when I left Mutterstadt. It wasn't a great appartment but it was my first own place and really enjoyed being free!</div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [8.466039, 49.487459, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Munich, Germany',
-                'placeType': 'house',
-                'icon': 'house',
-                'description': `<div class='content-header'><div class='title'>Munich, Germany</div><div class='subtitle'>München</div></div><div class='location-info'>I moved to Munich to attend college. One of my favorite cities in the whole world.</div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [11.58198, 48.135125, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Mutterstadt, Germany',
-                'placeType': 'house',
-                'icon': 'house',
-                'description': `<div class='content-header'><div class='title'>Mutterstadt, Germany</div></div><div class='location-info'>Cute little city I lived in briefly when I left Munich.</div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [8.35527, 49.44197, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Neuhofen, Germany',
-                'placeType': 'house',
-                'icon': 'house',
-                'description': `<div class='content-header'><div class='title'>Neuhofen, Germany</div></div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [8.423456, 49.422421, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Virginia Beach, Virginia',
-                'placeType': 'house',
-                'icon': 'house',
-                'description': `<div class='content-header'><div class='title'>Virginia Beach, Virginia</div></div><div class='location-info'>After telling my big boss at Raytheon that I need to be moved out of Wichita, this is where I moved to. Better but still not a place a civilized person would want to live.</div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [-75.977985, 36.852926, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Wichita, Kansas',
-                'placeType': 'house',
-                'icon': 'house',
-                'description': `<div class='content-header'><div class='title'>Wichita, Kansas</div></div><div class='location-info'>When Raytheon Aerospace moved me to the USA, this horrible city is where they sent me to.</div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [-97.330053, 37.687176, ]
+                'coordinates': [50.197138, 26.217191, ]
             }
         },
         {
@@ -128,6 +37,19 @@ const geoJsonMerged = {
             'geometry': {
                 'type': 'Point',
                 'coordinates': [-73.755912, 42.651897, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Alexandria, Virginia',
+                'placeType': 'house',
+                'icon': 'house',
+                'description': `<div class='content-header'><div class='title'>Alexandria, Virginia</div></div><div class='location-info'>I currently live in Virginia, Alexandia, Fairfax County (and not Alexandria City).</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-77.046921, 38.804836, ]
             }
         },
         {
@@ -159,6 +81,19 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
+                'place': 'Anapolis, Maryland',
+                'placeType': 'building',
+                'icon': 'building',
+                'description': `<div class='content-header'><div class='title'>Anapolis, Maryland</div></div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-76.492183, 38.978445, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
                 'place': 'Andechs, Germany',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
@@ -167,19 +102,6 @@ const geoJsonMerged = {
             'geometry': {
                 'type': 'Point',
                 'coordinates': [11.18525, 47.97487, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Lake Titi, Germany',
-                'placeType': 'binoculars-fill',
-                'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Lake Titi, Germany</div></div><div class='location-info'>My family vacationed here when I was a child on several occasions.</div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [8.1410769, 47.8881538, ]
             }
         },
         {
@@ -198,6 +120,71 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
+                'place': 'Balimore, Maryland',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
+                'description': `<div class='content-header'><div class='title'>Balimore, Maryland</div></div><div class='location-info'>Ute and I went to Inner Harbor back in 1997 while we were on vacation in the US. Then when I moved to the US, went here a couple of times.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-76.6171139, 39.2827433, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Bangkok, Thailand',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Bangkok, Thailand</div><div class='subtitle'>กรุงเทพมหานคร</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [100.50176, 13.75633, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Bath, England',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Bath, England</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-2.35968, 51.3781, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Belfast, Northern Ireland',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Belfast, Northern Ireland</div><div class='subtitle'>Béal Feirste</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-5.93012, 54.59728, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Berlin, Germany',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Berlin, Germany</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [13.38698, 52.51573, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
                 'place': 'Bernau am Chiemsee & Lake Chiemsee, Germany',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
@@ -211,6 +198,58 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
+                'place': 'Bolder, Colorado',
+                'placeType': 'building',
+                'icon': 'building',
+                'description': `<div class='content-header'><div class='title'>Bolder, Colorado</div></div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-105.270546, 40.014986, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Boston, Massachusetts',
+                'placeType': 'building',
+                'icon': 'building',
+                'description': `<div class='content-header'><div class='title'>Boston, Massachusetts</div></div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-71.05888, 42.360083, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Brussels, Belgium',
+                'placeType': 'building',
+                'icon': 'building',
+                'description': `<div class='content-header'><div class='title'>Brussels, Belgium</div><div class='subtitle'>Bruxelles</div></div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [4.351721, 50.850346, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Buenos Aires, Argentina',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Buenos Aires, Argentina</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-58.4332985, -34.6158238, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
                 'place': 'Cape Coral, Florida',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
@@ -219,6 +258,45 @@ const geoJsonMerged = {
             'geometry': {
                 'type': 'Point',
                 'coordinates': [-81.949533, 26.562854, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Cardiff, Wales',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Cardiff, Wales</div><div class='subtitle'>Caerdydd</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-3.16809, 51.4837, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Charlotte Amalie, US Virgin Islands',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Charlotte Amalie, US Virgin Islands</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-64.9391814, 18.3412971, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Chicago, Illinois',
+                'placeType': 'building',
+                'icon': 'building',
+                'description': `<div class='content-header'><div class='title'>Chicago, Illinois</div></div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-87.629798, 41.878114, ]
             }
         },
         {
@@ -250,6 +328,45 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
+                'place': 'Denver, Colorado',
+                'placeType': 'building',
+                'icon': 'building',
+                'description': `<div class='content-header'><div class='title'>Denver, Colorado</div></div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-104.990251, 39.739236, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Des Moines, Iowa',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
+                'description': `<div class='content-header'><div class='title'>Des Moines, Iowa</div></div><div class='location-info'>Met up with an school friend here on my way back home from Omaha.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-93.6058276, 41.5912062, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Dublin, Ireland',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Dublin, Ireland</div><div class='subtitle'>Baile Átha Cliath</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-6.2603, 53.3498, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
                 'place': 'Duisburg, Germany',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
@@ -271,6 +388,19 @@ const geoJsonMerged = {
             'geometry': {
                 'type': 'Point',
                 'coordinates': [7.011555, 51.455643, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Florence, Italy',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Florence, Italy</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [11.24626, 43.77925, ]
             }
         },
         {
@@ -302,6 +432,71 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
+                'place': 'Gaborone, Botswana',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Gaborone, Botswana</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [25.92314, -24.6282, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Glasgow, Scotland',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Glasgow, Scotland</div><div class='subtitle'>Glesca</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-4.2518, 55.86423, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Glashütte, Germany',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Glashütte, Germany</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [13.7816008, 50.8515416, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Hanoi, Vietnam',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Hanoi, Vietnam</div><div class='subtitle'>Hà Nội</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [105.83415, 21.02776, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Hassloch, Germany',
+                'placeType': 'house',
+                'icon': 'house',
+                'description': `<div class='content-header'><div class='title'>Hassloch, Germany</div><div class='subtitle'>Haßloch</div></div><div class='location-info'>Haßloch, at one point, was Germany's smallest city, and it is where my family moved to in 1974.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [8.257806, 49.361015, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
                 'place': 'Heidelberg, Germany',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
@@ -310,6 +505,32 @@ const geoJsonMerged = {
             'geometry': {
                 'type': 'Point',
                 'coordinates': [8.672434, 49.398752, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Helsinki, Finland',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Helsinki, Finland</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [24.93837, 60.16985, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Ho Chi Minh City/Saigon, Vietnam',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Ho Chi Minh City/Saigon, Vietnam</div><div class='subtitle'>Thành phố Hồ Chí Minh/Sài Gòn</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [106.62966, 10.82309, ]
             }
         },
         {
@@ -341,6 +562,32 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
+                'place': 'Istanbul, Turkey',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Istanbul, Turkey</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [28.97835, 41.00823, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Juniper, Florida',
+                'placeType': 'building',
+                'icon': 'building',
+                'description': `<div class='content-header'><div class='title'>Juniper, Florida</div></div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-80.094209, 26.934225, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
                 'place': 'Key West, Florida',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
@@ -349,6 +596,19 @@ const geoJsonMerged = {
             'geometry': {
                 'type': 'Point',
                 'coordinates': [-81.779987, 24.555059, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Lake Titi, Germany',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
+                'description': `<div class='content-header'><div class='title'>Lake Titi, Germany</div></div><div class='location-info'>My family vacationed here when I was a child on several occasions.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [8.1410769, 47.8881538, ]
             }
         },
         {
@@ -367,6 +627,32 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
+                'place': 'Liege, Belgium',
+                'placeType': 'building',
+                'icon': 'building',
+                'description': `<div class='content-header'><div class='title'>Liege, Belgium</div><div class='subtitle'>Liège</div></div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [5.579666, 50.632557, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Lima, Peru',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Lima, Peru</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-77.1278636, -12.0262676, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
                 'place': 'Limburgerhof, Germany',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
@@ -375,6 +661,19 @@ const geoJsonMerged = {
             'geometry': {
                 'type': 'Point',
                 'coordinates': [8.390031, 49.420761, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Lisbon, Portugal',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Lisbon, Portugal</div><div class='subtitle'>Lisboa</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-9.13933, 38.72225, ]
             }
         },
         {
@@ -396,7 +695,7 @@ const geoJsonMerged = {
                 'place': 'Lloret de Mar, Spain',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Lloret de Mar, Spain</div></div><div class='location-info'>Class mates and I went here vor vacation.</div>`
+                'description': `<div class='content-header'><div class='title'>Lloret de Mar, Spain</div></div><div class='location-info'>Class mates and I went here for Spring break.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -432,6 +731,19 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
+                'place': 'Ludwigshafen am Rhein, Germany',
+                'placeType': 'asterisk-gold',
+                'icon': 'asterisk-gold',
+                'description': `<div class='content-header'><div class='title'>Ludwigshafen am Rhein, Germany</div></div><div class='location-info'>Ludwigshafen is where I was born... on my Oma's couch. ☺</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [8.44518, 49.47741, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
                 'place': 'Mainz, Germany',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
@@ -440,6 +752,45 @@ const geoJsonMerged = {
             'geometry': {
                 'type': 'Point',
                 'coordinates': [8.247253, 49.992862, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Mannheim, Germany',
+                'placeType': 'house',
+                'icon': 'house',
+                'description': `<div class='content-header'><div class='title'>Mannheim, Germany</div></div><div class='location-info'>Mannheim is where I moved to when I left Mutterstadt. It wasn't a great appartment but it was my first own place and really enjoyed being free!</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [8.466039, 49.487459, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Marrakesh, Morocco',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Marrakesh, Morocco</div><div class='subtitle'>مراكش</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-7.98108, 31.62947, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Mérida, Mexico',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Mérida, Mexico</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-89.7029583, 20.9802115, ]
             }
         },
         {
@@ -458,6 +809,19 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
+                'place': 'Mexico City, Mexico',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Mexico City, Mexico</div><div class='subtitle'>Ciudad de México</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-99.1332, 19.4326, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
                 'place': 'Miami, Florida',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
@@ -466,6 +830,45 @@ const geoJsonMerged = {
             'geometry': {
                 'type': 'Point',
                 'coordinates': [-80.19179, 25.76168, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Mount Kilimanjaro, Tanzania',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Mount Kilimanjaro, Tanzania</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [37.35562, -3.06742, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Munich, Germany',
+                'placeType': 'house',
+                'icon': 'house',
+                'description': `<div class='content-header'><div class='title'>Munich, Germany</div><div class='subtitle'>München</div></div><div class='location-info'>I moved to Munich to attend college. One of my favorite cities in the whole world.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [11.58198, 48.135125, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Mutterstadt, Germany',
+                'placeType': 'house',
+                'icon': 'house',
+                'description': `<div class='content-header'><div class='title'>Mutterstadt, Germany</div></div><div class='location-info'>Cute little city I lived in briefly when I left Munich.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [8.35527, 49.44197, ]
             }
         },
         {
@@ -492,6 +895,19 @@ const geoJsonMerged = {
             'geometry': {
                 'type': 'Point',
                 'coordinates': [6.184417, 48.692054, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Neuhofen, Germany',
+                'placeType': 'house',
+                'icon': 'house',
+                'description': `<div class='content-header'><div class='title'>Neuhofen, Germany</div></div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [8.423456, 49.422421, ]
             }
         },
         {
@@ -536,6 +952,19 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
+                'place': 'Olive Branch, Mississippi',
+                'placeType': 'building',
+                'icon': 'building',
+                'description': `<div class='content-header'><div class='title'>Olive Branch, Mississippi</div></div><div class='location-info'>TNC Science Conference</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-89.829532, 34.96176, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
                 'place': 'Omaha, Nebraska',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
@@ -562,6 +991,45 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
+                'place': 'Oslo, Norway',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Oslo, Norway</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [10.75224, 59.91386, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Panama City, Panama',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Panama City, Panama</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-79.5932221, 9.0817275, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Paris, France',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Paris, France</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [2.35222, 48.85661, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
                 'place': 'Partnachklamm, Germany',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
@@ -583,6 +1051,32 @@ const geoJsonMerged = {
             'geometry': {
                 'type': 'Point',
                 'coordinates': [12.915549, 43.912476, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Pisa, Italy',
+                'placeType': 'building',
+                'icon': 'building',
+                'description': `<div class='content-header'><div class='title'>Pisa, Italy</div></div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [10.401689, 43.722839, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Reykjavík, Iceland',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Reykjavík, Iceland</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-21.8524424, 64.1334904, ]
             }
         },
         {
@@ -692,6 +1186,32 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
+                'place': 'San José, Costa Rica',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>San José, Costa Rica</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-84.1483645, 9.9356284, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'San Juan, Puerto Rico',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>San Juan, Puerto Rico</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-66.1305125, 18.3893875, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
                 'place': 'San Marino',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
@@ -731,6 +1251,19 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
+                'place': 'Seoul, South Korea',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Seoul, South Korea</div><div class='subtitle'>서울시</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [126.97796, 37.56653, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
                 'place': 'Speyer, Germany',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
@@ -752,6 +1285,19 @@ const geoJsonMerged = {
             'geometry': {
                 'type': 'Point',
                 'coordinates': [-81.271155, 29.843983, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Stockholm, Sweden',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Stockholm, Sweden</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [18.06858, 59.32932, ]
             }
         },
         {
@@ -791,6 +1337,19 @@ const geoJsonMerged = {
             'geometry': {
                 'type': 'Point',
                 'coordinates': [9.182932, 48.775846, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Tokyo, Japan',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Tokyo, Japan</div><div class='subtitle'>東京都</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [139.65031, 35.67619, ]
             }
         },
         {
@@ -848,214 +1407,6 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Washington, DC',
-                'placeType': 'binoculars-fill',
-                'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Washington, DC</div></div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [-77.036871, 38.907192, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Wissembourg, France',
-                'placeType': 'binoculars-fill',
-                'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Wissembourg, France</div><div class='subtitle'>Weißenburg</div></div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [7.94454, 49.036858, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Worms, Germany',
-                'placeType': 'binoculars-fill',
-                'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Worms, Germany</div></div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [8.350718, 49.634137, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Des Moines, Iowa',
-                'placeType': 'binoculars-fill',
-                'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Des Moines, Iowa</div></div><div class='location-info'>Met up with an school friend here on my way back home from Omaha.</div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [-93.6058276, 41.5912062, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Balimore, Maryland',
-                'placeType': 'binoculars-fill',
-                'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Balimore, Maryland</div></div><div class='location-info'>Ute and I went to Inner Harbor back in 1997 while we were on vacation in the US. Then when I moved to the US, went here a couple of times.</div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [-76.6171139, 39.2827433, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'al-Kobar, Saudi Arabia',
-                'placeType': 'building',
-                'icon': 'building',
-                'description': `<div class='content-header'><div class='title'>al-Kobar, Saudi Arabia</div><div class='subtitle'>الخبر المملكة العربية السعودية‎</div></div><div class='location-info'>During the 1st Gulf War and while working for Agust Aerospace, this is where I lived while doing the books for the personel deplyed in support of that war.</div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [50.197138, 26.217191, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Anapolis, Maryland',
-                'placeType': 'building',
-                'icon': 'building',
-                'description': `<div class='content-header'><div class='title'>Anapolis, Maryland</div></div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [-76.492183, 38.978445, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Bolder, Colorado',
-                'placeType': 'building',
-                'icon': 'building',
-                'description': `<div class='content-header'><div class='title'>Bolder, Colorado</div></div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [-105.270546, 40.014986, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Boston, Massachusetts',
-                'placeType': 'building',
-                'icon': 'building',
-                'description': `<div class='content-header'><div class='title'>Boston, Massachusetts</div></div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [-71.05888, 42.360083, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Brussels, Belgium',
-                'placeType': 'building',
-                'icon': 'building',
-                'description': `<div class='content-header'><div class='title'>Brussels, Belgium</div><div class='subtitle'>Bruxelles</div></div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [4.351721, 50.850346, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Chicago, Illinois',
-                'placeType': 'building',
-                'icon': 'building',
-                'description': `<div class='content-header'><div class='title'>Chicago, Illinois</div></div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [-87.629798, 41.878114, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Denver, Colorado',
-                'placeType': 'building',
-                'icon': 'building',
-                'description': `<div class='content-header'><div class='title'>Denver, Colorado</div></div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [-104.990251, 39.739236, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Juniper, Florida',
-                'placeType': 'building',
-                'icon': 'building',
-                'description': `<div class='content-header'><div class='title'>Juniper, Florida</div></div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [-80.094209, 26.934225, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Liege, Belgium',
-                'placeType': 'building',
-                'icon': 'building',
-                'description': `<div class='content-header'><div class='title'>Liege, Belgium</div><div class='subtitle'>Liège</div></div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [5.579666, 50.632557, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Olive Branch, Mississippi',
-                'placeType': 'building',
-                'icon': 'building',
-                'description': `<div class='content-header'><div class='title'>Olive Branch, Mississippi</div></div><div class='location-info'>TNC Science Conference</div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [-89.829532, 34.96176, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Pisa, Italy',
-                'placeType': 'building',
-                'icon': 'building',
-                'description': `<div class='content-header'><div class='title'>Pisa, Italy</div></div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [10.401689, 43.722839, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
                 'place': 'Verona, Italy',
                 'placeType': 'building',
                 'icon': 'building',
@@ -1082,416 +1433,66 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Berlin, Germany',
-                'placeType': 'future',
-                'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Berlin, Germany</div></div>`
+                'place': 'Virginia Beach, Virginia',
+                'placeType': 'house',
+                'icon': 'house',
+                'description': `<div class='content-header'><div class='title'>Virginia Beach, Virginia</div></div><div class='location-info'>After telling my big boss at Raytheon that I need to be moved out of Wichita, this is where I moved to. Better but still not a place a civilized person would want to live.</div>`
             },
             'geometry': {
                 'type': 'Point',
-                'coordinates': [13.38698, 52.51573, ]
+                'coordinates': [-75.977985, 36.852926, ]
             }
         },
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Helsinki, Finland',
-                'placeType': 'future',
-                'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Helsinki, Finland</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+                'place': 'Washington, DC',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
+                'description': `<div class='content-header'><div class='title'>Washington, DC</div></div>`
             },
             'geometry': {
                 'type': 'Point',
-                'coordinates': [24.93837, 60.16985, ]
+                'coordinates': [-77.036871, 38.907192, ]
             }
         },
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Oslo, Norway',
-                'placeType': 'future',
-                'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Oslo, Norway</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+                'place': 'Wichita, Kansas',
+                'placeType': 'house',
+                'icon': 'house',
+                'description': `<div class='content-header'><div class='title'>Wichita, Kansas</div></div><div class='location-info'>When Raytheon Aerospace moved me to the USA, this horrible city is where they sent me to.</div>`
             },
             'geometry': {
                 'type': 'Point',
-                'coordinates': [10.75224, 59.91386, ]
+                'coordinates': [-97.330053, 37.687176, ]
             }
         },
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Stockholm, Sweden',
-                'placeType': 'future',
-                'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Stockholm, Sweden</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+                'place': 'Wissembourg, France',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
+                'description': `<div class='content-header'><div class='title'>Wissembourg, France</div><div class='subtitle'>Weißenburg</div></div>`
             },
             'geometry': {
                 'type': 'Point',
-                'coordinates': [18.06858, 59.32932, ]
+                'coordinates': [7.94454, 49.036858, ]
             }
         },
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Bath, England',
-                'placeType': 'future',
-                'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Bath, England</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+                'place': 'Worms, Germany',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
+                'description': `<div class='content-header'><div class='title'>Worms, Germany</div></div>`
             },
             'geometry': {
                 'type': 'Point',
-                'coordinates': [-2.35968, 51.3781, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Dublin, Ireland',
-                'placeType': 'future',
-                'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Dublin, Ireland</div><div class='subtitle'>Baile Átha Cliath</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [-6.2603, 53.3498, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Belfast, Northern Ireland',
-                'placeType': 'future',
-                'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Belfast, Northern Ireland</div><div class='subtitle'>Béal Feirste</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [-5.93012, 54.59728, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Cardiff, Wales',
-                'placeType': 'future',
-                'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Cardiff, Wales</div><div class='subtitle'>Caerdydd</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [-3.16809, 51.4837, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Glasgow, Scotland',
-                'placeType': 'future',
-                'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Glasgow, Scotland</div><div class='subtitle'>Glesca</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [-4.2518, 55.86423, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Hanoi, Vietnam',
-                'placeType': 'future',
-                'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Hanoi, Vietnam</div><div class='subtitle'>Hà Nội</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [105.83415, 21.02776, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Bangkok, Thailand',
-                'placeType': 'future',
-                'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Bangkok, Thailand</div><div class='subtitle'>กรุงเทพมหานคร</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [100.50176, 13.75633, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Tokyo, Japan',
-                'placeType': 'future',
-                'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Tokyo, Japan</div><div class='subtitle'>東京都</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [139.65031, 35.67619, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Ho Chi Minh City/Saigon, Vietnam',
-                'placeType': 'future',
-                'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Ho Chi Minh City/Saigon, Vietnam</div><div class='subtitle'>Thành phố Hồ Chí Minh/Sài Gòn</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [106.62966, 10.82309, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Seoul, South Korea',
-                'placeType': 'future',
-                'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Seoul, South Korea</div><div class='subtitle'>서울시</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [126.97796, 37.56653, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Lisbon, Portugal',
-                'placeType': 'future',
-                'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Lisbon, Portugal</div><div class='subtitle'>Lisboa</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [-9.13933, 38.72225, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Mexico City, Mexico',
-                'placeType': 'future',
-                'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Mexico City, Mexico</div><div class='subtitle'>Ciudad de México</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [-99.1332, 19.4326, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Paris, France',
-                'placeType': 'future',
-                'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Paris, France</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [2.35222, 48.85661, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Marrakesh, Morocco',
-                'placeType': 'future',
-                'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Marrakesh, Morocco</div><div class='subtitle'>مراكش</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [-7.98108, 31.62947, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Mount Kilimanjaro, Tanzania',
-                'placeType': 'future',
-                'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Mount Kilimanjaro, Tanzania</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [37.35562, -3.06742, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Gaborone, Botswana',
-                'placeType': 'future',
-                'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Gaborone, Botswana</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [25.92314, -24.6282, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Accra, Ghana',
-                'placeType': 'future',
-                'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Accra, Ghana</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [-0.18696, 5.60371, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Istanbul, Turkey',
-                'placeType': 'future',
-                'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Istanbul, Turkey</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [28.97835, 41.00823, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Florence, Italy',
-                'placeType': 'future',
-                'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Florence, Italy</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [11.24626, 43.77925, ]
-            }
-        }, {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Reykjavík, Iceland',
-                'placeType': 'future',
-                'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Reykjavík, Iceland</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [-21.8524424, 64.1334904, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Glashütte, Germany',
-                'placeType': 'future',
-                'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Glashütte, Germany</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [13.7816008, 50.8515416, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Buenos Aires, Argentina',
-                'placeType': 'future',
-                'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Buenos Aires, Argentina</div></div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [-58.4332985, -34.6158238, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Lima, Peru',
-                'placeType': 'future',
-                'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Lima, Peru</div></div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [-77.1278636, -12.0262676, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Panama City, Panama',
-                'placeType': 'future',
-                'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Panama City, Panama</div></div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [-79.5932221, 9.0817275, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'San José, Costa Rica',
-                'placeType': 'future',
-                'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>San José, Costa Rica</div></div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [-84.1483645, 9.9356284, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Mérida, Mexico',
-                'placeType': 'future',
-                'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Mérida, Mexico</div></div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [-89.7029583, 20.9802115, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'San Juan, Puerto Rico',
-                'placeType': 'future',
-                'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>San Juan, Puerto Rico</div></div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [-66.1305125, 18.3893875, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Charlotte Amalie, US Virgin Islands',
-                'placeType': 'future',
-                'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Charlotte Amalie, US Virgin Islands</div></div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [-64.9391814, 18.3412971, ]
+                'coordinates': [8.350718, 49.634137, ]
             }
         },
     ]
