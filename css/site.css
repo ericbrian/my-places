@@ -42,7 +42,9 @@ body {
 }
 
 .content-header .subtitle {
-    font-size: 110%;
+    font-size: 90%;
 }
 
-.content-header .location-info {}
+.location-info {
+    line-height: 150%;
+}

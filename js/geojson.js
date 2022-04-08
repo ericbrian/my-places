@@ -1403,5 +1403,96 @@ const geoJsonMerged = {
                 'coordinates': [13.7816008, 50.8515416, ]
             }
         },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Buenos Aires, Argentina',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Buenos Aires, Argentina</div></div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-58.4332985, -34.6158238, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Lima, Peru',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Lima, Peru</div></div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-77.1278636, -12.0262676, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Panama City, Panama',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Panama City, Panama</div></div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-79.5932221, 9.0817275, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'San José, Costa Rica',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>San José, Costa Rica</div></div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-84.1483645, 9.9356284, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Mérida, Mexico',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Mérida, Mexico</div></div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-89.7029583, 20.9802115, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'San Juan, Puerto Rico',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>San Juan, Puerto Rico</div></div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-66.1305125, 18.3893875, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Charlotte Amalie, US Virgin Islands',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Charlotte Amalie, US Virgin Islands</div></div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-64.9391814, 18.3412971, ]
+            }
+        },
     ]
 };
