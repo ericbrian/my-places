@@ -1342,6 +1342,19 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
+                'place': 'Lake Titi',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
+                'description': `<div class='content-header'><div class='title'>Lake Titi</div></div><div class='location-info'>My family vacationed here when I was a child on several occasions.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [8.1410769, 47.8881538, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
                 'place': 'Istanbul, Turkey',
                 'placeType': 'future',
                 'icon': 'future',
