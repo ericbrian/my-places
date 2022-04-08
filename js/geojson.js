@@ -1377,6 +1377,18 @@ const geoJsonMerged = {
                 'type': 'Point',
                 'coordinates': [11.24626, 43.77925, ]
             }
+        }, {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Reykjavík, Iceland',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Reykjavík, Iceland</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-21.8524424, 64.1334904, ]
+            }
         },
     ]
 };
