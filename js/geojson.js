@@ -3,10 +3,10 @@ const geoJsonMerged = {
     "features": [{
             'type': 'Feature',
             'properties': {
-                'place': 'Alexandria, VA, USA',
+                'place': 'Alexandria, Virginia',
                 'placeType': 'house',
                 'icon': 'house',
-                'description': `<div class='content-header'><div class='title'>Alexandria, VA, USA</div></div><div class='location-info'>I currently live in Virginia, Alexandia, Fairfax County (and not Alexandria City).</div>`
+                'description': `<div class='content-header'><div class='title'>Alexandria, Virginia</div></div><div class='location-info'>I currently live in Virginia, Alexandia, Fairfax County (and not Alexandria City).</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -94,10 +94,10 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Virginia Beach, VA, USA',
+                'place': 'Virginia Beach, Virginia',
                 'placeType': 'house',
                 'icon': 'house',
-                'description': `<div class='content-header'><div class='title'>Virginia Beach, VA, USA</div></div><div class='location-info'>After telling my big boss at Raytheon that I need to be moved out of Wichita, this is where I moved to. Better but still not a place a civilized person would want to live.</div>`
+                'description': `<div class='content-header'><div class='title'>Virginia Beach, Virginia</div></div><div class='location-info'>After telling my big boss at Raytheon that I need to be moved out of Wichita, this is where I moved to. Better but still not a place a civilized person would want to live.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -107,10 +107,10 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Wichita, KS, USA',
+                'place': 'Wichita, Kansas',
                 'placeType': 'house',
                 'icon': 'house',
-                'description': `<div class='content-header'><div class='title'>Wichita, KS, USA</div></div><div class='location-info'>When Raytheon Aerospace moved me to the USA, this horrible city is where they sent me to.</div>`
+                'description': `<div class='content-header'><div class='title'>Wichita, Kansas</div></div><div class='location-info'>When Raytheon Aerospace moved me to the USA, this horrible city is where they sent me to.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -120,10 +120,10 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Albany, NY, USA',
+                'place': 'Albany, New York',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Albany, NY, USA</div></div><div class='location-info'>This was a simple trip I took with Ute and Michael.</div>`
+                'description': `<div class='content-header'><div class='title'>Albany, New York</div></div><div class='location-info'>This was a simple trip I took with Ute and Michael.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -172,10 +172,23 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Bakersville, CA, USA',
+                'place': 'Lake Titi, Germany',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Bakersville, CA, USA</div></div><div class='location-info'>My Uncle Robert and I visited my American family in Bakersville.</div>`
+                'description': `<div class='content-header'><div class='title'>Lake Titi, Germany</div></div><div class='location-info'>My family vacationed here when I was a child on several occasions.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [8.1410769, 47.8881538, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Bakersville, California',
+                'placeType': 'binoculars-fill',
+                'icon': 'binoculars-fill',
+                'description': `<div class='content-header'><div class='title'>Bakersville, California</div></div><div class='location-info'>My Uncle Robert and I visited my American family in Bakersville.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -185,10 +198,10 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Bernau am Chiemsee, Germany',
+                'place': 'Bernau am Chiemsee & Lake Chiemsee, Germany',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Bernau am Chiemsee, Germany</div></div><div class='location-info'>My family and I vacationed at Chiemsee a couple of times when I was a boy.</div>`
+                'description': `<div class='content-header'><div class='title'>Bernau am Chiemsee & Lake Chiemsee, Germany</div></div><div class='location-info'>My family and I vacationed at Chiemsee a couple of times when I was a boy.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -198,10 +211,10 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Cape Coral, FL, USA',
+                'place': 'Cape Coral, Florida',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Cape Coral, FL, USA</div></div><div class='location-info'>Ute, Michael and I vacationed here.</div>`
+                'description': `<div class='content-header'><div class='title'>Cape Coral, Florida</div></div><div class='location-info'>Ute, Michael and I vacationed here.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -224,10 +237,10 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Daytona Beach, FL, USA',
+                'place': 'Daytona Beach, Florida',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Daytona Beach, FL, USA</div></div><div class='location-info'>Ute, Michael and I visited some of Ute's friends who have a condo in Daytona.</div>`
+                'description': `<div class='content-header'><div class='title'>Daytona Beach, Florida</div></div><div class='location-info'>Ute, Michael and I visited some of Ute's friends who have a condo in Daytona.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -302,10 +315,10 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Houston, TX, USA',
+                'place': 'Houston, Texas',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Houston, TX, USA</div></div><div class='location-info'>I visited Houston with my Brother Bruce.</div>`
+                'description': `<div class='content-header'><div class='title'>Houston, Texas</div></div><div class='location-info'>I visited Houston with my Brother Bruce.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -328,10 +341,10 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Key West, FL, USA',
+                'place': 'Key West, Florida',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Key West, FL, USA</div></div><div class='location-info'>Ute, Michael and I vacationed here.</div>`
+                'description': `<div class='content-header'><div class='title'>Key West, Florida</div></div><div class='location-info'>Ute, Michael and I vacationed here.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -341,10 +354,10 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Las Vegas, NV, USA',
+                'place': 'Las Vegas, Nevada',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Las Vegas, NV, USA</div></div><div class='location-info'>My Uncle Robert and I visited Las Vegas. I did not like it there and won't be going back.</div>`
+                'description': `<div class='content-header'><div class='title'>Las Vegas, Nevada</div></div><div class='location-info'>My Uncle Robert and I visited Las Vegas. I did not like it there and won't be going back.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -445,10 +458,10 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Miami, FL, USA',
+                'place': 'Miami, Florida',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Miami, FL, USA</div></div><div class='location-info'>Ute, Michael and I vacationed here.</div>`
+                'description': `<div class='content-header'><div class='title'>Miami, Florida</div></div><div class='location-info'>Ute, Michael and I vacationed here.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -484,10 +497,10 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
-                'place': 'New York, NY, USA',
+                'place': 'New York, New York',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>New York, NY, USA</div></div>`
+                'description': `<div class='content-header'><div class='title'>New York, New York</div></div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -497,10 +510,10 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Newburgh, NY, USA',
+                'place': 'Newburgh, New York',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Newburgh, NY, USA</div></div><div class='location-info'>Ute, Michael and I visited  Orange County Choppers showroom.</div>`
+                'description': `<div class='content-header'><div class='title'>Newburgh, New York</div></div><div class='location-info'>Ute, Michael and I visited  Orange County Choppers showroom.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -510,10 +523,10 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Oklahoma City, OK, USA',
+                'place': 'Oklahoma City, Oklahoma',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Oklahoma City, OK, USA</div></div>`
+                'description': `<div class='content-header'><div class='title'>Oklahoma City, Oklahoma</div></div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -523,10 +536,10 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Omaha, NE, USA',
+                'place': 'Omaha, Nebraska',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Omaha, NE, USA</div></div>`
+                'description': `<div class='content-header'><div class='title'>Omaha, Nebraska</div></div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -536,10 +549,10 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Orlando, FL, USA',
+                'place': 'Orlando, Florida',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Orlando, FL, USA</div></div><div class='location-info'>Ute, Michael and I vacationed here.</div>`
+                'description': `<div class='content-header'><div class='title'>Orlando, Florida</div></div><div class='location-info'>Ute, Michael and I vacationed here.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -627,10 +640,10 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Saint Louis, MO, USA',
+                'place': 'Saint Louis, Missouri',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Saint Louis, MO, USA</div></div>`
+                'description': `<div class='content-header'><div class='title'>Saint Louis, Missouri</div></div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -640,10 +653,10 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Salinas, CA, USA',
+                'place': 'Salinas, California',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Salinas, CA, USA</div></div>`
+                'description': `<div class='content-header'><div class='title'>Salinas, California</div></div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -666,10 +679,10 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
-                'place': 'San Francisco, CA, USA',
+                'place': 'San Francisco, California',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>San Francisco, CA, USA</div></div>`
+                'description': `<div class='content-header'><div class='title'>San Francisco, California</div></div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -822,10 +835,10 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Ventura, CA, USA',
+                'place': 'Ventura, California',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Ventura, CA, USA</div></div>`
+                'description': `<div class='content-header'><div class='title'>Ventura, California</div></div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -835,10 +848,10 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Washington, DC, USA',
+                'place': 'Washington, DC',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Washington, DC, USA</div></div>`
+                'description': `<div class='content-header'><div class='title'>Washington, DC</div></div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -851,7 +864,7 @@ const geoJsonMerged = {
                 'place': 'Wissembourg, France',
                 'placeType': 'binoculars-fill',
                 'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Wissembourg, France</div></div>`
+                'description': `<div class='content-header'><div class='title'>Wissembourg, France</div><div class='subtitle'>Weißenburg</div></div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -913,10 +926,10 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Anapolis, MD, USA',
+                'place': 'Anapolis, Maryland',
                 'placeType': 'building',
                 'icon': 'building',
-                'description': `<div class='content-header'><div class='title'>Anapolis, MD, USA</div></div>`
+                'description': `<div class='content-header'><div class='title'>Anapolis, Maryland</div></div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -939,10 +952,10 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Boston, MA, USA',
+                'place': 'Boston, Massachusetts',
                 'placeType': 'building',
                 'icon': 'building',
-                'description': `<div class='content-header'><div class='title'>Boston, MA, USA</div></div>`
+                'description': `<div class='content-header'><div class='title'>Boston, Massachusetts</div></div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -991,10 +1004,10 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Juniper, FL, USA',
+                'place': 'Juniper, Florida',
                 'placeType': 'building',
                 'icon': 'building',
-                'description': `<div class='content-header'><div class='title'>Juniper, FL, USA</div></div>`
+                'description': `<div class='content-header'><div class='title'>Juniper, Florida</div></div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -1007,7 +1020,7 @@ const geoJsonMerged = {
                 'place': 'Liege, Belgium',
                 'placeType': 'building',
                 'icon': 'building',
-                'description': `<div class='content-header'><div class='title'>Liege, Belgium</div></div>`
+                'description': `<div class='content-header'><div class='title'>Liege, Belgium</div><div class='subtitle'>Liège</div></div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -1017,10 +1030,10 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Olive Branch, MS, USA',
+                'place': 'Olive Branch, Mississippi',
                 'placeType': 'building',
                 'icon': 'building',
-                'description': `<div class='content-header'><div class='title'>Olive Branch, MS, USA</div></div><div class='location-info'>TNC Science Conference</div>`
+                'description': `<div class='content-header'><div class='title'>Olive Branch, Mississippi</div></div><div class='location-info'>TNC Science Conference</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -1137,7 +1150,7 @@ const geoJsonMerged = {
                 'place': 'Dublin, Ireland',
                 'placeType': 'future',
                 'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Dublin, Ireland</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+                'description': `<div class='content-header'><div class='title'>Dublin, Ireland</div><div class='subtitle'>Baile Átha Cliath</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -1150,7 +1163,7 @@ const geoJsonMerged = {
                 'place': 'Belfast, Northern Ireland',
                 'placeType': 'future',
                 'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Belfast, Northern Ireland</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+                'description': `<div class='content-header'><div class='title'>Belfast, Northern Ireland</div><div class='subtitle'>Béal Feirste</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -1163,7 +1176,7 @@ const geoJsonMerged = {
                 'place': 'Cardiff, Wales',
                 'placeType': 'future',
                 'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Cardiff, Wales</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+                'description': `<div class='content-header'><div class='title'>Cardiff, Wales</div><div class='subtitle'>Caerdydd</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -1176,7 +1189,7 @@ const geoJsonMerged = {
                 'place': 'Glasgow, Scotland',
                 'placeType': 'future',
                 'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Glasgow, Scotland</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+                'description': `<div class='content-header'><div class='title'>Glasgow, Scotland</div><div class='subtitle'>Glesca</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -1189,7 +1202,7 @@ const geoJsonMerged = {
                 'place': 'Hanoi, Vietnam',
                 'placeType': 'future',
                 'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Hanoi, Vietnam</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+                'description': `<div class='content-header'><div class='title'>Hanoi, Vietnam</div><div class='subtitle'>Hà Nội</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -1202,7 +1215,7 @@ const geoJsonMerged = {
                 'place': 'Bangkok, Thailand',
                 'placeType': 'future',
                 'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Bangkok, Thailand</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+                'description': `<div class='content-header'><div class='title'>Bangkok, Thailand</div><div class='subtitle'>กรุงเทพมหานคร</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -1215,7 +1228,7 @@ const geoJsonMerged = {
                 'place': 'Tokyo, Japan',
                 'placeType': 'future',
                 'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Tokyo, Japan</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+                'description': `<div class='content-header'><div class='title'>Tokyo, Japan</div><div class='subtitle'>東京都</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -1225,10 +1238,10 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Ho Chi Minh City, Vietnam',
+                'place': 'Ho Chi Minh City/Saigon, Vietnam',
                 'placeType': 'future',
                 'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Ho Chi Minh City, Vietnam</div><div class='subtitle'>Saigon</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+                'description': `<div class='content-header'><div class='title'>Ho Chi Minh City/Saigon, Vietnam</div><div class='subtitle'>Thành phố Hồ Chí Minh/Sài Gòn</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -1241,7 +1254,7 @@ const geoJsonMerged = {
                 'place': 'Seoul, South Korea',
                 'placeType': 'future',
                 'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Seoul, South Korea</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+                'description': `<div class='content-header'><div class='title'>Seoul, South Korea</div><div class='subtitle'>서울시</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -1254,7 +1267,7 @@ const geoJsonMerged = {
                 'place': 'Lisbon, Portugal',
                 'placeType': 'future',
                 'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Lisbon, Portugal</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+                'description': `<div class='content-header'><div class='title'>Lisbon, Portugal</div><div class='subtitle'>Lisboa</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -1267,7 +1280,7 @@ const geoJsonMerged = {
                 'place': 'Mexico City, Mexico',
                 'placeType': 'future',
                 'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Mexico City, Mexico</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+                'description': `<div class='content-header'><div class='title'>Mexico City, Mexico</div><div class='subtitle'>Ciudad de México</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -1293,7 +1306,7 @@ const geoJsonMerged = {
                 'place': 'Marrakesh, Morocco',
                 'placeType': 'future',
                 'icon': 'future',
-                'description': `<div class='content-header'><div class='title'>Marrakesh, Morocco</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+                'description': `<div class='content-header'><div class='title'>Marrakesh, Morocco</div><div class='subtitle'>مراكش</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
             },
             'geometry': {
                 'type': 'Point',
@@ -1342,19 +1355,6 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Lake Titi',
-                'placeType': 'binoculars-fill',
-                'icon': 'binoculars-fill',
-                'description': `<div class='content-header'><div class='title'>Lake Titi</div></div><div class='location-info'>My family vacationed here when I was a child on several occasions.</div>`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [8.1410769, 47.8881538, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
                 'place': 'Istanbul, Turkey',
                 'placeType': 'future',
                 'icon': 'future',
@@ -1364,7 +1364,8 @@ const geoJsonMerged = {
                 'type': 'Point',
                 'coordinates': [28.97835, 41.00823, ]
             }
-        }, {
+        },
+        {
             'type': 'Feature',
             'properties': {
                 'place': 'Florence, Italy',
