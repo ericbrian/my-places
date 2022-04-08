@@ -1390,5 +1390,18 @@ const geoJsonMerged = {
                 'coordinates': [-21.8524424, 64.1334904, ]
             }
         },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Glashütte, Germany',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Glashütte, Germany</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [13.7816008, 50.8515416, ]
+            }
+        },
     ]
 };
