@@ -1351,6 +1351,18 @@ const geoJsonMerged = {
                 'type': 'Point',
                 'coordinates': [28.97835, 41.00823, ]
             }
+        }, {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Florence, Italy',
+                'placeType': 'future',
+                'icon': 'future',
+                'description': `<div class='content-header'><div class='title'>Florence, Italy</div></div><div class='location-info'>🤞 Future Location. Place I want to visit.</div>`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [11.24626, 43.77925, ]
+            }
         },
     ]
 };
