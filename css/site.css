@@ -10,6 +10,14 @@ body {
     width: 100%;
 }
 
+div.mapboxgl-popup-content>div {
+    top: -14px;
+    position: relative;
+}
+
+div.mapboxgl-popup-content>p {
+    margin: 0;
+}
 
 .marker {
     background-size: cover;

@@ -4,6 +4,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Accra, Ghana',
+                'localname': '',
                 'placeType': 'Wishful',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -16,6 +17,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'al-Kobar, Saudi Arabia',
+                'localname': 'الخبر المملكة العربية السعودية‎',
                 'placeType': 'Work',
                 'description': `During the 1st Gulf War and while working for Agust Aerospace, this is where I lived while doing the books for the personel working on the aircraft in support of that war.`
             },
@@ -28,6 +30,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Albany, New York',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `This was a simple trip I took with Ute and Michael.`
             },
@@ -40,6 +43,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Alexandria, Virginia',
+                'localname': '',
                 'placeType': 'Home',
                 'description': `I currently live in Virginia, Alexandia, Fairfax County (and not Alexandria City).`
             },
@@ -52,6 +56,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Altrip, Germany',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `This is a smal little town where my Opa's family used own a restaurant.`
             },
@@ -64,6 +69,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Amsterdam, Netherlands',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `I visited Amsterdam a couple of times with my school's band. I used to play clarinet and tenor sax. And, no, I was not good at it.... merely decent.`
             },
@@ -76,6 +82,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Anapolis, Maryland',
+                'localname': '',
                 'placeType': 'Work',
                 'description': `We had a departmental meeting here.`
             },
@@ -88,6 +95,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Andechs, Germany',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `The monestary (Klosterbrauerei Andechs) in this town is where my German professor, Dr. Schmalzbauer, took a group of students for a German lesson with beer! ☺`
             },
@@ -100,6 +108,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Bakersville, California',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `My Uncle Robert and I visited my American family in Bakersville.`
             },
@@ -112,6 +121,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Balimore, Maryland',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `Ute and I went to Inner Harbor back in 1997 while we were on vacation in the US. Then when I moved to the US, went here a couple of times.`
             },
@@ -124,6 +134,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Bangkok, Thailand',
+                'localname': 'กรุงเทพมหานคร',
                 'placeType': 'Wishful',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -136,6 +147,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Bath, England',
+                'localname': '',
                 'placeType': 'Wishful',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -148,6 +160,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Belfast, Northern Ireland',
+                'localname': 'Béal Feirste',
                 'placeType': 'Wishful',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -160,6 +173,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Berlin, Germany',
+                'localname': '',
                 'placeType': 'Wishful',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -172,6 +186,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Bernau am Chiemsee & Lake Chiemsee, Germany',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `My family and I vacationed at Chiemsee a couple of times when I was a boy.`
             },
@@ -184,6 +199,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Bolder, Colorado',
+                'localname': '',
                 'placeType': 'Work',
                 'description': ``
             },
@@ -196,6 +212,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Boston, Massachusetts',
+                'localname': '',
                 'placeType': 'Work',
                 'description': ``
             },
@@ -208,6 +225,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Brussels, Belgium',
+                'localname': 'Bruxelles',
                 'placeType': 'Work',
                 'description': ``
             },
@@ -220,6 +238,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Buenos Aires, Argentina',
+                'localname': '',
                 'placeType': 'Wishful',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -232,6 +251,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Cape Coral, Florida',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `Ute, Michael and I vacationed here.`
             },
@@ -244,6 +264,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Cardiff, Wales',
+                'localname': 'Caerdydd',
                 'placeType': 'Wishful',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -256,6 +277,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Carpinteria, California',
+                'localname': '',
                 'placeType': 'Home',
                 'description': ``
             },
@@ -268,6 +290,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Charlotte Amalie, US Virgin Islands',
+                'localname': '',
                 'placeType': 'Wishful',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -280,6 +303,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Chicago, Illinois',
+                'localname': '',
                 'placeType': 'Work',
                 'description': ``
             },
@@ -292,6 +316,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Colmar, France',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': ``
             },
@@ -304,6 +329,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Cologne, Germany',
+                'localname': 'Köln',
                 'placeType': 'Pleasure',
                 'description': `In my 20s, Friends and I visited Cologne once a year for a 'excessive' long weekend.`
             },
@@ -316,6 +342,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Daytona Beach, Florida',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `Ute, Michael and I visited some of Ute's friends who have a condo in Daytona.`
             },
@@ -328,6 +355,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Denver, Colorado',
+                'localname': '',
                 'placeType': 'Work',
                 'description': ``
             },
@@ -340,6 +368,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Des Moines, Iowa',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `Met up with an school friend here on my way back home from Omaha.`
             },
@@ -352,6 +381,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Dublin, Ireland',
+                'localname': 'Baile Átha Cliath',
                 'placeType': 'Wishful',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -364,6 +394,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Duisburg, Germany',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `A friend of mine lived in Duisburg. I loved visiting here because he took me to types of places I'd never been bofore. And, I won't tell what type.`
             },
@@ -376,6 +407,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Essen, Germany',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `My Brother Bruce used to stay at a hotel in Essen while working for Continental Airlines.`
             },
@@ -388,6 +420,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Florence, Italy',
+                'localname': '',
                 'placeType': 'Wishful',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -400,6 +433,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Frankenthal, Germany',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `My friend Ron used to live here and I used to visit him often.`
             },
@@ -412,6 +446,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Frankfurt, Germany',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `Friends and I used to visit Frankfurt for simple day trips. But also, this is where the American Embassy was.`
             },
@@ -424,6 +459,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Gaborone, Botswana',
+                'localname': '',
                 'placeType': 'Wishful',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -436,6 +472,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Glasgow, Scotland',
+                'localname': 'Glesca',
                 'placeType': 'Wishful',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -448,6 +485,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Glashütte, Germany',
+                'localname': '',
                 'placeType': 'Wishful',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -460,6 +498,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Hanoi, Vietnam',
+                'localname': 'Hà Nội',
                 'placeType': 'Wishful',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -472,6 +511,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Hassloch, Germany',
+                'localname': 'Haßloch',
                 'placeType': 'Home',
                 'description': `Haßloch, at one point, was Germany's smallest city, and it is where my family moved to in 1974.`
             },
@@ -484,6 +524,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Heidelberg, Germany',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `I worked here a couple of times; went out at Friday nights; visited the castle; and so much more.`
             },
@@ -496,6 +537,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Helsinki, Finland',
+                'localname': '',
                 'placeType': 'Wishful',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -508,6 +550,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Herren Chiemsee, Germany',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `Visited Ludwig II Palace that was modelled after the Palace of Versailles.`
             },
@@ -520,6 +563,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Ho Chi Minh City/Saigon, Vietnam',
+                'localname': 'Thành phố Hồ Chí Minh/Sài Gòn',
                 'placeType': 'Wishful',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -532,6 +576,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Houston, Texas',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `I visited Houston with my brother, Bruce.`
             },
@@ -544,6 +589,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Ingolstadt, Germany',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `I took some Archeology classes and the professor brought us to Ingolstadt to look at some sites.`
             },
@@ -556,6 +602,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Istanbul, Turkey',
+                'localname': '',
                 'placeType': 'Wishful',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -568,6 +615,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Juniper, Florida',
+                'localname': '',
                 'placeType': 'Work',
                 'description': `My department had a team retreat here where we visited the Blowing Rocks Preserve.`
             },
@@ -580,6 +628,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Key West, Florida',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `Ute, Michael and I vacationed here.`
             },
@@ -592,6 +641,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Lake Lucerne, Switzerland',
+                'localname': 'Vierwaldstättersee',
                 'placeType': 'Pleasure',
                 'description': ``
             },
@@ -604,6 +654,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Lake Titi, Germany',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `My family vacationed here when I was a child on several occasions.`
             },
@@ -616,6 +667,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Las Vegas, Nevada',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `My Uncle Robert and I visited Las Vegas. I did not like it there and won't be going back.`
             },
@@ -628,6 +680,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Liege, Belgium',
+                'localname': 'Liège',
                 'placeType': 'Work',
                 'description': `When I worked for Agusta Aerospace, we came here to visit a partner company TeamCo.`
             },
@@ -640,6 +693,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Lima, Peru',
+                'localname': '',
                 'placeType': 'Wishful',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -652,6 +706,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Limburgerhof, Germany',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `Ute and Michael live here.`
             },
@@ -664,6 +719,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Lisbon, Portugal',
+                'localname': 'Lisboa',
                 'placeType': 'Wishful',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -676,6 +732,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Little Rock, AR, USA',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `Visited William J. Clinton Presidential Library and Museum.`
             },
@@ -688,6 +745,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Livorno, Italy',
+                'localname': '',
                 'placeType': 'Work',
                 'description': ``
             },
@@ -700,6 +758,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Lloret de Mar, Spain',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `Class mates and I went here for Spring break.`
             },
@@ -712,6 +771,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'London, England',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `I visited London and met up with my friend Christian.`
             },
@@ -724,6 +784,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Long Beach, California',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `My Uncle Robert and I visited my grandmother here before she passed away.`
             },
@@ -736,6 +797,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Ludwigshafen am Rhein, Germany',
+                'localname': '',
                 'placeType': 'Birth',
                 'description': `Ludwigshafen is where I was born... on my Oma's couch. 🌟`
             },
@@ -748,6 +810,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Mainz, Germany',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `Visited Mainz a couple of times while my brother was here on layover.`
             },
@@ -760,6 +823,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Mannheim, Germany',
+                'localname': '',
                 'placeType': 'Home',
                 'description': `Mannheim is where I moved to when I left Mutterstadt. It wasn't a great appartment but it was my first own place and really enjoyed being free!`
             },
@@ -772,6 +836,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Marrakesh, Morocco',
+                'localname': 'مراكش',
                 'placeType': 'Wishful',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -784,6 +849,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Mérida, Mexico',
+                'localname': '',
                 'placeType': 'Wishful',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -796,6 +862,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Metz, France',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `I visited Metz with my school's band.`
             },
@@ -808,6 +875,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Mexico City, Mexico',
+                'localname': 'Ciudad de México',
                 'placeType': 'Wishful',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -820,6 +888,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Miami, Florida',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `Ute, Michael and I vacationed here.`
             },
@@ -832,6 +901,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Mount Kilimanjaro, Tanzania',
+                'localname': '',
                 'placeType': 'Wishful',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -844,6 +914,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Munich, Germany',
+                'localname': 'München',
                 'placeType': 'Home',
                 'description': `I moved to Munich to attend college. One of my favorite cities in the whole world.`
             },
@@ -856,6 +927,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Mutterstadt, Germany',
+                'localname': '',
                 'placeType': 'Home',
                 'description': `Cute little city I lived in briefly when I left Munich.`
             },
@@ -868,6 +940,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Nakskov, Denmark',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `Went here with a friend and stayed a couple of night. This is also where I bought my leather pants. 🤤`
             },
@@ -880,6 +953,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Nancy, France',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `I visited Nancy with our school band.`
             },
@@ -892,6 +966,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Neuhofen, Germany',
+                'localname': '',
                 'placeType': 'Home',
                 'description': ``
             },
@@ -904,6 +979,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'New York City, New York',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `Saw musicals here on and off Broadway. Visited Lady Liberty. Met my cousin Dennis and his friend.`
             },
@@ -916,6 +992,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Newburgh, New York',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `Ute, Michael and I visited  Orange County Choppers showroom.`
             },
@@ -928,6 +1005,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Oklahoma City, Oklahoma',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `Visited coworkers from Raytheon Aerospace while on vacation to the US.`
             },
@@ -940,6 +1018,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Olive Branch, Mississippi',
+                'localname': '',
                 'placeType': 'Work',
                 'description': `TNC Science Conference`
             },
@@ -952,6 +1031,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Omaha, Nebraska',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `Visited by brother Jeff and his family while traveling to Colorado.`
             },
@@ -964,6 +1044,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Orlando, Florida',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `Ute, Michael and I vacationed here.`
             },
@@ -976,6 +1057,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Oslo, Norway',
+                'localname': '',
                 'placeType': 'Wishful',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -988,6 +1070,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Panama City, Panama',
+                'localname': '',
                 'placeType': 'Wishful',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -1000,6 +1083,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Paris, France',
+                'localname': '',
                 'placeType': 'Wishful',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -1012,6 +1096,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Partnachklamm, Germany',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `My friend Thomas, his friend and I went here and visited the salt mines. It was tons of fun.`
             },
@@ -1024,6 +1109,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Pesaro, Italy',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `My family and I vacationed here at my great uncle Domenico's family house.`
             },
@@ -1036,6 +1122,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Pisa, Italy',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `Stopped at the leaning tower while on the way to one of work locations.`
             },
@@ -1048,6 +1135,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Reykjavík, Iceland',
+                'localname': '',
                 'placeType': 'Wishful',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -1060,6 +1148,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Riccione, Italy',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `My family and I vacationed here over a number of years. `
             },
@@ -1072,6 +1161,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Rothenburg ob der Tauber, Germany',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `Visited this place a number of times. It is an old city with an original city wall around it.`
             },
@@ -1084,6 +1174,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Rotterdam, Nederland',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `Visited for work. Our helicopters were sent from this port to overseas.`
             },
@@ -1096,6 +1187,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Saint Louis, Missouri',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `VIsited a couple of times for different reasons. I always had a blast.`
             },
@@ -1108,6 +1200,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Saint-Avold, France',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': ``
             },
@@ -1120,6 +1213,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Salinas, California',
+                'localname': '',
                 'placeType': 'Home',
                 'description': `This is where my younger brother was born.`
             },
@@ -1132,6 +1226,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Salzburg, Austria',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `Visited with friends. We went to the casino and also walk around down town.`
             },
@@ -1144,6 +1239,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'San Francisco, California',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `Robert, my uncle, and I came here during our USA vacation. This was the first and last time he had sushi. `
             },
@@ -1156,6 +1252,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'San José, Costa Rica',
+                'localname': '',
                 'placeType': 'Wishful',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -1168,6 +1265,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'San Juan, Puerto Rico',
+                'localname': '',
                 'placeType': 'Wishful',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -1180,6 +1278,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'San Marino',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `While vacationing in Riccione, we visited this city state. `
             },
@@ -1192,6 +1291,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Sanibel Island, FL, USA',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `Visited J.N. 'Ding' Darling National Wildlife Refuge`
             },
@@ -1204,6 +1304,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Santa Barbara, CA, USA',
+                'localname': '',
                 'placeType': 'Home',
                 'description': `Or Goleta? `
             },
@@ -1216,6 +1317,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Seoul, South Korea',
+                'localname': '서울시',
                 'placeType': 'Wishful',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -1228,6 +1330,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Speyer, Germany',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `Visited the Cathedral and a couple of beer gardens. `
             },
@@ -1240,6 +1343,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'St. Augustine Beach, FL, USA',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `Ute, Michael and I vacationed here.`
             },
@@ -1252,6 +1356,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Stockholm, Sweden',
+                'localname': '',
                 'placeType': 'Wishful',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -1264,6 +1369,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Strasbourg, France',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `Visited the cathedral. `
             },
@@ -1276,6 +1382,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Strasburg, Virginia',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `Visited my parents.`
             },
@@ -1288,8 +1395,9 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Stuttgart, Germany',
+                'localname': '',
                 'placeType': 'Pleasure',
-                'description': `Visited friends.`
+                'description': `Visited friends from university.`
             },
             'geometry': {
                 'type': 'Point',
@@ -1300,6 +1408,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Tokyo, Japan',
+                'localname': '東京都',
                 'placeType': 'Wishful',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -1312,8 +1421,9 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Trier, Germany',
+                'localname': '',
                 'placeType': 'Pleasure',
-                'description': `Visit archaeological sites and Roman structures.`
+                'description': `Visited archaeological sites and Roman structures.`
             },
             'geometry': {
                 'type': 'Point',
@@ -1324,6 +1434,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Vancouver, Canada',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `Visited with Bruce, my brother, and his friend. We had dimsum and it was nice!!! `
             },
@@ -1336,6 +1447,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Venice, Italy',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `Richard, my coworker, and I visited while in the area for work.`
             },
@@ -1348,6 +1460,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Ventura, California',
+                'localname': '',
                 'placeType': 'Home',
                 'description': ``
             },
@@ -1360,6 +1473,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Verona, Italy',
+                'localname': '',
                 'placeType': 'Work',
                 'description': `Visited while in the area for work.`
             },
@@ -1372,6 +1486,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Vicenza, Italy',
+                'localname': '',
                 'placeType': 'Work',
                 'description': `Visited while in the area for work.`
             },
@@ -1384,6 +1499,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Virginia Beach, Virginia',
+                'localname': '',
                 'placeType': 'Home',
                 'description': `After telling my big boss at Raytheon that I need to be moved out of Wichita, this is where I moved to. Better but still not a place a civilized person would want to live.`
             },
@@ -1396,6 +1512,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Washington, DC',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `Been here countless times for many reasons.`
             },
@@ -1408,6 +1525,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Wichita, Kansas',
+                'localname': '',
                 'placeType': 'Home',
                 'description': `When Raytheon Aerospace moved me to the USA, this horrible city is where they sent me to.`
             },
@@ -1420,6 +1538,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Wissembourg, France',
+                'localname': 'Weißenburg',
                 'placeType': 'Pleasure',
                 'description': `Ute, Michael and I visited.`
             },
@@ -1432,6 +1551,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Worms, Germany',
+                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `Michelle, my friend from school, lived here.`
             },

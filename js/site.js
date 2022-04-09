@@ -13,6 +13,12 @@ for (const feature of geoJsonMerged.features) {
     el.classList.add('marker', `marker-${feature.properties.placeType}`);
 
     // make a marker for each feature and add to the map
+
+    let html = `<h3>${feature.properties.place}</h3>`;
+    if (feature.properties.localname)
+        html += `<div>${feature.properties.localname}</div>`;
+    html += `<p>${feature.properties.description}</p>`;
+
     new mapboxgl
         .Marker(el)
         .setLngLat(feature.geometry.coordinates)
@@ -20,9 +26,7 @@ for (const feature of geoJsonMerged.features) {
             new mapboxgl.Popup({
                 offset: 25
             }) // add popups
-            .setHTML(
-                `<h3>${feature.properties.place}</h3><p>${feature.properties.description}</p>`
-            )
+            .setHTML(html)
         )
         .addTo(map);
 }
