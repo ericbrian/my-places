@@ -131,8 +131,19 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
+                'place': 'Athens, Greece',
+                'placeType': 'Future',
+                'description': `🤞 Future Location. Place I want to visit.`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [23.7383394, 37.9908372, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
                 'place': 'Bakersville, California',
-                'localname': '',
                 'placeType': 'Pleasure',
                 'description': `My Uncle Robert and I visited my American family in Bakersville.`
             },
@@ -165,6 +176,19 @@ const geoJsonMerged = {
             'geometry': {
                 'type': 'Point',
                 'coordinates': [100.50176, 13.75633, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Bari, Italy',
+                'localname': '',
+                'placeType': 'Future',
+                'description': `🤞 Future Location. Place I want to visit.`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [16.8120405, 41.1114853, ]
             }
         },
         {
