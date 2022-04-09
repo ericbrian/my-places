@@ -1,50 +1,48 @@
-html,
 body {
-    height: 100%;
     margin: 0;
     padding: 0;
 }
 
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
 .marker {
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    border: 1px solid rgb(0, 0, 0);
+    background-size: cover;
+    width: 32px;
+    height: 37px;
+    cursor: pointer;
 }
 
-.marker-work {
-    background-color: rgb(255, 166, 0);
+.marker-Pleasure {
+    background-image: url('/images/train.png');
 }
 
-.marker-pleasure {
-    background-color: rgb(255, 0, 43);
+.marker-Home {
+    background-image: url('/images/home-2.png');
 }
 
-.marker-home {
-    background-color: rgb(4, 122, 4);
+.marker-Wishful {
+    background-image: url('/images/notvisited.png');
 }
 
-.marker-birth {
-    background-color: rgb(223, 18, 223);
+.marker-Work {
+    background-image: url('/images/workshop.png');
+}
+
+.marker-Birth {
+    background-image: url('/images/star-3.png');
 }
 
 .mapboxgl-popup {
-    max-width: 400px;
-    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    max-width: 200px;
 }
 
-.content-header {
-    border-bottom: 1px solid #ababab;
-}
-
-.content-header .title {
-    font-size: 140%;
-}
-
-.content-header .subtitle {
-    font-size: 90%;
-}
-
-.location-info {
-    line-height: 150%;
+.mapboxgl-popup-content {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
 }
