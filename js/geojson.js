@@ -1013,7 +1013,7 @@ const geoJsonMerged = {
             'properties': {
                 'place': 'Partnachklamm, Germany',
                 'placeType': 'Pleasure',
-                'description': `My friend Thomas, his friend and I went here and visited the salt mines. It was tuns of fun.`
+                'description': `My friend Thomas, his friend and I went here and visited the salt mines. It was tons of fun.`
             },
             'geometry': {
                 'type': 'Point',
