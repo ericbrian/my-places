@@ -2,9 +2,12 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZXJpY2JyaWFuIiwiYSI6ImNreXJobHN3eTB1MnoydXBla
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/ericbrian/ckyra5pms0f7n14th4d4s3x21',
-    center: [-42.5200714, 39.5876049],
+    center: [4.764904234141426, 16.065578903225898],
     zoom: 2
 });
+
+
+console.log(map.getCenter());
 
 // Add zoom and rotation controls to the map.
 map.addControl(new mapboxgl.NavigationControl());
