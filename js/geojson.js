@@ -297,7 +297,7 @@ const geoJsonMerged = {
             },
             'geometry': {
                 'type': 'Point',
-                'coordinates': [7.3923845, 48.1114914, ]
+                'coordinates': [7.3530502, 48.0783803, ]
             }
         },
         {
