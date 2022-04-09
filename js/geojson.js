@@ -16,6 +16,18 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
+                'place': 'Agra, India',
+                'placeType': 'Future',
+                'description': `🤞 Future Location. Place I want to visit.`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [77.909973, 27.1763098, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
                 'place': 'al-Kobar, Saudi Arabia',
                 'localname': 'الخبر المملكة العربية السعودية‎',
                 'placeType': 'Work',
@@ -102,6 +114,18 @@ const geoJsonMerged = {
             'geometry': {
                 'type': 'Point',
                 'coordinates': [11.18525, 47.97487, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Andorra la Vella, Andorra',
+                'placeType': 'Future',
+                'description': `🤞 Future Location. Place I want to visit.`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [1.5116108, 42.5051006, ]
             }
         },
         {
@@ -614,6 +638,18 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
+                'place': 'Jaipur, India',
+                'placeType': 'Future',
+                'description': `🤞 Future Location. Place I want to visit.`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [75.7205179, 26.8853466, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
                 'place': 'Juniper, Florida',
                 'localname': '',
                 'placeType': 'Work',
@@ -809,6 +845,18 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
+                'place': 'Luxembourg',
+                'placeType': 'Future',
+                'description': `🤞 Future Location. Place I want to visit.`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [6.0641124, 49.6076384, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
                 'place': 'Mainz, Germany',
                 'localname': '',
                 'placeType': 'Pleasure',
@@ -978,6 +1026,18 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
+                'place': 'New Delhi, India',
+                'placeType': 'Future',
+                'description': `🤞 Future Location. Place I want to visit.`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [77.1389452, 28.5274851, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
                 'place': 'New York City, New York',
                 'localname': '',
                 'placeType': 'Pleasure',
@@ -1129,6 +1189,18 @@ const geoJsonMerged = {
             'geometry': {
                 'type': 'Point',
                 'coordinates': [10.401689, 43.722839, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Prague, Czechia',
+                'placeType': 'Future',
+                'description': `🤞 Future Location. Place I want to visit.`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [14.3255419, 50.0598058, ]
             }
         },
         {
@@ -1428,6 +1500,18 @@ const geoJsonMerged = {
             'geometry': {
                 'type': 'Point',
                 'coordinates': [6.63629, 49.75735, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Vaduz, Liechtenstein',
+                'placeType': 'Future',
+                'description': `🤞 Future Location. Place I want to visit.`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [9.5086904, 47.1427529, ]
             }
         },
         {
