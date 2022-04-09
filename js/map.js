@@ -37,7 +37,7 @@ map.on('load', () => {
         'type': 'circle',
         'source': 'places',
         'paint': {
-            'circle-stroke-color': '#f00',
+            'circle-stroke-color': '#8b0000',
             'circle-stroke-width': 1,
             'circle-color': '#f00'
         }
