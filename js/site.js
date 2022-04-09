@@ -1,4 +1,4 @@
-mapboxgl.accessToken = 'pk.eyJ1IjoiZXJpY2JyaWFuIiwiYSI6ImNreXJobHN3eTB1MnoydXBla2lzOXFtOGQifQ.f2fiVNRwiVNqpi_RjeGEBg';
+mapboxgl.accessToken = 'pk.eyJ1IjoiZXJpY2JyaWFuIiwiYSI6ImNsMXNhdnR0OTBqdXEzZG84d3NrcnhvdHcifQ.dyDAz-blS-m8BM3ZPog_dw';
 
 const map = new mapboxgl.Map({
     container: 'map',
@@ -6,6 +6,8 @@ const map = new mapboxgl.Map({
     center: [4.764904234141426, 16.065578903225898],
     zoom: 2
 });
+
+map.addControl(new mapboxgl.NavigationControl());
 
 for (const feature of geoJsonMerged.features) {
     // create a HTML element for each feature

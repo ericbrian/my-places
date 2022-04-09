@@ -34,7 +34,7 @@ div.mapboxgl-popup-content>p {
     background-image: url('/images/home-2.png');
 }
 
-.marker-Wishful {
+.marker-Future {
     background-image: url('/images/notvisited.png');
 }
 
@@ -54,3 +54,15 @@ div.mapboxgl-popup-content>p {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
 }
+
+/* #info-box {
+    position: absolute;
+    margin: 20px;
+    width: 15%;
+    top: 500px;
+    bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    overflow-y: hidden;
+    border-radius: 10px;
+} */
