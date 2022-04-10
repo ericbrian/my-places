@@ -610,6 +610,19 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
+                'place': 'Heillecourt, France',
+                'localname': '',
+                'placeType': 'Pleasure',
+                'description': `Ute, Michael and I visited. This is the partner town of Neuhofen.`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [6.0580735, 48.657881, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
                 'place': 'Helsinki, Finland',
                 'localname': '',
                 'placeType': 'Future',
@@ -1130,7 +1143,7 @@ const geoJsonMerged = {
                 'place': 'Olive Branch, Mississippi',
                 'localname': '',
                 'placeType': 'Work',
-                'description': `TNC Science Conference`
+                'description': `Attended the Nature Conservancy's Science Conference.`
             },
             'geometry': {
                 'type': 'Point',
@@ -1156,7 +1169,7 @@ const geoJsonMerged = {
                 'place': 'Orlando, Florida',
                 'localname': '',
                 'placeType': 'Pleasure',
-                'description': `Ute, Michael and I vacationed here.`
+                'description': `Ute (and larger family), Michael and I vacationed here. We went to Disney World where I met up with my school friend Gerda.`
             },
             'geometry': {
                 'type': 'Point',
@@ -1350,7 +1363,7 @@ const geoJsonMerged = {
                 'place': 'Salzburg, Austria',
                 'localname': '',
                 'placeType': 'Pleasure',
-                'description': `Visited with friends. We went to the casino and also walkws around town.`
+                'description': `Visited with friends. We went to the casino and also walked around town.`
             },
             'geometry': {
                 'type': 'Point',
@@ -1441,7 +1454,7 @@ const geoJsonMerged = {
                 'place': 'Seckenheim, Germany',
                 'localname': '',
                 'placeType': 'Work',
-                'description': `This the town my office was in while working for Agusta Aerospace and then Raytheon Aerospace.`
+                'description': `This is the town my office was in while working for Agusta Aerospace and then Raytheon Aerospace.`
             },
             'geometry': {
                 'type': 'Point',
@@ -1467,7 +1480,7 @@ const geoJsonMerged = {
                 'place': 'Siedelsbrunn, Germany',
                 'localname': '',
                 'placeType': 'Pleasure',
-                'description': `This was one of the places my whole family went to during the winter. `
+                'description': `This was one of the places my whole family had day trips to during the winter. `
             },
             'geometry': {
                 'type': 'Point',
@@ -1490,19 +1503,6 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
-                'place': 'St. Augustine Beach, FL, USA',
-                'localname': '',
-                'placeType': 'Pleasure',
-                'description': `Ute, Michael and I vacationed here.`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [-81.271155, 29.843983, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
                 'place': 'Stockholm, Sweden',
                 'localname': '',
                 'placeType': 'Future',
@@ -1519,7 +1519,7 @@ const geoJsonMerged = {
                 'place': 'Strasbourg, France',
                 'localname': '',
                 'placeType': 'Pleasure',
-                'description': `Visited the cathedral. `
+                'description': `Visited the cathedral. And while that is amazing, I did not enjoy anything else here… Enough said.`
             },
             'geometry': {
                 'type': 'Point',
@@ -1647,7 +1647,7 @@ const geoJsonMerged = {
             'properties': {
                 'place': 'Verona, Italy',
                 'localname': '',
-                'placeType': 'Work',
+                'placeType': 'Pleasure',
                 'description': `Visited while in the area for work.`
             },
             'geometry': {
@@ -1661,7 +1661,7 @@ const geoJsonMerged = {
                 'place': 'Vicenza, Italy',
                 'localname': '',
                 'placeType': 'Work',
-                'description': `Visited while in the area for work.`
+                'description': `We had an office here which my coworker and I visited.`
             },
             'geometry': {
                 'type': 'Point',
@@ -1674,7 +1674,7 @@ const geoJsonMerged = {
                 'place': 'Virginia Beach, Virginia',
                 'localname': '',
                 'placeType': 'Home',
-                'description': `After telling my big boss at Raytheon that I need to be moved out of Wichita, this is where I moved to. Better but still not a place a civilized person would want to live.`
+                'description': `I really despised Witchita, KS and this is where my big boss moved me to after I told her that was thinking about leaving to go back home to Germany.`
             },
             'geometry': {
                 'type': 'Point',
@@ -1687,7 +1687,7 @@ const geoJsonMerged = {
                 'place': 'Wald-Michelbach, Germany',
                 'localname': '',
                 'placeType': 'Pleasure',
-                'description': `This was one of the places my whole family went to during the winter. `
+                'description': `This was one of the places my whole family had day trips to during the winter. `
             },
             'geometry': {
                 'type': 'Point',
