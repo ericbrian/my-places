@@ -259,6 +259,19 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
+                'place': 'Bonn, Germany',
+                'localname': '',
+                'placeType': 'Work',
+                'description': `While working for Agusta Aerospace, I handled things at the US Embassy.`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [7.0975198, 50.722775, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
                 'place': 'Boston, Massachusetts',
                 'localname': '',
                 'placeType': 'Work',
@@ -506,6 +519,19 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
+                'place': 'Freising, Germany',
+                'localname': '',
+                'placeType': 'Pleasure',
+                'description': `My friend Thomas used to live here and I visited him a couple of times.`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [11.646443, 48.3899113, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
                 'place': 'Gaborone, Botswana',
                 'localname': '',
                 'placeType': 'Future',
@@ -707,7 +733,7 @@ const geoJsonMerged = {
             },
             'geometry': {
                 'type': 'Point',
-                'coordinates': [8.1759558, 46.979722, ]
+                'coordinates': [8.4518942, 46.9854077, ]
             }
         },
         {
@@ -980,6 +1006,19 @@ const geoJsonMerged = {
             'geometry': {
                 'type': 'Point',
                 'coordinates': [37.35562, -3.06742, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Mummelsee, Germany',
+                'localname': '',
+                'placeType': 'Pleasure',
+                'description': `My family used to vacation here when I was a boy.`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [8.2000645, 48.5971936, ]
             }
         },
         {
@@ -1648,7 +1687,7 @@ const geoJsonMerged = {
                 'place': 'Wissembourg, France',
                 'localname': 'Weißenburg',
                 'placeType': 'Pleasure',
-                'description': `Ute, Michael and I visited.`
+                'description': `Ute, Michael and I visited the absolutely beautiful place.`
             },
             'geometry': {
                 'type': 'Point',
