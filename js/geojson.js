@@ -739,19 +739,6 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Titisee, Germany',
-                'localname': '',
-                'placeType': 'Pleasure',
-                'description': `My family vacationed here when I was a child on several occasions.`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [8.1410769, 47.8881538, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
                 'place': 'Las Vegas, Nevada',
                 'localname': '',
                 'placeType': 'Pleasure',
@@ -1464,6 +1451,19 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
+                'place': 'Siedelsbrunn, Germany',
+                'localname': '',
+                'placeType': 'Pleasure',
+                'description': `This was one of the places my whole family went to during the winter. `
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [8.8135726, 49.5504949, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
                 'place': 'Speyer, Germany',
                 'localname': '',
                 'placeType': 'Pleasure',
@@ -1537,6 +1537,19 @@ const geoJsonMerged = {
             'geometry': {
                 'type': 'Point',
                 'coordinates': [9.182932, 48.775846, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Titisee, Germany',
+                'localname': '',
+                'placeType': 'Pleasure',
+                'description': `My family vacationed here when I was a child on several occasions.`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [8.1410769, 47.8881538, ]
             }
         },
         {
@@ -1653,6 +1666,19 @@ const geoJsonMerged = {
             'geometry': {
                 'type': 'Point',
                 'coordinates': [-75.977985, 36.852926, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'place': 'Wald-Michelbach, Germany',
+                'localname': '',
+                'placeType': 'Pleasure',
+                'description': `This was one of the places my whole family went to during the winter. `
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [8.8248267, 49.571291, ]
             }
         },
         {
