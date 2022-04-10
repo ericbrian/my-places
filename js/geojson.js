@@ -573,7 +573,7 @@ const geoJsonMerged = {
             'properties': {
                 'place': 'Guadalajara, Mexico',
                 'localname': '',
-                'placeType': 'Pleasure',
+                'placeType': 'Future',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
             'geometry': {
@@ -741,7 +741,7 @@ const geoJsonMerged = {
             'properties': {
                 'place': 'Karlovy Vary, Czechia',
                 'localname': '',
-                'placeType': 'Pleasure',
+                'placeType': 'Future',
                 'description': `🤞 Future Location. Place I want to visit. Karlovy Vary is the site of numerous hot springs, and is the most visited spa town in the Czech Republic. The historic city centre with the spa cultural landscape is well preserved and is protected by law as an urban monument reservation.`
             },
             'geometry': {
