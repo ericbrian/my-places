@@ -262,7 +262,7 @@ const geoJsonMerged = {
                 'place': 'Bonn, Germany',
                 'localname': '',
                 'placeType': 'Work',
-                'description': `While working for Agusta Aerospace, I handled things at the US Embassy.`
+                'description': `While working for Agusta Aerospace, I handled things at the US Embassy the company.`
             },
             'geometry': {
                 'type': 'Point',
@@ -392,7 +392,7 @@ const geoJsonMerged = {
                 'place': 'Cologne, Germany',
                 'localname': 'Köln',
                 'placeType': 'Pleasure',
-                'description': `In my 20s, Friends and I visited Cologne once a year for a 'excessive' long weekend.`
+                'description': `The city's medieval Catholic Cologne Cathedral, the third-tallest church and tallest cathedral in the world is a recognized landmark and one of the most visited sights and pilgrimage destinations in Europe. The cityscape is further shaped by the Twelve Romanesque churches of Cologne, and Cologne is famous for Eau de Cologne, that has been produced in the city since 1709. In my 20s, friends and I visited Cologne once a year for a 'excessive' long weekend.`
             },
             'geometry': {
                 'type': 'Point',
@@ -405,7 +405,7 @@ const geoJsonMerged = {
                 'place': 'Daytona Beach, Florida',
                 'localname': '',
                 'placeType': 'Pleasure',
-                'description': `Ute, Michael and I visited some of Ute's friends who have a condo in Daytona.`
+                'description': `Ute, Michael and I visited some of Ute's friends.`
             },
             'geometry': {
                 'type': 'Point',
@@ -467,14 +467,14 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Essen, Germany',
+                'place': 'Düsseldorf, Germany',
                 'localname': '',
                 'placeType': 'Pleasure',
-                'description': `My Brother Bruce used to stay at a hotel in Essen while working for Continental Airlines.`
+                'description': `My Brother Bruce used to stay at a hotel while working for Continental Airlines.`
             },
             'geometry': {
                 'type': 'Point',
-                'coordinates': [7.011555, 51.455643, ]
+                'coordinates': [6.8143502, 51.2384547, ]
             }
         },
         {
@@ -496,7 +496,7 @@ const geoJsonMerged = {
                 'place': 'Frankenthal, Germany',
                 'localname': '',
                 'placeType': 'Pleasure',
-                'description': `My friend Ron used to live here and I used to visit him often.`
+                'description': `My friend Ron Naujelis used to live here.`
             },
             'geometry': {
                 'type': 'Point',
@@ -600,7 +600,7 @@ const geoJsonMerged = {
                 'place': 'Heidelberg, Germany',
                 'localname': '',
                 'placeType': 'Pleasure',
-                'description': `I worked here a couple of times; went out at Friday nights; visited the castle; and so much more.`
+                'description': `A popular tourist destination due to its romantic cityscape, including Heidelberg Castle, the Philosophers' Walk, and the Baroque old town.`
             },
             'geometry': {
                 'type': 'Point',
@@ -739,7 +739,7 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Lake Titi, Germany',
+                'place': 'Titisee, Germany',
                 'localname': '',
                 'placeType': 'Pleasure',
                 'description': `My family vacationed here when I was a child on several occasions.`
@@ -755,7 +755,7 @@ const geoJsonMerged = {
                 'place': 'Las Vegas, Nevada',
                 'localname': '',
                 'placeType': 'Pleasure',
-                'description': `My Uncle Robert and I visited Las Vegas. I did not like it there and won't be going back.`
+                'description': `My Uncle Robert and I visited Las Vegas. Definitely not a fan.`
             },
             'geometry': {
                 'type': 'Point',
@@ -1221,7 +1221,7 @@ const geoJsonMerged = {
                 'place': 'Partnachklamm, Germany',
                 'localname': '',
                 'placeType': 'Pleasure',
-                'description': `My friend Thomas, his friend and I went here and visited the salt mines. It was tons of fun.`
+                'description': `The Partnach Gorge is a deep gorge that has been incised by a mountain stream, the Partnach, in the Reintal valley near the south German town of Garmisch-Partenkirchen. My friend Thomas, his friend and I went here and visited the salt mines. It was tons of fun.`
             },
             'geometry': {
                 'type': 'Point',
@@ -1298,7 +1298,7 @@ const geoJsonMerged = {
                 'place': 'Rothenburg ob der Tauber, Germany',
                 'localname': '',
                 'placeType': 'Pleasure',
-                'description': `Visited this place a number of times. It is an old city with an original city wall around it.`
+                'description': `Rothenburg ob der Tauber is a German town in northern Bavaria known for its medieval architecture. The town walls include many preserved gate houses and towers, plus a covered walkway on top. St. Jakob’s Church houses an intricate, late Gothic altarpiece. The medieval Town Hall has a tower with panoramic views.`
             },
             'geometry': {
                 'type': 'Point',
@@ -1337,7 +1337,7 @@ const geoJsonMerged = {
                 'place': 'Saint-Avold, France',
                 'localname': '',
                 'placeType': 'Pleasure',
-                'description': ``
+                'description': `The site of Europe's largest United States' World War II military cemetery, the Lorraine American Cemetery and Memorial, with the graves of 10,489 American soldiers who died during World War II.`
             },
             'geometry': {
                 'type': 'Point',
@@ -1363,7 +1363,7 @@ const geoJsonMerged = {
                 'place': 'Salzburg, Austria',
                 'localname': '',
                 'placeType': 'Pleasure',
-                'description': `Visited with friends. We went to the casino and also walk around down town.`
+                'description': `Visited with friends. We went to the casino and also walkws around town.`
             },
             'geometry': {
                 'type': 'Point',
@@ -1415,7 +1415,7 @@ const geoJsonMerged = {
                 'place': 'San Marino',
                 'localname': '',
                 'placeType': 'Pleasure',
-                'description': `While vacationing in Riccione, we visited this city state. `
+                'description': `San Marino is a mountainous microstate surrounded by north-central Italy. Among the world’s oldest republics, it retains much of its historic architecture.`
             },
             'geometry': {
                 'type': 'Point',
@@ -1428,7 +1428,7 @@ const geoJsonMerged = {
                 'place': 'Sanibel Island, FL, USA',
                 'localname': '',
                 'placeType': 'Pleasure',
-                'description': `Visited J.N. 'Ding' Darling National Wildlife Refuge`
+                'description': `Visited J.N. 'Ding' Darling National Wildlife Refuge while on vacation to Florida's west coast.`
             },
             'geometry': {
                 'type': 'Point',
@@ -1438,10 +1438,10 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Santa Barbara, CA, USA',
+                'place': 'Santa Barbara/Goleta, CA, USA',
                 'localname': '',
                 'placeType': 'Home',
-                'description': `Or Goleta? `
+                'description': ``
             },
             'geometry': {
                 'type': 'Point',
@@ -1467,7 +1467,7 @@ const geoJsonMerged = {
                 'place': 'Speyer, Germany',
                 'localname': '',
                 'placeType': 'Pleasure',
-                'description': `Visited the Cathedral and a couple of beer gardens. `
+                'description': `Founded by the Romans, it is one of Germany's oldest cities. Speyer Cathedral, a number of other churches, and the Altpörtel (old gate) dominate the Speyer landscape. In the cathedral, beneath the high altar, are the tombs of eight Holy Roman Emperors and German kings.`
             },
             'geometry': {
                 'type': 'Point',
@@ -1558,7 +1558,7 @@ const geoJsonMerged = {
                 'place': 'Trier, Germany',
                 'localname': '',
                 'placeType': 'Pleasure',
-                'description': `Visited archaeological sites and Roman structures.`
+                'description': `Founded by the Celts in the late 4th century BC as Treuorum and conquered 300 years later by the Romans, who renamed it Augusta Treverorum ("The City of Augustus among the Treveri"), Trier is considered Germany's oldest city.`
             },
             'geometry': {
                 'type': 'Point',
@@ -1700,7 +1700,7 @@ const geoJsonMerged = {
                 'place': 'Worms, Germany',
                 'localname': '',
                 'placeType': 'Pleasure',
-                'description': `Michelle, my friend from school, lived here.`
+                'description': `A pre-Roman foundation, Worms is one of the oldest cities in northern Europe. It was the capital of the Kingdom of the Burgundians in the early fifth century, hence is the scene of the medieval legends referring to this period, notably the first part of the Nibelungenlied. Worms has been a Roman Catholic bishopric since at least 614, and was an important palatinate of Charlemagne. Worms Cathedral is one of the imperial cathedrals and among the finest examples of Romanesque architecture in Germany.`
             },
             'geometry': {
                 'type': 'Point',
