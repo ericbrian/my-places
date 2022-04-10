@@ -1257,6 +1257,19 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
+                'place': 'Port Isaac, England',
+                'localname': '',
+                'placeType': 'Future',
+                'description': `🤞 Future Location. Place I want to visit. This is the spot where the tv series "Doc Martin" was shot.`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-4.8305485, 50.593474, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
                 'place': 'Prague, Czechia',
                 'placeType': 'Future',
                 'description': `🤞 Future Location. Place I want to visit.`
