@@ -1438,6 +1438,19 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
+                'place': 'Seckenheim, Germany',
+                'localname': '',
+                'placeType': 'Work',
+                'description': `This the town my office was in while working for Agusta Aerospace and then Raytheon Aerospace.`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [8.5562368, 49.4633734, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
                 'place': 'Seoul, South Korea',
                 'localname': '서울시',
                 'placeType': 'Future',
