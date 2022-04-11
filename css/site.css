@@ -55,7 +55,7 @@ div.mapboxgl-popup-content>p {
     font-family: 'Open Sans', sans-serif;
 }
 
-/* #info-box {
+#info-box {
     position: absolute;
     margin: 20px;
     width: 15%;
@@ -65,4 +65,4 @@ div.mapboxgl-popup-content>p {
     background-color: #fff;
     overflow-y: hidden;
     border-radius: 10px;
-} */
+}

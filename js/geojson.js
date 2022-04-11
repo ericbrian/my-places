@@ -4,7 +4,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Accra, Ghana',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Future',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -17,6 +17,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Agra, India',
+                'localname': 'आगरा',
                 'placeType': 'Future',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -42,7 +43,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Albany, New York',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `This was a simple trip I took with Ute and Michael.`
             },
@@ -55,7 +56,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Alexandria, Virginia',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Home',
                 'description': `I currently live in Virginia, Alexandia, Fairfax County (and not Alexandria City).`
             },
@@ -68,7 +69,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Altrip, Germany',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `This is a smal little town where my Opa's family used own a restaurant.`
             },
@@ -81,7 +82,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Amsterdam, Netherlands',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `I visited Amsterdam a couple of times with my school's band. I used to play clarinet and tenor sax. And, no, I was not good at it.... merely decent.`
             },
@@ -94,7 +95,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Anapolis, Maryland',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Work',
                 'description': `We had a departmental meeting here.`
             },
@@ -107,7 +108,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Andechs, Germany',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `The monestary (Klosterbrauerei Andechs) in this town is where my German professor, Dr. Schmalzbauer, took a group of students for a German lesson with beer! ☺`
             },
@@ -120,6 +121,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Andorra la Vella, Andorra',
+                'localname': null,
                 'placeType': 'Future',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -132,7 +134,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Antigua, Guatemala ',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Future',
                 'description': `Antigua is a small city surrounded by volcanoes in southern Guatemala. It’s renowned for its Spanish colonial buildings, many of them restored following a 1773 earthquake that ended Antigua’s 200-year reign as Guatemala’s colonial capital.`
             },
@@ -144,7 +146,21 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
+                'place': 'Arlington, Virginia',
+                'localname': null,
+                'placeType': 'Work',
+                'description': null
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-77.1123516, 38.8829587, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
                 'place': 'Athens, Greece',
+                'localname': 'Αθήνα',
                 'placeType': 'Future',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -157,6 +173,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Bakersville, California',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `My Uncle Robert and I visited my American family in Bakersville.`
             },
@@ -169,7 +186,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Balimore, Maryland',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `Ute and I went to Inner Harbor back in 1997 while we were on vacation in the US. Then when I moved to the US, went here a couple of times.`
             },
@@ -195,7 +212,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Bari, Italy',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Future',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -208,7 +225,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Bath, England',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Future',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -234,7 +251,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Berlin, Germany',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Future',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -247,7 +264,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Bernau am Chiemsee & Lake Chiemsee, Germany',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `My family and I vacationed at Chiemsee a couple of times when I was a boy.`
             },
@@ -260,9 +277,9 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Bolder, Colorado',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Work',
-                'description': ``
+                'description': null
             },
             'geometry': {
                 'type': 'Point',
@@ -273,7 +290,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Bonn, Germany',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Work',
                 'description': `While working for Agusta Aerospace, I handled things at the US Embassy the company.`
             },
@@ -286,9 +303,9 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Boston, Massachusetts',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Work',
-                'description': ``
+                'description': null
             },
             'geometry': {
                 'type': 'Point',
@@ -301,7 +318,7 @@ const geoJsonMerged = {
                 'place': 'Brussels, Belgium',
                 'localname': 'Bruxelles',
                 'placeType': 'Work',
-                'description': ``
+                'description': null
             },
             'geometry': {
                 'type': 'Point',
@@ -312,7 +329,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Buenos Aires, Argentina',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Future',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -325,7 +342,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Cape Coral, Florida',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `Ute, Michael and I vacationed here.`
             },
@@ -364,9 +381,9 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Carpinteria, California',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Home',
-                'description': ``
+                'description': null
             },
             'geometry': {
                 'type': 'Point',
@@ -377,7 +394,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Charlotte Amalie, US Virgin Islands',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Future',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -390,9 +407,9 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Chicago, Illinois',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Work',
-                'description': ``
+                'description': null
             },
             'geometry': {
                 'type': 'Point',
@@ -403,9 +420,9 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Colmar, France',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
-                'description': ``
+                'description': null
             },
             'geometry': {
                 'type': 'Point',
@@ -429,7 +446,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Daytona Beach, Florida',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `Ute, Michael and I visited some of Ute's friends.`
             },
@@ -442,9 +459,9 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Denver, Colorado',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Work',
-                'description': ``
+                'description': null
             },
             'geometry': {
                 'type': 'Point',
@@ -455,7 +472,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Des Moines, Iowa',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `Met up with an school friend here on my way back home from Omaha.`
             },
@@ -481,7 +498,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Duisburg, Germany',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `A friend of mine lived in Duisburg. I loved visiting here because he took me to types of places I'd never been bofore. And, I won't tell what type.`
             },
@@ -494,7 +511,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Düsseldorf, Germany',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `My Brother Bruce used to stay at a hotel while working for Continental Airlines.`
             },
@@ -507,7 +524,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Florence, Italy',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Future',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -520,7 +537,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Frankenthal, Germany',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `My friend Ron Naujelis used to live here.`
             },
@@ -533,7 +550,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Frankfurt, Germany',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `Friends and I used to visit Frankfurt for simple day trips. But also, this is where the American Embassy was.`
             },
@@ -546,7 +563,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Freising, Germany',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `My friend Thomas used to live here and I visited him a couple of times.`
             },
@@ -559,7 +576,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Gaborone, Botswana',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Future',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -585,7 +602,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Glashütte, Germany',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Future',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -598,7 +615,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Guadalajara, Mexico',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Future',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -637,7 +654,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Heidelberg, Germany',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `A popular tourist destination due to its romantic cityscape, including Heidelberg Castle, the Philosophers' Walk, and the Baroque old town.`
             },
@@ -650,7 +667,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Heillecourt, France',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `Ute, Michael and I visited. This is the partner town of Neuhofen.`
             },
@@ -663,7 +680,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Helsinki, Finland',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Future',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -676,7 +693,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Herren Chiemsee, Germany',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `Visited Ludwig II Palace that was modelled after the Palace of Versailles.`
             },
@@ -702,7 +719,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Houston, Texas',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `I visited Houston with my brother, Bruce.`
             },
@@ -715,7 +732,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Ingolstadt, Germany',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `I took some Archeology classes and the professor brought us to Ingolstadt to look at some sites.`
             },
@@ -728,7 +745,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Istanbul, Turkey',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Future',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -741,6 +758,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Jaipur, India',
+                'localname': 'जयपुर',
                 'placeType': 'Future',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -753,7 +771,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Juniper, Florida',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Work',
                 'description': `My department had a team retreat here where we visited the Blowing Rocks Preserve.`
             },
@@ -766,7 +784,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Key West, Florida',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `Ute, Michael and I vacationed here.`
             },
@@ -781,7 +799,7 @@ const geoJsonMerged = {
                 'place': 'Lake Lucerne, Switzerland',
                 'localname': 'Vierwaldstättersee',
                 'placeType': 'Pleasure',
-                'description': ``
+                'description': null
             },
             'geometry': {
                 'type': 'Point',
@@ -792,7 +810,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Las Vegas, Nevada',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `My Uncle Robert and I visited Las Vegas. Definitely not a fan.`
             },
@@ -818,7 +836,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Lima, Peru',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Future',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -831,7 +849,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Limburgerhof, Germany',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `Ute and Michael live here.`
             },
@@ -857,7 +875,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Little Rock, AR, USA',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `Visited William J. Clinton Presidential Library and Museum.`
             },
@@ -870,9 +888,9 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Livorno, Italy',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Work',
-                'description': ``
+                'description': null
             },
             'geometry': {
                 'type': 'Point',
@@ -883,7 +901,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Lloret de Mar, Spain',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `Class mates and I went here for Spring break.`
             },
@@ -896,7 +914,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'London, England',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `I visited London and met up with my friend Christian.`
             },
@@ -909,7 +927,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Long Beach, California',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `My Uncle Robert and I visited my grandmother here before she passed away.`
             },
@@ -922,7 +940,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Ludwigshafen am Rhein, Germany',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Birth',
                 'description': `Ludwigshafen is where I was born... on my Oma's couch. 🌟`
             },
@@ -935,6 +953,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Luxembourg',
+                'localname': null,
                 'placeType': 'Future',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -947,7 +966,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Mainz, Germany',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `Visited Mainz a couple of times while my brother was here on layover.`
             },
@@ -960,7 +979,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Mannheim, Germany',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Home',
                 'description': `Mannheim is where I moved to when I left Mutterstadt. It wasn't a great appartment but it was my first own place and really enjoyed being free!`
             },
@@ -986,7 +1005,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Mérida, Mexico',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Future',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -999,7 +1018,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Metz, France',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `I visited Metz with my school's band.`
             },
@@ -1025,7 +1044,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Miami, Florida',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `Ute, Michael and I vacationed here.`
             },
@@ -1038,7 +1057,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Mount Kilimanjaro, Tanzania',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Future',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -1051,7 +1070,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Mummelsee, Germany',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `My family used to vacation here when I was a boy.`
             },
@@ -1077,7 +1096,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Mutterstadt, Germany',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Home',
                 'description': `Cute little city I lived in briefly when I left Munich.`
             },
@@ -1090,7 +1109,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Nakskov, Denmark',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `Went here with a friend and stayed a couple of night. This is also where I bought my leather pants. 🤤`
             },
@@ -1103,7 +1122,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Nancy, France',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `Nancy, a riverfront city in the northeastern French region of Grand Est, is known for its late baroque and art nouveau landmarks, some dating to its days as the former capital of the Duchy of Lorraine. Its focal point is the 18th-century Place Stanislas. This grand square, decorated with gilded wrought-iron gates and rococo fountains, rests by the ornate palaces and churches filling the city’s medieval old town.<br /><br />I visited Nancy with our school band.`
             },
@@ -1116,9 +1135,9 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Neuhofen, Germany',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Home',
-                'description': ``
+                'description': null
             },
             'geometry': {
                 'type': 'Point',
@@ -1129,6 +1148,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'New Delhi, India',
+                'localname': 'नई दिल्ली',
                 'placeType': 'Future',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -1141,7 +1161,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'New York City, New York',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `Saw musicals here on and off Broadway. Visited Lady Liberty. Met my cousin Dennis and his friend.`
             },
@@ -1154,7 +1174,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Newburgh, New York',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `Ute, Michael and I visited  Orange County Choppers showroom.`
             },
@@ -1167,7 +1187,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Oklahoma City, Oklahoma',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `Visited coworkers from Raytheon Aerospace while on vacation to the US.`
             },
@@ -1180,7 +1200,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Olive Branch, Mississippi',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Work',
                 'description': `Attended the Nature Conservancy's Science Conference.`
             },
@@ -1193,7 +1213,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Omaha, Nebraska',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `Visited by brother Jeff and his family while traveling to Colorado.`
             },
@@ -1206,7 +1226,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Orlando, Florida',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `Ute (and larger family), Michael and I vacationed here. We went to Disney World where I met up with my school friend Gerda.`
             },
@@ -1219,7 +1239,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Oslo, Norway',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Future',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -1232,7 +1252,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Panama City, Panama',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Future',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -1245,7 +1265,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Paris, France',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Future',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -1258,7 +1278,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Partnachklamm, Germany',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `The Partnach Gorge is a deep gorge that has been incised by a mountain stream, the Partnach, in the Reintal valley near the south German town of Garmisch-Partenkirchen. My friend Thomas, his friend and I went here and visited the salt mines. It was tons of fun.`
             },
@@ -1271,7 +1291,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Pesaro, Italy',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `My family and I vacationed here at my great uncle Domenico's family house.`
             },
@@ -1284,7 +1304,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Pisa, Italy',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `Stopped at the leaning tower while on the way to one of work locations.`
             },
@@ -1297,7 +1317,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Port Isaac, England',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Future',
                 'description': `🤞 Future Location. Place I want to visit. This is the spot where the tv series "Doc Martin" was shot.`
             },
@@ -1310,6 +1330,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Prague, Czechia',
+                'localname': 'Praha',
                 'placeType': 'Future',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -1322,7 +1343,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Reykjavík, Iceland',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Future',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -1335,7 +1356,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Riccione, Italy',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `My family and I vacationed here over a number of years. `
             },
@@ -1348,7 +1369,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Rothenburg ob der Tauber, Germany',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `Rothenburg ob der Tauber is a German town in northern Bavaria known for its medieval architecture. The town walls include many preserved gate houses and towers, plus a covered walkway on top. St. Jakob’s Church houses an intricate, late Gothic altarpiece. The medieval Town Hall has a tower with panoramic views.`
             },
@@ -1361,7 +1382,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Rotterdam, Nederland',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `Visited for work. Our helicopters were sent from this port to overseas.`
             },
@@ -1374,7 +1395,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Saint Louis, Missouri',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `VIsited a couple of times for different reasons. I always had a blast.`
             },
@@ -1387,7 +1408,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Saint-Avold, France',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `The site of Europe's largest United States' World War II military cemetery, the Lorraine American Cemetery and Memorial, with the graves of 10,489 American soldiers who died during World War II.`
             },
@@ -1400,7 +1421,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Salinas, California',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Home',
                 'description': `This is where my younger brother was born.`
             },
@@ -1413,7 +1434,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Salzburg, Austria',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `Visited with friends. We went to the casino and also walked around town.`
             },
@@ -1426,7 +1447,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'San Francisco, California',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `Robert, my uncle, and I came here during our USA vacation. This was the first and last time he had sushi. `
             },
@@ -1439,7 +1460,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'San José, Costa Rica',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Future',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -1452,7 +1473,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'San Juan, Puerto Rico',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Future',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -1465,7 +1486,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'San Marino',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `San Marino is a mountainous microstate surrounded by north-central Italy. Among the world’s oldest republics, it retains much of its historic architecture.`
             },
@@ -1478,7 +1499,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Sanibel Island, FL, USA',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `Visited J.N. 'Ding' Darling National Wildlife Refuge while on vacation to Florida's west coast.`
             },
@@ -1491,9 +1512,9 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Santa Barbara/Goleta, CA, USA',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Home',
-                'description': ``
+                'description': null
             },
             'geometry': {
                 'type': 'Point',
@@ -1504,7 +1525,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Seckenheim, Germany',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Work',
                 'description': `This is the town my office was in while working for Agusta Aerospace and then Raytheon Aerospace.`
             },
@@ -1530,7 +1551,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Siedelsbrunn, Germany',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `This was one of the places my whole family had day trips to during the winter. `
             },
@@ -1543,7 +1564,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Speyer, Germany',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `Founded by the Romans, it is one of Germany's oldest cities. Speyer Cathedral, a number of other churches, and the Altpörtel (old gate) dominate the Speyer landscape. In the cathedral, beneath the high altar, are the tombs of eight Holy Roman Emperors and German kings.`
             },
@@ -1556,7 +1577,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Stockholm, Sweden',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Future',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -1569,7 +1590,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Strasbourg, France',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `Visited the cathedral. And while that is amazing, I did not enjoy anything else here… Enough said.`
             },
@@ -1582,7 +1603,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Strasburg, Virginia',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `Visited my parents.`
             },
@@ -1595,7 +1616,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Stuttgart, Germany',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `Visited friends from university.`
             },
@@ -1608,7 +1629,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Titisee, Germany',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `My family vacationed here when I was a child on several occasions.`
             },
@@ -1634,7 +1655,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Trier, Germany',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `Founded by the Celts in the late 4th century BC as Treuorum and conquered 300 years later by the Romans, who renamed it Augusta Treverorum ("The City of Augustus among the Treveri"), Trier is considered Germany's oldest city.`
             },
@@ -1647,6 +1668,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Vaduz, Liechtenstein',
+                'localname': null,
                 'placeType': 'Future',
                 'description': `🤞 Future Location. Place I want to visit.`
             },
@@ -1659,7 +1681,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Vancouver, Canada',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `Visited with Bruce, my brother, and his friend. We had dimsum and it was nice!!! `
             },
@@ -1685,9 +1707,9 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Ventura, California',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Home',
-                'description': ``
+                'description': null
             },
             'geometry': {
                 'type': 'Point',
@@ -1698,7 +1720,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Verona, Italy',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `Visited while in the area for work.`
             },
@@ -1711,7 +1733,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Vicenza, Italy',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Work',
                 'description': `We had an office here which my coworker and I visited.`
             },
@@ -1724,7 +1746,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Virginia Beach, Virginia',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Home',
                 'description': `I really despised Witchita, KS and this is where my big boss moved me to after I told her that was thinking about leaving to go back home to Germany.`
             },
@@ -1737,7 +1759,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Wald-Michelbach, Germany',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `This was one of the places my whole family had day trips to during the winter. `
             },
@@ -1750,7 +1772,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Washington, DC',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `Been here countless times for many reasons.`
             },
@@ -1763,7 +1785,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Wichita, Kansas',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Home',
                 'description': `When Raytheon Aerospace moved me to the USA, this horrible city is where they sent me to.`
             },
@@ -1789,7 +1811,7 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Worms, Germany',
-                'localname': '',
+                'localname': null,
                 'placeType': 'Pleasure',
                 'description': `A pre-Roman foundation, Worms is one of the oldest cities in northern Europe. It was the capital of the Kingdom of the Burgundians in the early fifth century, hence is the scene of the medieval legends referring to this period, notably the first part of the Nibelungenlied. Worms has been a Roman Catholic bishopric since at least 614, and was an important palatinate of Charlemagne. Worms Cathedral is one of the imperial cathedrals and among the finest examples of Romanesque architecture in Germany.`
             },
