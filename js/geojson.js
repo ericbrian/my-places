@@ -1098,7 +1098,7 @@ const geoJsonMerged = {
                 'place': 'Mutterstadt, Germany',
                 'localname': null,
                 'placeType': 'Home',
-                'description': `Cute little city I lived in briefly when I left Munich.`
+                'description': null
             },
             'geometry': {
                 'type': 'Point',
@@ -1111,7 +1111,7 @@ const geoJsonMerged = {
                 'place': 'Nakskov, Denmark',
                 'localname': null,
                 'placeType': 'Pleasure',
-                'description': `Went here with a friend and stayed a couple of night. This is also where I bought my leather pants. 🤤`
+                'description': `Went here with a friend and stayed a couple of nights. This is also where I bought my leather pants. 🤤`
             },
             'geometry': {
                 'type': 'Point',
