@@ -337,6 +337,19 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
+                'place': 'Carlsbad, Czechia',
+                'localname': 'Karlovy Vary',
+                'placeType': 'Future',
+                'description': `🤞 Future Location. Place I want to visit. Karlovy Vary is the site of numerous hot springs, and is the most visited spa town in the Czech Republic. The historic city centre with the spa cultural landscape is well preserved and is protected by law as an urban monument reservation.`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [12.8752562, 50.2244427, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
                 'place': 'Carpinteria, California',
                 'localname': '',
                 'placeType': 'Home',
@@ -665,7 +678,7 @@ const geoJsonMerged = {
                 'place': 'Ho Chi Minh City/Saigon, Vietnam',
                 'localname': 'Thành phố Hồ Chí Minh/Sài Gòn',
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit.`
+                'description': `🤞 Future Location. Place I want to visit. I want to walk thru the Bùi Viện street. :)`
             },
             'geometry': {
                 'type': 'Point',
@@ -734,19 +747,6 @@ const geoJsonMerged = {
             'geometry': {
                 'type': 'Point',
                 'coordinates': [-80.094209, 26.934225, ]
-            }
-        },
-        {
-            'type': 'Feature',
-            'properties': {
-                'place': 'Karlovy Vary, Czechia',
-                'localname': '',
-                'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit. Karlovy Vary is the site of numerous hot springs, and is the most visited spa town in the Czech Republic. The historic city centre with the spa cultural landscape is well preserved and is protected by law as an urban monument reservation.`
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [12.8752562, 50.2244427, ]
             }
         },
         {
