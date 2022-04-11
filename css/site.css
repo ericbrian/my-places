@@ -58,11 +58,19 @@ div.mapboxgl-popup-content>p {
 #info-box {
     position: absolute;
     margin: 20px;
-    width: 15%;
-    top: 500px;
+    width: 200px;
+    top: 650px;
     bottom: 20px;
     padding: 20px;
     background-color: #fff;
     overflow-y: hidden;
     border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+#info-box div {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    align-items: center
 }
