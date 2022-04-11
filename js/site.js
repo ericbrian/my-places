@@ -32,3 +32,18 @@ for (const feature of geoJsonMerged.features) {
         )
         .addTo(map);
 }
+
+const categories = ['Future', 'Birth', 'Pleasure', 'Work', 'Home', ];
+categories.forEach((category) => {
+    const legend = document.getElementById(`marker-${category}`);
+    legend.addEventListener("click", () => {
+        const categoryEls = document.getElementsByClassName(`marker-${category}`);
+        Array.from(categoryEls).forEach((categoryEl) => {
+            if (categoryEl.style.display == 'none') {
+                categoryEl.style.display = 'block';
+            } else {
+                categoryEl.style.display = 'none';
+            }
+        });
+    }, false);
+});

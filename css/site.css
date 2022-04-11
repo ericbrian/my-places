@@ -72,5 +72,6 @@ div.mapboxgl-popup-content>p {
 #info-box div {
     display: grid;
     grid-template-columns: min-content max-content;
-    align-items: center
+    align-items: center;
+    cursor: pointer;
 }
