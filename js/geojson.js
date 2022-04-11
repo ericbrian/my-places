@@ -1092,7 +1092,7 @@ const geoJsonMerged = {
                 'place': 'Nancy, France',
                 'localname': '',
                 'placeType': 'Pleasure',
-                'description': `I visited Nancy with our school band.`
+                'description': `Nancy, a riverfront city in the northeastern French region of Grand Est, is known for its late baroque and art nouveau landmarks, some dating to its days as the former capital of the Duchy of Lorraine. Its focal point is the 18th-century Place Stanislas. This grand square, decorated with gilded wrought-iron gates and rococo fountains, rests by the ornate palaces and churches filling the city’s medieval old town.<br /><br />I visited Nancy with our school band.`
             },
             'geometry': {
                 'type': 'Point',
@@ -1659,9 +1659,9 @@ const geoJsonMerged = {
             'type': 'Feature',
             'properties': {
                 'place': 'Venice, Italy',
-                'localname': '',
+                'localname': 'Venezia',
                 'placeType': 'Pleasure',
-                'description': `Richard, my coworker, and I visited while in the area for work.`
+                'description': `It is built on a group of 118 small islands that are separated by canals and linked by over 400 bridges. Richard, my coworker, and I visited while in the area for work.`
             },
             'geometry': {
                 'type': 'Point',
