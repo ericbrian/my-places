@@ -131,6 +131,19 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
+                'place': 'Antigua, Guatemala ',
+                'localname': '',
+                'placeType': 'Future',
+                'description': `Antigua is a small city surrounded by volcanoes in southern Guatemala. It’s renowned for its Spanish colonial buildings, many of them restored following a 1773 earthquake that ended Antigua’s 200-year reign as Guatemala’s colonial capital.`
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-90.7338202, 14.5591442, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
                 'place': 'Athens, Greece',
                 'placeType': 'Future',
                 'description': `🤞 Future Location. Place I want to visit.`
