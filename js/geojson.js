@@ -58,7 +58,7 @@ const geoJsonMerged = {
                 'place': 'Alexandria, Virginia',
                 'localname': null,
                 'placeType': 'Home',
-                'description': `I currently live in Virginia, Alexandia, Fairfax County (and not Alexandria City).`
+                'description': `A city on the Potomac River, just south of Washington, DC. It’s known for its Old Town, with brick sidewalks and well-preserved 18th- and 19th-century buildings.`
             },
             'geometry': {
                 'type': 'Point',
@@ -71,7 +71,7 @@ const geoJsonMerged = {
                 'place': 'Altrip, Germany',
                 'localname': null,
                 'placeType': 'Pleasure',
-                'description': `This is a smal little town where my Opa's family used own a restaurant.`
+                'description': `This is a smal little town where my Opa's family used own a restaurant. As a kid, I camped at a property a few meters away from the Rhein.`
             },
             'geometry': {
                 'type': 'Point',
@@ -84,7 +84,7 @@ const geoJsonMerged = {
                 'place': 'Amsterdam, Netherlands',
                 'localname': null,
                 'placeType': 'Pleasure',
-                'description': `I visited Amsterdam a couple of times with my school's band. I used to play clarinet and tenor sax. And, no, I was not good at it.... merely decent.`
+                'description': `I visited Amsterdam a couple of times with my school's band to participate in the Bloemencorso Bollenstreek, It is one of the flower parades in the Netherlands and one of the largest editions of the world. The event takes place in the end of April, The route starts on Saturday in Noordwijk and ends in the city of Haarlem the day after.`
             },
             'geometry': {
                 'type': 'Point',
@@ -94,10 +94,10 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Anapolis, Maryland',
+                'place': 'Annapolis, Maryland',
                 'localname': null,
                 'placeType': 'Work',
-                'description': `We had a departmental meeting here.`
+                'description': `Annapolis is the capital of the U.S. state of Maryland.<br/><br/>The company I work for had a departmental meeting here.`
             },
             'geometry': {
                 'type': 'Point',
@@ -188,7 +188,7 @@ const geoJsonMerged = {
                 'place': 'Balimore, Maryland',
                 'localname': null,
                 'placeType': 'Pleasure',
-                'description': `Ute and I went to Inner Harbor back in 1997 while we were on vacation in the US. Then when I moved to the US, went here a couple of times.`
+                'description': `The Inner Harbor is located at the mouth of Jones Falls, creating the wide and short northwest branch of the Patapsco River. The district includes any water west of a line drawn between the foot of President Street and the American Visionary Art Museum.<br /><br />Ute and I went to Inner Harbor back in 1997 while we were on vacation in the US. Then when I moved to the US, went here a couple of times.`
             },
             'geometry': {
                 'type': 'Point',
