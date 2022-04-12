@@ -279,7 +279,7 @@ const geoJsonMerged = {
                 'place': 'Bolder, Colorado',
                 'localname': null,
                 'placeType': 'Work',
-                'description': null
+                'description': `The department I work in had a production conference here. While there, the area had a major snow storm and my friend and former boss Paul picked us up from the hotel with his car to take us to the conference center. It was quite fun, actually :)`
             },
             'geometry': {
                 'type': 'Point',
@@ -292,7 +292,7 @@ const geoJsonMerged = {
                 'place': 'Bonn, Germany',
                 'localname': null,
                 'placeType': 'Work',
-                'description': `While working for Agusta Aerospace, I handled things at the US Embassy the company.`
+                'description': `While working for Agusta Aerospace, I handled things at the US Embassy in Bonn for the company.`
             },
             'geometry': {
                 'type': 'Point',
@@ -305,7 +305,7 @@ const geoJsonMerged = {
                 'place': 'Boston, Massachusetts',
                 'localname': null,
                 'placeType': 'Work',
-                'description': null
+                'description': `My former coworker Sally and I went to a conference in Boston. It is a fantastic city albeit expensive.`
             },
             'geometry': {
                 'type': 'Point',
@@ -318,7 +318,7 @@ const geoJsonMerged = {
                 'place': 'Brussels, Belgium',
                 'localname': 'Bruxelles',
                 'placeType': 'Work',
-                'description': null
+                'description': `The seat of the Agusta Aerospace branch I worked for was in Brussels. We went there on a number of occasions.`
             },
             'geometry': {
                 'type': 'Point',
@@ -822,10 +822,10 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
-                'place': 'Liege, Belgium',
-                'localname': 'Liège',
+                'place': 'Liège, Belgium',
+                'localname': 'Lüttich',
                 'placeType': 'Work',
-                'description': `When I worked for Agusta Aerospace, we came here to visit a partner company TeamCo.`
+                'description': `When I worked for Agusta Aerospace, we came here to visit a partner company TeamCo at the airport.`
             },
             'geometry': {
                 'type': 'Point',
@@ -851,7 +851,7 @@ const geoJsonMerged = {
                 'place': 'Limburgerhof, Germany',
                 'localname': null,
                 'placeType': 'Pleasure',
-                'description': `Ute and Michael live here.`
+                'description': `Ute and Michael live here. I used to work here in a videotheke after college while looking for a job.`
             },
             'geometry': {
                 'type': 'Point',
@@ -877,7 +877,7 @@ const geoJsonMerged = {
                 'place': 'Little Rock, AR, USA',
                 'localname': null,
                 'placeType': 'Pleasure',
-                'description': `Visited William J. Clinton Presidential Library and Museum.`
+                'description': `I visited the William J. Clinton Presidential Library and Museum. It is an impressive building and very informative. I also walked around downtown which was very charming.`
             },
             'geometry': {
                 'type': 'Point',
@@ -890,7 +890,7 @@ const geoJsonMerged = {
                 'place': 'Livorno, Italy',
                 'localname': null,
                 'placeType': 'Work',
-                'description': null
+                'description': `During my very first post college job, I went to a remote office in Livorno to check the status of high value items. `
             },
             'geometry': {
                 'type': 'Point',
@@ -903,7 +903,7 @@ const geoJsonMerged = {
                 'place': 'Lloret de Mar, Spain',
                 'localname': null,
                 'placeType': 'Pleasure',
-                'description': `Class mates and I went here for Spring break.`
+                'description': `Class mates and I went here for Spring break. A few idiots on that trip ruined my experience of it all. I actually have no desire to return to Spain because of it. But, I really think I should give it another chance. `
             },
             'geometry': {
                 'type': 'Point',
@@ -916,7 +916,7 @@ const geoJsonMerged = {
                 'place': 'London, England',
                 'localname': null,
                 'placeType': 'Pleasure',
-                'description': `I visited London and met up with my friend Christian.`
+                'description': `Since my friend Christian went to London for school, he asked if I would come along. I went and it was quite nice. Btw, I miss Christian... Wish I were still in contact with him.`
             },
             'geometry': {
                 'type': 'Point',
@@ -929,7 +929,7 @@ const geoJsonMerged = {
                 'place': 'Long Beach, California',
                 'localname': null,
                 'placeType': 'Pleasure',
-                'description': `My Uncle Robert and I visited my grandmother here before she passed away.`
+                'description': `My Uncle Robert and I visited my American grandmother here before she passed away.`
             },
             'geometry': {
                 'type': 'Point',
@@ -942,7 +942,7 @@ const geoJsonMerged = {
                 'place': 'Ludwigshafen am Rhein, Germany',
                 'localname': null,
                 'placeType': 'Birth',
-                'description': `Ludwigshafen is where I was born... on my Oma's couch. 🌟`
+                'description': `Known primarily as an industrial city, Ludwigshafen is home to BASF, the world's largest chemical producer, and other companies. Among its cultural facilities are the Staatsphilharmonie Rheinland-Pfalz. It is the birthplace and deathplace of the former German chancellor Helmut Kohl.<br /><br />Ludwigshafen is where I was born... on my Oma's couch. 🌟`
             },
             'geometry': {
                 'type': 'Point',
