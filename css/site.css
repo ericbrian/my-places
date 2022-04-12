@@ -59,7 +59,7 @@ div.mapboxgl-popup-content>p {
     position: absolute;
     margin: 20px;
     width: 200px;
-    top: 650px;
+    top: 735px;
     bottom: 20px;
     padding: 20px;
     background-color: #fff;
@@ -67,11 +67,4 @@ div.mapboxgl-popup-content>p {
     border-radius: 10px;
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
-}
-
-#info-box div {
-    display: grid;
-    grid-template-columns: min-content max-content;
-    align-items: center;
-    cursor: pointer;
 }

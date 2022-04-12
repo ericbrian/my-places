@@ -8,27 +8,44 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
-    <link href='css/site.css' rel='stylesheet' />
+    <link href='/css/site.css' rel='stylesheet' />
+    <link href="/css/pretty-checkbox.min.css" rel="stylesheet" />
 </head>
 
 <body>
 
     <div id="map"></div>
     <div id="info-box">
-        <div id="marker-Pleasure">
-            <img src="/images/airport.png" /> Places I've Visited
+        <div id="marker-Pleasure" class="pretty p-default p-round">
+            <input id="checkbox-Pleasure" type="checkbox" checked />
+            <div class="state p-warning">
+                <label>Places I've Visited</label>
+            </div>
         </div>
-        <div id="marker-Home">
-            <img src="/images/home-2.png" /> Places I Lived
+        <div id="marker-Home" class="pretty p-default p-round">
+            <input id="checkbox-Home" type="checkbox" checked />
+            <div class="state p-warning">
+                <label>Places I Lived</label>
+            </div>
         </div>
-        <div id="marker-Work">
-            <img src="/images/letter_w.png" /> Places I've Worked
+        <div id="marker-Work" class="pretty p-default p-round">
+            <input id="checkbox-Work" type="checkbox" checked />
+            <div class="state p-warning">
+                <label>Places I've Worked</label>
+            </div>
         </div>
-        <div id="marker-Birth">
-            <img src="/images/star-3.png" /> Place of Birth
+        <div id="marker-Birth" class="pretty p-default p-round">
+            <input id="checkbox-Birth" type="checkbox" checked />
+            <div class="state p-warning">
+                <label>Place of Birth</label>
+            </div>
         </div>
-        <div id="marker-Future">
-            <img src="/images/notvisited.png" /> Places I Want to Visit
+        <hr />
+        <div id="marker-Future" class="pretty p-default p-round">
+            <input id="checkbox-Future" type="checkbox" />
+            <div class="state p-warning">
+                <label>Places I Want to Visit</label>
+            </div>
         </div>
     </div>
     <script src='/js/geojson.js'></script>

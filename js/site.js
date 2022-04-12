@@ -14,8 +14,12 @@ for (const feature of geoJsonMerged.features) {
     const el = document.createElement('div');
     el.classList.add('marker', `marker-${feature.properties.placeType}`);
 
-    // make a marker for each feature and add to the map
+    // Don't display future places OTB
+    if (feature.properties.placeType == 'Future') {
+        el.style.display = 'none';
+    }
 
+    // make a marker for each feature and add to the map
     let html = `<h3>${feature.properties.place}</h3>`;
     if (feature.properties.localname)
         html += `<div>${feature.properties.localname}</div>`;
@@ -35,8 +39,8 @@ for (const feature of geoJsonMerged.features) {
 
 const categories = ['Future', 'Birth', 'Pleasure', 'Work', 'Home', ];
 categories.forEach((category) => {
-    const legend = document.getElementById(`marker-${category}`);
-    legend.addEventListener("click", () => {
+    const legendItem = document.getElementById(`marker-${category}`);
+    legendItem.addEventListener("click", () => {
         const categoryEls = document.getElementsByClassName(`marker-${category}`);
         Array.from(categoryEls).forEach((categoryEl) => {
             if (categoryEl.style.display == 'none') {
