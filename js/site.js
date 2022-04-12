@@ -14,11 +14,6 @@ for (const feature of geoJsonMerged.features) {
     const el = document.createElement('div');
     el.classList.add('marker', `marker-${feature.properties.placeType}`);
 
-    // Don't display future places OTB
-    if (feature.properties.placeType == 'Future') {
-        el.style.display = 'none';
-    }
-
     // make a marker for each feature and add to the map
     let html = `<h3>${feature.properties.place}</h3>`;
     if (feature.properties.localname)
@@ -51,3 +46,7 @@ categories.forEach((category) => {
         });
     }, false);
 });
+
+window.onload = function () {
+    document.getElementById('marker-Future').click();
+};
