@@ -630,7 +630,7 @@ const geoJsonMerged = {
                 'place': 'Hanoi, Vietnam',
                 'localname': 'Hà Nội',
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit.`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br/><a href="https://goo.gl/maps/Ft5KSmKZYxrYhMiQ8">The Note Coffee</a>`
             },
             'geometry': {
                 'type': 'Point',
