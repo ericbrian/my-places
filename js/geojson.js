@@ -19,7 +19,7 @@ const geoJsonMerged = {
                 'place': 'Agra, India',
                 'localname': 'आगरा',
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit.`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />I really want to see the Taj Mahal. I want to see the monument engulfed in the azure moonbeam.`
             },
             'geometry': {
                 'type': 'Point',
@@ -110,7 +110,7 @@ const geoJsonMerged = {
                 'place': 'Andorra la Vella, Andorra',
                 'localname': null,
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit.`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />I want to visit the Caldea Spa Center, a large natural and thermal spring complex with indoor and outdoor swimming pools, jacuzzi and hydrotherapy offerings, massage, Turkish baths and more. But, can I afford it? 😊😥😊😥😊😥`
             },
             'geometry': {
                 'type': 'Point',
@@ -240,7 +240,7 @@ const geoJsonMerged = {
                 'place': 'Belfast, Northern Ireland',
                 'localname': 'Béal Feirste',
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit.`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />`
             },
             'geometry': {
                 'type': 'Point',
@@ -331,7 +331,7 @@ const geoJsonMerged = {
                 'place': 'Buenos Aires, Argentina',
                 'localname': null,
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit.<br /><br />Evita. 'Nuff said.`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />I gotta visit Evita's final resting place.`
             },
             'geometry': {
                 'type': 'Point',
@@ -344,7 +344,7 @@ const geoJsonMerged = {
                 'place': 'Cape Coral, Florida',
                 'localname': null,
                 'placeType': 'Pleasure',
-                'description': `Ute, Michael and I vacationed here.`
+                'description': `Ute, Michael and I vacationed here. Aside from the sand fleas on the beach, it was a nice place to be. `
             },
             'geometry': {
                 'type': 'Point',
@@ -396,7 +396,7 @@ const geoJsonMerged = {
                 'place': 'Charlotte Amalie, US Virgin Islands',
                 'localname': null,
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit.`
+                'description': `🤞 Future Location. Place I want to visit. Gotta see the white sand beaches and the turqouise waters. But also the food there is supposed to be fantastic.`
             },
             'geometry': {
                 'type': 'Point',
@@ -422,7 +422,7 @@ const geoJsonMerged = {
                 'place': 'Colmar, France',
                 'localname': null,
                 'placeType': 'Pleasure',
-                'description': null
+                'description': `Went there with people from school. But, I want to go again and when I go again, I'll apprecate the architecture and idylic streets.`
             },
             'geometry': {
                 'type': 'Point',
@@ -487,7 +487,7 @@ const geoJsonMerged = {
                 'place': 'Dublin, Ireland',
                 'localname': 'Baile Átha Cliath',
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit.`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />`
             },
             'geometry': {
                 'type': 'Point',
@@ -526,7 +526,7 @@ const geoJsonMerged = {
                 'place': 'Edinburgh, Scotland',
                 'localname': null,
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit.`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />`
             },
             'geometry': {
                 'type': 'Point',
@@ -539,7 +539,7 @@ const geoJsonMerged = {
                 'place': 'Florence, Italy',
                 'localname': null,
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit.`
+                'description': `🤞 Future Location. Place I want to visit. I want to go to the Uffizi Gallery. `
             },
             'geometry': {
                 'type': 'Point',
@@ -565,7 +565,7 @@ const geoJsonMerged = {
                 'place': 'Frankfurt, Germany',
                 'localname': null,
                 'placeType': 'Pleasure',
-                'description': `Friends and I used to visit Frankfurt for simple day trips. But also, this is where the American Embassy was.`
+                'description': `Friends and I used to visit Frankfurt for simple day trips. But also, this is the closest American Embassy to where I used to live.`
             },
             'geometry': {
                 'type': 'Point',
@@ -578,7 +578,7 @@ const geoJsonMerged = {
                 'place': 'Freising, Germany',
                 'localname': null,
                 'placeType': 'Pleasure',
-                'description': `My friend Thomas used to live here and I visited him a couple of times.`
+                'description': `My friend Thomas used to live here and I visited him a couple of times. I really loved visiting this beautiful little town.`
             },
             'geometry': {
                 'type': 'Point',
@@ -591,7 +591,7 @@ const geoJsonMerged = {
                 'place': 'Gaborone, Botswana',
                 'localname': null,
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit.`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />`
             },
             'geometry': {
                 'type': 'Point',
@@ -604,7 +604,7 @@ const geoJsonMerged = {
                 'place': 'Glasgow, Scotland',
                 'localname': 'Glesca',
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit.`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />`
             },
             'geometry': {
                 'type': 'Point',
@@ -617,7 +617,7 @@ const geoJsonMerged = {
                 'place': 'Glashütte, Germany',
                 'localname': null,
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit.`
+                'description': `🤞 Future Location. Place I want to visit. I have to visit because this is the home of A. Lange & Söhne.`
             },
             'geometry': {
                 'type': 'Point',
@@ -630,7 +630,7 @@ const geoJsonMerged = {
                 'place': 'Guadalajara, Mexico',
                 'localname': null,
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit.`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />This is the home of the fictional character Dani Rojas on the TV Show Ted Lasso.`
             },
             'geometry': {
                 'type': 'Point',
@@ -695,7 +695,7 @@ const geoJsonMerged = {
                 'place': 'Helsinki, Finland',
                 'localname': null,
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit.`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />This city is worth visiting for the architecture. And even during its hottest months, it doesn't get hotter than low 20s Celsius. `
             },
             'geometry': {
                 'type': 'Point',
@@ -760,7 +760,7 @@ const geoJsonMerged = {
                 'place': 'Istanbul, Turkey',
                 'localname': null,
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit.`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />`
             },
             'geometry': {
                 'type': 'Point',
@@ -773,7 +773,7 @@ const geoJsonMerged = {
                 'place': 'Jaipur, India',
                 'localname': 'जयपुर',
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit.`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />`
             },
             'geometry': {
                 'type': 'Point',
@@ -877,7 +877,7 @@ const geoJsonMerged = {
                 'place': 'Lisbon, Portugal',
                 'localname': 'Lisboa',
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit.`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />`
             },
             'geometry': {
                 'type': 'Point',
@@ -968,7 +968,7 @@ const geoJsonMerged = {
                 'place': 'Luxembourg',
                 'localname': null,
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit.`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />`
             },
             'geometry': {
                 'type': 'Point',
@@ -1007,7 +1007,7 @@ const geoJsonMerged = {
                 'place': 'Marrakesh, Morocco',
                 'localname': 'مراكش',
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit.`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />`
             },
             'geometry': {
                 'type': 'Point',
@@ -1020,7 +1020,7 @@ const geoJsonMerged = {
                 'place': 'Mérida, Mexico',
                 'localname': null,
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit.`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />`
             },
             'geometry': {
                 'type': 'Point',
@@ -1163,7 +1163,7 @@ const geoJsonMerged = {
                 'place': 'New Delhi, India',
                 'localname': 'नई दिल्ली',
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit.`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />`
             },
             'geometry': {
                 'type': 'Point',
@@ -1254,7 +1254,7 @@ const geoJsonMerged = {
                 'place': 'Oslo, Norway',
                 'localname': null,
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit.`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />`
             },
             'geometry': {
                 'type': 'Point',
@@ -1267,7 +1267,7 @@ const geoJsonMerged = {
                 'place': 'Panama City, Panama',
                 'localname': null,
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit.`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />`
             },
             'geometry': {
                 'type': 'Point',
@@ -1280,7 +1280,7 @@ const geoJsonMerged = {
                 'place': 'Paris, France',
                 'localname': null,
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit.`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />`
             },
             'geometry': {
                 'type': 'Point',
@@ -1345,7 +1345,7 @@ const geoJsonMerged = {
                 'place': 'Prague, Czechia',
                 'localname': 'Praha',
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit.`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />`
             },
             'geometry': {
                 'type': 'Point',
@@ -1358,7 +1358,7 @@ const geoJsonMerged = {
                 'place': 'Reykjavík, Iceland',
                 'localname': null,
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit.`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />`
             },
             'geometry': {
                 'type': 'Point',
@@ -1475,7 +1475,7 @@ const geoJsonMerged = {
                 'place': 'San José, Costa Rica',
                 'localname': null,
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit.`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />`
             },
             'geometry': {
                 'type': 'Point',
@@ -1488,7 +1488,7 @@ const geoJsonMerged = {
                 'place': 'San Juan, Puerto Rico',
                 'localname': null,
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit.`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />`
             },
             'geometry': {
                 'type': 'Point',
@@ -1553,7 +1553,7 @@ const geoJsonMerged = {
                 'place': 'Seoul, South Korea',
                 'localname': '서울시',
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit.`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />`
             },
             'geometry': {
                 'type': 'Point',
@@ -1592,7 +1592,7 @@ const geoJsonMerged = {
                 'place': 'Stockholm, Sweden',
                 'localname': null,
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit.`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />`
             },
             'geometry': {
                 'type': 'Point',
@@ -1657,7 +1657,7 @@ const geoJsonMerged = {
                 'place': 'Tokyo, Japan',
                 'localname': '東京都',
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit.`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />`
             },
             'geometry': {
                 'type': 'Point',
@@ -1683,7 +1683,7 @@ const geoJsonMerged = {
                 'place': 'Vaduz, Liechtenstein',
                 'localname': null,
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit.`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />`
             },
             'geometry': {
                 'type': 'Point',
