@@ -59,7 +59,7 @@ div.mapboxgl-popup-content>p {
     position: absolute;
     margin: 20px;
     width: 200px;
-    top: 735px;
+    /* top: 735px; */
     bottom: 20px;
     padding: 20px;
     background-color: #fff;
