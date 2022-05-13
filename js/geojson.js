@@ -1069,6 +1069,19 @@ const geoJsonMerged = {
         {
             'type': 'Feature',
             'properties': {
+                'place': 'Monaco',
+                'localname': null,
+                'placeType': 'Future',
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />Visit the Prince's Palace which was built in 1191 as a Genoese fortress, during its long and often dramatic history it has been bombarded and besieged by many foreign powers. `
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [7.4157002, 43.7383399, ]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
                 'place': 'Mount Kilimanjaro, Tanzania',
                 'localname': null,
                 'placeType': 'Future',
