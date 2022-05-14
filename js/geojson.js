@@ -6,7 +6,7 @@ const geoJsonMerged = {
                 'place': 'Accra, Ghana',
                 'localname': null,
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit. When I was a kid in Neuhofen, our neighbor, Cephas, was from Ghana. Ever since he spoke of Ghana, I've wanted to go.`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />When I was a kid in Neuhofen, our neighbor, Cephas Bansah, was from Ghana. Ever since he spoke of Ghana, I've wanted to go.`
             },
             'geometry': {
                 'type': 'Point',
@@ -136,7 +136,7 @@ const geoJsonMerged = {
                 'place': 'Antigua, Guatemala ',
                 'localname': null,
                 'placeType': 'Future',
-                'description': `Antigua is a small city surrounded by volcanoes in southern Guatemala. It’s renowned for its Spanish colonial buildings, many of them restored following a 1773 earthquake that ended Antigua’s 200-year reign as Guatemala’s colonial capital.`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />Antigua is a small city surrounded by volcanoes in southern Guatemala. It’s renowned for its Spanish colonial buildings, many of them restored following a 1773 earthquake that ended Antigua’s 200-year reign as Guatemala’s colonial capital.`
             },
             'geometry': {
                 'type': 'Point',
@@ -253,7 +253,7 @@ const geoJsonMerged = {
                 'place': 'Berlin, Germany',
                 'localname': null,
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit. I want to visit the old and now new capital of Germany. Always wanted to do that but never have.`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />I want to visit the old and now new capital of Germany. Always wanted to do that but never have.`
             },
             'geometry': {
                 'type': 'Point',
@@ -370,7 +370,7 @@ const geoJsonMerged = {
                 'place': 'Carlsbad, Czechia',
                 'localname': 'Karlovy Vary',
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit. Karlovy Vary is the site of numerous hot springs, and is the most visited spa town in the Czech Republic. The historic city centre with the spa cultural landscape is well preserved and is protected by law as an urban monument reservation.`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />Karlovy Vary is the site of numerous hot springs, and is the most visited spa town in the Czech Republic. The historic city centre with the spa cultural landscape is well preserved and is protected by law as an urban monument reservation.`
             },
             'geometry': {
                 'type': 'Point',
@@ -396,7 +396,7 @@ const geoJsonMerged = {
                 'place': 'Charlotte Amalie, US Virgin Islands',
                 'localname': null,
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit. Gotta see the white sand beaches and the turqouise waters. But also the food there is supposed to be fantastic.`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />Gotta see the white sand beaches and the turqouise waters. But also the food there is supposed to be fantastic.`
             },
             'geometry': {
                 'type': 'Point',
@@ -435,7 +435,7 @@ const geoJsonMerged = {
                 'place': 'Cologne, Germany',
                 'localname': 'Köln',
                 'placeType': 'Pleasure',
-                'description': `The city's medieval Catholic Cologne Cathedral, the third-tallest church and tallest cathedral in the world is a recognized landmark and one of the most visited sights and pilgrimage destinations in Europe. The cityscape is further shaped by the Twelve Romanesque churches of Cologne, and Cologne is famous for Eau de Cologne, that has been produced in the city since 1709. In my 20s, friends and I visited Cologne once a year for a 'excessive' long weekend.`
+                'description': `The city's medieval catholic cathedral, the third-tallest church and tallest cathedral in the world is a recognized landmark and one of the most visited sights and pilgrimage destinations in Europe. The cityscape is further shaped by the Twelve Romanesque churches of Cologne, and Cologne is famous for Eau de Cologne, that has been produced in the city since 1709. In my 20s, friends and I visited Cologne once a year for a 'excessive' long weekend.`
             },
             'geometry': {
                 'type': 'Point',
@@ -539,7 +539,7 @@ const geoJsonMerged = {
                 'place': 'Florence, Italy',
                 'localname': null,
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit. I want to go to the Uffizi Gallery. `
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />I want to go to the Uffizi Gallery. `
             },
             'geometry': {
                 'type': 'Point',
@@ -552,7 +552,7 @@ const geoJsonMerged = {
                 'place': 'Frankenthal, Germany',
                 'localname': null,
                 'placeType': 'Pleasure',
-                'description': `My friend Ron Naujelis used to live here.`
+                'description': `My friends Ron Naujelis and Jens V. used to live here.`
             },
             'geometry': {
                 'type': 'Point',
@@ -565,7 +565,7 @@ const geoJsonMerged = {
                 'place': 'Frankfurt, Germany',
                 'localname': null,
                 'placeType': 'Pleasure',
-                'description': `Friends and I used to visit Frankfurt for simple day trips. But also, this is the closest American Embassy to where I used to live.`
+                'description': `Friends and I used to visit Frankfurt for simple day trips. But also, this is also where the closest US Embassy was located in relation to where I lived. Also visited the zoo and botanical gardens.`
             },
             'geometry': {
                 'type': 'Point',
@@ -578,7 +578,7 @@ const geoJsonMerged = {
                 'place': 'Freising, Germany',
                 'localname': null,
                 'placeType': 'Pleasure',
-                'description': `My friend Thomas used to live here and I visited him a couple of times. I really loved visiting this beautiful little town.`
+                'description': `My friend, Thomas Weger, used to live here and I visited him a couple of times. I really loved visiting this beautiful little town.`
             },
             'geometry': {
                 'type': 'Point',
@@ -617,7 +617,7 @@ const geoJsonMerged = {
                 'place': 'Glashütte, Germany',
                 'localname': null,
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit. I have to visit because this is the home of A. Lange & Söhne.`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />I have to visit because this is the home of A. Lange & Söhne.`
             },
             'geometry': {
                 'type': 'Point',
@@ -721,7 +721,7 @@ const geoJsonMerged = {
                 'place': 'Ho Chi Minh City/Saigon, Vietnam',
                 'localname': 'Thành phố Hồ Chí Minh/Sài Gòn',
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit. I want to walk thru the Bùi Viện street. :)`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />I want to walk thru the Bùi Viện street. :)`
             },
             'geometry': {
                 'type': 'Point',
@@ -825,7 +825,7 @@ const geoJsonMerged = {
                 'place': 'Las Vegas, Nevada',
                 'localname': null,
                 'placeType': 'Pleasure',
-                'description': `My Uncle Robert and I visited Las Vegas. Definitely not a fan.`
+                'description': `My Uncle Robert and I visited Las Vegas. Definitely not a fan of Vegas.`
             },
             'geometry': {
                 'type': 'Point',
@@ -877,7 +877,7 @@ const geoJsonMerged = {
                 'place': 'Lisbon, Portugal',
                 'localname': 'Lisboa',
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit.<br /><br />`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />Lisbon look great judging by the travel videos on YouTube. I want to see all of that and eat the fantastic foods.`
             },
             'geometry': {
                 'type': 'Point',
@@ -929,7 +929,7 @@ const geoJsonMerged = {
                 'place': 'London, England',
                 'localname': null,
                 'placeType': 'Pleasure',
-                'description': `Since my friend Christian went to London for school, he asked if I would come along. I went and it was quite nice. Btw, I miss Christian... Wish I were still in contact with him.`
+                'description': `My friend Christian Merker went to London for school and he asked if I would come along. I went and it was quite nice. Btw, I miss Christian... Wish I were still in contact with him.`
             },
             'geometry': {
                 'type': 'Point',
@@ -1046,7 +1046,7 @@ const geoJsonMerged = {
                 'place': 'Mexico City, Mexico',
                 'localname': 'Ciudad de México',
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit.`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />`
             },
             'geometry': {
                 'type': 'Point',
@@ -1076,7 +1076,7 @@ const geoJsonMerged = {
             },
             'geometry': {
                 'type': 'Point',
-                'coordinates': [7.4157002, 43.7383399, ]
+                'coordinates': [7.422118, 43.736536, ]
             }
         },
         {
@@ -1085,7 +1085,7 @@ const geoJsonMerged = {
                 'place': 'Mount Kilimanjaro, Tanzania',
                 'localname': null,
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit.`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />`
             },
             'geometry': {
                 'type': 'Point',
@@ -1345,7 +1345,7 @@ const geoJsonMerged = {
                 'place': 'Port Isaac, England',
                 'localname': null,
                 'placeType': 'Future',
-                'description': `🤞 Future Location. Place I want to visit. This is the spot where the tv series "Doc Martin" was shot.`
+                'description': `🤞 Future Location. Place I want to visit.<br /><br />This is the spot where the tv series "Doc Martin" was shot.`
             },
             'geometry': {
                 'type': 'Point',
@@ -1384,7 +1384,7 @@ const geoJsonMerged = {
                 'place': 'Riccione, Italy',
                 'localname': null,
                 'placeType': 'Pleasure',
-                'description': `My family and I vacationed here over a number of years. `
+                'description': `My family and I vacationed here over a number of summers. `
             },
             'geometry': {
                 'type': 'Point',
@@ -1514,7 +1514,7 @@ const geoJsonMerged = {
                 'place': 'San Marino',
                 'localname': null,
                 'placeType': 'Pleasure',
-                'description': `San Marino is a mountainous microstate surrounded by north-central Italy. Among the world’s oldest republics, it retains much of its historic architecture.`
+                'description': `San Marino is a mountainous microstate surrounded by north-central Italy. Among the world’s oldest republics, it retains much of its historic architecture. We visited a number of times while on vacation to Italy.`
             },
             'geometry': {
                 'type': 'Point',
@@ -1761,7 +1761,7 @@ const geoJsonMerged = {
                 'place': 'Vicenza, Italy',
                 'localname': null,
                 'placeType': 'Work',
-                'description': `We had an office here which my coworker and I visited.`
+                'description': `While working for Raytheon Aerospace, my coworker, Richard, and I visited the office here.`
             },
             'geometry': {
                 'type': 'Point',
@@ -1813,7 +1813,7 @@ const geoJsonMerged = {
                 'place': 'Wichita, Kansas',
                 'localname': null,
                 'placeType': 'Home',
-                'description': `When Raytheon Aerospace moved me to the USA, this horrible city is where they sent me to.`
+                'description': `When Raytheon Aerospace moved me to the USA, this horrible city is where they sent me.`
             },
             'geometry': {
                 'type': 'Point',
