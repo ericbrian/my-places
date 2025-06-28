@@ -1,6 +1,6 @@
 import type { FeatureCollection, Point } from "geojson";
 
-const geoJsonMerged: FeatureCollection<Point> = {
+const geoJson: FeatureCollection<Point> = {
     "type": "FeatureCollection",
     "features": [{
         'type': 'Feature',
@@ -1838,4 +1838,4 @@ const geoJsonMerged: FeatureCollection<Point> = {
     ]
 };
 
-export default geoJsonMerged;
+export default geoJson;
