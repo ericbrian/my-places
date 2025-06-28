@@ -165,6 +165,15 @@ function MapComponent() {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
+    const resetMap = () => {
+        if (mapRef.current) {
+            mapRef.current.fitBounds(bounds.fitBounds, {
+                padding: { top: 80, bottom: 40, left: 40, right: 200 }, // Extra padding for title and legend
+                maxZoom: 6, // Prevent zooming in too much
+            });
+        }
+    };
+
     const [popupInfo, setPopupInfo] = useState<{
         longitude: number;
         latitude: number;
@@ -202,271 +211,311 @@ function MapComponent() {
     };
 
     return (
-        <Map
-            ref={mapRef}
-            {...viewState}
-            mapboxAccessToken={mapboxAccessToken}
-            onMove={(evt: ViewStateChangeEvent) => setViewState(evt.viewState)}
-            onClick={onClick}
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
-            style={{ width: "100vw", height: "100vh" }}
-            mapStyle="mapbox://styles/mapbox/streets-v12"
-            projection="mercator"
-            maxBounds={bounds.maxBounds}
-            minZoom={1}
-            interactiveLayerIds={[
-                "home-points",
-                "work-points",
-                "travel-points",
-                "home-symbols",
-                "work-symbols",
-                "travel-symbols",
-                ...(showFutureLocations ? ["future-points", "future-symbols"] : []),
-            ]}
-        >
-            <Source id="my-data" type="geojson" data={geoJson}>
-                <Layer {...homeLayerStyle} />
-                <Layer {...homeSymbolLayerStyle} />
-                {showFutureLocations && <Layer {...futureLayerStyle} />}
-                {showFutureLocations && <Layer {...futureSymbolLayerStyle} />}
-                <Layer {...workLayerStyle} />
-                <Layer {...workSymbolLayerStyle} />
-                <Layer {...travelLayerStyle} />
-                <Layer {...travelSymbolLayerStyle} />
-            </Source>
-            {popupInfo && (
-                <Popup longitude={popupInfo.longitude} latitude={popupInfo.latitude} onClose={() => setPopupInfo(null)} closeButton={true} closeOnClick={false} maxWidth="400px">
-                    <div style={{ padding: "8px" }}>
-                        <div style={{ display: "flex", alignItems: "flex-start", gap: "8px", marginBottom: "8px" }}>
-                            <span style={{ fontSize: "16px", flexShrink: 0, lineHeight: 1.2 }}>
-                                {popupInfo.placeType === "Home" && "🏠"}
-                                {popupInfo.placeType === "Work" && "💼"}
-                                {popupInfo.placeType === "Travel" && "🎉"}
-                                {popupInfo.placeType === "Future" && "⭐"}
-                            </span>
-                            <div style={{ display: "flex", flexDirection: "column" }}>
-                                <h3 style={{ margin: "0", color: "#333", lineHeight: "1.2" }}>{popupInfo.place}</h3>
-                                {popupInfo.localname && <h4 style={{ margin: "0", color: "#555", fontWeight: "normal", fontStyle: "italic" }}>{popupInfo.localname}</h4>}
+        <>
+            <Map
+                ref={mapRef}
+                {...viewState}
+                mapboxAccessToken={mapboxAccessToken}
+                onMove={(evt: ViewStateChangeEvent) => setViewState(evt.viewState)}
+                onClick={onClick}
+                onMouseEnter={onMouseEnter}
+                onMouseLeave={onMouseLeave}
+                style={{ width: "100vw", height: "100vh" }}
+                mapStyle="mapbox://styles/mapbox/streets-v12"
+                projection="mercator"
+                maxBounds={bounds.maxBounds}
+                minZoom={1}
+                interactiveLayerIds={[
+                    "home-points",
+                    "work-points",
+                    "travel-points",
+                    "home-symbols",
+                    "work-symbols",
+                    "travel-symbols",
+                    ...(showFutureLocations ? ["future-points", "future-symbols"] : []),
+                ]}
+            >
+                <Source id="my-data" type="geojson" data={geoJson}>
+                    <Layer {...homeLayerStyle} />
+                    <Layer {...homeSymbolLayerStyle} />
+                    {showFutureLocations && <Layer {...futureLayerStyle} />}
+                    {showFutureLocations && <Layer {...futureSymbolLayerStyle} />}
+                    <Layer {...workLayerStyle} />
+                    <Layer {...workSymbolLayerStyle} />
+                    <Layer {...travelLayerStyle} />
+                    <Layer {...travelSymbolLayerStyle} />
+                </Source>
+                {popupInfo && (
+                    <Popup
+                        longitude={popupInfo.longitude}
+                        latitude={popupInfo.latitude}
+                        onClose={() => setPopupInfo(null)}
+                        closeButton={true}
+                        closeOnClick={false}
+                        maxWidth="400px"
+                    >
+                        <div style={{ padding: "8px" }}>
+                            <div style={{ display: "flex", alignItems: "flex-start", gap: "8px", marginBottom: "8px" }}>
+                                <span style={{ fontSize: "16px", flexShrink: 0, lineHeight: 1.2 }}>
+                                    {popupInfo.placeType === "Home" && "🏠"}
+                                    {popupInfo.placeType === "Work" && "💼"}
+                                    {popupInfo.placeType === "Travel" && "🎉"}
+                                    {popupInfo.placeType === "Future" && "⭐"}
+                                </span>
+                                <div style={{ display: "flex", flexDirection: "column" }}>
+                                    <h3 style={{ margin: "0", color: "#333", lineHeight: "1.2" }}>{popupInfo.place}</h3>
+                                    {popupInfo.localname && <h4 style={{ margin: "0", color: "#555", fontWeight: "normal", fontStyle: "italic" }}>{popupInfo.localname}</h4>}
+                                </div>
                             </div>
-                        </div>
-                        <p
-                            style={{
-                                margin: "0 0 8px 0",
-                                padding: "4px 8px",
-                                backgroundColor:
-                                    popupInfo.placeType === "Home"
-                                        ? "#E8F5E8"
-                                        : popupInfo.placeType === "Work"
-                                        ? "#E3F2FD"
-                                        : popupInfo.placeType === "Travel"
-                                        ? "#FCE4EC"
-                                        : "#FFF3E0",
-                                color:
-                                    popupInfo.placeType === "Home"
-                                        ? "#4CAF50"
-                                        : popupInfo.placeType === "Work"
-                                        ? "#2196F3"
-                                        : popupInfo.placeType === "Travel"
-                                        ? "#E91E63"
-                                        : "#FF9800",
-                                borderRadius: "4px",
-                                fontSize: "12px",
-                                fontWeight: "bold",
-                            }}
-                        >
-                            {popupInfo.placeType}
-                        </p>
-                        <div style={{ fontSize: "14px", lineHeight: "1.4", color: "#333" }} dangerouslySetInnerHTML={{ __html: popupInfo.description }} />
-                    </div>
-                </Popup>
-            )}
-
-            {/* Site Title */}
-            <div
-                style={{
-                    position: "absolute",
-                    top: "20px",
-                    left: "20px",
-                    backgroundColor: "rgba(255, 255, 255, 0.95)",
-                    padding: "16px",
-                    borderRadius: "8px",
-                    boxShadow: "0 2px 10px rgba(0,0,0,0.1)",
-                    fontFamily: "system-ui, -apple-system, sans-serif",
-                }}
-            >
-                <h1
-                    style={{
-                        margin: "0",
-                        fontSize: "24px",
-                        color: "#333",
-                        fontWeight: "bold",
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "8px",
-                    }}
-                >
-                    <span style={{ fontSize: "28px" }}>🗺️</span>
-                    {siteTitle}
-                </h1>
-            </div>
-
-            {/* Legend */}
-            <div
-                style={{
-                    position: "absolute",
-                    top: "20px",
-                    right: "20px",
-                    backgroundColor: "rgba(255, 255, 255, 0.95)",
-                    padding: "16px",
-                    borderRadius: "8px",
-                    boxShadow: "0 2px 10px rgba(0,0,0,0.1)",
-                    fontSize: "14px",
-                    fontFamily: "system-ui, -apple-system, sans-serif",
-                    minWidth: "140px",
-                }}
-            >
-                <h4 style={{ margin: "0 0 12px 0", fontSize: "16px", color: "#333" }}>Place Types</h4>
-                <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                    <div
-                        style={{
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "8px",
-                            padding: "4px",
-                            borderRadius: "4px",
-                            border: "1px solid rgba(76, 175, 80, 0.3)",
-                            backgroundColor: "rgba(76, 175, 80, 0.1)",
-                        }}
-                    >
-                        <div
-                            style={{
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                                width: "20px",
-                                height: "20px",
-                                borderRadius: "50%",
-                                backgroundColor: "#4CAF50",
-                                border: "2px solid white",
-                                fontSize: "12px",
-                            }}
-                        >
-                            🏠
-                        </div>
-                        <span style={{ color: "#333", fontWeight: "bold" }}>Home</span>
-                    </div>
-                    <div
-                        style={{
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "8px",
-                            padding: "4px",
-                            borderRadius: "4px",
-                            border: "1px solid rgba(33, 150, 243, 0.3)",
-                            backgroundColor: "rgba(33, 150, 243, 0.1)",
-                        }}
-                    >
-                        <div
-                            style={{
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                                width: "20px",
-                                height: "20px",
-                                borderRadius: "50%",
-                                backgroundColor: "#2196F3",
-                                border: "2px solid white",
-                                fontSize: "12px",
-                            }}
-                        >
-                            💼
-                        </div>
-                        <span style={{ color: "#333", fontWeight: "bold" }}>Work</span>
-                    </div>
-                    <div
-                        style={{
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "8px",
-                            padding: "4px",
-                            borderRadius: "4px",
-                            border: "1px solid rgba(233, 30, 99, 0.3)",
-                            backgroundColor: "rgba(233, 30, 99, 0.1)",
-                        }}
-                    >
-                        <div
-                            style={{
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                                width: "20px",
-                                height: "20px",
-                                borderRadius: "50%",
-                                backgroundColor: "#E91E63",
-                                border: "2px solid white",
-                                fontSize: "12px",
-                            }}
-                        >
-                            🎉
-                        </div>
-                        <span style={{ color: "#333", fontWeight: "bold" }}>Travel</span>
-                    </div>
-                    <div
-                        style={{
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "8px",
-                            cursor: "pointer",
-                            padding: "4px",
-                            borderRadius: "4px",
-                            backgroundColor: showFutureLocations ? "rgba(255, 152, 0, 0.1)" : "transparent",
-                            border: showFutureLocations ? "1px solid rgba(255, 152, 0, 0.3)" : "1px solid transparent",
-                            minWidth: "160px",
-                        }}
-                        onClick={() => setShowFutureLocations(!showFutureLocations)}
-                    >
-                        <div
-                            style={{
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                                width: "20px",
-                                height: "20px",
-                                borderRadius: "50%",
-                                backgroundColor: showFutureLocations ? "#FF9800" : "#ccc",
-                                border: "2px solid white",
-                                fontSize: "12px",
-                                opacity: showFutureLocations ? 1 : 0.5,
-                            }}
-                        >
-                            ⭐
-                        </div>
-                        <span
-                            style={{
-                                color: showFutureLocations ? "#FF9800" : "#999",
-                                fontWeight: showFutureLocations ? "bold" : "normal",
-                                flex: 1,
-                            }}
-                        >
-                            Future ({showFutureLocations ? "hide" : "show"})
-                        </span>
-                        {!showFutureLocations && (
-                            <span
+                            <p
                                 style={{
-                                    fontSize: "10px",
-                                    color: "#999",
-                                    fontStyle: "italic",
-                                    visibility: "hidden",
+                                    margin: "0 0 8px 0",
+                                    padding: "4px 8px",
+                                    backgroundColor:
+                                        popupInfo.placeType === "Home"
+                                            ? "#E8F5E8"
+                                            : popupInfo.placeType === "Work"
+                                            ? "#E3F2FD"
+                                            : popupInfo.placeType === "Travel"
+                                            ? "#FCE4EC"
+                                            : "#FFF3E0",
+                                    color:
+                                        popupInfo.placeType === "Home"
+                                            ? "#4CAF50"
+                                            : popupInfo.placeType === "Work"
+                                            ? "#2196F3"
+                                            : popupInfo.placeType === "Travel"
+                                            ? "#E91E63"
+                                            : "#FF9800",
+                                    borderRadius: "4px",
+                                    fontSize: "12px",
+                                    fontWeight: "bold",
                                 }}
                             >
-                                (click)
+                                {popupInfo.placeType}
+                            </p>
+                            <div style={{ fontSize: "14px", lineHeight: "1.4", color: "#333" }} dangerouslySetInnerHTML={{ __html: popupInfo.description }} />
+                        </div>
+                    </Popup>
+                )}
+
+                {/* Site Title */}
+                <div
+                    style={{
+                        position: "absolute",
+                        top: "20px",
+                        left: "20px",
+                        backgroundColor: "rgba(255, 255, 255, 0.95)",
+                        padding: "16px",
+                        borderRadius: "8px",
+                        boxShadow: "0 2px 10px rgba(0,0,0,0.1)",
+                        fontFamily: "system-ui, -apple-system, sans-serif",
+                        zIndex: 1,
+                    }}
+                >
+                    <h1
+                        style={{
+                            margin: "0",
+                            fontSize: "24px",
+                            color: "#333",
+                            fontWeight: "bold",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "8px",
+                        }}
+                    >
+                        <span style={{ fontSize: "28px" }}>🗺️</span>
+                        {siteTitle}
+                    </h1>
+                </div>
+
+                {/* Legend */}
+                <div
+                    style={{
+                        position: "absolute",
+                        top: "20px",
+                        right: "20px",
+                        backgroundColor: "rgba(255, 255, 255, 0.95)",
+                        padding: "16px",
+                        borderRadius: "8px",
+                        boxShadow: "0 2px 10px rgba(0,0,0,0.1)",
+                        fontSize: "14px",
+                        fontFamily: "system-ui, -apple-system, sans-serif",
+                        minWidth: "140px",
+                        zIndex: 1,
+                    }}
+                >
+                    <h4 style={{ margin: "0 0 12px 0", fontSize: "16px", color: "#333" }}>Place Types</h4>
+                    <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+                        <div
+                            style={{
+                                display: "flex",
+                                alignItems: "center",
+                                gap: "8px",
+                                padding: "4px",
+                                borderRadius: "4px",
+                                border: "1px solid rgba(76, 175, 80, 0.3)",
+                                backgroundColor: "rgba(76, 175, 80, 0.1)",
+                            }}
+                        >
+                            <div
+                                style={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    justifyContent: "center",
+                                    width: "20px",
+                                    height: "20px",
+                                    borderRadius: "50%",
+                                    backgroundColor: "#4CAF50",
+                                    border: "2px solid white",
+                                    fontSize: "12px",
+                                }}
+                            >
+                                🏠
+                            </div>
+                            <span style={{ color: "#333", fontWeight: "bold" }}>Home</span>
+                        </div>
+                        <div
+                            style={{
+                                display: "flex",
+                                alignItems: "center",
+                                gap: "8px",
+                                padding: "4px",
+                                borderRadius: "4px",
+                                border: "1px solid rgba(33, 150, 243, 0.3)",
+                                backgroundColor: "rgba(33, 150, 243, 0.1)",
+                            }}
+                        >
+                            <div
+                                style={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    justifyContent: "center",
+                                    width: "20px",
+                                    height: "20px",
+                                    borderRadius: "50%",
+                                    backgroundColor: "#2196F3",
+                                    border: "2px solid white",
+                                    fontSize: "12px",
+                                }}
+                            >
+                                💼
+                            </div>
+                            <span style={{ color: "#333", fontWeight: "bold" }}>Work</span>
+                        </div>
+                        <div
+                            style={{
+                                display: "flex",
+                                alignItems: "center",
+                                gap: "8px",
+                                padding: "4px",
+                                borderRadius: "4px",
+                                border: "1px solid rgba(233, 30, 99, 0.3)",
+                                backgroundColor: "rgba(233, 30, 99, 0.1)",
+                            }}
+                        >
+                            <div
+                                style={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    justifyContent: "center",
+                                    width: "20px",
+                                    height: "20px",
+                                    borderRadius: "50%",
+                                    backgroundColor: "#E91E63",
+                                    border: "2px solid white",
+                                    fontSize: "12px",
+                                }}
+                            >
+                                🎉
+                            </div>
+                            <span style={{ color: "#333", fontWeight: "bold" }}>Travel</span>
+                        </div>
+                        <div
+                            style={{
+                                display: "flex",
+                                alignItems: "center",
+                                gap: "8px",
+                                cursor: "pointer",
+                                padding: "4px",
+                                borderRadius: "4px",
+                                backgroundColor: showFutureLocations ? "rgba(255, 152, 0, 0.1)" : "transparent",
+                                border: showFutureLocations ? "1px solid rgba(255, 152, 0, 0.3)" : "1px solid transparent",
+                                minWidth: "160px",
+                            }}
+                            onClick={() => setShowFutureLocations(!showFutureLocations)}
+                        >
+                            <div
+                                style={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    justifyContent: "center",
+                                    width: "20px",
+                                    height: "20px",
+                                    borderRadius: "50%",
+                                    backgroundColor: showFutureLocations ? "#FF9800" : "#ccc",
+                                    border: "2px solid white",
+                                    fontSize: "12px",
+                                    opacity: showFutureLocations ? 1 : 0.5,
+                                }}
+                            >
+                                ⭐
+                            </div>
+                            <span
+                                style={{
+                                    color: showFutureLocations ? "#FF9800" : "#999",
+                                    fontWeight: showFutureLocations ? "bold" : "normal",
+                                    flex: 1,
+                                }}
+                            >
+                                Future ({showFutureLocations ? "hide" : "show"})
                             </span>
-                        )}
+                            {!showFutureLocations && (
+                                <span
+                                    style={{
+                                        fontSize: "10px",
+                                        color: "#999",
+                                        fontStyle: "italic",
+                                        visibility: "hidden",
+                                    }}
+                                >
+                                    (click)
+                                </span>
+                            )}
+                        </div>
                     </div>
                 </div>
-            </div>
-        </Map>
+                <div
+                    style={{
+                        position: "absolute",
+                        bottom: "20px",
+                        right: "20px",
+                        zIndex: 1,
+                    }}
+                >
+                    <button
+                        onClick={resetMap}
+                        style={{
+                            padding: "8px 12px",
+                            fontSize: "14px",
+                            fontWeight: "bold",
+                            color: "#fff",
+                            backgroundColor: "#007bff",
+                            border: "none",
+                            borderRadius: "4px",
+                            cursor: "pointer",
+                            boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
+                            transition: "background-color 0.3s, transform 0.1s",
+                        }}
+                        onMouseDown={(e) => (e.currentTarget.style.transform = "scale(0.95)")}
+                        onMouseUp={(e) => (e.currentTarget.style.transform = "scale(1)")}
+                        onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
+                    >
+                        Reset View
+                    </button>
+                </div>
+            </Map>
+        </>
     );
 }
 
