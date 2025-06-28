@@ -281,7 +281,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Bolder, Colorado',
             'localname': null,
             'placeType': 'Work',
-            'description': `The department I work in had a production conference here. While there, the area had a major snow storm and my friend and former boss Paul picked us up from the hotel with his car to take us to the conference center. It was quite fun, actually :)`
+            'description': `My work team had a team conference here. While here, the area had a major snow storm and my friend and former boss, Paul, picked us up from the hotel with his car to take us to the conference center. It was quite fun, actually :)`
         },
         'geometry': {
             'type': 'Point',
@@ -905,7 +905,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Little Rock, AR, USA',
             'localname': null,
             'placeType': 'Travel',
-            'description': `I visited the William J. Clinton Presidential Library and Museum. It is an impressive building and very informative. I also walked around downtown which was very charming.`
+            'description': `I visited the William J. Clinton Presidential Library and Museum. It is an impressive building and very informative. I also walked around downtown which was charming.`
         },
         'geometry': {
             'type': 'Point',
