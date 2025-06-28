@@ -8,7 +8,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Accra, Ghana',
             'localname': null,
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />When I was a kid in Neuhofen, our neighbor, Cephas Bansah, was from Ghana. Ever since he spoke of Ghana, I've wanted to go.`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />I have a longstanding interest in visiting Ghana, inspired by conversations with a former neighbor from Neuhofen who was originally from this country.`
         },
         'geometry': {
             'type': 'Point',
@@ -21,7 +21,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Agra, India',
             'localname': 'आगरा',
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />I really want to see the Taj Mahal. I want to see the monument engulfed in the azure moonbeam.`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />I am particularly interested in experiencing the Taj Mahal, one of the world's most iconic monuments, especially during moonlight viewing hours.`
         },
         'geometry': {
             'type': 'Point',
@@ -34,7 +34,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'al-Kobar, Saudi Arabia',
             'localname': 'الخبر المملكة العربية السعودية‎',
             'placeType': 'Work',
-            'description': `During the 1st Gulf War and while working for Agusta Aerospace, this is where I lived while doing the books for the personel working on the aircraft in support of that war.`
+            'description': `During the First Gulf War, I was stationed here while employed by Agusta Aerospace, managing financial operations for personnel supporting aircraft maintenance operations.`
         },
         'geometry': {
             'type': 'Point',
@@ -47,7 +47,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Albany, New York',
             'localname': null,
             'placeType': 'Travel',
-            'description': `This was a simple trip I took with Ute and Michael.`
+            'description': `Visited this state capital during a travel excursion with family members.`
         },
         'geometry': {
             'type': 'Point',
@@ -60,7 +60,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Alexandria, Virginia',
             'localname': null,
             'placeType': 'Home',
-            'description': `A city on the Potomac River, just south of Washington, DC. It's known for its Old Town, with brick sidewalks and well-preserved 18th- and 19th-century buildings.`
+            'description': `A historic city on the Potomac River, located just south of Washington, DC. Known for its well-preserved Old Town district featuring brick sidewalks and 18th- and 19th-century architecture.`
         },
         'geometry': {
             'type': 'Point',
@@ -73,7 +73,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Altrip, Germany',
             'localname': null,
             'placeType': 'Travel',
-            'description': `This is a small little town where my Opa's family used own a restaurant. As a kid, I camped at a property a few meters away from the Rhein.`
+            'description': `A small town near the Rhine River with family historical significance. The location previously housed a family-owned restaurant and includes camping areas near the riverfront.`
         },
         'geometry': {
             'type': 'Point',
@@ -86,7 +86,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Amsterdam, Netherlands',
             'localname': null,
             'placeType': 'Travel',
-            'description': `I visited Amsterdam a couple of times with my school's band to participate in the Bloemencorso Bollenstreek, It is one of the flower parades in the Netherlands and one of the largest editions of the world. The event takes place in the end of April, The route starts on Saturday in Noordwijk and ends in the city of Haarlem the day after.`
+            'description': `Visited multiple times as part of school band performances at the Bloemencorso Bollenstreek, one of the world's largest flower parades. This annual event occurs in late April, with a route from Noordwijk to Haarlem.`
         },
         'geometry': {
             'type': 'Point',
@@ -99,7 +99,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Andechs, Germany',
             'localname': null,
             'placeType': 'Travel',
-            'description': `The monastery (Klosterbrauerei Andechs) in this town is where my German professor, Dr. Schmalzbauer, took a group of students for a German lesson with beer! ☺`
+            'description': `Home to the historic Klosterbrauerei Andechs monastery, visited as part of an educational excursion led by Dr. Schmalzbauer for German language studies.`
         },
         'geometry': {
             'type': 'Point',
@@ -112,7 +112,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Andorra la Vella, Andorra',
             'localname': null,
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />I want to visit the Caldea Spa Center, a large natural and thermal spring complex with indoor and outdoor swimming pools, jacuzzi and hydrotherapy offerings, massage, Turkish baths and more. But, can I afford it? 😊😥😊😥😊😥`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />Interested in visiting the Caldea Spa Center, a comprehensive thermal spring complex featuring indoor and outdoor pools, hydrotherapy facilities, Turkish baths, and massage services.`
         },
         'geometry': {
             'type': 'Point',
@@ -125,7 +125,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Annapolis, Maryland',
             'localname': null,
             'placeType': 'Work',
-            'description': `My company's IT department had a meeting here.`
+            'description': `Attended a corporate IT department meeting in this historic Maryland capital city.`
         },
         'geometry': {
             'type': 'Point',
@@ -138,7 +138,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Antigua, Guatemala ',
             'localname': null,
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />Antigua is a small city surrounded by volcanoes in southern Guatemala. It's renowned for its Spanish colonial buildings, many of them restored following a 1773 earthquake that ended Antigua's 200-year reign as Guatemala's colonial capital.`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />A small city surrounded by volcanoes in southern Guatemala, renowned for its preserved Spanish colonial architecture. Many buildings have been restored following the 1773 earthquake that ended Antigua's 200-year period as Guatemala's colonial capital.`
         },
         'geometry': {
             'type': 'Point',
@@ -151,7 +151,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Arlington, Virginia',
             'localname': null,
             'placeType': 'Work',
-            'description': `This where I work and also, where the Apple Store is.`
+            'description': `Primary work location in the Washington, DC metropolitan area.`
         },
         'geometry': {
             'type': 'Point',
@@ -164,7 +164,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Athens, Greece',
             'localname': 'Αθήνα',
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />Athens, Greece! 'Nuff said.`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />The historic capital of Greece, home to numerous ancient monuments and archaeological sites.`
         },
         'geometry': {
             'type': 'Point',
@@ -177,7 +177,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Bakersville, California',
             'localname': null,
             'placeType': 'Travel',
-            'description': `My Uncle Robert and I visited my American family in Bakersville.`
+            'description': `Visited family members residing in this California community.`
         },
         'geometry': {
             'type': 'Point',
@@ -190,7 +190,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Balimore, Maryland',
             'localname': null,
             'placeType': 'Travel',
-            'description': `The Inner Harbor is located at the mouth of Jones Falls, creating the wide and short northwest branch of the Patapsco River. The district includes any water west of a line drawn between the foot of President Street and the American Visionary Art Museum.<br /><br />Ute and I went to Inner Harbor back in 1997 while we were on vacation in the US. Then when I moved to the US, went here a couple of times.`
+            'description': `The Inner Harbor is located at the mouth of Jones Falls, creating the wide and short northwest branch of the Patapsco River. The district includes any water west of a line drawn between the foot of President Street and the American Visionary Art Museum. Visited this historic waterfront district during multiple trips to the area.`
         },
         'geometry': {
             'type': 'Point',
@@ -203,7 +203,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Bangkok, Thailand',
             'localname': 'กรุงเทพมหานคร',
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />I want to visit Thailand and I think Bangkok is as good as any place to start.`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />Interested in exploring Thailand's vibrant capital city as an introduction to the country.`
         },
         'geometry': {
             'type': 'Point',
@@ -216,7 +216,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Bari, Italy',
             'localname': null,
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />It is one of the most important cities in southern Italy and on the Adriatic Sea.`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />One of the most significant cities in southern Italy, located on the Adriatic Sea coast.`
         },
         'geometry': {
             'type': 'Point',
@@ -229,7 +229,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Bath, England',
             'localname': null,
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />Bath sounds like a lovely place to visit. Also, my friend Shaney lives close by and it would be fun to visit both.`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />A historic spa city in Somerset, England, known for its Roman-built baths and Georgian architecture.`
         },
         'geometry': {
             'type': 'Point',
@@ -242,7 +242,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Belfast, Northern Ireland',
             'localname': 'Béal Feirste',
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />The capital and largest city of Northern Ireland.`
         },
         'geometry': {
             'type': 'Point',
@@ -255,7 +255,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Berlin, Germany',
             'localname': null,
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />I want to visit the old and now new capital of Germany. Always wanted to do that but never have.`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />Germany's capital and largest city, a major cultural and historical center that has undergone significant transformation since reunification.`
         },
         'geometry': {
             'type': 'Point',
@@ -268,7 +268,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Bernau am Chiemsee & Lake Chiemsee, Germany',
             'localname': null,
             'placeType': 'Travel',
-            'description': `My family and I vacationed at Chiemsee a couple of times when I was a boy.`
+            'description': `A vacation destination visited during childhood, located at Bavaria's largest lake.`
         },
         'geometry': {
             'type': 'Point',
@@ -281,7 +281,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Bolder, Colorado',
             'localname': null,
             'placeType': 'Work',
-            'description': `My work team had a team conference here. While here, the area had a major snow storm and my friend and former boss, Paul, picked us up from the hotel with his car to take us to the conference center. It was quite fun, actually :)`
+            'description': `Attended a professional team conference in this Colorado city. The area experienced significant snowfall during the visit.`
         },
         'geometry': {
             'type': 'Point',
@@ -294,7 +294,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Bonn, Germany',
             'localname': null,
             'placeType': 'Work',
-            'description': `While working for Agusta Aerospace, I handled things at the US Embassy in Bonn for the company.`
+            'description': `Conducted business operations at the US Embassy while employed by Agusta Aerospace.`
         },
         'geometry': {
             'type': 'Point',
@@ -307,7 +307,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Boston, Massachusetts',
             'localname': null,
             'placeType': 'Work',
-            'description': `My former coworker Sally and I went to a conference in Boston. It is a fantastic city albeit expensive.`
+            'description': `Attended a professional conference in this historic Massachusetts capital.`
         },
         'geometry': {
             'type': 'Point',
@@ -320,7 +320,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Brussels, Belgium',
             'localname': 'Bruxelles',
             'placeType': 'Work',
-            'description': `The seat of the Agusta Aerospace branch I worked for was in Brussels. We went there on a number of occasions.`
+            'description': `Location of the Agusta Aerospace branch headquarters, visited multiple times for business operations.`
         },
         'geometry': {
             'type': 'Point',
@@ -333,7 +333,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Buenos Aires, Argentina',
             'localname': null,
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />I gotta visit Evita's final resting place.`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />Argentina's capital city, known for its European-influenced architecture and rich cultural heritage.`
         },
         'geometry': {
             'type': 'Point',
@@ -346,7 +346,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Cape Coral, Florida',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Ute, Michael and I vacationed here. Aside from the sand fleas on the beach, it was a nice place to be. `
+            'description': `A vacation destination on Florida's Gulf Coast.`
         },
         'geometry': {
             'type': 'Point',
@@ -359,7 +359,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Cardiff, Wales',
             'localname': 'Caerdydd',
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />I am not sure I know much about Cardiff but I want to visit on a trip thru England, Wales, Ireland, N. Ireland and Scotland.`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />The capital city of Wales, planned as part of a comprehensive tour of the United Kingdom and Ireland.`
         },
         'geometry': {
             'type': 'Point',
@@ -372,7 +372,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Carlsbad, Czechia',
             'localname': 'Karlovy Vary',
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />Karlovy Vary is the site of numerous hot springs, and is the most visited spa town in the Czech Republic. The historic city centre with the spa cultural landscape is well preserved and is protected by law as an urban monument reservation.`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />The most visited spa town in the Czech Republic, featuring numerous hot springs. The historic city center and spa cultural landscape are protected as an urban monument reservation.`
         },
         'geometry': {
             'type': 'Point',
@@ -385,7 +385,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Carpinteria, California',
             'localname': null,
             'placeType': 'Home',
-            'description': null
+            'description': `Residential location in coastal Southern California.`
         },
         'geometry': {
             'type': 'Point',
@@ -398,7 +398,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Charlotte Amalie, US Virgin Islands',
             'localname': null,
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />Gotta see the white sand beaches and the turqouise waters. But also the food there is supposed to be fantastic.`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />The capital of the US Virgin Islands, known for its pristine beaches, turquoise waters, and Caribbean cuisine.`
         },
         'geometry': {
             'type': 'Point',
@@ -411,7 +411,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Chicago, Illinois',
             'localname': null,
             'placeType': 'Work',
-            'description': `I visited Chicago for a work conference. I really liked the city and would like to visit again. Also, try the Vienna hotdog with everything on it. Very delicious at Portillo's!`
+            'description': `Attended a professional conference in this major midwestern city. Notable for its distinctive architecture and diverse culinary scene.`
         },
         'geometry': {
             'type': 'Point',
@@ -424,7 +424,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Colmar, France',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Went there with people from school. But, I want to go again and when I go again, I'll appreciate the architecture and idyllic streets.`
+            'description': `A picturesque town in the Alsace region of France, known for its well-preserved medieval and early Renaissance architecture.`
         },
         'geometry': {
             'type': 'Point',
@@ -437,7 +437,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Cologne, Germany',
             'localname': 'Köln',
             'placeType': 'Travel',
-            'description': `The city's medieval catholic cathedral, the third-tallest church and tallest cathedral in the world is a recognized landmark and one of the most visited sights and pilgrimage destinations in Europe. The cityscape is further shaped by the Twelve Romanesque churches of Cologne, and Cologne is famous for Eau de Cologne, that has been produced in the city since 1709. In my 20s, friends and I visited Cologne once a year for a 'excessive' long weekend.`
+            'description': `The city's medieval Catholic cathedral is the third-tallest church and tallest cathedral in the world, serving as a recognized landmark and pilgrimage destination. The cityscape features twelve Romanesque churches, and the city is famous for Eau de Cologne, produced here since 1709.`
         },
         'geometry': {
             'type': 'Point',
@@ -450,7 +450,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Daytona Beach, Florida',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Ute, Michael and I visited some of Ute's friends.`
+            'description': `Visited this Atlantic coast city known for its motorsports and beach activities.`
         },
         'geometry': {
             'type': 'Point',
@@ -463,7 +463,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Denver, Colorado',
             'localname': null,
             'placeType': 'Work',
-            'description': 'My team had a team retreat there. On the way home, all flights were delayed since President Obama was in town and was going to fly out.'
+            'description': `Attended a team retreat in Colorado's capital city. Travel was affected by a presidential visit during departure.`
         },
         'geometry': {
             'type': 'Point',
@@ -476,7 +476,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Des Moines, Iowa',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Met up with an school friend here on my way back home from Omaha.`
+            'description': `Visited Iowa's capital city during a cross-country journey.`
         },
         'geometry': {
             'type': 'Point',
@@ -489,7 +489,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Dublin, Ireland',
             'localname': 'Baile Átha Cliath',
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />The capital and largest city of Ireland.`
         },
         'geometry': {
             'type': 'Point',
@@ -502,7 +502,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Duisburg, Germany',
             'localname': null,
             'placeType': 'Travel',
-            'description': `A friend of mine lived in Duisburg. I loved visiting here because he took me to types of places I'd never been bofore. And, I won't tell what type.`
+            'description': `An industrial city in the Ruhr area of Germany, visited during personal travels.`
         },
         'geometry': {
             'type': 'Point',
@@ -515,7 +515,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Düsseldorf, Germany',
             'localname': null,
             'placeType': 'Travel',
-            'description': `My Brother Bruce used to stay at a hotel while working for Continental Airlines.`
+            'description': `Major city on the Rhine River, visited during family member's business travels.`
         },
         'geometry': {
             'type': 'Point',
@@ -528,7 +528,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Edinburgh, Scotland',
             'localname': null,
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />Scotland's capital city, renowned for its historic and cultural attractions.`
         },
         'geometry': {
             'type': 'Point',
@@ -541,7 +541,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Uffizi Galleries, Florence, Italy',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Visited with friends. I got to see Botticelli's Birth of Venus! :)`
+            'description': `Visited one of Italy's most famous art museums, home to Renaissance masterpieces including Botticelli's Birth of Venus.`
         },
         'geometry': {
             'type': 'Point',
@@ -554,7 +554,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Frankenthal, Germany',
             'localname': null,
             'placeType': 'Travel',
-            'description': `My friends Ron Naujelis and Jens V. used to live here.`
+            'description': `A town in the Rhineland-Palatinate region where friends previously resided.`
         },
         'geometry': {
             'type': 'Point',
@@ -567,7 +567,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Frankfurt, Germany',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Friends and I used to visit Frankfurt for simple day trips. But also, this is also where the closest US Embassy was located in relation to where I lived. Also visited the zoo and botanical gardens.`
+            'description': `Major financial center of Germany, visited for various purposes including the US Embassy, zoo, and botanical gardens.`
         },
         'geometry': {
             'type': 'Point',
@@ -580,7 +580,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Freising, Germany',
             'localname': null,
             'placeType': 'Travel',
-            'description': `My friend, Thomas Weger, used to live here and I visited him a couple of times. I really loved visiting this beautiful little town.`
+            'description': `A charming Bavarian town near Munich, known for its historic architecture and cultural significance.`
         },
         'geometry': {
             'type': 'Point',
@@ -593,7 +593,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Gaborone, Botswana',
             'localname': null,
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />The capital and largest city of Botswana.`
         },
         'geometry': {
             'type': 'Point',
@@ -606,7 +606,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Glasgow, Scotland',
             'localname': 'Glesca',
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />Scotland's largest city, known for its Victorian architecture and vibrant cultural scene.`
         },
         'geometry': {
             'type': 'Point',
@@ -619,7 +619,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Glashütte, Germany',
             'localname': null,
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />I have to visit because this is the home of A. Lange & Söhne.`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />The historic center of German watchmaking, home to prestigious manufacturer A. Lange & Söhne.`
         },
         'geometry': {
             'type': 'Point',
@@ -632,7 +632,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Guadalajara, Mexico',
             'localname': null,
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />This is the home of the fictional character Dani Rojas on the TV Show Ted Lasso.`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />Mexico's second-largest city, known for its colonial architecture and mariachi music tradition.`
         },
         'geometry': {
             'type': 'Point',
@@ -645,7 +645,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Hanoi, Vietnam',
             'localname': 'Hà Nội',
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br/><a href="https://thenotecoffee.com/" target="_blank">The Note Coffee</a> <a class="emoji" href="https://goo.gl/maps/Ft5KSmKZYxrYhMiQ8" alt="See on Map"  target="_blank">🗺️</a>`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />Vietnam's capital city, known for its centuries-old architecture and rich cultural heritage.<br/><a href="https://thenotecoffee.com/" target="_blank">The Note Coffee</a> <a class="emoji" href="https://goo.gl/maps/Ft5KSmKZYxrYhMiQ8" alt="See on Map"  target="_blank">🗺️</a>`
         },
         'geometry': {
             'type': 'Point',
@@ -658,7 +658,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Hassloch, Germany',
             'localname': 'Haßloch',
             'placeType': 'Home',
-            'description': `Haßloch, at one point, was Germany's smallest city, and it is where my family moved to in 1974.`
+            'description': `Former residence in the Rhineland-Palatinate region. Once recognized as Germany's smallest city, this was the family's home from 1974.`
         },
         'geometry': {
             'type': 'Point',
@@ -671,7 +671,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Heidelberg, Germany',
             'localname': null,
             'placeType': 'Travel',
-            'description': `A popular tourist destination due to its romantic cityscape, including Heidelberg Castle, the Philosophers' Walk, and the Baroque old town.`
+            'description': `A popular tourist destination renowned for its romantic cityscape, including Heidelberg Castle, the Philosophers' Walk, and the Baroque old town.`
         },
         'geometry': {
             'type': 'Point',
@@ -684,7 +684,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Heillecourt, France',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Ute, Michael and I visited. This is the partner town of Neuhofen.`
+            'description': `Partner city of Neuhofen, visited as part of cultural exchange initiatives.`
         },
         'geometry': {
             'type': 'Point',
@@ -697,7 +697,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Helsinki, Finland',
             'localname': null,
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />This city is worth visiting for the architecture. And even during its hottest months, it doesn't get hotter than low 20s Celsius. `
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />Finland's capital, notable for its distinctive architecture and temperate climate, with summer temperatures rarely exceeding the low 20s Celsius.`
         },
         'geometry': {
             'type': 'Point',
@@ -710,7 +710,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Herren Chiemsee, Germany',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Visited Ludwig II Palace that was modelled after the Palace of Versailles.`
+            'description': `Visited the palace of Ludwig II, designed as a replica of the Palace of Versailles.`
         },
         'geometry': {
             'type': 'Point',
@@ -723,7 +723,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Ho Chi Minh City/Saigon, Vietnam',
             'localname': 'Thành phố Hồ Chí Minh/Sài Gòn',
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />I want to walk thru the Bùi Viện street. :)`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />Vietnam's largest city, particularly interested in exploring the vibrant Bùi Viện street area.`
         },
         'geometry': {
             'type': 'Point',
@@ -736,7 +736,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Houston, Texas',
             'localname': null,
             'placeType': 'Travel',
-            'description': `I visited Houston with my brother, Bruce.`
+            'description': `Visited Texas's largest city during family travels.`
         },
         'geometry': {
             'type': 'Point',
@@ -749,7 +749,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Ingolstadt, Germany',
             'localname': null,
             'placeType': 'Travel',
-            'description': `I took some Archeology classes and the professor brought us to Ingolstadt to look at some sites.`
+            'description': `Visited archaeological sites as part of university studies in archaeology.`
         },
         'geometry': {
             'type': 'Point',
@@ -762,7 +762,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Istanbul, Turkey',
             'localname': null,
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />A transcontinental city straddling Europe and Asia, known for its rich history and cultural heritage.`
         },
         'geometry': {
             'type': 'Point',
@@ -775,7 +775,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Jaipur, India',
             'localname': 'जयपुर',
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />The capital of Rajasthan, known as the "Pink City" for its distinctive architecture.`
         },
         'geometry': {
             'type': 'Point',
@@ -788,7 +788,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Juniper, Florida',
             'localname': null,
             'placeType': 'Work',
-            'description': `My department had a team retreat here where we visited the Blowing Rocks Preserve.`
+            'description': `Location of a departmental team retreat, featuring the Blowing Rocks Preserve nature site.`
         },
         'geometry': {
             'type': 'Point',
@@ -801,7 +801,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Key West, Florida',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Ute, Michael and I vacationed here.`
+            'description': `Visited the southernmost city in the continental United States.`
         },
         'geometry': {
             'type': 'Point',
@@ -814,7 +814,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Lake Lucerne, Switzerland',
             'localname': 'Vierwaldstättersee',
             'placeType': 'Travel',
-            'description': `Encircled by popular excursion mountains, Lake Lucerne is the lake with the greatest scenic variety in the country. It is somewhat reminiscent of a fjord landscape, yet remains characterised by a mild lake climate.`
+            'description': `Surrounded by popular excursion mountains, Lake Lucerne offers Switzerland's greatest scenic variety. The landscape is reminiscent of fjords while maintaining a mild lake climate.`
         },
         'geometry': {
             'type': 'Point',
@@ -827,7 +827,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Gera Lario, Lake Como, Italy',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Lake Como, of glacial origin in Lombardy, Italy, is the third-largest lake in Italy. Known for its characteristic 'Y' shape, it's a popular retreat for the wealthy, with numerous villas and palaces along its shores. This is where my friends and I vacationed for a week 2024.`
+            'description': `Lake Como, of glacial origin in Lombardy, Italy, is the third-largest Italian lake. Known for its distinctive 'Y' shape and as a popular retreat featuring numerous villas and palaces along its shores. Vacation destination in 2024.`
         },
         'geometry': {
             'type': 'Point',
@@ -840,7 +840,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Las Vegas, Nevada',
             'localname': null,
             'placeType': 'Travel',
-            'description': `My Uncle Robert and I visited Las Vegas. Definitely not a fan of Vegas.`
+            'description': `Visited Nevada's entertainment capital known for its casinos and resorts.`
         },
         'geometry': {
             'type': 'Point',
@@ -853,7 +853,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Liege, Belgium',
             'localname': 'Lüttich/Liège',
             'placeType': 'Work',
-            'description': `When I worked for Agusta Aerospace, we came here to visit a partner company, TeamCo, at the airport.`
+            'description': `Business travel destination for Agusta Aerospace partnership meetings with TeamCo at the local airport.`
         },
         'geometry': {
             'type': 'Point',
@@ -866,7 +866,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Lima, Peru',
             'localname': null,
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />Lima's Historic Center is a UNESCO World Heritage Site. The city was founded in the 1500s and, although many of the original structures were destroyed, it still holds significant historical value and is a beautiful place to wander around.`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />Lima's Historic Center is a UNESCO World Heritage Site. Founded in the 1500s, the city retains significant historical value despite the destruction of many original structures.`
         },
         'geometry': {
             'type': 'Point',
@@ -879,7 +879,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Limburgerhof, Germany',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Ute and Michael live here. I used to work here in a VHS renal place after college while looking for a job.`
+            'description': `A town in the Rhineland-Palatinate region. Former workplace location during post-college job search period.`
         },
         'geometry': {
             'type': 'Point',
@@ -892,7 +892,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Lisbon, Portugal',
             'localname': 'Lisboa',
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />Lisbon look great judging by the travel videos on YouTube. I want to see all of that and eat the fantastic foods.`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />Portugal's capital city, renowned for its historic architecture, scenic views, and culinary traditions.`
         },
         'geometry': {
             'type': 'Point',
@@ -905,7 +905,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Little Rock, AR, USA',
             'localname': null,
             'placeType': 'Travel',
-            'description': `I visited the William J. Clinton Presidential Library and Museum. It is an impressive building and very informative. I also walked around downtown which was charming.`
+            'description': `Visited the William J. Clinton Presidential Library and Museum, featuring impressive architecture and informative exhibits. Explored the charming downtown area.`
         },
         'geometry': {
             'type': 'Point',
@@ -918,7 +918,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Livorno, Italy',
             'localname': null,
             'placeType': 'Work',
-            'description': `During my very first post-college job at Raytheon, I went to a remote office in Livorno to check the status of high value items. `
+            'description': `Business destination during employment at Raytheon for inventory verification of high-value assets.`
         },
         'geometry': {
             'type': 'Point',
@@ -931,7 +931,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Lloret de Mar, Spain',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Class mates and I went here for Spring break. A few idiots on that trip ruined my experience of it all. I actually have no desire to return to Spain because of it. But, I really think I should give it another chance. `
+            'description': `Coastal resort town on the Costa Brava visited during an educational spring break trip.`
         },
         'geometry': {
             'type': 'Point',
@@ -944,7 +944,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'London, England',
             'localname': null,
             'placeType': 'Travel',
-            'description': `My friend Christian Merker went to London for school and he asked if I would come along. I went and it was quite nice. Btw, I miss Christian... Wish I were still in contact with him.`
+            'description': `Visited the United Kingdom's capital city during a friend's educational residency.`
         },
         'geometry': {
             'type': 'Point',
@@ -957,7 +957,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Long Beach, California',
             'localname': null,
             'placeType': 'Travel',
-            'description': `My Uncle Robert and I visited my American grandmother here before she passed away.`
+            'description': `Visited family members in this Southern California coastal city.`
         },
         'geometry': {
             'type': 'Point',
@@ -970,7 +970,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Ludwigshafen am Rhein, Germany',
             'localname': null,
             'placeType': 'Birth',
-            'description': `Known primarily as an industrial city, Ludwigshafen is home to BASF, the world's largest chemical producer, and other companies. Among its cultural facilities are the Staatsphilharmonie Rheinland-Pfalz. It is the birthplace and deathplace of the former German chancellor Helmut Kohl.<br /><br />Ludwigshafen is where I was born... on my Oma's couch. 🌟`
+            'description': `An industrial city primarily known as the headquarters of BASF, the world's largest chemical producer. Among its cultural facilities is the Staatsphilharmonie Rheinland-Pfalz. It was the birthplace and final residence of former German Chancellor Helmut Kohl. My birthplace.`
         },
         'geometry': {
             'type': 'Point',
@@ -983,7 +983,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Luxembourg',
             'localname': null,
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />One of Europe's smallest sovereign nations and a major financial center.`
         },
         'geometry': {
             'type': 'Point',
@@ -996,7 +996,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Mainz, Germany',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Visited Mainz a couple of times while my brother was here on layover.`
+            'description': `Capital of Rhineland-Palatinate, visited during family member's business layovers.`
         },
         'geometry': {
             'type': 'Point',
@@ -1009,7 +1009,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Mannheim, Germany',
             'localname': null,
             'placeType': 'Home',
-            'description': `Mannheim is where I moved to when I left Mutterstadt. It wasn't a great apartment but it was my first own place and really enjoyed being free!`
+            'description': `Former residence and location of first independent apartment.`
         },
         'geometry': {
             'type': 'Point',
@@ -1022,7 +1022,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Marrakesh, Morocco',
             'localname': 'مراكش',
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />A major city in Morocco known for its historic medina and vibrant souks.`
         },
         'geometry': {
             'type': 'Point',
@@ -1035,7 +1035,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Metz, France',
             'localname': null,
             'placeType': 'Travel',
-            'description': `I visited Metz with my school's band.`
+            'description': `Historic city in northeastern France visited as part of school band performances.`
         },
         'geometry': {
             'type': 'Point',
@@ -1048,7 +1048,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Hilton Mexico City Reforma, Mexico City, Mexico',
             'localname': 'Ciudad de México',
             'placeType': 'Work',
-            'description': `I attended the Nature Conservancy's Science Conference in 2024.`
+            'description': `Attended The Nature Conservancy's Science Conference in 2024.`
         },
         'geometry': {
             'type': 'Point',
@@ -1061,7 +1061,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Miami, Florida',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Ute, Michael and I vacationed here.`
+            'description': `Major city in southeastern Florida, visited as a vacation destination.`
         },
         'geometry': {
             'type': 'Point',
@@ -1074,7 +1074,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Monaco',
             'localname': null,
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />Visit the Prince's Palace which was built in 1191 as a Genoese fortress, during its long and often dramatic history it has been bombarded and besieged by many foreign powers. `
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />Home to the Prince's Palace, built in 1191 as a Genoese fortress. Throughout its dramatic history, it has been bombarded and besieged by many foreign powers.`
         },
         'geometry': {
             'type': 'Point',
@@ -1087,7 +1087,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Mount Kilimanjaro, Tanzania',
             'localname': null,
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />Africa's highest peak and the world's tallest free-standing mountain.`
         },
         'geometry': {
             'type': 'Point',
@@ -1100,7 +1100,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Mummelsee, Germany',
             'localname': null,
             'placeType': 'Travel',
-            'description': `My family used to vacation here when I was a boy.`
+            'description': `A scenic lake in the Black Forest region, visited during family vacations.`
         },
         'geometry': {
             'type': 'Point',
@@ -1113,7 +1113,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Munich, Germany',
             'localname': 'München',
             'placeType': 'Home',
-            'description': `I moved to Munich to attend college. One of my favorite cities in the whole world.`
+            'description': `Bavaria's capital city, former residence during university studies. One of Germany's major cultural and economic centers.`
         },
         'geometry': {
             'type': 'Point',
@@ -1126,7 +1126,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Mutterstadt, Germany',
             'localname': null,
             'placeType': 'Home',
-            'description': null
+            'description': `Former residential location in the Rhineland-Palatinate region.`
         },
         'geometry': {
             'type': 'Point',
@@ -1139,7 +1139,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Nakskov, Denmark',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Went here with a friend and stayed a couple of nights. This is also where I bought my leather pants. 🤤`
+            'description': `Danish town on the island of Lolland, visited during personal travels.`
         },
         'geometry': {
             'type': 'Point',
@@ -1152,7 +1152,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Nancy, France',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Nancy, a riverfront city in the northeastern French region of Grand Est, is known for its late baroque and art nouveau landmarks, some dating to its days as the former capital of the Duchy of Lorraine. Its focal point is the 18th-century Place Stanislas. This grand square, decorated with gilded wrought-iron gates and rococo fountains, rests by the ornate palaces and churches filling the city's medieval old town.<br /><br />I visited Nancy with our school band.`
+            'description': `A riverfront city in northeastern France's Grand Est region, known for its late baroque and art nouveau landmarks from its time as capital of the Duchy of Lorraine. The focal point is the 18th-century Place Stanislas with gilded wrought-iron gates and rococo fountains. Visited with school band.`
         },
         'geometry': {
             'type': 'Point',
@@ -1165,7 +1165,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Neuhofen, Germany',
             'localname': null,
             'placeType': 'Home',
-            'description': null
+            'description': `Former residential location in the Rhineland-Palatinate region.`
         },
         'geometry': {
             'type': 'Point',
@@ -1178,7 +1178,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'New Delhi, India',
             'localname': 'नई दिल्ली',
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />India's capital territory, containing the capital city New Delhi.`
         },
         'geometry': {
             'type': 'Point',
@@ -1191,7 +1191,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'New York City, New York',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Saw musicals here on and off Broadway. Visited Lady Liberty. Met my cousin Dennis and his friend.`
+            'description': `Visited for Broadway and Off-Broadway theatrical performances, the Statue of Liberty, and social engagements.`
         },
         'geometry': {
             'type': 'Point',
@@ -1204,7 +1204,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Newburgh, New York',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Ute, Michael and I visited  Orange County Choppers showroom.`
+            'description': `Visited the Orange County Choppers showroom facility.`
         },
         'geometry': {
             'type': 'Point',
@@ -1217,7 +1217,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Oklahoma City, Oklahoma',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Visited coworkers from Raytheon Aerospace while on vacation to the US.`
+            'description': `Visited colleagues from Raytheon Aerospace during US travels.`
         },
         'geometry': {
             'type': 'Point',
@@ -1230,7 +1230,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Olive Branch, Mississippi',
             'localname': null,
             'placeType': 'Work',
-            'description': `Attended the Nature Conservancy's Science Conference in October 2011.`
+            'description': `Attended The Nature Conservancy's Science Conference in October 2011.`
         },
         'geometry': {
             'type': 'Point',
@@ -1243,7 +1243,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Omaha, Nebraska',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Visited by brother Jeff and his family while traveling to Colorado.`
+            'description': `Visited family members during cross-country travels to Colorado.`
         },
         'geometry': {
             'type': 'Point',
@@ -1256,7 +1256,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Orlando, Florida',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Ute (and larger family), Michael and I vacationed here. We went to Disney World where I met up with my school friend Gerda.`
+            'description': `Vacation destination featuring visits to Walt Disney World theme parks.`
         },
         'geometry': {
             'type': 'Point',
@@ -1269,7 +1269,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Oslo, Norway',
             'localname': null,
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />The capital and most populous city of Norway.`
         },
         'geometry': {
             'type': 'Point',
@@ -1282,7 +1282,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Panama City, Panama',
             'localname': null,
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />The capital and largest city of Panama, known for the Panama Canal.`
         },
         'geometry': {
             'type': 'Point',
@@ -1295,7 +1295,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Paris, France',
             'localname': null,
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />France's capital, renowned for its art, fashion, gastronomy, and culture.`
         },
         'geometry': {
             'type': 'Point',
@@ -1308,7 +1308,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Partnachklamm, Germany',
             'localname': null,
             'placeType': 'Travel',
-            'description': `The Partnach Gorge is a deep gorge that has been incised by a mountain stream, the Partnach, in the Reintal valley near the south German town of Garmisch-Partenkirchen. My friend Thomas, his friend and I went here and visited the salt mines. It was tons of fun.`
+            'description': `The Partnach Gorge is a deep gorge carved by a mountain stream near Garmisch-Partenkirchen. Visited this natural attraction and nearby salt mines.`
         },
         'geometry': {
             'type': 'Point',
@@ -1321,7 +1321,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Pesaro, Italy',
             'localname': null,
             'placeType': 'Travel',
-            'description': `My family and I vacationed here at my Great Uncle Domenico's family house.`
+            'description': `Coastal city on the Adriatic Sea, visited during family vacations.`
         },
         'geometry': {
             'type': 'Point',
@@ -1334,7 +1334,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Pisa, Italy',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Stopped at the leaning tower while on the way to one of work locations.`
+            'description': `Visited the famous Leaning Tower during business travels in the region.`
         },
         'geometry': {
             'type': 'Point',
@@ -1347,7 +1347,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Port Isaac, England',
             'localname': null,
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />This is the spot where the tv series "Doc Martin" was shot.`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />A picturesque fishing village on the north Cornwall coast, filming location for the television series "Doc Martin".`
         },
         'geometry': {
             'type': 'Point',
@@ -1360,7 +1360,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Prague, Czechia',
             'localname': 'Praha',
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />The capital city of the Czech Republic, known for its Old Town Square, colorful baroque buildings, and medieval Astronomical Clock.`
         },
         'geometry': {
             'type': 'Point',
@@ -1373,7 +1373,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Reykjavík, Iceland',
             'localname': null,
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />Iceland's coastal capital, known for its dramatic landscapes and geothermal features.`
         },
         'geometry': {
             'type': 'Point',
@@ -1386,7 +1386,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Riccione, Italy',
             'localname': null,
             'placeType': 'Travel',
-            'description': `My family and I vacationed here over a number of summers. `
+            'description': `Popular resort town on the Adriatic coast, visited during multiple summer family vacations.`
         },
         'geometry': {
             'type': 'Point',
@@ -1412,7 +1412,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Rotterdam, Nederlanden',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Visited for work. Our helicopters were sent from this port to overseas.`
+            'description': `Major port city visited for business operations related to helicopter shipping logistics.`
         },
         'geometry': {
             'type': 'Point',
@@ -1425,7 +1425,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Saint Louis, Missouri',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Visited a couple of times for different reasons.`
+            'description': `Missouri's second-largest city, visited on multiple occasions.`
         },
         'geometry': {
             'type': 'Point',
@@ -1438,7 +1438,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Saint-Avold, France',
             'localname': null,
             'placeType': 'Travel',
-            'description': `The site of Europe's largest United States' World War II military cemetery, the Lorraine American Cemetery and Memorial, with the graves of 10,489 American soldiers who died during World War II.`
+            'description': `Home to Europe's largest United States World War II military cemetery, the Lorraine American Cemetery and Memorial, containing the graves of 10,489 American soldiers who died during World War II.`
         },
         'geometry': {
             'type': 'Point',
@@ -1451,7 +1451,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Salinas, California',
             'localname': null,
             'placeType': 'Home',
-            'description': `This is where my younger brother was born.`
+            'description': `City in California's Central Coast region, birthplace of family member.`
         },
         'geometry': {
             'type': 'Point',
@@ -1464,7 +1464,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Salzburg, Austria',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Visited with friends. We went to the casino and also walked around town.`
+            'description': `Historic Austrian city known for its baroque architecture and as the birthplace of Mozart. Visited for tourism and entertainment venues.`
         },
         'geometry': {
             'type': 'Point',
@@ -1477,7 +1477,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'San Francisco, California',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Robert, my uncle, and I came here during our USA vacation. This was the first and last time he had sushi. `
+            'description': `Major California city visited during US vacation travels.`
         },
         'geometry': {
             'type': 'Point',
@@ -1490,7 +1490,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'San José, Costa Rica',
             'localname': null,
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />The capital and largest city of Costa Rica.`
         },
         'geometry': {
             'type': 'Point',
@@ -1503,7 +1503,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'San Juan, Puerto Rico',
             'localname': null,
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />The capital and most populous city of Puerto Rico.`
         },
         'geometry': {
             'type': 'Point',
@@ -1516,7 +1516,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'San Marino',
             'localname': null,
             'placeType': 'Travel',
-            'description': `San Marino is a mountainous microstate surrounded by north-central Italy. Among the world's oldest republics, it retains much of its historic architecture. We visited a number of times while on vacation to Italy.`
+            'description': `A mountainous microstate surrounded by north-central Italy. Among the world's oldest republics, it retains much of its historic architecture. Visited during Italian vacations.`
         },
         'geometry': {
             'type': 'Point',
@@ -1529,7 +1529,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Sanibel Island, FL, USA',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Visited J.N. 'Ding' Darling National Wildlife Refuge while on vacation to Florida's west coast.`
+            'description': `Visited J.N. 'Ding' Darling National Wildlife Refuge on this barrier island known for its shell beaches.`
         },
         'geometry': {
             'type': 'Point',
@@ -1542,7 +1542,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Santa Barbara/Goleta, CA, USA',
             'localname': null,
             'placeType': 'Home',
-            'description': null
+            'description': `Former residential location in California's Central Coast region.`
         },
         'geometry': {
             'type': 'Point',
@@ -1555,7 +1555,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Seckenheim, Germany',
             'localname': null,
             'placeType': 'Work',
-            'description': `This is the town my office was in while working for Agusta Aerospace and then Raytheon Aerospace.`
+            'description': `District of Mannheim where offices were located during employment with Agusta Aerospace and Raytheon Aerospace.`
         },
         'geometry': {
             'type': 'Point',
@@ -1568,7 +1568,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Seoul, South Korea',
             'localname': '서울시',
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />The capital and largest metropolis of South Korea.`
         },
         'geometry': {
             'type': 'Point',
@@ -1581,7 +1581,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Siedelsbrunn, Germany',
             'localname': null,
             'placeType': 'Travel',
-            'description': `This was one of the places my whole family had day trips to during the winter. `
+            'description': `A destination for winter day trips during family excursions.`
         },
         'geometry': {
             'type': 'Point',
@@ -1607,7 +1607,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Stockholm, Sweden',
             'localname': null,
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />Sweden's capital, built on 14 islands connected by over 50 bridges.`
         },
         'geometry': {
             'type': 'Point',
@@ -1620,7 +1620,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Strasbourg, France',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Visited the cathedral. And while that is amazing, I did not enjoy anything else here… Enough said.`
+            'description': `Historic city featuring a remarkable cathedral. Capital of the Alsace region.`
         },
         'geometry': {
             'type': 'Point',
@@ -1633,7 +1633,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Strasburg, Virginia',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Visited my parents.`
+            'description': `Small town in Virginia's Shenandoah Valley, visited during family travels.`
         },
         'geometry': {
             'type': 'Point',
@@ -1646,7 +1646,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Stuttgart, Germany',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Visited friends from university.`
+            'description': `Capital of Baden-Württemberg, visited during university period.`
         },
         'geometry': {
             'type': 'Point',
@@ -1659,7 +1659,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Titisee, Germany',
             'localname': null,
             'placeType': 'Travel',
-            'description': `My family vacationed here when I was a child on several occasions.`
+            'description': `Lake resort in the Black Forest region, visited during childhood family vacations.`
         },
         'geometry': {
             'type': 'Point',
@@ -1672,7 +1672,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Tokyo, Japan',
             'localname': '東京都',
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />Japan's capital and most populous metropolis.`
         },
         'geometry': {
             'type': 'Point',
@@ -1698,7 +1698,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Vaduz, Liechtenstein',
             'localname': null,
             'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />`
+            'description': `🤞 Future Location. Place I want to visit.<br /><br />The capital of Liechtenstein, located along the Rhine River.`
         },
         'geometry': {
             'type': 'Point',
@@ -1711,7 +1711,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Vancouver, Canada',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Visited with Bruce, my brother, and others. We had dim sum and it was nice!!! `
+            'description': `Major Canadian west coast city visited during family travels.`
         },
         'geometry': {
             'type': 'Point',
@@ -1724,7 +1724,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Venice, Italy',
             'localname': 'Venezia',
             'placeType': 'Travel',
-            'description': `It is built on a group of 118 small islands that are separated by canals and linked by over 400 bridges. Richard, my coworker, and I visited while in the area for work.`
+            'description': `Built on a group of 118 small islands separated by canals and linked by over 400 bridges. Visited during business travels in the region.`
         },
         'geometry': {
             'type': 'Point',
@@ -1737,7 +1737,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Ventura, California',
             'localname': null,
             'placeType': 'Home',
-            'description': null
+            'description': `Former residential location in coastal Southern California.`
         },
         'geometry': {
             'type': 'Point',
@@ -1750,7 +1750,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Verona, Italy',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Visited while in the area for work.`
+            'description': `Historic Italian city visited during business travels in the region.`
         },
         'geometry': {
             'type': 'Point',
@@ -1763,7 +1763,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Vicenza, Italy',
             'localname': null,
             'placeType': 'Work',
-            'description': `While working for Raytheon Aerospace, my coworker, Richard, and I visited the office here.`
+            'description': `Business destination for Raytheon Aerospace office visits.`
         },
         'geometry': {
             'type': 'Point',
@@ -1776,7 +1776,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Piazza della Biade, Vicenza, Italy',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Ute and I explored downtown Vicenza.`
+            'description': `Historic square in downtown Vicenza explored during travels.`
         },
         'geometry': {
             'type': 'Point',
@@ -1789,7 +1789,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Santuario della Madonna di Monte Berico, Vicenza, Italy',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Marlene, Michelle, Ute and I visited Santuario della Madonna di Monte Berico.`
+            'description': `Visited this important Catholic pilgrimage site overlooking Vicenza.`
         },
         'geometry': {
             'type': 'Point',
@@ -1802,7 +1802,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Virginia Beach, Virginia',
             'localname': null,
             'placeType': 'Home',
-            'description': `I really despised Witchita, KS and this is where the boss moved me to after I told her that was thinking about leaving to go back home to Germany.`
+            'description': `Former residence on Virginia's Atlantic coast, relocated here through work transfer.`
         },
         'geometry': {
             'type': 'Point',
@@ -1815,7 +1815,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Wald-Michelbach, Germany',
             'localname': null,
             'placeType': 'Travel',
-            'description': `This was one of the places my whole family had day trips to during the winter. `
+            'description': `A destination for winter day trips during family excursions.`
         },
         'geometry': {
             'type': 'Point',
@@ -1828,7 +1828,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Washington, DC',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Been here countless times for many reasons.`
+            'description': `The United States capital, visited frequently for various purposes.`
         },
         'geometry': {
             'type': 'Point',
@@ -1841,7 +1841,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Wichita, Kansas',
             'localname': null,
             'placeType': 'Home',
-            'description': `When Raytheon Aerospace moved me to the USA, this horrible city is where they sent me.`
+            'description': `Former residence in Kansas, initial US relocation through Raytheon Aerospace.`
         },
         'geometry': {
             'type': 'Point',
@@ -1854,7 +1854,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Wissembourg, France',
             'localname': 'Weißenburg',
             'placeType': 'Travel',
-            'description': `Ute, Michael and I visited the absolutely beautiful place.`
+            'description': `Picturesque town in Alsace near the German border.`
         },
         'geometry': {
             'type': 'Point',
@@ -1867,7 +1867,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Worms, Germany',
             'localname': null,
             'placeType': 'Travel',
-            'description': `A pre-Roman foundation, Worms is one of the oldest cities in northern Europe. It was the capital of the Kingdom of the Burgundians in the early fifth century, hence is the scene of the medieval legends referring to this period, notably the first part of the Nibelungenlied. Worms has been a Roman Catholic bishopric since at least 614, and was an important palatinate of Charlemagne. Worms Cathedral is one of the imperial cathedrals and among the finest examples of Romanesque architecture in Germany.`
+            'description': `A pre-Roman foundation and one of the oldest cities in northern Europe. Former capital of the Kingdom of the Burgundians in the early fifth century and setting for medieval legends including the Nibelungenlied. Home to a Roman Catholic bishopric since 614 and an important palatinate of Charlemagne. Worms Cathedral exemplifies Romanesque architecture.`
         },
         'geometry': {
             'type': 'Point',
