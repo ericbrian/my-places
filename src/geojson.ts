@@ -538,14 +538,14 @@ const geoJson: FeatureCollection<Point> = {
     {
         'type': 'Feature',
         'properties': {
-            'place': 'Florence, Italy',
+            'place': 'Uffizi Galleries, Florence, Italy',
             'localname': null,
-            'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />I want to go to the Uffizi Gallery. `
+            'placeType': 'Travel',
+            'description': `Visited with friends. I got to see Botticelli's Birth of Venus! :)`
         },
         'geometry': {
             'type': 'Point',
-            'coordinates': [11.24626, 43.77925,]
+            'coordinates': [11.25528, 43.76833]
         }
     },
     {
@@ -824,6 +824,19 @@ const geoJson: FeatureCollection<Point> = {
     {
         'type': 'Feature',
         'properties': {
+            'place': 'Gera Lario, Lake Como, Italy',
+            'localname': null,
+            'placeType': 'Travel',
+            'description': `Lake Como, of glacial origin in Lombardy, Italy, is the third-largest lake in Italy. Known for its characteristic 'Y' shape, it's a popular retreat for the wealthy, with numerous villas and palaces along its shores. This is where my friends and I vacationed for a week 2024.`
+        },
+        'geometry': {
+            'type': 'Point',
+            'coordinates': [9.367, 46.167]
+        }
+    },
+    {
+        'type': 'Feature',
+        'properties': {
             'place': 'Las Vegas, Nevada',
             'localname': null,
             'placeType': 'Travel',
@@ -1032,14 +1045,14 @@ const geoJson: FeatureCollection<Point> = {
     {
         'type': 'Feature',
         'properties': {
-            'place': 'Mexico City, Mexico',
+            'place': 'Hilton Mexico City Reforma, Mexico City, Mexico',
             'localname': 'Ciudad de México',
-            'placeType': 'Future',
-            'description': `🤞 Future Location. Place I want to visit.<br /><br />`
+            'placeType': 'Work',
+            'description': `I attended the Nature Conservancy's Science Conference in 2024.`
         },
         'geometry': {
             'type': 'Point',
-            'coordinates': [-99.1332, 19.4326,]
+            'coordinates': [-99.1465194, 19.4344500,]
         }
     },
     {
@@ -1412,7 +1425,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Saint Louis, Missouri',
             'localname': null,
             'placeType': 'Travel',
-            'description': `VIsited a couple of times for different reasons. I always had a blast.`
+            'description': `Visited a couple of times for different reasons. I always had a blast.`
         },
         'geometry': {
             'type': 'Point',
@@ -1755,6 +1768,32 @@ const geoJson: FeatureCollection<Point> = {
         'geometry': {
             'type': 'Point',
             'coordinates': [11.535421, 45.545479,]
+        }
+    },
+    {
+        'type': 'Feature',
+        'properties': {
+            'place': 'Piazza della Biade, Vicenza, Italy',
+            'localname': null,
+            'placeType': 'Travel',
+            'description': `Ute and I explored downtown Vicenza.`
+        },
+        'geometry': {
+            'type': 'Point',
+            'coordinates': [11.547450, 45.547805,],
+        }
+    },
+    {
+        'type': 'Feature',
+        'properties': {
+            'place': 'Santuario della Madonna di Monte Berico, Vicenza, Italy',
+            'localname': null,
+            'placeType': 'Travel',
+            'description': `Marlene, Michelle, Ute and I visited Santuario della Madonna di Monte Berico.`
+        },
+        'geometry': {
+            'type': 'Point',
+            'coordinates': [11.544958, 45.535145,],
         }
     },
     {
