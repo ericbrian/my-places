@@ -187,7 +187,7 @@ const geoJsonMerged: FeatureCollection<Point> = {
     {
         'type': 'Feature',
         'properties': {
-            'place': 'Baltimore, Maryland',
+            'place': 'Balimore, Maryland',
             'localname': null,
             'placeType': 'Travel',
             'description': `The Inner Harbor is located at the mouth of Jones Falls, creating the wide and short northwest branch of the Patapsco River. The district includes any water west of a line drawn between the foot of President Street and the American Visionary Art Museum.<br /><br />Ute and I went to Inner Harbor back in 1997 while we were on vacation in the US. Then when I moved to the US, went here a couple of times.`
@@ -1835,27 +1835,7 @@ const geoJsonMerged: FeatureCollection<Point> = {
             'coordinates': [8.350718, 49.634137,]
         }
     },
-    ].sort((a, b) => {
-        // Parse place into city and country
-        const parsePlace = (place: string) => {
-            const parts = place.split(',').map(p => p.trim());
-            const city = parts[0] || '';
-            const country = parts[parts.length - 1] || '';
-            return { city, country };
-        };
-        
-        const placeA = parsePlace(a.properties.place);
-        const placeB = parsePlace(b.properties.place);
-        
-        // First sort by country
-        const countryCompare = placeA.country.localeCompare(placeB.country);
-        if (countryCompare !== 0) {
-            return countryCompare;
-        }
-        
-        // If countries are the same, sort by city
-        return placeA.city.localeCompare(placeB.city);
-    })
+    ]
 };
 
 export default geoJsonMerged;
