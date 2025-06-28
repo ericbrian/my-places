@@ -125,7 +125,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Annapolis, Maryland',
             'localname': null,
             'placeType': 'Work',
-            'description': `Annapolis is the capital of the U.S. state of Maryland.<br/><br/>The company I work for had a departmental meeting here.`
+            'description': `My company's IT department had a meeting here.`
         },
         'geometry': {
             'type': 'Point',
@@ -463,7 +463,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Denver, Colorado',
             'localname': null,
             'placeType': 'Work',
-            'description': null
+            'description': 'My team had a team retreat there. On the way home, all flights were delayed since President Obama was in town and was going to fly out.'
         },
         'geometry': {
             'type': 'Point',
@@ -1230,7 +1230,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Olive Branch, Mississippi',
             'localname': null,
             'placeType': 'Work',
-            'description': `Attended the Nature Conservancy's Science Conference.`
+            'description': `Attended the Nature Conservancy's Science Conference in October 2011.`
         },
         'geometry': {
             'type': 'Point',
@@ -1425,7 +1425,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Saint Louis, Missouri',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Visited a couple of times for different reasons. I always had a blast.`
+            'description': `Visited a couple of times for different reasons.`
         },
         'geometry': {
             'type': 'Point',
@@ -1711,7 +1711,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Vancouver, Canada',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Visited with Bruce, my brother, and his friend. We had dimsum and it was nice!!! `
+            'description': `Visited with Bruce, my brother, and others. We had dim sum and it was nice!!! `
         },
         'geometry': {
             'type': 'Point',
@@ -1802,7 +1802,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Virginia Beach, Virginia',
             'localname': null,
             'placeType': 'Home',
-            'description': `I really despised Witchita, KS and this is where my big boss moved me to after I told her that was thinking about leaving to go back home to Germany.`
+            'description': `I really despised Witchita, KS and this is where the boss moved me to after I told her that was thinking about leaving to go back home to Germany.`
         },
         'geometry': {
             'type': 'Point',
