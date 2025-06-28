@@ -87,25 +87,25 @@ const workSymbolLayerStyle: LayerProps = {
     },
 };
 
-// Heart-like markers for "Pleasure" places
-const pleasureLayerStyle: LayerProps = {
-    id: "pleasure-points",
+// Heart-like markers for "Travel" places
+const travelLayerStyle: LayerProps = {
+    id: "travel-points",
     type: "circle",
-    filter: ["==", ["get", "placeType"], "Pleasure"],
+    filter: ["==", ["get", "placeType"], "Travel"],
     paint: {
         "circle-radius": 8,
-        "circle-color": "#E91E63", // Pink for pleasure
+        "circle-color": "#E91E63", // Pink for Travel
         "circle-stroke-width": 2,
         "circle-stroke-color": "#FFFFFF",
         "circle-opacity": 0.9,
     },
 };
 
-// Pleasure symbol layer
-const pleasureSymbolLayerStyle: LayerProps = {
-    id: "pleasure-symbols",
+// Travel symbol layer
+const travelSymbolLayerStyle: LayerProps = {
+    id: "travel-symbols",
     type: "symbol",
-    filter: ["==", ["get", "placeType"], "Pleasure"],
+    filter: ["==", ["get", "placeType"], "Travel"],
     layout: {
         "text-field": "🎉",
         "text-size": 12,
@@ -218,10 +218,10 @@ function MapComponent() {
             interactiveLayerIds={[
                 "home-points",
                 "work-points",
-                "pleasure-points",
+                "travel-points",
                 "home-symbols",
                 "work-symbols",
-                "pleasure-symbols",
+                "travel-symbols",
                 ...(showFutureLocations ? ["future-points", "future-symbols"] : []),
             ]}
         >
@@ -232,33 +232,22 @@ function MapComponent() {
                 {showFutureLocations && <Layer {...futureSymbolLayerStyle} />}
                 <Layer {...workLayerStyle} />
                 <Layer {...workSymbolLayerStyle} />
-                <Layer {...pleasureLayerStyle} />
-                <Layer {...pleasureSymbolLayerStyle} />
+                <Layer {...travelLayerStyle} />
+                <Layer {...travelSymbolLayerStyle} />
             </Source>
             {popupInfo && (
                 <Popup longitude={popupInfo.longitude} latitude={popupInfo.latitude} onClose={() => setPopupInfo(null)} closeButton={true} closeOnClick={false} maxWidth="400px">
                     <div style={{ padding: "8px" }}>
                         <div style={{ display: "flex", alignItems: "flex-start", gap: "8px", marginBottom: "8px" }}>
-                            <span style={{ fontSize: "16px", flexShrink: 0 }}>
+                            <span style={{ fontSize: "16px", flexShrink: 0, lineHeight: 1.2 }}>
                                 {popupInfo.placeType === "Home" && "🏠"}
                                 {popupInfo.placeType === "Work" && "💼"}
-                                {popupInfo.placeType === "Pleasure" && "🎉"}
+                                {popupInfo.placeType === "Travel" && "🎉"}
                                 {popupInfo.placeType === "Future" && "⭐"}
                             </span>
-                            <div>
+                            <div style={{ display: "flex", flexDirection: "column" }}>
                                 <h3 style={{ margin: "0", color: "#333", lineHeight: "1.2" }}>{popupInfo.place}</h3>
-                                {popupInfo.localname && (
-                                    <h4
-                                        style={{
-                                            margin: "0",
-                                            color: "#555",
-                                            fontWeight: "normal",
-                                            fontStyle: "italic",
-                                        }}
-                                    >
-                                        {popupInfo.localname}
-                                    </h4>
-                                )}
+                                {popupInfo.localname && <h4 style={{ margin: "0", color: "#555", fontWeight: "normal", fontStyle: "italic" }}>{popupInfo.localname}</h4>}
                             </div>
                         </div>
                         <p
@@ -270,7 +259,7 @@ function MapComponent() {
                                         ? "#E8F5E8"
                                         : popupInfo.placeType === "Work"
                                         ? "#E3F2FD"
-                                        : popupInfo.placeType === "Pleasure"
+                                        : popupInfo.placeType === "Travel"
                                         ? "#FCE4EC"
                                         : "#FFF3E0",
                                 color:
@@ -278,7 +267,7 @@ function MapComponent() {
                                         ? "#4CAF50"
                                         : popupInfo.placeType === "Work"
                                         ? "#2196F3"
-                                        : popupInfo.placeType === "Pleasure"
+                                        : popupInfo.placeType === "Travel"
                                         ? "#E91E63"
                                         : "#FF9800",
                                 borderRadius: "4px",
@@ -421,7 +410,7 @@ function MapComponent() {
                         >
                             🎉
                         </div>
-                        <span style={{ color: "#333", fontWeight: "bold" }}>Pleasure</span>
+                        <span style={{ color: "#333", fontWeight: "bold" }}>Travel</span>
                     </div>
                     <div
                         style={{
