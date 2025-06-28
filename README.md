@@ -1,69 +1,64 @@
-# React + TypeScript + Vite
+# Eric's Places
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a personal map application that showcases significant locations in my life, categorized into different types such as home, work, and travel destinations. It's built with React and Mapbox GL, providing an interactive and visually appealing way to explore these places.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   **Interactive Map**: Uses Mapbox GL to display a world map.
+-   **Categorized Places**: Locations are categorized as:
+    -   🏠 **Home**: Places I've lived.
+    -   💼 **Work**: Places I've worked.
+    -   🎉 **Travel**: Places I've visited for leisure.
+    -   ⭐ **Future**: Places I plan to visit.
+-   **Pop-up Information**: Clicking on a location marker displays a pop-up with more details about the place.
+-   **Dynamic Sizing**: The map automatically adjusts to fit all the markers when the page loads.
+-   **Toggleable Layers**: The "Future" locations can be toggled on and off.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+-   **Frontend**: React, TypeScript, Vite
+-   **Map**: Mapbox GL, react-map-gl
+-   **Backend**: Express.js (for serving the static build)
+-   **Deployment**: Configured for Heroku
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### Prerequisites
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+-   Node.js (v23.x recommended)
+-   npm
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Installation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1.  Clone the repository:
+    ```sh
+    git clone https://github.com/ericbrian/my-places.git
+    cd my-places
+    ```
+2.  Install dependencies:
+    ```sh
+    npm install
+    ```
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Running the Application
+
+1.  **Development Mode**:
+    To run the application in development mode with hot-reloading:
+    ```sh
+    npm run dev
+    ```
+
+2.  **Production Mode**:
+    To build the application and run the production server:
+    ```sh
+    # Build the React application
+    npm run build
+
+    # Start the Express server
+    npm start
+    ```
+    The application will be available at `http://localhost:3000`.
+
+## Deployment
+
+This application is configured for deployment on [Heroku](https://www.heroku.com/). The `Procfile` specifies the command to start the web server.
