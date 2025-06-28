@@ -23,14 +23,14 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Install Heroku CLI
-        run: curl https://cli-assets.heroku.com/install.sh | sh
-
       - name: Deploy to Heroku
-        uses: akhileshns/heroku-deploy@v3.13.15
-        with:
-          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: ${{secrets.HEROKU_APP_NAME}} # Please change this to your app's name on Heroku
-          heroku_email: ${{secrets.HEROKU_EMAIL}} # Please change this to your Heroku account email
-          usedocker: false
-          appdir: "."
+        env:
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+          HEROKU_APP_NAME: ${{ secrets.HEROKU_APP_NAME }}
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          git checkout -b heroku-deploy
+          git add -f server.js package.json package-lock.json Procfile dist
+          git commit -m "Deploy to Heroku"
+          git push -f https://heroku:${HEROKU_API_KEY}@git.heroku.com/${HEROKU_APP_NAME}.git heroku-deploy:main
