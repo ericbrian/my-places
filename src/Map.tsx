@@ -146,22 +146,30 @@ function MapComponent() {
 
     const bounds = calculateBounds();
 
-    const [viewState, setViewState] = useState({
-        longitude: 10,
-        latitude: 30,
-        zoom: 2,
-    });
+    // Calculate initial viewState from bounds to prevent jumping
+    const calculateInitialZoom = () => {
+        const lngDiff = bounds.fitBounds[1][0] - bounds.fitBounds[0][0];
+        const latDiff = bounds.fitBounds[1][1] - bounds.fitBounds[0][1];
+        const maxDiff = Math.max(lngDiff, latDiff);
+
+        // Rough approximation for zoom level based on degree span
+        if (maxDiff > 100) return 1;
+        if (maxDiff > 50) return 2;
+        if (maxDiff > 20) return 3;
+        if (maxDiff > 10) return 4;
+        if (maxDiff > 5) return 5;
+        return 6;
+    };
+
+    const initialViewState = {
+        longitude: (bounds.fitBounds[0][0] + bounds.fitBounds[1][0]) / 2,
+        latitude: (bounds.fitBounds[0][1] + bounds.fitBounds[1][1]) / 2,
+        zoom: calculateInitialZoom(),
+    };
+
+    const [viewState, setViewState] = useState(initialViewState);
 
     const [showFutureLocations, setShowFutureLocations] = useState(false);
-
-    const onMapLoad = () => {
-        if (mapRef.current) {
-            mapRef.current.fitBounds(bounds.fitBounds, {
-                padding: { top: 80, bottom: 40, left: 40, right: 200 }, // Extra padding for title and legend
-                maxZoom: 6, // Prevent zooming in too much
-            });
-        }
-    };
 
     const resetMap = () => {
         if (mapRef.current) {
@@ -215,7 +223,6 @@ function MapComponent() {
                 {...viewState}
                 mapboxAccessToken={mapboxAccessToken}
                 onMove={(evt: ViewStateChangeEvent) => setViewState(evt.viewState)}
-                onLoad={onMapLoad}
                 onClick={onClick}
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
