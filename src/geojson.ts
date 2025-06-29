@@ -629,19 +629,6 @@ const geoJson: FeatureCollection<Point> = {
     {
         'type': 'Feature',
         'properties': {
-            'place': 'Guadalajara, Mexico',
-            'localname': null,
-            'placeType': 'Future',
-            'description': `🤞 Future Location. Mexico's second-largest city, known for its colonial architecture and mariachi music tradition.`
-        },
-        'geometry': {
-            'type': 'Point',
-            'coordinates': [-103.4071722, 20.6738573,]
-        }
-    },
-    {
-        'type': 'Feature',
-        'properties': {
             'place': 'Hanoi, Vietnam',
             'localname': 'Hà Nội',
             'placeType': 'Future',

@@ -224,7 +224,7 @@ function MapComponent() {
                 mapStyle="mapbox://styles/mapbox/streets-v12"
                 projection="mercator"
                 maxBounds={bounds.maxBounds}
-                minZoom={1}
+                minZoom={0}
                 interactiveLayerIds={[
                     "home-points",
                     "work-points",
@@ -275,18 +275,18 @@ function MapComponent() {
                                         popupInfo.placeType === "Home"
                                             ? "#E8F5E8"
                                             : popupInfo.placeType === "Work"
-                                            ? "#E3F2FD"
-                                            : popupInfo.placeType === "Travel"
-                                            ? "#FCE4EC"
-                                            : "#FFF3E0",
+                                                ? "#E3F2FD"
+                                                : popupInfo.placeType === "Travel"
+                                                    ? "#FCE4EC"
+                                                    : "#FFF3E0",
                                     color:
                                         popupInfo.placeType === "Home"
                                             ? "#4CAF50"
                                             : popupInfo.placeType === "Work"
-                                            ? "#2196F3"
-                                            : popupInfo.placeType === "Travel"
-                                            ? "#E91E63"
-                                            : "#FF9800",
+                                                ? "#2196F3"
+                                                : popupInfo.placeType === "Travel"
+                                                    ? "#E91E63"
+                                                    : "#FF9800",
                                     borderRadius: "4px",
                                     fontSize: "12px",
                                     fontWeight: "bold",
