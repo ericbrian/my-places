@@ -603,35 +603,41 @@ function MapComponent() {
                             )}
                         </div>
                     </div>
-                </div>
-                <div
-                    style={{
-                        position: "absolute",
-                        bottom: "20px",
-                        right: "20px",
-                        zIndex: 1,
-                    }}
-                >
-                    <button
-                        onClick={resetMap}
-                        style={{
-                            padding: "8px 12px",
-                            fontSize: "14px",
-                            fontWeight: "bold",
-                            color: "#fff",
-                            backgroundColor: "#007bff",
-                            border: "none",
-                            borderRadius: "4px",
-                            cursor: "pointer",
-                            boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
-                            transition: "background-color 0.3s, transform 0.1s",
-                        }}
-                        onMouseDown={(e) => (e.currentTarget.style.transform = "scale(0.95)")}
-                        onMouseUp={(e) => (e.currentTarget.style.transform = "scale(1)")}
-                        onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
-                    >
-                        Reset View
-                    </button>
+
+                    {/* Reset Button */}
+                    <div style={{ marginTop: "16px", paddingTop: "12px", borderTop: "1px solid rgba(0, 0, 0, 0.1)" }}>
+                        <button
+                            onClick={resetMap}
+                            style={{
+                                width: "100%",
+                                padding: "8px 12px",
+                                fontSize: "13px",
+                                fontWeight: "600",
+                                color: "#fff",
+                                backgroundColor: "#6c757d",
+                                border: "none",
+                                borderRadius: "6px",
+                                cursor: "pointer",
+                                boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
+                                transition: "all 0.2s ease",
+                                fontFamily: "system-ui, -apple-system, sans-serif",
+                            }}
+                            onMouseEnter={(e) => {
+                                e.currentTarget.style.backgroundColor = "#5a6268";
+                                e.currentTarget.style.transform = "translateY(-1px)";
+                                e.currentTarget.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.15)";
+                            }}
+                            onMouseLeave={(e) => {
+                                e.currentTarget.style.backgroundColor = "#6c757d";
+                                e.currentTarget.style.transform = "translateY(0)";
+                                e.currentTarget.style.boxShadow = "0 2px 4px rgba(0, 0, 0, 0.1)";
+                            }}
+                            onMouseDown={(e) => (e.currentTarget.style.transform = "translateY(0) scale(0.98)")}
+                            onMouseUp={(e) => (e.currentTarget.style.transform = "translateY(-1px) scale(1)")}
+                        >
+                            🔄 Reset View
+                        </button>
+                    </div>
                 </div>
             </Map>
         </>
