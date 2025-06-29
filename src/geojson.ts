@@ -25,14 +25,14 @@ const geoJson: FeatureCollection<Point> = {
         },
         'geometry': {
             'type': 'Point',
-            'coordinates': [77.909973, 27.1763098,]
+            'coordinates': [78.042068, 27.173891,]
         }
     },
     {
         'type': 'Feature',
         'properties': {
             'place': 'al-Kobar, Saudi Arabia',
-            'localname': 'الخبر المملكة العربية السعودية‎',
+            'localname': 'الخبر المملكة العربية السعودية',
             'placeType': 'Work',
             'description': `During the First Gulf War, I was stationed here while employed by Agusta Aerospace, managing financial operations for personnel supporting aircraft maintenance operations.`
         },
@@ -1299,7 +1299,7 @@ const geoJson: FeatureCollection<Point> = {
         },
         'geometry': {
             'type': 'Point',
-            'coordinates': [11.119327, 47.468324,]
+            'coordinates': [11.12162, 47.46555]
         }
     },
     {
@@ -1425,7 +1425,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Saint-Avold, France',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Home to Europe's largest United States World War II military cemetery, the Lorraine American Cemetery and Memorial, containing the graves of 10,489 American soldiers who died during World War II.`
+            'description': `Home to Europe's largest US World War II military cemetery, the Lorraine American Cemetery and Memorial, containing the graves of 10,489 American soldiers who died during World War II.`
         },
         'geometry': {
             'type': 'Point',
