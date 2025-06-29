@@ -45,8 +45,5 @@ jobs:
           # Create app if it doesn't exist (will fail silently if it exists)
           heroku create $HEROKU_APP_NAME --buildpack https://buildpack-registry.s3.amazonaws.com/buildpacks/heroku/nodejs.tgz || true
 
-          # Add Heroku remote
-          heroku git:remote -a $HEROKU_APP_NAME
-
-          # Deploy
-          git push heroku HEAD:main --force
+          # Deploy using git with API key authentication
+          git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git HEAD:main --force
