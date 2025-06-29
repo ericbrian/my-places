@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import Map, { Source, Layer, Popup } from "react-map-gl/mapbox";
 import type { ViewStateChangeEvent, LayerProps, MapMouseEvent, MapRef } from "react-map-gl/mapbox";
 
@@ -154,16 +154,14 @@ function MapComponent() {
 
     const [showFutureLocations, setShowFutureLocations] = useState(false);
 
-    // Fit map to bounds when component mounts
-    useEffect(() => {
+    const onMapLoad = () => {
         if (mapRef.current) {
             mapRef.current.fitBounds(bounds.fitBounds, {
                 padding: { top: 80, bottom: 40, left: 40, right: 200 }, // Extra padding for title and legend
                 maxZoom: 6, // Prevent zooming in too much
             });
         }
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
+    };
 
     const resetMap = () => {
         if (mapRef.current) {
@@ -217,6 +215,7 @@ function MapComponent() {
                 {...viewState}
                 mapboxAccessToken={mapboxAccessToken}
                 onMove={(evt: ViewStateChangeEvent) => setViewState(evt.viewState)}
+                onLoad={onMapLoad}
                 onClick={onClick}
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
