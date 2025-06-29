@@ -428,7 +428,6 @@ function MapComponent() {
                         zIndex: 1,
                     }}
                 >
-                    <h4 style={{ margin: "0 0 12px 0", fontSize: "16px", color: "#333" }}>Place Types</h4>
                     <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
                         <div
                             style={{
