@@ -172,12 +172,7 @@ function MapComponent() {
     const [showFutureLocations, setShowFutureLocations] = useState(false);
 
     const resetMap = () => {
-        if (mapRef.current) {
-            mapRef.current.fitBounds(bounds.fitBounds, {
-                padding: { top: 80, bottom: 40, left: 40, right: 200 }, // Extra padding for title and legend
-                maxZoom: 6, // Prevent zooming in too much
-            });
-        }
+        setViewState(initialViewState);
     };
 
     const [popupInfo, setPopupInfo] = useState<{
