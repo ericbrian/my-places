@@ -340,7 +340,7 @@ function MapComponent() {
                                         style={{
                                             display: "inline-flex",
                                             alignItems: "center",
-                                            padding: "8px 16px",
+                                            padding: "4px 16px",
                                             backgroundColor:
                                                 popupInfo.placeType === "Home"
                                                     ? "rgba(76, 175, 80, 0.1)"
