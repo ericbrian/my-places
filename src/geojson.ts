@@ -645,7 +645,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Hanoi, Vietnam',
             'localname': 'Hà Nội',
             'placeType': 'Future',
-            'description': `🤞 Future Location. Vietnam's capital city, known for its centuries-old architecture and rich cultural heritage.<br/><a href="https://thenotecoffee.com/" target="_blank">The Note Coffee</a> <a class="emoji" href="https://goo.gl/maps/Ft5KSmKZYxrYhMiQ8" alt="See on Map"  target="_blank">🗺️</a>`
+            'description': `🤞 Future Location. Vietnam's capital city, known for its centuries-old architecture and rich cultural heritage.`
         },
         'geometry': {
             'type': 'Point',
