@@ -253,50 +253,132 @@ function MapComponent() {
                         onClose={() => setPopupInfo(null)}
                         closeButton={true}
                         closeOnClick={false}
-                        maxWidth="400px"
+                        className="custom-popup"
                     >
-                        <div style={{ padding: "8px" }}>
-                            <div style={{ display: "flex", alignItems: "flex-start", gap: "8px", marginBottom: "8px" }}>
-                                <span style={{ fontSize: "16px", flexShrink: 0, lineHeight: 1.2 }}>
-                                    {popupInfo.placeType === "Home" && "🏠"}
-                                    {popupInfo.placeType === "Work" && "💼"}
-                                    {popupInfo.placeType === "Travel" && "🎉"}
-                                    {popupInfo.placeType === "Future" && "⭐"}
-                                </span>
-                                <div style={{ display: "flex", flexDirection: "column" }}>
-                                    <h3 style={{ margin: "0", color: "#333", lineHeight: "1.2" }}>{popupInfo.place}</h3>
-                                    {popupInfo.localname && <h4 style={{ margin: "0", color: "#555", fontWeight: "normal", fontStyle: "italic" }}>{popupInfo.localname}</h4>}
-                                </div>
-                            </div>
-                            <p
+                        <>
+                            {/* Header section with gradient background */}
+                            <div
                                 style={{
-                                    margin: "0 0 8px 0",
-                                    padding: "4px 8px",
-                                    backgroundColor:
+                                    background: `linear-gradient(135deg, ${
                                         popupInfo.placeType === "Home"
-                                            ? "#E8F5E8"
+                                            ? "#4CAF50, #66BB6A"
                                             : popupInfo.placeType === "Work"
-                                            ? "#E3F2FD"
+                                            ? "#2196F3, #42A5F5"
                                             : popupInfo.placeType === "Travel"
-                                            ? "#FCE4EC"
-                                            : "#FFF3E0",
-                                    color:
-                                        popupInfo.placeType === "Home"
-                                            ? "#4CAF50"
-                                            : popupInfo.placeType === "Work"
-                                            ? "#2196F3"
-                                            : popupInfo.placeType === "Travel"
-                                            ? "#E91E63"
-                                            : "#FF9800",
-                                    borderRadius: "4px",
-                                    fontSize: "12px",
-                                    fontWeight: "bold",
+                                            ? "#E91E63, #EC407A"
+                                            : "#FF9800, #FFA726"
+                                    })`,
+                                    padding: "20px",
+                                    color: "white",
+                                    position: "relative",
                                 }}
                             >
-                                {popupInfo.placeType}
-                            </p>
-                            <div style={{ fontSize: "14px", lineHeight: "1.4", color: "#333" }} dangerouslySetInnerHTML={{ __html: popupInfo.description }} />
-                        </div>
+                                <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                                    <div
+                                        style={{
+                                            fontSize: "24px",
+                                            background: "rgba(255, 255, 255, 0.2)",
+                                            borderRadius: "50%",
+                                            width: "48px",
+                                            height: "48px",
+                                            display: "flex",
+                                            alignItems: "center",
+                                            justifyContent: "center",
+                                            backdropFilter: "blur(10px)",
+                                        }}
+                                    >
+                                        {popupInfo.placeType === "Home" && "🏠"}
+                                        {popupInfo.placeType === "Work" && "💼"}
+                                        {popupInfo.placeType === "Travel" && "🎉"}
+                                        {popupInfo.placeType === "Future" && "⭐"}
+                                    </div>
+                                    <div style={{ flex: 1 }}>
+                                        <h3
+                                            style={{
+                                                margin: "0 0 4px 0",
+                                                fontSize: "18px",
+                                                fontWeight: "700",
+                                                lineHeight: "1.2",
+                                                textShadow: "0 1px 2px rgba(0, 0, 0, 0.1)",
+                                            }}
+                                        >
+                                            {popupInfo.place}
+                                        </h3>
+                                        {popupInfo.localname && (
+                                            <h4
+                                                style={{
+                                                    margin: "0",
+                                                    fontSize: "14px",
+                                                    fontWeight: "400",
+                                                    fontStyle: "italic",
+                                                    opacity: 0.9,
+                                                    textShadow: "0 1px 2px rgba(0, 0, 0, 0.1)",
+                                                }}
+                                            >
+                                                {popupInfo.localname}
+                                            </h4>
+                                        )}
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Content section */}
+                            <div style={{ padding: "20px" }}>
+                                <div
+                                    style={{
+                                        fontSize: "15px",
+                                        lineHeight: "1.6",
+                                        color: "#2c3e50",
+                                        marginBottom: "20px",
+                                    }}
+                                    dangerouslySetInnerHTML={{ __html: popupInfo.description }}
+                                />
+
+                                {/* Type pill */}
+                                <div style={{ display: "flex", justifyContent: "flex-start" }}>
+                                    <span
+                                        style={{
+                                            display: "inline-flex",
+                                            alignItems: "center",
+                                            padding: "8px 16px",
+                                            backgroundColor:
+                                                popupInfo.placeType === "Home"
+                                                    ? "rgba(76, 175, 80, 0.1)"
+                                                    : popupInfo.placeType === "Work"
+                                                    ? "rgba(33, 150, 243, 0.1)"
+                                                    : popupInfo.placeType === "Travel"
+                                                    ? "rgba(233, 30, 99, 0.1)"
+                                                    : "rgba(255, 152, 0, 0.1)",
+                                            color:
+                                                popupInfo.placeType === "Home"
+                                                    ? "#2E7D32"
+                                                    : popupInfo.placeType === "Work"
+                                                    ? "#1565C0"
+                                                    : popupInfo.placeType === "Travel"
+                                                    ? "#C2185B"
+                                                    : "#E65100",
+                                            borderRadius: "20px",
+                                            fontSize: "12px",
+                                            fontWeight: "600",
+                                            textTransform: "uppercase",
+                                            letterSpacing: "0.8px",
+                                            border: `2px solid ${
+                                                popupInfo.placeType === "Home"
+                                                    ? "rgba(76, 175, 80, 0.2)"
+                                                    : popupInfo.placeType === "Work"
+                                                    ? "rgba(33, 150, 243, 0.2)"
+                                                    : popupInfo.placeType === "Travel"
+                                                    ? "rgba(233, 30, 99, 0.2)"
+                                                    : "rgba(255, 152, 0, 0.2)"
+                                            }`,
+                                            transition: "all 0.2s ease-in-out",
+                                        }}
+                                    >
+                                        {popupInfo.placeType}
+                                    </span>
+                                </div>
+                            </div>
+                        </>
                     </Popup>
                 )}
 
