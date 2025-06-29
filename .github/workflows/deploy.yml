@@ -30,9 +30,22 @@ jobs:
           curl https://cli-assets.heroku.com/install.sh | sh
 
       - name: Deploy to Heroku
-        uses: akhileshns/heroku-deploy@v3.13.15
-        with:
-          heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
-          heroku_app_name: ${{ secrets.HEROKU_APP_NAME }}
-          heroku_email: ${{secrets.HEROKU_EMAIL}}
-          buildpack: "https://buildpack-registry.s3.amazonaws.com/buildpacks/heroku/nodejs.tgz"
+        env:
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+          HEROKU_APP_NAME: ${{ secrets.HEROKU_APP_NAME }}
+        run: |
+          # Authenticate with Heroku
+          echo $HEROKU_API_KEY | heroku auth:token
+
+          # Create app if it doesn't exist (will fail silently if it exists)
+          heroku create $HEROKU_APP_NAME --buildpack https://buildpack-registry.s3.amazonaws.com/buildpacks/heroku/nodejs.tgz || true
+
+          # Add Heroku remote
+          heroku git:remote -a $HEROKU_APP_NAME
+
+          # Configure git
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+
+          # Deploy
+          git push heroku HEAD:main --force
