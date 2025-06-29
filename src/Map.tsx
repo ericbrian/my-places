@@ -170,6 +170,9 @@ function MapComponent() {
     const [viewState, setViewState] = useState(initialViewState);
 
     const [showFutureLocations, setShowFutureLocations] = useState(false);
+    const [showHomeLocations, setShowHomeLocations] = useState(true);
+    const [showWorkLocations, setShowWorkLocations] = useState(true);
+    const [showTravelLocations, setShowTravelLocations] = useState(true);
 
     const resetMap = () => {
         setViewState(initialViewState);
@@ -227,24 +230,21 @@ function MapComponent() {
                 maxBounds={bounds.maxBounds}
                 minZoom={0}
                 interactiveLayerIds={[
-                    "home-points",
-                    "work-points",
-                    "travel-points",
-                    "home-symbols",
-                    "work-symbols",
-                    "travel-symbols",
+                    ...(showHomeLocations ? ["home-points", "home-symbols"] : []),
+                    ...(showWorkLocations ? ["work-points", "work-symbols"] : []),
+                    ...(showTravelLocations ? ["travel-points", "travel-symbols"] : []),
                     ...(showFutureLocations ? ["future-points", "future-symbols"] : []),
                 ]}
             >
                 <Source id="my-data" type="geojson" data={geoJson}>
-                    <Layer {...homeLayerStyle} />
-                    <Layer {...homeSymbolLayerStyle} />
+                    {showHomeLocations && <Layer {...homeLayerStyle} />}
+                    {showHomeLocations && <Layer {...homeSymbolLayerStyle} />}
                     {showFutureLocations && <Layer {...futureLayerStyle} />}
                     {showFutureLocations && <Layer {...futureSymbolLayerStyle} />}
-                    <Layer {...workLayerStyle} />
-                    <Layer {...workSymbolLayerStyle} />
-                    <Layer {...travelLayerStyle} />
-                    <Layer {...travelSymbolLayerStyle} />
+                    {showWorkLocations && <Layer {...workLayerStyle} />}
+                    {showWorkLocations && <Layer {...workSymbolLayerStyle} />}
+                    {showTravelLocations && <Layer {...travelLayerStyle} />}
+                    {showTravelLocations && <Layer {...travelSymbolLayerStyle} />}
                 </Source>
                 {popupInfo && (
                     <Popup
@@ -276,18 +276,18 @@ function MapComponent() {
                                         popupInfo.placeType === "Home"
                                             ? "#E8F5E8"
                                             : popupInfo.placeType === "Work"
-                                                ? "#E3F2FD"
-                                                : popupInfo.placeType === "Travel"
-                                                    ? "#FCE4EC"
-                                                    : "#FFF3E0",
+                                            ? "#E3F2FD"
+                                            : popupInfo.placeType === "Travel"
+                                            ? "#FCE4EC"
+                                            : "#FFF3E0",
                                     color:
                                         popupInfo.placeType === "Home"
                                             ? "#4CAF50"
                                             : popupInfo.placeType === "Work"
-                                                ? "#2196F3"
-                                                : popupInfo.placeType === "Travel"
-                                                    ? "#E91E63"
-                                                    : "#FF9800",
+                                            ? "#2196F3"
+                                            : popupInfo.placeType === "Travel"
+                                            ? "#E91E63"
+                                            : "#FF9800",
                                     borderRadius: "4px",
                                     fontSize: "12px",
                                     fontWeight: "bold",
@@ -353,11 +353,14 @@ function MapComponent() {
                                 display: "flex",
                                 alignItems: "center",
                                 gap: "8px",
+                                cursor: "pointer",
                                 padding: "4px",
                                 borderRadius: "4px",
-                                border: "1px solid rgba(76, 175, 80, 0.3)",
-                                backgroundColor: "rgba(76, 175, 80, 0.1)",
+                                backgroundColor: showHomeLocations ? "rgba(76, 175, 80, 0.1)" : "transparent",
+                                border: showHomeLocations ? "1px solid rgba(76, 175, 80, 0.3)" : "1px solid transparent",
+                                minWidth: "160px",
                             }}
+                            onClick={() => setShowHomeLocations(!showHomeLocations)}
                         >
                             <div
                                 style={{
@@ -367,25 +370,37 @@ function MapComponent() {
                                     width: "20px",
                                     height: "20px",
                                     borderRadius: "50%",
-                                    backgroundColor: "#4CAF50",
+                                    backgroundColor: showHomeLocations ? "#4CAF50" : "#ccc",
                                     border: "2px solid white",
                                     fontSize: "12px",
+                                    opacity: showHomeLocations ? 1 : 0.5,
                                 }}
                             >
                                 🏠
                             </div>
-                            <span style={{ color: "#333", fontWeight: "bold" }}>Home</span>
+                            <span
+                                style={{
+                                    color: showHomeLocations ? "#4CAF50" : "#999",
+                                    fontWeight: showHomeLocations ? "bold" : "normal",
+                                    flex: 1,
+                                }}
+                            >
+                                Home ({showHomeLocations ? "hide" : "show"})
+                            </span>
                         </div>
                         <div
                             style={{
                                 display: "flex",
                                 alignItems: "center",
                                 gap: "8px",
+                                cursor: "pointer",
                                 padding: "4px",
                                 borderRadius: "4px",
-                                border: "1px solid rgba(33, 150, 243, 0.3)",
-                                backgroundColor: "rgba(33, 150, 243, 0.1)",
+                                backgroundColor: showWorkLocations ? "rgba(33, 150, 243, 0.1)" : "transparent",
+                                border: showWorkLocations ? "1px solid rgba(33, 150, 243, 0.3)" : "1px solid transparent",
+                                minWidth: "160px",
                             }}
+                            onClick={() => setShowWorkLocations(!showWorkLocations)}
                         >
                             <div
                                 style={{
@@ -395,25 +410,37 @@ function MapComponent() {
                                     width: "20px",
                                     height: "20px",
                                     borderRadius: "50%",
-                                    backgroundColor: "#2196F3",
+                                    backgroundColor: showWorkLocations ? "#2196F3" : "#ccc",
                                     border: "2px solid white",
                                     fontSize: "12px",
+                                    opacity: showWorkLocations ? 1 : 0.5,
                                 }}
                             >
                                 💼
                             </div>
-                            <span style={{ color: "#333", fontWeight: "bold" }}>Work</span>
+                            <span
+                                style={{
+                                    color: showWorkLocations ? "#2196F3" : "#999",
+                                    fontWeight: showWorkLocations ? "bold" : "normal",
+                                    flex: 1,
+                                }}
+                            >
+                                Work ({showWorkLocations ? "hide" : "show"})
+                            </span>
                         </div>
                         <div
                             style={{
                                 display: "flex",
                                 alignItems: "center",
                                 gap: "8px",
+                                cursor: "pointer",
                                 padding: "4px",
                                 borderRadius: "4px",
-                                border: "1px solid rgba(233, 30, 99, 0.3)",
-                                backgroundColor: "rgba(233, 30, 99, 0.1)",
+                                backgroundColor: showTravelLocations ? "rgba(233, 30, 99, 0.1)" : "transparent",
+                                border: showTravelLocations ? "1px solid rgba(233, 30, 99, 0.3)" : "1px solid transparent",
+                                minWidth: "160px",
                             }}
+                            onClick={() => setShowTravelLocations(!showTravelLocations)}
                         >
                             <div
                                 style={{
@@ -423,14 +450,23 @@ function MapComponent() {
                                     width: "20px",
                                     height: "20px",
                                     borderRadius: "50%",
-                                    backgroundColor: "#E91E63",
+                                    backgroundColor: showTravelLocations ? "#E91E63" : "#ccc",
                                     border: "2px solid white",
                                     fontSize: "12px",
+                                    opacity: showTravelLocations ? 1 : 0.5,
                                 }}
                             >
                                 🎉
                             </div>
-                            <span style={{ color: "#333", fontWeight: "bold" }}>Travel</span>
+                            <span
+                                style={{
+                                    color: showTravelLocations ? "#E91E63" : "#999",
+                                    fontWeight: showTravelLocations ? "bold" : "normal",
+                                    flex: 1,
+                                }}
+                            >
+                                Travel ({showTravelLocations ? "hide" : "show"})
+                            </span>
                         </div>
                         <div
                             style={{
