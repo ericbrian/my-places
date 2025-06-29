@@ -34,18 +34,19 @@ jobs:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
           HEROKU_APP_NAME: ${{ secrets.HEROKU_APP_NAME }}
         run: |
-          # Authenticate with Heroku
-          echo $HEROKU_API_KEY | heroku auth:token
+          # Configure git
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+
+          # The HEROKU_API_KEY env var should be automatically used by Heroku CLI
+          # Verify authentication first
+          heroku auth:whoami
 
           # Create app if it doesn't exist (will fail silently if it exists)
           heroku create $HEROKU_APP_NAME --buildpack https://buildpack-registry.s3.amazonaws.com/buildpacks/heroku/nodejs.tgz || true
 
           # Add Heroku remote
           heroku git:remote -a $HEROKU_APP_NAME
-
-          # Configure git
-          git config --global user.email "action@github.com"
-          git config --global user.name "GitHub Action"
 
           # Deploy
           git push heroku HEAD:main --force
