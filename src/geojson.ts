@@ -1861,6 +1861,19 @@ const geoJson: FeatureCollection<Point> = {
             'coordinates': [8.350718, 49.634137,]
         }
     },
+    {
+        'type': 'Feature',
+        'properties': {
+            'place': 'Gartenstadt, Ludwigshafen am Rhein, Germany',
+            'localname': null,
+            'placeType': 'Home',
+            'description': `This will go down in history as the birthplace of the author of this map. A residential area in Ludwigshafen am Rhein, Germany, known for its garden city layout and green spaces.`
+        },
+        'geometry': {
+            'type': 'Point',
+            'coordinates': [8.3507, 49.4864,]
+        }
+    },
     ]
 };
 
