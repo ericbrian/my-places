@@ -1874,6 +1874,45 @@ const geoJson: FeatureCollection<Point> = {
             'coordinates': [8.4022006, 49.4706328,],
         }
     },
+    {
+        'type': 'Feature',
+        'properties': {
+            'place': 'Como, Lombardy, Italy',
+            'localname': null,
+            'placeType': 'Travel',
+            'description': `A charming city at the southern tip of Lake Como in Lombardy, northern Italy. Known for its beautiful cathedral, historic old town, and as a gateway to the stunning Lake Como region. Visited in 2025.`
+        },
+        'geometry': {
+            'type': 'Point',
+            'coordinates': [9.0832, 45.8081],
+        }
+    },
+    {
+        'type': 'Feature',
+        'properties': {
+            'place': 'Morbegno, Lombardy, Italy',
+            'localname': null,
+            'placeType': 'Travel',
+            'description': `A historic town in the Valtellina valley in Lombardy, northern Italy. Located at the foot of the Alps, known for its medieval architecture and as a gateway to the beautiful mountain valleys. Visited in 2025.`
+        },
+        'geometry': {
+            'type': 'Point',
+            'coordinates': [9.5686, 46.1364],
+        }
+    },
+    {
+        'type': 'Feature',
+        'properties': {
+            'place': 'Milano-Linate Airport, Italy',
+            'localname': null,
+            'placeType': 'Travel',
+            'description': `Milan's city airport, located in the southeastern part of Milan, Lombardy. One of Milan's main airports serving the metropolitan area. Visited in 2025.`
+        },
+        'geometry': {
+            'type': 'Point',
+            'coordinates': [9.2781, 45.4451],
+        }
+    },
     ]
 };
 
