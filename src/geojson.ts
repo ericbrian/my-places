@@ -1913,6 +1913,19 @@ const geoJson: FeatureCollection<Point> = {
             'coordinates': [9.2781, 45.4451],
         }
     },
+    {
+        'type': 'Feature',
+        'properties': {
+            'place': 'Dürkheimer Fass, Bad Dürkheim, Germany',
+            'localname': 'Dürkheimer Riesenfass',
+            'placeType': 'Travel',
+            'description': `A giant wine barrel landmark and restaurant (Riesenfass) on the Brühlwiesen in Bad Dürkheim along the German Wine Route. Visited area many times during regional travels.`
+        },
+        'geometry': {
+            'type': 'Point',
+            'coordinates': [8.169167, 49.464889],
+        }
+    },
     ]
 };
 
