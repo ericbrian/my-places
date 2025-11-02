@@ -1926,6 +1926,19 @@ const geoJson: FeatureCollection<Point> = {
             'coordinates': [8.169167, 49.464889],
         }
     },
+    {
+        'type': 'Feature',
+        'properties': {
+            'place': 'Rhein-Neckar-Zentrum, Viernheim, Germany',
+            'localname': null,
+            'placeType': 'Travel',
+            'description': `A large shopping mall in Viernheim (RNZ) near the A659/A6 interchange in the Rhine-Neckar region. Used to frequent this location for shopping and eating Currywurst.`
+        },
+        'geometry': {
+            'type': 'Point',
+            'coordinates': [8.566194, 49.527167],
+        }
+    },
     ]
 };
 
