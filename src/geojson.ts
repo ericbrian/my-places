@@ -798,6 +798,19 @@ const geoJson: FeatureCollection<Point> = {
     {
         'type': 'Feature',
         'properties': {
+            'place': 'Kyoto, Japan',
+            'localname': '京都市',
+            'placeType': 'Future',
+            'description': `🤞 Future Location. I am very interested in exploring Kyoto, which served as Japan's capital for over a millennium. It is renowned for its classical Buddhist temples, stunning gardens, imperial palaces, and traditional wooden houses.`
+        },
+        'geometry': {
+            'type': 'Point',
+            'coordinates': [135.7681, 35.0116]
+        }
+    },
+    {
+        'type': 'Feature',
+        'properties': {
             'place': 'Lake Lucerne, Switzerland',
             'localname': 'Vierwaldstättersee',
             'placeType': 'Travel',
