@@ -174,10 +174,10 @@ const geoJson: FeatureCollection<Point> = {
     {
         'type': 'Feature',
         'properties': {
-            'place': 'Bakersville, California',
+            'place': 'Bakersfield, California',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Visited with family members more family members residing in this California community.`
+            'description': `Visited family members residing in this Central Valley community.`
         },
         'geometry': {
             'type': 'Point',
@@ -278,10 +278,10 @@ const geoJson: FeatureCollection<Point> = {
     {
         'type': 'Feature',
         'properties': {
-            'place': 'Bolder, Colorado',
+            'place': 'Boulder, Colorado',
             'localname': null,
             'placeType': 'Work',
-            'description': `Attended a professional team conference in this Colorado city. While here, the area had a major snow storm and my friend and former boss, Paul, picked us up from the hotel with his car to take us to the conference center. It was quite fun, actually :)`
+            'description': `Attended a professional team conference here. I have a vivid memory of a major snowstorm where my friend and former boss, Paul, picked us up in his car to get us safely to the conference center. It turned a work trip into quite an adventure!`
         },
         'geometry': {
             'type': 'Point',
@@ -486,10 +486,23 @@ const geoJson: FeatureCollection<Point> = {
     {
         'type': 'Feature',
         'properties': {
+            'place': 'Dubrovnik, Croatia',
+            'localname': null,
+            'placeType': 'Future',
+            'description': `🤞 Future Location. Known as the "Pearl of the Adriatic," I'm eager to walk along its ancient city walls and explore the well-preserved medieval Old Town.`
+        },
+        'geometry': {
+            'type': 'Point',
+            'coordinates': [18.0944, 42.6488]
+        }
+    },
+    {
+        'type': 'Feature',
+        'properties': {
             'place': 'Dublin, Ireland',
             'localname': 'Baile Átha Cliath',
             'placeType': 'Future',
-            'description': `🤞 Future Location. The capital and largest city of Ireland.`
+            'description': `🤞 Future Location. I'd love to visit the "Fair City" to experience its rich literary history, vibrant music scene, and perhaps a pint at the Guinness Storehouse.`
         },
         'geometry': {
             'type': 'Point',
@@ -772,10 +785,10 @@ const geoJson: FeatureCollection<Point> = {
     {
         'type': 'Feature',
         'properties': {
-            'place': 'Juniper, Florida',
+            'place': 'Jupiter, Florida',
             'localname': null,
             'placeType': 'Work',
-            'description': `Location of a departmental team retreat, featuring the Blowing Rocks Preserve nature site.`
+            'description': `Location of a departmental team retreat. We spent time at the Blowing Rocks Preserve, which is a stunning natural site on the Atlantic coast.`
         },
         'geometry': {
             'type': 'Point',
@@ -793,6 +806,19 @@ const geoJson: FeatureCollection<Point> = {
         'geometry': {
             'type': 'Point',
             'coordinates': [-81.779987, 24.555059,]
+        }
+    },
+    {
+        'type': 'Feature',
+        'properties': {
+            'place': 'Karachi, Pakistan',
+            'localname': 'کراچی',
+            'placeType': 'Future',
+            'description': `🤞 Future Location. I'm curious to visit Pakistan's largest city and financial hub, known for its diverse culture and historic landmarks like the Mazar-e-Quaid.`
+        },
+        'geometry': {
+            'type': 'Point',
+            'coordinates': [67.0011, 24.8607]
         }
     },
     {
@@ -957,7 +983,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Long Beach, California',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Visited family members in this Southern California coastal city.`
+            'description': `A coastal getaway in Southern California, often visited to catch up with family and enjoy the ocean breeze.`
         },
         'geometry': {
             'type': 'Point',
@@ -1126,7 +1152,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Mutterstadt, Germany',
             'localname': null,
             'placeType': 'Home',
-            'description': `Former residential location in the Rhineland-Palatinate region.`
+            'description': `A quiet town in the Rhineland-Palatinate region that I called home for several years.`
         },
         'geometry': {
             'type': 'Point',
@@ -1165,7 +1191,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Neuhofen, Germany',
             'localname': null,
             'placeType': 'Home',
-            'description': `Former residential location in the Rhineland-Palatinate region.`
+            'description': `One of the many charming communities in the Rhine valley where I lived.`
         },
         'geometry': {
             'type': 'Point',
@@ -1828,7 +1854,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Washington, DC',
             'localname': null,
             'placeType': 'Travel',
-            'description': `The United States capital, visited frequently for various purposes.`
+            'description': `The heart of U.S. history and politics. I've visited frequently to explore the Smithsonian museums, the iconic monuments on the National Mall, and the vibrant neighborhoods of Capitol Hill and Georgetown.`
         },
         'geometry': {
             'type': 'Point',
