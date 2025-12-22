@@ -1,4 +1,5 @@
 import { useState, useRef } from "react";
+import DOMPurify from "dompurify";
 import Map, { Source, Layer, Popup } from "react-map-gl/mapbox";
 import type { ViewStateChangeEvent, LayerProps, MapMouseEvent, MapRef } from "react-map-gl/mapbox";
 
@@ -331,7 +332,7 @@ function MapComponent() {
                                         color: "#2c3e50",
                                         marginBottom: "20px",
                                     }}
-                                    dangerouslySetInnerHTML={{ __html: popupInfo.description }}
+                                    dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(popupInfo.description) }}
                                 />
 
                                 {/* Type pill */}

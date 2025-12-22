@@ -1,4 +1,5 @@
 import express from 'express';
+import helmet from 'helmet';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
@@ -7,6 +8,22 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 const port = process.env.PORT || 3000;
+
+// Security headers
+app.use(
+    helmet({
+        contentSecurityPolicy: {
+            useDefaults: true,
+            directives: {
+                "script-src": ["'self'", "'unsafe-inline'", "https://api.mapbox.com"],
+                "worker-src": ["'self'", "blob:"],
+                "child-src": ["'self'", "blob:"],
+                "img-src": ["'self'", "data:", "blob:", "https://api.mapbox.com"],
+                "connect-src": ["'self'", "https://*.mapbox.com"],
+            },
+        },
+    })
+);
 
 // Serve static files from the 'dist' directory
 app.use(express.static(path.join(__dirname, 'dist')));
