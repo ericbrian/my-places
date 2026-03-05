@@ -23,16 +23,15 @@ function MapPin({ color, emoji, shadow, size = 40 }: { color: string; emoji: str
         <div
             style={{
                 cursor: "pointer",
-                transform: "translate(0, -100%)",
                 filter: `drop-shadow(0 3px 4px ${shadow})`,
                 transition: "transform 0.15s ease, filter 0.15s ease",
             }}
             onMouseEnter={(e) => {
-                e.currentTarget.style.transform = "translate(0, -100%) scale(1.15)";
+                e.currentTarget.style.transform = "scale(1.15)";
                 e.currentTarget.style.filter = `drop-shadow(0 5px 8px ${shadow})`;
             }}
             onMouseLeave={(e) => {
-                e.currentTarget.style.transform = "translate(0, -100%)";
+                e.currentTarget.style.transform = "scale(1)";
                 e.currentTarget.style.filter = `drop-shadow(0 3px 4px ${shadow})`;
             }}
         >
