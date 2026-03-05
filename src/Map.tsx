@@ -1,7 +1,9 @@
-import { useState, useRef, useCallback } from "react";
+import { useState, useRef, useCallback, useMemo } from "react";
 import DOMPurify from "dompurify";
 import Map, { Marker, Popup } from "react-map-gl/mapbox";
 import type { ViewStateChangeEvent, MapRef } from "react-map-gl/mapbox";
+import Supercluster from "supercluster";
+import type { BBox } from "geojson";
 
 import "mapbox-gl/dist/mapbox-gl.css";
 import { mapboxAccessToken, siteTitle } from "./siteconfig";
@@ -148,6 +150,52 @@ function MapComponent() {
         Future: showFutureLocations,
     };
 
+    // Filter features by visibility toggles
+    const visibleFeatures = useMemo(
+        () =>
+            geoJson.features.filter(
+                (f) => f.properties && visibilityMap[f.properties.placeType],
+            ),
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+        [showHomeLocations, showWorkLocations, showTravelLocations, showFutureLocations],
+    );
+
+    // Build supercluster index from visible features
+    const clusterIndex = useMemo(() => {
+        const index = new Supercluster<{ place: string; localname: string | null; placeType: string; description: string }>({
+            radius: 60,
+            maxZoom: 16,
+        });
+        index.load(
+            visibleFeatures.map((f) => ({
+                type: "Feature" as const,
+                properties: {
+                    place: f.properties!.place,
+                    localname: f.properties!.localname,
+                    placeType: f.properties!.placeType,
+                    description: f.properties!.description,
+                },
+                geometry: f.geometry,
+            })),
+        );
+        return index;
+    }, [visibleFeatures]);
+
+    // Get clusters for the current viewport
+    const clusters = useMemo(() => {
+        const bbox: BBox = [-180, -85, 180, 85];
+        if (mapRef.current) {
+            const b = mapRef.current.getMap().getBounds();
+            if (b) {
+                bbox[0] = b.getWest();
+                bbox[1] = b.getSouth();
+                bbox[2] = b.getEast();
+                bbox[3] = b.getNorth();
+            }
+        }
+        return clusterIndex.getClusters(bbox, Math.floor(viewState.zoom));
+    }, [clusterIndex, viewState]);
+
     const onMarkerClick = useCallback(
         (feature: (typeof geoJson.features)[number]) => {
             if (!feature.properties) return;
@@ -164,6 +212,19 @@ function MapComponent() {
         [],
     );
 
+    const onClusterClick = useCallback(
+        (clusterId: number, longitude: number, latitude: number) => {
+            const zoom = clusterIndex.getClusterExpansionZoom(clusterId);
+            setViewState((prev) => ({
+                ...prev,
+                longitude,
+                latitude,
+                zoom: Math.min(zoom, 18),
+            }));
+        },
+        [clusterIndex],
+    );
+
     return (
         <>
             <Map
@@ -177,23 +238,79 @@ function MapComponent() {
                 maxBounds={bounds.maxBounds}
                 minZoom={0}
             >
-                {/* Render teardrop pin markers */}
-                {geoJson.features.map((feature, idx) => {
-                    if (!feature.properties) return null;
-                    const placeType = feature.properties.placeType;
-                    if (!visibilityMap[placeType]) return null;
+                {/* Render clusters and individual pin markers */}
+                {clusters.map((cluster) => {
+                    const [lng, lat] = cluster.geometry.coordinates;
+                    const props = cluster.properties;
+
+                    // Cluster bubble
+                    if ("cluster" in props && props.cluster) {
+                        const count = (props as Supercluster.ClusterProperties).point_count;
+                        const clusterId = (props as Supercluster.ClusterProperties).cluster_id;
+                        // Scale bubble size by point count
+                        const size = 36 + Math.min(count, 100) * 0.4;
+                        return (
+                            <Marker
+                                key={`cluster-${clusterId}`}
+                                longitude={lng}
+                                latitude={lat}
+                                anchor="center"
+                                onClick={(e) => {
+                                    e.originalEvent.stopPropagation();
+                                    onClusterClick(clusterId as number, lng, lat);
+                                }}
+                            >
+                                <div
+                                    style={{
+                                        width: `${size}px`,
+                                        height: `${size}px`,
+                                        borderRadius: "50%",
+                                        background: "linear-gradient(135deg, #6366f1, #8b5cf6)",
+                                        border: "3px solid white",
+                                        display: "flex",
+                                        alignItems: "center",
+                                        justifyContent: "center",
+                                        color: "white",
+                                        fontWeight: 700,
+                                        fontSize: `${Math.max(13, 16 - Math.floor(count / 20))}px`,
+                                        fontFamily: "system-ui, -apple-system, sans-serif",
+                                        cursor: "pointer",
+                                        boxShadow: "0 3px 10px rgba(99, 102, 241, 0.4)",
+                                        transition: "transform 0.15s ease, box-shadow 0.15s ease",
+                                    }}
+                                    onMouseEnter={(e) => {
+                                        e.currentTarget.style.transform = "scale(1.15)";
+                                        e.currentTarget.style.boxShadow = "0 5px 16px rgba(99, 102, 241, 0.5)";
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.currentTarget.style.transform = "scale(1)";
+                                        e.currentTarget.style.boxShadow = "0 3px 10px rgba(99, 102, 241, 0.4)";
+                                    }}
+                                >
+                                    {count}
+                                </div>
+                            </Marker>
+                        );
+                    }
+
+                    // Individual point — render teardrop pin
+                    const placeType = props.placeType;
                     const config = PIN_CONFIG[placeType];
                     if (!config) return null;
-                    const [lng, lat] = feature.geometry.coordinates;
+
                     return (
                         <Marker
-                            key={idx}
+                            key={`point-${lng}-${lat}-${props.place}`}
                             longitude={lng}
                             latitude={lat}
                             anchor="bottom"
                             onClick={(e) => {
                                 e.originalEvent.stopPropagation();
-                                onMarkerClick(feature);
+                                onMarkerClick({
+                                    type: "Feature",
+                                    properties: props as typeof geoJson.features[number]["properties"],
+                                    geometry: cluster.geometry,
+                                });
                             }}
                         >
                             <MapPin color={config.color} emoji={config.emoji} shadow={config.shadow} />
