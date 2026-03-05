@@ -135,5 +135,8 @@
         "जयपुर",
         "दिल्ली",
         "กรุงเทพมหานคร"
-    ]
+    ],
+    "chat.tools.terminal.autoApprove": {
+        "npm audit": true
+    }
 }
