@@ -1,119 +1,71 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useCallback } from "react";
 import DOMPurify from "dompurify";
-import Map, { Source, Layer, Popup } from "react-map-gl/mapbox";
-import type { ViewStateChangeEvent, LayerProps, MapMouseEvent, MapRef } from "react-map-gl/mapbox";
+import Map, { Marker, Popup } from "react-map-gl/mapbox";
+import type { ViewStateChangeEvent, MapRef } from "react-map-gl/mapbox";
 
 import "mapbox-gl/dist/mapbox-gl.css";
 import { mapboxAccessToken, siteTitle } from "./siteconfig";
 import geoJson from "./geojson";
 
-// Circle markers for "Home" places
-const homeLayerStyle: LayerProps = {
-    id: "home-points",
-    type: "circle",
-    filter: ["==", ["get", "placeType"], "Home"],
-    paint: {
-        "circle-radius": 10,
-        "circle-color": "#4CAF50", // Green for home
-        "circle-stroke-width": 3,
-        "circle-stroke-color": "#FFFFFF",
-        "circle-opacity": 0.9,
-    },
+// Pin color & emoji mapping by placeType
+const PIN_CONFIG: Record<string, { color: string; emoji: string; shadow: string }> = {
+    Home: { color: "#4CAF50", emoji: "🏠", shadow: "rgba(76, 175, 80, 0.4)" },
+    Work: { color: "#2196F3", emoji: "💼", shadow: "rgba(33, 150, 243, 0.4)" },
+    Travel: { color: "#E91E63", emoji: "🎉", shadow: "rgba(233, 30, 99, 0.4)" },
+    Future: { color: "#FF9800", emoji: "⭐", shadow: "rgba(255, 152, 0, 0.4)" },
 };
 
-// Home symbol layer
-const homeSymbolLayerStyle: LayerProps = {
-    id: "home-symbols",
-    type: "symbol",
-    filter: ["==", ["get", "placeType"], "Home"],
-    layout: {
-        "text-field": "🏠",
-        "text-size": 16,
-        "text-offset": [0, 0],
-        "text-anchor": "center",
-    },
-};
-
-// Star-like markers for "Future" places
-const futureLayerStyle: LayerProps = {
-    id: "future-points",
-    type: "circle",
-    filter: ["==", ["get", "placeType"], "Future"],
-    paint: {
-        "circle-radius": 8,
-        "circle-color": "#FF9800", // Orange for future
-        "circle-stroke-width": 2,
-        "circle-stroke-color": "#FFFFFF",
-        "circle-opacity": 0.9,
-    },
-};
-
-// Future symbol layer
-const futureSymbolLayerStyle: LayerProps = {
-    id: "future-symbols",
-    type: "symbol",
-    filter: ["==", ["get", "placeType"], "Future"],
-    layout: {
-        "text-field": "⭐",
-        "text-size": 12,
-        "text-offset": [0, 0],
-        "text-anchor": "center",
-    },
-};
-
-// Square-like markers for "Work" places
-const workLayerStyle: LayerProps = {
-    id: "work-points",
-    type: "circle",
-    filter: ["==", ["get", "placeType"], "Work"],
-    paint: {
-        "circle-radius": 8,
-        "circle-color": "#2196F3", // Blue for work
-        "circle-stroke-width": 2,
-        "circle-stroke-color": "#FFFFFF",
-        "circle-opacity": 0.9,
-    },
-};
-
-// Work symbol layer
-const workSymbolLayerStyle: LayerProps = {
-    id: "work-symbols",
-    type: "symbol",
-    filter: ["==", ["get", "placeType"], "Work"],
-    layout: {
-        "text-field": "💼",
-        "text-size": 12,
-        "text-offset": [0, 0],
-        "text-anchor": "center",
-    },
-};
-
-// Heart-like markers for "Travel" places
-const travelLayerStyle: LayerProps = {
-    id: "travel-points",
-    type: "circle",
-    filter: ["==", ["get", "placeType"], "Travel"],
-    paint: {
-        "circle-radius": 8,
-        "circle-color": "#E91E63", // Pink for Travel
-        "circle-stroke-width": 2,
-        "circle-stroke-color": "#FFFFFF",
-        "circle-opacity": 0.9,
-    },
-};
-
-// Travel symbol layer
-const travelSymbolLayerStyle: LayerProps = {
-    id: "travel-symbols",
-    type: "symbol",
-    filter: ["==", ["get", "placeType"], "Travel"],
-    layout: {
-        "text-field": "🎉",
-        "text-size": 12,
-        "text-offset": [0, 0],
-        "text-anchor": "center",
-    },
-};
+// Teardrop map pin component
+function MapPin({ color, emoji, shadow, size = 40 }: { color: string; emoji: string; shadow: string; size?: number }) {
+    return (
+        <div
+            style={{
+                cursor: "pointer",
+                transform: "translate(0, -100%)",
+                filter: `drop-shadow(0 3px 4px ${shadow})`,
+                transition: "transform 0.15s ease, filter 0.15s ease",
+            }}
+            onMouseEnter={(e) => {
+                e.currentTarget.style.transform = "translate(0, -100%) scale(1.15)";
+                e.currentTarget.style.filter = `drop-shadow(0 5px 8px ${shadow})`;
+            }}
+            onMouseLeave={(e) => {
+                e.currentTarget.style.transform = "translate(0, -100%)";
+                e.currentTarget.style.filter = `drop-shadow(0 3px 4px ${shadow})`;
+            }}
+        >
+            <svg
+                width={size}
+                height={size * 1.3}
+                viewBox="0 0 40 52"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                {/* Teardrop / pin shape */}
+                <path
+                    d="M20 0C8.954 0 0 8.954 0 20c0 11.046 20 32 20 32s20-20.954 20-32C40 8.954 31.046 0 20 0z"
+                    fill={color}
+                />
+                {/* White inner circle */}
+                <circle cx="20" cy="19" r="13" fill="white" opacity="0.95" />
+            </svg>
+            {/* Emoji centered in the white circle */}
+            <span
+                style={{
+                    position: "absolute",
+                    top: `${size * 0.22}px`,
+                    left: "50%",
+                    transform: "translateX(-50%)",
+                    fontSize: `${size * 0.4}px`,
+                    lineHeight: "1",
+                    pointerEvents: "none",
+                }}
+            >
+                {emoji}
+            </span>
+        </div>
+    );
+}
 
 function MapComponent() {
     const mapRef = useRef<MapRef>(null);
@@ -188,10 +140,18 @@ function MapComponent() {
         localname: string | null;
     } | null>(null);
 
-    const onClick = (event: MapMouseEvent) => {
-        const feature = event.features?.[0];
-        if (feature && feature.geometry.type === "Point" && feature.properties) {
-            const [longitude, latitude] = feature.geometry.coordinates as [number, number];
+    // Determine which features are visible based on toggle state
+    const visibilityMap: Record<string, boolean> = {
+        Home: showHomeLocations,
+        Work: showWorkLocations,
+        Travel: showTravelLocations,
+        Future: showFutureLocations,
+    };
+
+    const onMarkerClick = useCallback(
+        (feature: (typeof geoJson.features)[number]) => {
+            if (!feature.properties) return;
+            const [longitude, latitude] = feature.geometry.coordinates;
             setPopupInfo({
                 longitude,
                 latitude,
@@ -200,20 +160,9 @@ function MapComponent() {
                 placeType: feature.properties.placeType,
                 localname: feature.properties.localname,
             });
-        }
-    };
-
-    const onMouseEnter = () => {
-        if (mapRef.current) {
-            mapRef.current.getCanvas().style.cursor = "pointer";
-        }
-    };
-
-    const onMouseLeave = () => {
-        if (mapRef.current) {
-            mapRef.current.getCanvas().style.cursor = "";
-        }
-    };
+        },
+        [],
+    );
 
     return (
         <>
@@ -222,31 +171,35 @@ function MapComponent() {
                 {...viewState}
                 mapboxAccessToken={mapboxAccessToken}
                 onMove={(evt: ViewStateChangeEvent) => setViewState(evt.viewState)}
-                onClick={onClick}
-                onMouseEnter={onMouseEnter}
-                onMouseLeave={onMouseLeave}
                 style={{ width: "100vw", height: "100vh" }}
                 mapStyle="mapbox://styles/mapbox/streets-v12"
                 projection="mercator"
                 maxBounds={bounds.maxBounds}
                 minZoom={0}
-                interactiveLayerIds={[
-                    ...(showHomeLocations ? ["home-points", "home-symbols"] : []),
-                    ...(showWorkLocations ? ["work-points", "work-symbols"] : []),
-                    ...(showTravelLocations ? ["travel-points", "travel-symbols"] : []),
-                    ...(showFutureLocations ? ["future-points", "future-symbols"] : []),
-                ]}
             >
-                <Source id="my-data" type="geojson" data={geoJson}>
-                    {showHomeLocations && <Layer {...homeLayerStyle} />}
-                    {showHomeLocations && <Layer {...homeSymbolLayerStyle} />}
-                    {showFutureLocations && <Layer {...futureLayerStyle} />}
-                    {showFutureLocations && <Layer {...futureSymbolLayerStyle} />}
-                    {showWorkLocations && <Layer {...workLayerStyle} />}
-                    {showWorkLocations && <Layer {...workSymbolLayerStyle} />}
-                    {showTravelLocations && <Layer {...travelLayerStyle} />}
-                    {showTravelLocations && <Layer {...travelSymbolLayerStyle} />}
-                </Source>
+                {/* Render teardrop pin markers */}
+                {geoJson.features.map((feature, idx) => {
+                    if (!feature.properties) return null;
+                    const placeType = feature.properties.placeType;
+                    if (!visibilityMap[placeType]) return null;
+                    const config = PIN_CONFIG[placeType];
+                    if (!config) return null;
+                    const [lng, lat] = feature.geometry.coordinates;
+                    return (
+                        <Marker
+                            key={idx}
+                            longitude={lng}
+                            latitude={lat}
+                            anchor="bottom"
+                            onClick={(e) => {
+                                e.originalEvent.stopPropagation();
+                                onMarkerClick(feature);
+                            }}
+                        >
+                            <MapPin color={config.color} emoji={config.emoji} shadow={config.shadow} />
+                        </Marker>
+                    );
+                })}
                 {popupInfo && (
                     <Popup
                         longitude={popupInfo.longitude}
