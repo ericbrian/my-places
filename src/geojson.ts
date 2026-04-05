@@ -1672,7 +1672,7 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Stuttgart, Germany',
             'localname': null,
             'placeType': 'Travel',
-            'description': `Capital of Baden-Württemberg, visited during university period.`
+            'description': `Capital of Baden-Württemberg, visited a friend during university period.`
         },
         'geometry': {
             'type': 'Point',
