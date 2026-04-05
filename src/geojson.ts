@@ -1978,6 +1978,19 @@ const geoJson: FeatureCollection<Point> = {
             'coordinates': [8.566194, 49.527167],
         }
     },
+    {
+        'type': 'Feature',
+        'properties': {
+            'place': 'Lahore, Pakistan',
+            'localname': 'لاہور',
+            'placeType': 'Future',
+            'description': `🤞 Future Location. Lahore is Pakistan's cultural capital, renowned for the Badshahi Mosque, Lahore Fort, and vibrant food scene along the famous Food Street.`
+        },
+        'geometry': {
+            'type': 'Point',
+            'coordinates': [74.3587, 31.5204],
+        }
+    },
     ]
 };
 
