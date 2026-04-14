@@ -1682,6 +1682,19 @@ const geoJson: FeatureCollection<Point> = {
     {
         'type': 'Feature',
         'properties': {
+            'place': 'Tirana, Albania',
+            'localname': 'Tiranë',
+            'placeType': 'Future',
+            'description': `🤞 Future Location. Albania's vibrant capital, known for its colorful Ottoman and Soviet-era architecture, bustling Skanderbeg Square, and proximity to stunning mountain landscapes.`
+        },
+        'geometry': {
+            'type': 'Point',
+            'coordinates': [19.8187, 41.3275],
+        }
+    },
+    {
+        'type': 'Feature',
+        'properties': {
             'place': 'Titisee, Germany',
             'localname': null,
             'placeType': 'Travel',
