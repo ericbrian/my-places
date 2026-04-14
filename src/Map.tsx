@@ -162,8 +162,8 @@ function MapComponent() {
     // Build supercluster index from visible features
     const clusterIndex = useMemo(() => {
         const index = new Supercluster<{ place: string; localname: string | null; placeType: string; description: string }>({
-            radius: 30,
-            maxZoom: 14,
+            radius: 15,
+            maxZoom: 10,
         });
         index.load(
             visibleFeatures.map((f) => ({
