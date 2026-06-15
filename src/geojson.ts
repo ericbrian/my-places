@@ -1955,14 +1955,14 @@ const geoJson: FeatureCollection<Point> = {
     {
         'type': 'Feature',
         'properties': {
-            'place': 'Milano-Linate Airport, Italy',
-            'localname': null,
+            'place': 'Milan, Lombardy, Italy',
+            'localname': 'Milano',
             'placeType': 'Travel',
-            'description': `Milan's city airport, located in the southeastern part of Milan, Lombardy. One of Milan's main airports serving the metropolitan area. Visited in 2025.`
+            'description': `Italy's second-largest city and the capital of Lombardy, known for its historic center, Duomo di Milano, and role as a major cultural and business hub. Visited in 2025.`
         },
         'geometry': {
             'type': 'Point',
-            'coordinates': [9.2781, 45.4451],
+            'coordinates': [9.1900, 45.4642],
         }
     },
     {
