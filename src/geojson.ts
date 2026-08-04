@@ -593,11 +593,11 @@ const geoJson: FeatureCollection<Point> = {
             'place': 'Freising, Germany',
             'localname': null,
             'placeType': 'Travel',
-            'description': `A charming Bavarian town near Munich, known for its historic architecture and cultural significance.`
+            'description': `A historic Bavarian town near Munich where I stayed with a friend when visiting Munich after university.`
         },
         'geometry': {
             'type': 'Point',
-            'coordinates': [11.646443, 48.3899113,]
+            'coordinates': [11.7447, 48.4029,]
         }
     },
     {
