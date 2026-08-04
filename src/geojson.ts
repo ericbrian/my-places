@@ -1143,7 +1143,20 @@ const geoJson: FeatureCollection<Point> = {
         },
         'geometry': {
             'type': 'Point',
-            'coordinates': [11.58198, 48.135125,]
+            'coordinates': [11.5849172, 48.1003723,]
+        }
+    },
+    {
+        'type': 'Feature',
+        'properties': {
+            'place': 'Oktoberfest, Munich, Germany',
+            'localname': 'Theresienwiese',
+            'placeType': 'Travel',
+            'description': `Visited the famous Oktoberfest folk festival on the Theresienwiese in Munich multiple times.`
+        },
+        'geometry': {
+            'type': 'Point',
+            'coordinates': [11.5492, 48.1319,]
         }
     },
     {
