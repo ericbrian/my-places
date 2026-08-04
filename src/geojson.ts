@@ -597,7 +597,7 @@ const geoJson: FeatureCollection<Point> = {
         },
         'geometry': {
             'type': 'Point',
-            'coordinates': [11.7447, 48.4029,]
+            'coordinates': [11.7335603, 48.3995632,]
         }
     },
     {
