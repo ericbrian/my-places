@@ -220,10 +220,15 @@ function MapComponent() {
                                         position: "relative",
                                         width: `${size}px`,
                                         height: `${size}px`,
+                                        minWidth: `${size}px`,
+                                        minHeight: `${size}px`,
+                                        aspectRatio: "1 / 1",
+                                        boxSizing: "border-box",
                                         display: "flex",
                                         alignItems: "center",
                                         justifyContent: "center",
                                         cursor: "pointer",
+                                        flexShrink: 0,
                                     }}
                                 >
                                     {/* Outer Pulse Ring */}
@@ -235,6 +240,7 @@ function MapComponent() {
                                             background: glowColor,
                                             filter: "blur(6px)",
                                             animation: "markerPulse 2s infinite ease-in-out",
+                                            pointerEvents: "none",
                                         }}
                                     />
                                     {/* Cluster Main Bubble */}
@@ -244,6 +250,7 @@ function MapComponent() {
                                             width: "100%",
                                             height: "100%",
                                             borderRadius: "50%",
+                                            boxSizing: "border-box",
                                             background: clusterGradient,
                                             border: "3px solid #ffffff",
                                             display: "flex",
@@ -253,6 +260,7 @@ function MapComponent() {
                                             fontWeight: 800,
                                             fontSize: `${Math.max(13, 16 - Math.floor(count / 20))}px`,
                                             fontFamily: "system-ui, -apple-system, sans-serif",
+                                            lineHeight: "1",
                                             boxShadow: "0 8px 20px rgba(0, 0, 0, 0.25), 0 2px 4px rgba(0, 0, 0, 0.15)",
                                             transition: "transform 0.2s ease, boxShadow 0.2s ease",
                                         }}
