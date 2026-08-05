@@ -159,7 +159,8 @@ export const MapMarker: React.FC<MapMarkerProps> = ({
                         y="16.5"
                         textAnchor="middle"
                         dominantBaseline="central"
-                        fontSize="14"
+                        fontSize="20"
+                        fontWeight="bold"
                         fill="#ffffff"
                         pointerEvents="none"
                     >
