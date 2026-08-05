@@ -356,10 +356,10 @@ function MapComponent() {
                                             boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
                                         }}
                                     >
-                                        {popupInfo.placeType === "Home" && "🏠"}
-                                        {popupInfo.placeType === "Work" && "💼"}
-                                        {popupInfo.placeType === "Travel" && "✈️"}
-                                        {popupInfo.placeType === "Future" && "🌟"}
+                                        {popupInfo.placeType === "Home" && "𖠿"}
+                                        {popupInfo.placeType === "Work" && "⛁"}
+                                        {popupInfo.placeType === "Travel" && "✈"}
+                                        {popupInfo.placeType === "Future" && "☆"}
                                     </div>
                                     <div style={{ flex: 1 }}>
                                         <h3
@@ -511,10 +511,10 @@ function MapComponent() {
                         </div>
                         <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
                             {[
-                                { key: "Home", label: "Home", active: showHomeLocations, toggle: () => setShowHomeLocations(!showHomeLocations), color: "#10b981", icon: "🏠" },
-                                { key: "Work", label: "Work", active: showWorkLocations, toggle: () => setShowWorkLocations(!showWorkLocations), color: "#3b82f6", icon: "💼" },
-                                { key: "Travel", label: "Travel", active: showTravelLocations, toggle: () => setShowTravelLocations(!showTravelLocations), color: "#ec4899", icon: "✈️" },
-                                { key: "Future", label: "Future", active: showFutureLocations, toggle: () => setShowFutureLocations(!showFutureLocations), color: "#f59e0b", icon: "🌟" },
+                                { key: "Home", label: "Home", active: showHomeLocations, toggle: () => setShowHomeLocations(!showHomeLocations), color: "#10b981", icon: "𖠿" },
+                                { key: "Work", label: "Work", active: showWorkLocations, toggle: () => setShowWorkLocations(!showWorkLocations), color: "#3b82f6", icon: "⛁" },
+                                { key: "Travel", label: "Travel", active: showTravelLocations, toggle: () => setShowTravelLocations(!showTravelLocations), color: "#ec4899", icon: "✈" },
+                                { key: "Future", label: "Future", active: showFutureLocations, toggle: () => setShowFutureLocations(!showFutureLocations), color: "#f59e0b", icon: "☆" },
                             ].map((cat) => (
                                 <div
                                     key={cat.key}
