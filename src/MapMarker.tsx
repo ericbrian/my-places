@@ -112,7 +112,7 @@ export const MapMarker: React.FC<MapMarkerProps> = ({
                         fontWeight: 600,
                     }}
                 >
-                    <span style={{ fontSize: "14px" }}>{config.emoji}</span>
+                    <span style={{ fontSize: "14px", lineHeight: "1" }}>{config.emoji}</span>
                     <div style={{ display: "flex", flexDirection: "column" }}>
                         <span>{place}</span>
                         {localname && (
@@ -137,11 +137,14 @@ export const MapMarker: React.FC<MapMarkerProps> = ({
                 </div>
             )}
 
-            {/* STYLE 1: 3D Glassmorphic Pin */}
+            {/* STYLE 1: 3D Glassmorphic Pin with Flexbox Centering */}
             {styleType === "glass-pin" && (
                 <div
                     style={{
                         position: "relative",
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
                         transition: "transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1)",
                         transform: isHovered || isSelected ? "scale(1.25) translateY(-4px)" : "scale(1)",
                     }}
@@ -150,98 +153,71 @@ export const MapMarker: React.FC<MapMarkerProps> = ({
                     <div
                         style={{
                             position: "absolute",
-                            top: "50%",
+                            top: "18px",
                             left: "50%",
+                            transform: "translate(-50%, -50%)",
                             width: "36px",
                             height: "36px",
-                            marginTop: "-18px",
-                            marginLeft: "-18px",
                             borderRadius: "50%",
                             background: config.glow,
                             opacity: isHovered || isSelected ? 0.8 : 0.35,
                             filter: "blur(8px)",
                             transition: "opacity 0.25s ease",
                             animation: isHovered || isSelected ? "markerPulse 1.8s infinite" : "none",
+                            pointerEvents: "none",
                         }}
                     />
 
-                    {/* SVG 3D Teardrop Pin */}
-                    <svg
-                        width="38"
-                        height="48"
-                        viewBox="0 0 38 48"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
+                    {/* Pin Head Badge - Flexbox Centered */}
+                    <div
                         style={{
-                            filter: `drop-shadow(0 6px 12px ${config.shadow})`,
+                            position: "relative",
+                            width: "36px",
+                            height: "36px",
+                            borderRadius: "50%",
+                            background: `linear-gradient(135deg, ${config.gradient[0]}, ${config.gradient[1]})`,
+                            border: "2.5px solid #ffffff",
+                            boxShadow: `0 4px 12px ${config.shadow}`,
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            boxSizing: "border-box",
+                            zIndex: 2,
                         }}
                     >
-                        <defs>
-                            <linearGradient id={`pinGradient-${placeType}`} x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" stopColor={config.gradient[0]} />
-                                <stop offset="100%" stopColor={config.gradient[1]} />
-                            </linearGradient>
-                            <linearGradient id={`pinGlassHighlight-${placeType}`} x1="0%" y1="0%" x2="0%" y2="100%">
-                                <stop offset="0%" stopColor="#ffffff" stopOpacity="0.6" />
-                                <stop offset="40%" stopColor="#ffffff" stopOpacity="0.1" />
-                                <stop offset="100%" stopColor="#ffffff" stopOpacity="0" />
-                            </linearGradient>
-                            <filter id="innerShadow" x="-20%" y="-20%" width="140%" height="140%">
-                                <feComponentTransfer in="SourceAlpha">
-                                    <feFuncA type="linear" slope="0.7" />
-                                </feComponentTransfer>
-                                <feGaussianBlur stdDeviation="1.5" result="blur" />
-                                <feOffset dx="0" dy="1.5" />
-                                <feComposite operator="out" in2="SourceAlpha" result="inverse" />
-                                <feFlood floodColor="black" floodOpacity="0.25" result="color" />
-                                <feComposite operator="in" in2="inverse" result="shadow" />
-                                <feComposite operator="over" in2="SourceGraphic" />
-                            </filter>
-                        </defs>
-
-                        {/* Outer Pin Body */}
-                        <path
-                            d="M19 1C9.059 1 1 9.059 1 19c0 12.5 18 28 18 28s18-15.5 18-28C37 9.059 28.941 1 19 1z"
-                            fill={`url(#pinGradient-${placeType})`}
-                            stroke="#ffffff"
-                            strokeWidth="2"
-                        />
-
-                        {/* Glass Highlight Arc */}
-                        <path
-                            d="M19 2.5C10 2.5 3 9.5 3 18.5c0 3.2 1.2 6.5 3.5 9.8L19 43.5l12.5-15.2C33.8 25 35 21.7 35 18.5 35 9.5 28 2.5 19 2.5z"
-                            fill={`url(#pinGlassHighlight-${placeType})`}
-                            pointerEvents="none"
-                        />
-
-                        {/* Inner White Glass Sphere Badge */}
-                        <circle
-                            cx="19"
-                            cy="18.5"
-                            r="11.5"
-                            fill="#ffffff"
-                            opacity="0.95"
+                        {/* Inner White Sphere Badge */}
+                        <div
                             style={{
-                                filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.15))",
+                                width: "22px",
+                                height: "22px",
+                                borderRadius: "50%",
+                                backgroundColor: "#ffffff",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                fontSize: "13px",
+                                lineHeight: "1",
+                                boxShadow: "inset 0 1px 2px rgba(0,0,0,0.12)",
+                                boxSizing: "border-box",
                             }}
-                        />
-                    </svg>
+                        >
+                            {config.emoji}
+                        </div>
+                    </div>
 
-                    {/* Emoji inside center badge */}
-                    <span
+                    {/* Pin Tail / Pointed Tip */}
+                    <div
                         style={{
-                            position: "absolute",
-                            top: "9px",
-                            left: "50%",
-                            transform: "translateX(-50%)",
-                            fontSize: "15px",
-                            lineHeight: "1",
-                            pointerEvents: "none",
-                            filter: "drop-shadow(0 1px 1px rgba(0,0,0,0.1))",
+                            width: 0,
+                            height: 0,
+                            borderLeft: "6px solid transparent",
+                            borderRight: "6px solid transparent",
+                            borderTop: `9px solid ${config.gradient[1]}`,
+                            marginTop: "-2px",
+                            filter: "drop-shadow(0 2px 3px rgba(0,0,0,0.2))",
+                            zIndex: 1,
                         }}
-                    >
-                        {config.emoji}
-                    </span>
+                    />
                 </div>
             )}
 
@@ -252,14 +228,14 @@ export const MapMarker: React.FC<MapMarkerProps> = ({
                         display: "flex",
                         alignItems: "center",
                         gap: "6px",
-                        padding: "5px 12px 5px 6px",
-                        background: "rgba(255, 255, 255, 0.85)",
+                        padding: "4px 10px 4px 5px",
+                        background: "rgba(255, 255, 255, 0.9)",
                         backdropFilter: "blur(12px)",
                         WebkitBackdropFilter: "blur(12px)",
                         border: `1.5px solid ${config.color}`,
                         borderRadius: "20px",
                         boxShadow: isHovered || isSelected
-                            ? `0 8px 20px -2px ${config.shadow}, 0 4px 6px -1px rgba(0, 0, 0, 0.1)`
+                            ? `0 8px 20px -2px ${config.shadow}`
                             : "0 4px 12px rgba(0, 0, 0, 0.12)",
                         transform: isHovered || isSelected ? "scale(1.15) translateY(-3px)" : "scale(1)",
                         transition: "all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1)",
@@ -276,7 +252,9 @@ export const MapMarker: React.FC<MapMarkerProps> = ({
                             justifyContent: "center",
                             color: "white",
                             fontSize: "13px",
+                            lineHeight: "1",
                             boxShadow: `0 2px 6px ${config.shadow}`,
+                            flexShrink: 0,
                         }}
                     >
                         {config.emoji}
@@ -297,7 +275,7 @@ export const MapMarker: React.FC<MapMarkerProps> = ({
                 </div>
             )}
 
-            {/* STYLE 3: Glowing Minimal Dot */}
+            {/* STYLE 3: Glowing Minimal Dot with Centered Emoticon */}
             {styleType === "glowing-dot" && (
                 <div
                     style={{
@@ -319,21 +297,29 @@ export const MapMarker: React.FC<MapMarkerProps> = ({
                             border: `2px solid ${config.color}`,
                             opacity: isHovered || isSelected ? 0.9 : 0.4,
                             animation: "markerPulse 1.8s infinite ease-in-out",
+                            pointerEvents: "none",
                         }}
                     />
-                    {/* Inner Solid Dot */}
+                    {/* Inner Solid Dot with Centered Emoticon */}
                     <div
                         style={{
-                            width: "14px",
-                            height: "14px",
+                            width: "20px",
+                            height: "20px",
                             borderRadius: "50%",
                             background: `linear-gradient(135deg, ${config.gradient[0]}, ${config.gradient[1]})`,
                             border: "2px solid #ffffff",
                             boxShadow: `0 0 10px ${config.color}`,
-                            transform: isHovered || isSelected ? "scale(1.3)" : "scale(1)",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            fontSize: "11px",
+                            lineHeight: "1",
+                            transform: isHovered || isSelected ? "scale(1.2)" : "scale(1)",
                             transition: "transform 0.2s ease",
                         }}
-                    />
+                    >
+                        {config.emoji}
+                    </div>
                 </div>
             )}
         </div>
