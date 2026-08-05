@@ -11,12 +11,11 @@ export interface MapMarkerProps {
     onClick: (e: React.MouseEvent) => void;
 }
 
-// Configuration for pin categories
+// Configuration for pin categories with clean unicolor palette
 const CATEGORY_CONFIG: Record<
     string,
     {
         color: string;
-        gradient: [string, string];
         emoji: string;
         shadow: string;
         glow: string;
@@ -24,40 +23,35 @@ const CATEGORY_CONFIG: Record<
 > = {
     Home: {
         color: "#10b981",
-        gradient: ["#34d399", "#059669"],
         emoji: "🏠",
-        shadow: "rgba(16, 185, 129, 0.4)",
-        glow: "rgba(52, 211, 153, 0.6)",
+        shadow: "rgba(16, 185, 129, 0.35)",
+        glow: "rgba(52, 211, 153, 0.5)",
     },
     Work: {
         color: "#3b82f6",
-        gradient: ["#60a5fa", "#2563eb"],
         emoji: "💼",
-        shadow: "rgba(59, 130, 246, 0.4)",
-        glow: "rgba(96, 165, 250, 0.6)",
+        shadow: "rgba(59, 130, 246, 0.35)",
+        glow: "rgba(96, 165, 250, 0.5)",
     },
     Travel: {
         color: "#ec4899",
-        gradient: ["#f472b6", "#db2777"],
         emoji: "✈️",
-        shadow: "rgba(236, 72, 153, 0.4)",
-        glow: "rgba(244, 114, 182, 0.6)",
+        shadow: "rgba(236, 72, 153, 0.35)",
+        glow: "rgba(244, 114, 182, 0.5)",
     },
     Future: {
         color: "#f59e0b",
-        gradient: ["#fbbf24", "#d97706"],
         emoji: "🌟",
-        shadow: "rgba(245, 158, 11, 0.4)",
-        glow: "rgba(251, 191, 36, 0.6)",
+        shadow: "rgba(245, 158, 11, 0.35)",
+        glow: "rgba(251, 191, 36, 0.5)",
     },
 };
 
 const DEFAULT_CONFIG = {
     color: "#6b7280",
-    gradient: ["#9ca3af", "#4b5563"] as [string, string],
     emoji: "📍",
-    shadow: "rgba(107, 114, 128, 0.4)",
-    glow: "rgba(156, 163, 175, 0.6)",
+    shadow: "rgba(107, 114, 128, 0.35)",
+    glow: "rgba(156, 163, 175, 0.5)",
 };
 
 export const MapMarker: React.FC<MapMarkerProps> = ({
@@ -80,6 +74,7 @@ export const MapMarker: React.FC<MapMarkerProps> = ({
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
+                background: "transparent",
                 zIndex: isHovered || isSelected ? 100 : 1,
             }}
             onClick={onClick}
@@ -93,14 +88,14 @@ export const MapMarker: React.FC<MapMarkerProps> = ({
                     style={{
                         position: "absolute",
                         bottom: "100%",
-                        marginBottom: "12px",
+                        marginBottom: "10px",
                         padding: "6px 12px",
-                        background: "rgba(15, 23, 42, 0.88)",
+                        background: "rgba(15, 23, 42, 0.9)",
                         backdropFilter: "blur(12px)",
                         WebkitBackdropFilter: "blur(12px)",
                         border: "1px solid rgba(255, 255, 255, 0.15)",
-                        borderRadius: "10px",
-                        boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3)",
+                        borderRadius: "8px",
+                        boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.3)",
                         color: "#fff",
                         whiteSpace: "nowrap",
                         pointerEvents: "none",
@@ -129,100 +124,54 @@ export const MapMarker: React.FC<MapMarkerProps> = ({
                             transform: "translateX(-50%)",
                             width: 0,
                             height: 0,
-                            borderLeft: "6px solid transparent",
-                            borderRight: "6px solid transparent",
-                            borderTop: "6px solid rgba(15, 23, 42, 0.88)",
+                            borderLeft: "5px solid transparent",
+                            borderRight: "5px solid transparent",
+                            borderTop: "5px solid rgba(15, 23, 42, 0.9)",
                         }}
                     />
                 </div>
             )}
 
-            {/* STYLE 1: 3D Glassmorphic Pin with SVG Centered Emoticon */}
+            {/* STYLE 1: Unicolor Pin (Solid category color pin, white emoticon inside, transparent background) */}
             {styleType === "glass-pin" && (
                 <div
                     style={{
                         position: "relative",
-                        transition: "transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1)",
+                        background: "transparent",
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        transition: "transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1)",
                         transform: isHovered || isSelected ? "scale(1.25) translateY(-4px)" : "scale(1)",
                     }}
                 >
-                    {/* Outer glowing aura ring */}
-                    <div
-                        style={{
-                            position: "absolute",
-                            top: "50%",
-                            left: "50%",
-                            width: "36px",
-                            height: "36px",
-                            marginTop: "-18px",
-                            marginLeft: "-18px",
-                            borderRadius: "50%",
-                            background: config.glow,
-                            opacity: isHovered || isSelected ? 0.8 : 0.35,
-                            filter: "blur(8px)",
-                            transition: "opacity 0.25s ease",
-                            animation: isHovered || isSelected ? "markerPulse 1.8s infinite" : "none",
-                            pointerEvents: "none",
-                        }}
-                    />
-
-                    {/* SVG 3D Teardrop Pin */}
+                    {/* SVG Unicolor Teardrop Pin */}
                     <svg
-                        width="38"
-                        height="48"
-                        viewBox="0 0 38 48"
+                        width="34"
+                        height="44"
+                        viewBox="0 0 34 44"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                         style={{
-                            filter: `drop-shadow(0 6px 12px ${config.shadow})`,
+                            filter: `drop-shadow(0 4px 8px ${config.shadow})`,
                         }}
                     >
-                        <defs>
-                            <linearGradient id={`pinGradient-${placeType}`} x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" stopColor={config.gradient[0]} />
-                                <stop offset="100%" stopColor={config.gradient[1]} />
-                            </linearGradient>
-                            <linearGradient id={`pinGlassHighlight-${placeType}`} x1="0%" y1="0%" x2="0%" y2="100%">
-                                <stop offset="0%" stopColor="#ffffff" stopOpacity="0.6" />
-                                <stop offset="40%" stopColor="#ffffff" stopOpacity="0.1" />
-                                <stop offset="100%" stopColor="#ffffff" stopOpacity="0" />
-                            </linearGradient>
-                        </defs>
-
-                        {/* Outer Pin Body */}
+                        {/* Solid Unicolor Pin Shape */}
                         <path
-                            d="M19 1C9.059 1 1 9.059 1 19c0 12.5 18 28 18 28s18-15.5 18-28C37 9.059 28.941 1 19 1z"
-                            fill={`url(#pinGradient-${placeType})`}
+                            d="M17 1C8.163 1 1 8.163 1 17c0 11 16 26 16 26s16-15 16-26C33 8.163 25.837 1 17 1z"
+                            fill={config.color}
                             stroke="#ffffff"
-                            strokeWidth="2"
+                            strokeWidth="1.5"
                         />
 
-                        {/* Glass Highlight Arc */}
-                        <path
-                            d="M19 2.5C10 2.5 3 9.5 3 18.5c0 3.2 1.2 6.5 3.5 9.8L19 43.5l12.5-15.2C33.8 25 35 21.7 35 18.5 35 9.5 28 2.5 19 2.5z"
-                            fill={`url(#pinGlassHighlight-${placeType})`}
-                            pointerEvents="none"
-                        />
-
-                        {/* Inner White Glass Sphere Badge */}
-                        <circle
-                            cx="19"
-                            cy="18.5"
-                            r="11.5"
-                            fill="#ffffff"
-                            opacity="0.95"
-                            style={{
-                                filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.15))",
-                            }}
-                        />
-
-                        {/* Vector-Centered Emoticon Inside Circle */}
+                        {/* White Emoticon Centered inside Unicolor Pin */}
                         <text
-                            x="19"
-                            y="19"
+                            x="17"
+                            y="16.5"
                             textAnchor="middle"
                             dominantBaseline="central"
                             fontSize="14"
+                            fill="#ffffff"
                             pointerEvents="none"
                         >
                             {config.emoji}
@@ -231,94 +180,47 @@ export const MapMarker: React.FC<MapMarkerProps> = ({
                 </div>
             )}
 
-            {/* STYLE 2: Floating Glass Badge (Pill Style) */}
+            {/* STYLE 2: Floating Pure Emoticon (Transparent Background) */}
             {styleType === "floating-badge" && (
                 <div
                     style={{
+                        background: "transparent",
                         display: "flex",
                         alignItems: "center",
-                        gap: "6px",
-                        padding: "5px 12px 5px 6px",
-                        background: "rgba(255, 255, 255, 0.85)",
-                        backdropFilter: "blur(12px)",
-                        WebkitBackdropFilter: "blur(12px)",
-                        border: `1.5px solid ${config.color}`,
-                        borderRadius: "20px",
-                        boxShadow: isHovered || isSelected
-                            ? `0 8px 20px -2px ${config.shadow}, 0 4px 6px -1px rgba(0, 0, 0, 0.1)`
-                            : "0 4px 12px rgba(0, 0, 0, 0.12)",
-                        transform: isHovered || isSelected ? "scale(1.15) translateY(-3px)" : "scale(1)",
-                        transition: "all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1)",
+                        justifyContent: "center",
+                        fontSize: "24px",
+                        lineHeight: "1",
+                        filter: `drop-shadow(0 4px 6px ${config.shadow})`,
+                        transform: isHovered || isSelected ? "scale(1.3) translateY(-3px)" : "scale(1)",
+                        transition: "transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1)",
                     }}
                 >
-                    <div
-                        style={{
-                            width: "24px",
-                            height: "24px",
-                            borderRadius: "50%",
-                            background: `linear-gradient(135deg, ${config.gradient[0]}, ${config.gradient[1]})`,
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "center",
-                            color: "white",
-                            fontSize: "13px",
-                            lineHeight: "1",
-                            boxShadow: `0 2px 6px ${config.shadow}`,
-                            flexShrink: 0,
-                        }}
-                    >
-                        {config.emoji}
-                    </div>
-                    <span
-                        style={{
-                            fontSize: "12px",
-                            fontWeight: 700,
-                            color: "#1e293b",
-                            maxWidth: "110px",
-                            overflow: "hidden",
-                            textOverflow: "ellipsis",
-                            whiteSpace: "nowrap",
-                        }}
-                    >
-                        {place.split(",")[0]}
-                    </span>
+                    {config.emoji}
                 </div>
             )}
 
-            {/* STYLE 3: Glowing Minimal Dot */}
+            {/* STYLE 3: Minimal Unicolor Dot (Invisible Background) */}
             {styleType === "glowing-dot" && (
                 <div
                     style={{
                         position: "relative",
-                        width: "24px",
-                        height: "24px",
+                        width: "22px",
+                        height: "22px",
+                        background: "transparent",
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "center",
                     }}
                 >
-                    {/* Animated Pulsing Ring */}
-                    <div
-                        style={{
-                            position: "absolute",
-                            width: "28px",
-                            height: "28px",
-                            borderRadius: "50%",
-                            border: `2px solid ${config.color}`,
-                            opacity: isHovered || isSelected ? 0.9 : 0.4,
-                            animation: "markerPulse 1.8s infinite ease-in-out",
-                            pointerEvents: "none",
-                        }}
-                    />
-                    {/* Inner Solid Dot */}
+                    {/* Inner Solid Unicolor Dot with White Border */}
                     <div
                         style={{
                             width: "14px",
                             height: "14px",
                             borderRadius: "50%",
-                            background: `linear-gradient(135deg, ${config.gradient[0]}, ${config.gradient[1]})`,
+                            backgroundColor: config.color,
                             border: "2px solid #ffffff",
-                            boxShadow: `0 0 10px ${config.color}`,
+                            boxShadow: `0 2px 8px ${config.shadow}`,
                             transform: isHovered || isSelected ? "scale(1.3)" : "scale(1)",
                             transition: "transform 0.2s ease",
                         }}

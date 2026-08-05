@@ -515,9 +515,9 @@ function MapComponent() {
                         </div>
                         <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
                             {[
-                                { id: "glass-pin" as MarkerStyleType, label: "📍 3D Glass Pins" },
-                                { id: "floating-badge" as MarkerStyleType, label: "🏷️ Floating Badges" },
-                                { id: "glowing-dot" as MarkerStyleType, label: "✨ Glowing Dots" },
+                                { id: "glass-pin" as MarkerStyleType, label: "📍 Unicolor Pins" },
+                                { id: "floating-badge" as MarkerStyleType, label: "🏷️ Floating Emoticons" },
+                                { id: "glowing-dot" as MarkerStyleType, label: "✨ Minimal Dots" },
                             ].map((preset) => (
                                 <button
                                     key={preset.id}
