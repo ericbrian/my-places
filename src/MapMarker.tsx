@@ -93,7 +93,7 @@ export const MapMarker: React.FC<MapMarkerProps> = ({
                         display: "flex",
                         alignItems: "center",
                         gap: "8px",
-                        fontSize: "13px",
+                        fontSize: "14px",
                         fontWeight: 600,
                     }}
                 >
