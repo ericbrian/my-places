@@ -1,12 +1,9 @@
 import React, { useState } from "react";
 
-export type MarkerStyleType = "glass-pin" | "floating-badge" | "glowing-dot";
-
 export interface MapMarkerProps {
     place: string;
     localname: string | null;
     placeType: string;
-    styleType?: MarkerStyleType;
     isSelected?: boolean;
     onClick: (e: React.MouseEvent) => void;
 }
@@ -18,32 +15,27 @@ const CATEGORY_CONFIG: Record<
         color: string;
         emoji: string;
         shadow: string;
-        glow: string;
     }
 > = {
     Home: {
         color: "#10b981",
         emoji: "🏠",
         shadow: "rgba(16, 185, 129, 0.35)",
-        glow: "rgba(52, 211, 153, 0.5)",
     },
     Work: {
         color: "#3b82f6",
         emoji: "💼",
         shadow: "rgba(59, 130, 246, 0.35)",
-        glow: "rgba(96, 165, 250, 0.5)",
     },
     Travel: {
         color: "#ec4899",
         emoji: "✈️",
         shadow: "rgba(236, 72, 153, 0.35)",
-        glow: "rgba(244, 114, 182, 0.5)",
     },
     Future: {
         color: "#f59e0b",
         emoji: "🌟",
         shadow: "rgba(245, 158, 11, 0.35)",
-        glow: "rgba(251, 191, 36, 0.5)",
     },
 };
 
@@ -51,14 +43,12 @@ const DEFAULT_CONFIG = {
     color: "#6b7280",
     emoji: "📍",
     shadow: "rgba(107, 114, 128, 0.35)",
-    glow: "rgba(156, 163, 175, 0.5)",
 };
 
 export const MapMarker: React.FC<MapMarkerProps> = ({
     place,
     localname,
     placeType,
-    styleType = "glass-pin",
     isSelected = false,
     onClick,
 }) => {
@@ -132,101 +122,51 @@ export const MapMarker: React.FC<MapMarkerProps> = ({
                 </div>
             )}
 
-            {/* STYLE 1: Unicolor Pin (Solid category color pin, white emoticon inside, transparent background) */}
-            {styleType === "glass-pin" && (
-                <div
+            {/* Unicolor Pin (Solid category color pin, white emoticon inside, transparent background) */}
+            <div
+                style={{
+                    position: "relative",
+                    background: "transparent",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    transition: "transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1)",
+                    transform: isHovered || isSelected ? "scale(1.25) translateY(-4px)" : "scale(1)",
+                }}
+            >
+                {/* SVG Unicolor Teardrop Pin */}
+                <svg
+                    width="34"
+                    height="44"
+                    viewBox="0 0 34 44"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
                     style={{
-                        position: "relative",
-                        background: "transparent",
-                        display: "flex",
-                        flexDirection: "column",
-                        alignItems: "center",
-                        transition: "transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1)",
-                        transform: isHovered || isSelected ? "scale(1.25) translateY(-4px)" : "scale(1)",
+                        filter: `drop-shadow(0 4px 8px ${config.shadow})`,
                     }}
                 >
-                    {/* SVG Unicolor Teardrop Pin */}
-                    <svg
-                        width="34"
-                        height="44"
-                        viewBox="0 0 34 44"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        style={{
-                            filter: `drop-shadow(0 4px 8px ${config.shadow})`,
-                        }}
-                    >
-                        {/* Solid Unicolor Pin Shape */}
-                        <path
-                            d="M17 1C8.163 1 1 8.163 1 17c0 11 16 26 16 26s16-15 16-26C33 8.163 25.837 1 17 1z"
-                            fill={config.color}
-                            stroke="#ffffff"
-                            strokeWidth="1.5"
-                        />
-
-                        {/* White Emoticon Centered inside Unicolor Pin */}
-                        <text
-                            x="17"
-                            y="16.5"
-                            textAnchor="middle"
-                            dominantBaseline="central"
-                            fontSize="14"
-                            fill="#ffffff"
-                            pointerEvents="none"
-                        >
-                            {config.emoji}
-                        </text>
-                    </svg>
-                </div>
-            )}
-
-            {/* STYLE 2: Floating Pure Emoticon (Transparent Background) */}
-            {styleType === "floating-badge" && (
-                <div
-                    style={{
-                        background: "transparent",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        fontSize: "24px",
-                        lineHeight: "1",
-                        filter: `drop-shadow(0 4px 6px ${config.shadow})`,
-                        transform: isHovered || isSelected ? "scale(1.3) translateY(-3px)" : "scale(1)",
-                        transition: "transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1)",
-                    }}
-                >
-                    {config.emoji}
-                </div>
-            )}
-
-            {/* STYLE 3: Minimal Unicolor Dot (Invisible Background) */}
-            {styleType === "glowing-dot" && (
-                <div
-                    style={{
-                        position: "relative",
-                        width: "22px",
-                        height: "22px",
-                        background: "transparent",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                    }}
-                >
-                    {/* Inner Solid Unicolor Dot with White Border */}
-                    <div
-                        style={{
-                            width: "14px",
-                            height: "14px",
-                            borderRadius: "50%",
-                            backgroundColor: config.color,
-                            border: "2px solid #ffffff",
-                            boxShadow: `0 2px 8px ${config.shadow}`,
-                            transform: isHovered || isSelected ? "scale(1.3)" : "scale(1)",
-                            transition: "transform 0.2s ease",
-                        }}
+                    {/* Solid Unicolor Pin Shape */}
+                    <path
+                        d="M17 1C8.163 1 1 8.163 1 17c0 11 16 26 16 26s16-15 16-26C33 8.163 25.837 1 17 1z"
+                        fill={config.color}
+                        stroke="#ffffff"
+                        strokeWidth="1.5"
                     />
-                </div>
-            )}
+
+                    {/* White Emoticon Centered inside Unicolor Pin */}
+                    <text
+                        x="17"
+                        y="16.5"
+                        textAnchor="middle"
+                        dominantBaseline="central"
+                        fontSize="14"
+                        fill="#ffffff"
+                        pointerEvents="none"
+                    >
+                        {config.emoji}
+                    </text>
+                </svg>
+            </div>
         </div>
     );
 };
