@@ -8,65 +8,7 @@ import type { BBox } from "geojson";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { mapboxAccessToken, siteTitle } from "./siteconfig";
 import geoJson from "./geojson";
-
-// Pin color & emoji mapping by placeType
-const PIN_CONFIG: Record<string, { color: string; emoji: string; shadow: string }> = {
-    Home: { color: "#4CAF50", emoji: "🏠", shadow: "rgba(76, 175, 80, 0.4)" },
-    Work: { color: "#2196F3", emoji: "💼", shadow: "rgba(33, 150, 243, 0.4)" },
-    Travel: { color: "#E91E63", emoji: "🎉", shadow: "rgba(233, 30, 99, 0.4)" },
-    Future: { color: "#FF9800", emoji: "⭐", shadow: "rgba(255, 152, 0, 0.4)" },
-};
-
-// Teardrop map pin component
-function MapPin({ color, emoji, shadow, size = 40 }: { color: string; emoji: string; shadow: string; size?: number }) {
-    return (
-        <div
-            style={{
-                cursor: "pointer",
-                filter: `drop-shadow(0 3px 4px ${shadow})`,
-                transition: "transform 0.15s ease, filter 0.15s ease",
-            }}
-            onMouseEnter={(e) => {
-                e.currentTarget.style.transform = "scale(1.15)";
-                e.currentTarget.style.filter = `drop-shadow(0 5px 8px ${shadow})`;
-            }}
-            onMouseLeave={(e) => {
-                e.currentTarget.style.transform = "scale(1)";
-                e.currentTarget.style.filter = `drop-shadow(0 3px 4px ${shadow})`;
-            }}
-        >
-            <svg
-                width={size}
-                height={size * 1.3}
-                viewBox="0 0 40 52"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                {/* Teardrop / pin shape */}
-                <path
-                    d="M20 0C8.954 0 0 8.954 0 20c0 11.046 20 32 20 32s20-20.954 20-32C40 8.954 31.046 0 20 0z"
-                    fill={color}
-                />
-                {/* White inner circle */}
-                <circle cx="20" cy="19" r="13" fill="white" opacity="0.95" />
-            </svg>
-            {/* Emoji centered in the white circle */}
-            <span
-                style={{
-                    position: "absolute",
-                    top: `${size * 0.22}px`,
-                    left: "50%",
-                    transform: "translateX(-50%)",
-                    fontSize: `${size * 0.4}px`,
-                    lineHeight: "1",
-                    pointerEvents: "none",
-                }}
-            >
-                {emoji}
-            </span>
-        </div>
-    );
-}
+import { MapMarker, type MarkerStyleType } from "./MapMarker";
 
 function MapComponent() {
     const mapRef = useRef<MapRef>(null);
@@ -128,6 +70,9 @@ function MapComponent() {
     const [showWorkLocations, setShowWorkLocations] = useState(true);
     const [showTravelLocations, setShowTravelLocations] = useState(true);
 
+    // Custom Marker Style Preset State
+    const [markerStyle, setMarkerStyle] = useState<MarkerStyleType>("glass-pin");
+
     const resetMap = () => {
         setViewState(initialViewState);
     };
@@ -162,7 +107,7 @@ function MapComponent() {
     // Build supercluster index from visible features
     const clusterIndex = useMemo(() => {
         const index = new Supercluster<{ place: string; localname: string | null; placeType: string; description: string }>({
-            radius: 15,
+            radius: 18,
             maxZoom: 10,
         });
         index.load(
@@ -242,12 +187,23 @@ function MapComponent() {
                     const [lng, lat] = cluster.geometry.coordinates;
                     const props = cluster.properties;
 
-                    // Cluster bubble
+                    // Supercluster cluster bubble
                     if ("cluster" in props && props.cluster) {
                         const count = (props as Supercluster.ClusterProperties).point_count;
                         const clusterId = (props as Supercluster.ClusterProperties).cluster_id;
-                        // Scale bubble size by point count
-                        const size = 36 + Math.min(count, 100) * 0.4;
+                        const size = 38 + Math.min(count, 100) * 0.45;
+
+                        // Tiered gradients by cluster count
+                        let clusterGradient = "linear-gradient(135deg, #06b6d4, #10b981)";
+                        let glowColor = "rgba(6, 182, 212, 0.4)";
+                        if (count >= 25) {
+                            clusterGradient = "linear-gradient(135deg, #f43f5e, #f59e0b)";
+                            glowColor = "rgba(244, 63, 94, 0.5)";
+                        } else if (count >= 5) {
+                            clusterGradient = "linear-gradient(135deg, #6366f1, #8b5cf6)";
+                            glowColor = "rgba(99, 102, 241, 0.5)";
+                        }
+
                         return (
                             <Marker
                                 key={`cluster-${clusterId}`}
@@ -261,48 +217,69 @@ function MapComponent() {
                             >
                                 <div
                                     style={{
+                                        position: "relative",
                                         width: `${size}px`,
                                         height: `${size}px`,
-                                        borderRadius: "50%",
-                                        background: "linear-gradient(135deg, #6366f1, #8b5cf6)",
-                                        border: "3px solid white",
                                         display: "flex",
                                         alignItems: "center",
                                         justifyContent: "center",
-                                        color: "white",
-                                        fontWeight: 700,
-                                        fontSize: `${Math.max(13, 16 - Math.floor(count / 20))}px`,
-                                        fontFamily: "system-ui, -apple-system, sans-serif",
                                         cursor: "pointer",
-                                        boxShadow: "0 3px 10px rgba(99, 102, 241, 0.4)",
-                                        transition: "transform 0.15s ease, box-shadow 0.15s ease",
-                                    }}
-                                    onMouseEnter={(e) => {
-                                        e.currentTarget.style.transform = "scale(1.15)";
-                                        e.currentTarget.style.boxShadow = "0 5px 16px rgba(99, 102, 241, 0.5)";
-                                    }}
-                                    onMouseLeave={(e) => {
-                                        e.currentTarget.style.transform = "scale(1)";
-                                        e.currentTarget.style.boxShadow = "0 3px 10px rgba(99, 102, 241, 0.4)";
                                     }}
                                 >
-                                    {count}
+                                    {/* Outer Pulse Ring */}
+                                    <div
+                                        style={{
+                                            position: "absolute",
+                                            inset: "-4px",
+                                            borderRadius: "50%",
+                                            background: glowColor,
+                                            filter: "blur(6px)",
+                                            animation: "markerPulse 2s infinite ease-in-out",
+                                        }}
+                                    />
+                                    {/* Cluster Main Bubble */}
+                                    <div
+                                        style={{
+                                            position: "relative",
+                                            width: "100%",
+                                            height: "100%",
+                                            borderRadius: "50%",
+                                            background: clusterGradient,
+                                            border: "3px solid #ffffff",
+                                            display: "flex",
+                                            alignItems: "center",
+                                            justifyContent: "center",
+                                            color: "white",
+                                            fontWeight: 800,
+                                            fontSize: `${Math.max(13, 16 - Math.floor(count / 20))}px`,
+                                            fontFamily: "system-ui, -apple-system, sans-serif",
+                                            boxShadow: "0 8px 20px rgba(0, 0, 0, 0.25), 0 2px 4px rgba(0, 0, 0, 0.15)",
+                                            transition: "transform 0.2s ease, boxShadow 0.2s ease",
+                                        }}
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.transform = "scale(1.15)";
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.transform = "scale(1)";
+                                        }}
+                                    >
+                                        {count}
+                                    </div>
                                 </div>
                             </Marker>
                         );
                     }
 
-                    // Individual point — render teardrop pin
+                    // Individual point marker
                     const placeType = props.placeType;
-                    const config = PIN_CONFIG[placeType];
-                    if (!config) return null;
+                    if (!placeType) return null;
 
                     return (
                         <Marker
                             key={`point-${lng}-${lat}-${props.place}`}
                             longitude={lng}
                             latitude={lat}
-                            anchor="bottom"
+                            anchor={markerStyle === "glass-pin" ? "bottom" : "center"}
                             onClick={(e) => {
                                 e.originalEvent.stopPropagation();
                                 onMarkerClick({
@@ -312,10 +289,26 @@ function MapComponent() {
                                 });
                             }}
                         >
-                            <MapPin color={config.color} emoji={config.emoji} shadow={config.shadow} />
+                            <MapMarker
+                                place={props.place}
+                                localname={props.localname}
+                                placeType={placeType}
+                                styleType={markerStyle}
+                                isSelected={popupInfo?.place === props.place}
+                                onClick={(e) => {
+                                    e.stopPropagation();
+                                    onMarkerClick({
+                                        type: "Feature",
+                                        properties: props as typeof geoJson.features[number]["properties"],
+                                        geometry: cluster.geometry,
+                                    });
+                                }}
+                            />
                         </Marker>
                     );
                 })}
+
+                {/* Selected Point Popup */}
                 {popupInfo && (
                     <Popup
                         longitude={popupInfo.longitude}
@@ -326,28 +319,28 @@ function MapComponent() {
                         className="custom-popup"
                     >
                         <>
-                            {/* Header section with gradient background */}
+                            {/* Header section with category gradient background */}
                             <div
                                 style={{
                                     background: `linear-gradient(135deg, ${
                                         popupInfo.placeType === "Home"
-                                            ? "#4CAF50, #66BB6A"
+                                            ? "#10b981, #059669"
                                             : popupInfo.placeType === "Work"
-                                            ? "#2196F3, #42A5F5"
+                                            ? "#3b82f6, #1d4ed8"
                                             : popupInfo.placeType === "Travel"
-                                            ? "#E91E63, #EC407A"
-                                            : "#FF9800, #FFA726"
+                                            ? "#ec4899, #be185d"
+                                            : "#f59e0b, #d97706"
                                     })`,
                                     padding: "20px",
                                     color: "white",
                                     position: "relative",
                                 }}
                             >
-                                <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                                <div style={{ display: "flex", alignItems: "center", gap: "14px" }}>
                                     <div
                                         style={{
                                             fontSize: "24px",
-                                            background: "rgba(255, 255, 255, 0.2)",
+                                            background: "rgba(255, 255, 255, 0.25)",
                                             borderRadius: "50%",
                                             width: "48px",
                                             height: "48px",
@@ -355,12 +348,14 @@ function MapComponent() {
                                             alignItems: "center",
                                             justifyContent: "center",
                                             backdropFilter: "blur(10px)",
+                                            WebkitBackdropFilter: "blur(10px)",
+                                            boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
                                         }}
                                     >
                                         {popupInfo.placeType === "Home" && "🏠"}
                                         {popupInfo.placeType === "Work" && "💼"}
-                                        {popupInfo.placeType === "Travel" && "🎉"}
-                                        {popupInfo.placeType === "Future" && "⭐"}
+                                        {popupInfo.placeType === "Travel" && "✈️"}
+                                        {popupInfo.placeType === "Future" && "🌟"}
                                     </div>
                                     <div style={{ flex: 1 }}>
                                         <h3
@@ -368,8 +363,8 @@ function MapComponent() {
                                                 margin: "0 0 4px 0",
                                                 fontSize: "18px",
                                                 fontWeight: "700",
-                                                lineHeight: "1.2",
-                                                textShadow: "0 1px 2px rgba(0, 0, 0, 0.1)",
+                                                lineHeight: "1.25",
+                                                textShadow: "0 1px 3px rgba(0, 0, 0, 0.2)",
                                             }}
                                         >
                                             {popupInfo.place}
@@ -382,7 +377,7 @@ function MapComponent() {
                                                     fontWeight: "400",
                                                     fontStyle: "italic",
                                                     opacity: 0.9,
-                                                    textShadow: "0 1px 2px rgba(0, 0, 0, 0.1)",
+                                                    textShadow: "0 1px 2px rgba(0, 0, 0, 0.2)",
                                                 }}
                                             >
                                                 {popupInfo.localname}
@@ -393,12 +388,12 @@ function MapComponent() {
                             </div>
 
                             {/* Content section */}
-                            <div style={{ padding: "20px" }}>
+                            <div style={{ padding: "20px", background: "#ffffff" }}>
                                 <div
                                     style={{
-                                        fontSize: "15px",
+                                        fontSize: "14px",
                                         lineHeight: "1.6",
-                                        color: "#2c3e50",
+                                        color: "#334155",
                                         marginBottom: "20px",
                                     }}
                                     dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(popupInfo.description) }}
@@ -410,38 +405,37 @@ function MapComponent() {
                                         style={{
                                             display: "inline-flex",
                                             alignItems: "center",
-                                            padding: "4px 16px",
+                                            padding: "4px 14px",
                                             backgroundColor:
                                                 popupInfo.placeType === "Home"
-                                                    ? "rgba(76, 175, 80, 0.1)"
+                                                    ? "rgba(16, 185, 129, 0.12)"
                                                     : popupInfo.placeType === "Work"
-                                                    ? "rgba(33, 150, 243, 0.1)"
+                                                    ? "rgba(59, 130, 246, 0.12)"
                                                     : popupInfo.placeType === "Travel"
-                                                    ? "rgba(233, 30, 99, 0.1)"
-                                                    : "rgba(255, 152, 0, 0.1)",
+                                                    ? "rgba(236, 72, 153, 0.12)"
+                                                    : "rgba(245, 158, 11, 0.12)",
                                             color:
                                                 popupInfo.placeType === "Home"
-                                                    ? "#2E7D32"
+                                                    ? "#047857"
                                                     : popupInfo.placeType === "Work"
-                                                    ? "#1565C0"
+                                                    ? "#1d4ed8"
                                                     : popupInfo.placeType === "Travel"
-                                                    ? "#C2185B"
-                                                    : "#E65100",
+                                                    ? "#be185d"
+                                                    : "#b45309",
                                             borderRadius: "20px",
-                                            fontSize: "12px",
-                                            fontWeight: "600",
+                                            fontSize: "11px",
+                                            fontWeight: "700",
                                             textTransform: "uppercase",
                                             letterSpacing: "0.8px",
-                                            border: `2px solid ${
+                                            border: `1.5px solid ${
                                                 popupInfo.placeType === "Home"
-                                                    ? "rgba(76, 175, 80, 0.2)"
+                                                    ? "rgba(16, 185, 129, 0.3)"
                                                     : popupInfo.placeType === "Work"
-                                                    ? "rgba(33, 150, 243, 0.2)"
+                                                    ? "rgba(59, 130, 246, 0.3)"
                                                     : popupInfo.placeType === "Travel"
-                                                    ? "rgba(233, 30, 99, 0.2)"
-                                                    : "rgba(255, 152, 0, 0.2)"
+                                                    ? "rgba(236, 72, 153, 0.3)"
+                                                    : "rgba(245, 158, 11, 0.3)"
                                             }`,
-                                            transition: "all 0.2s ease-in-out",
                                         }}
                                     >
                                         {popupInfo.placeType}
@@ -452,257 +446,188 @@ function MapComponent() {
                     </Popup>
                 )}
 
-                {/* Site Title */}
+                {/* Site Title Header */}
                 <div
+                    className="glass-panel"
                     style={{
                         position: "absolute",
                         top: "20px",
                         left: "20px",
-                        backgroundColor: "rgba(255, 255, 255, 0.95)",
-                        padding: "16px",
-                        borderRadius: "8px",
-                        boxShadow: "0 2px 10px rgba(0,0,0,0.1)",
+                        padding: "14px 20px",
+                        borderRadius: "14px",
                         fontFamily: "system-ui, -apple-system, sans-serif",
-                        zIndex: 1,
+                        zIndex: 10,
                     }}
                 >
                     <h1
                         style={{
                             margin: "0",
-                            fontSize: "24px",
-                            color: "#333",
-                            fontWeight: "bold",
+                            fontSize: "22px",
+                            color: "#0f172a",
+                            fontWeight: "800",
                             display: "flex",
                             alignItems: "center",
-                            gap: "8px",
+                            gap: "10px",
+                            letterSpacing: "-0.3px",
                         }}
                     >
-                        <span style={{ fontSize: "28px" }}>🗺️</span>
+                        <span style={{ fontSize: "26px" }}>🗺️</span>
                         {siteTitle}
                     </h1>
                 </div>
 
-                {/* Legend */}
+                {/* Controls & Legend Panel */}
                 <div
+                    className="glass-panel"
                     style={{
                         position: "absolute",
                         top: "20px",
                         right: "20px",
-                        backgroundColor: "rgba(255, 255, 255, 0.95)",
-                        padding: "16px",
-                        borderRadius: "8px",
-                        boxShadow: "0 2px 10px rgba(0,0,0,0.1)",
-                        fontSize: "14px",
+                        padding: "18px",
+                        borderRadius: "16px",
+                        fontSize: "13px",
                         fontFamily: "system-ui, -apple-system, sans-serif",
-                        minWidth: "140px",
-                        zIndex: 1,
+                        width: "220px",
+                        zIndex: 10,
                     }}
                 >
-                    <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+                    {/* Section 1: Marker Style Selector */}
+                    <div style={{ marginBottom: "16px" }}>
                         <div
                             style={{
-                                display: "flex",
-                                alignItems: "center",
-                                gap: "8px",
-                                cursor: "pointer",
-                                padding: "4px",
-                                borderRadius: "4px",
-                                backgroundColor: showHomeLocations ? "rgba(76, 175, 80, 0.1)" : "transparent",
-                                border: showHomeLocations ? "1px solid rgba(76, 175, 80, 0.3)" : "1px solid transparent",
-                                minWidth: "160px",
+                                fontSize: "11px",
+                                fontWeight: "700",
+                                textTransform: "uppercase",
+                                letterSpacing: "0.8px",
+                                color: "#64748b",
+                                marginBottom: "8px",
                             }}
-                            onClick={() => setShowHomeLocations(!showHomeLocations)}
                         >
-                            <div
-                                style={{
-                                    display: "flex",
-                                    alignItems: "center",
-                                    justifyContent: "center",
-                                    width: "20px",
-                                    height: "20px",
-                                    borderRadius: "50%",
-                                    backgroundColor: showHomeLocations ? "#4CAF50" : "#ccc",
-                                    border: "2px solid white",
-                                    fontSize: "12px",
-                                    opacity: showHomeLocations ? 1 : 0.5,
-                                }}
-                            >
-                                🏠
-                            </div>
-                            <span
-                                style={{
-                                    color: showHomeLocations ? "#4CAF50" : "#999",
-                                    fontWeight: showHomeLocations ? "bold" : "normal",
-                                    flex: 1,
-                                }}
-                            >
-                                Home ({showHomeLocations ? "hide" : "show"})
-                            </span>
+                            Marker Theme
                         </div>
-                        <div
-                            style={{
-                                display: "flex",
-                                alignItems: "center",
-                                gap: "8px",
-                                cursor: "pointer",
-                                padding: "4px",
-                                borderRadius: "4px",
-                                backgroundColor: showWorkLocations ? "rgba(33, 150, 243, 0.1)" : "transparent",
-                                border: showWorkLocations ? "1px solid rgba(33, 150, 243, 0.3)" : "1px solid transparent",
-                                minWidth: "160px",
-                            }}
-                            onClick={() => setShowWorkLocations(!showWorkLocations)}
-                        >
-                            <div
-                                style={{
-                                    display: "flex",
-                                    alignItems: "center",
-                                    justifyContent: "center",
-                                    width: "20px",
-                                    height: "20px",
-                                    borderRadius: "50%",
-                                    backgroundColor: showWorkLocations ? "#2196F3" : "#ccc",
-                                    border: "2px solid white",
-                                    fontSize: "12px",
-                                    opacity: showWorkLocations ? 1 : 0.5,
-                                }}
-                            >
-                                💼
-                            </div>
-                            <span
-                                style={{
-                                    color: showWorkLocations ? "#2196F3" : "#999",
-                                    fontWeight: showWorkLocations ? "bold" : "normal",
-                                    flex: 1,
-                                }}
-                            >
-                                Work ({showWorkLocations ? "hide" : "show"})
-                            </span>
-                        </div>
-                        <div
-                            style={{
-                                display: "flex",
-                                alignItems: "center",
-                                gap: "8px",
-                                cursor: "pointer",
-                                padding: "4px",
-                                borderRadius: "4px",
-                                backgroundColor: showTravelLocations ? "rgba(233, 30, 99, 0.1)" : "transparent",
-                                border: showTravelLocations ? "1px solid rgba(233, 30, 99, 0.3)" : "1px solid transparent",
-                                minWidth: "160px",
-                            }}
-                            onClick={() => setShowTravelLocations(!showTravelLocations)}
-                        >
-                            <div
-                                style={{
-                                    display: "flex",
-                                    alignItems: "center",
-                                    justifyContent: "center",
-                                    width: "20px",
-                                    height: "20px",
-                                    borderRadius: "50%",
-                                    backgroundColor: showTravelLocations ? "#E91E63" : "#ccc",
-                                    border: "2px solid white",
-                                    fontSize: "12px",
-                                    opacity: showTravelLocations ? 1 : 0.5,
-                                }}
-                            >
-                                🎉
-                            </div>
-                            <span
-                                style={{
-                                    color: showTravelLocations ? "#E91E63" : "#999",
-                                    fontWeight: showTravelLocations ? "bold" : "normal",
-                                    flex: 1,
-                                }}
-                            >
-                                Travel ({showTravelLocations ? "hide" : "show"})
-                            </span>
-                        </div>
-                        <div
-                            style={{
-                                display: "flex",
-                                alignItems: "center",
-                                gap: "8px",
-                                cursor: "pointer",
-                                padding: "4px",
-                                borderRadius: "4px",
-                                backgroundColor: showFutureLocations ? "rgba(255, 152, 0, 0.1)" : "transparent",
-                                border: showFutureLocations ? "1px solid rgba(255, 152, 0, 0.3)" : "1px solid transparent",
-                                minWidth: "160px",
-                            }}
-                            onClick={() => setShowFutureLocations(!showFutureLocations)}
-                        >
-                            <div
-                                style={{
-                                    display: "flex",
-                                    alignItems: "center",
-                                    justifyContent: "center",
-                                    width: "20px",
-                                    height: "20px",
-                                    borderRadius: "50%",
-                                    backgroundColor: showFutureLocations ? "#FF9800" : "#ccc",
-                                    border: "2px solid white",
-                                    fontSize: "12px",
-                                    opacity: showFutureLocations ? 1 : 0.5,
-                                }}
-                            >
-                                ⭐
-                            </div>
-                            <span
-                                style={{
-                                    color: showFutureLocations ? "#FF9800" : "#999",
-                                    fontWeight: showFutureLocations ? "bold" : "normal",
-                                    flex: 1,
-                                }}
-                            >
-                                Future ({showFutureLocations ? "hide" : "show"})
-                            </span>
-                            {!showFutureLocations && (
-                                <span
+                        <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
+                            {[
+                                { id: "glass-pin" as MarkerStyleType, label: "📍 3D Glass Pins" },
+                                { id: "floating-badge" as MarkerStyleType, label: "🏷️ Floating Badges" },
+                                { id: "glowing-dot" as MarkerStyleType, label: "✨ Glowing Dots" },
+                            ].map((preset) => (
+                                <button
+                                    key={preset.id}
+                                    onClick={() => setMarkerStyle(preset.id)}
                                     style={{
-                                        fontSize: "10px",
-                                        color: "#999",
-                                        fontStyle: "italic",
-                                        visibility: "hidden",
+                                        padding: "7px 10px",
+                                        fontSize: "12px",
+                                        fontWeight: markerStyle === preset.id ? 700 : 500,
+                                        color: markerStyle === preset.id ? "#1e293b" : "#64748b",
+                                        backgroundColor: markerStyle === preset.id ? "#ffffff" : "rgba(241, 245, 249, 0.6)",
+                                        border: markerStyle === preset.id ? "1.5px solid #6366f1" : "1px solid rgba(226, 232, 240, 0.8)",
+                                        borderRadius: "8px",
+                                        cursor: "pointer",
+                                        textAlign: "left",
+                                        boxShadow: markerStyle === preset.id ? "0 2px 8px rgba(99, 102, 241, 0.15)" : "none",
+                                        transition: "all 0.15s ease",
                                     }}
                                 >
-                                    (click)
-                                </span>
-                            )}
+                                    {preset.label}
+                                </button>
+                            ))}
                         </div>
                     </div>
 
-                    {/* Reset Button */}
-                    <div style={{ marginTop: "16px", paddingTop: "12px", borderTop: "1px solid rgba(0, 0, 0, 0.1)" }}>
+                    <div style={{ height: "1px", background: "rgba(226, 232, 240, 0.8)", margin: "14px 0" }} />
+
+                    {/* Section 2: Category Filter Toggles */}
+                    <div style={{ marginBottom: "16px" }}>
+                        <div
+                            style={{
+                                fontSize: "11px",
+                                fontWeight: "700",
+                                textTransform: "uppercase",
+                                letterSpacing: "0.8px",
+                                color: "#64748b",
+                                marginBottom: "8px",
+                            }}
+                        >
+                            Categories
+                        </div>
+                        <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
+                            {[
+                                { key: "Home", label: "Home", active: showHomeLocations, toggle: () => setShowHomeLocations(!showHomeLocations), color: "#10b981", icon: "🏠" },
+                                { key: "Work", label: "Work", active: showWorkLocations, toggle: () => setShowWorkLocations(!showWorkLocations), color: "#3b82f6", icon: "💼" },
+                                { key: "Travel", label: "Travel", active: showTravelLocations, toggle: () => setShowTravelLocations(!showTravelLocations), color: "#ec4899", icon: "✈️" },
+                                { key: "Future", label: "Future", active: showFutureLocations, toggle: () => setShowFutureLocations(!showFutureLocations), color: "#f59e0b", icon: "🌟" },
+                            ].map((cat) => (
+                                <div
+                                    key={cat.key}
+                                    onClick={cat.toggle}
+                                    style={{
+                                        display: "flex",
+                                        alignItems: "center",
+                                        gap: "8px",
+                                        cursor: "pointer",
+                                        padding: "6px 8px",
+                                        borderRadius: "8px",
+                                        backgroundColor: cat.active ? "rgba(255, 255, 255, 0.8)" : "transparent",
+                                        border: cat.active ? `1px solid ${cat.color}40` : "1px solid transparent",
+                                        transition: "all 0.15s ease",
+                                    }}
+                                >
+                                    <div
+                                        style={{
+                                            display: "flex",
+                                            alignItems: "center",
+                                            justifyContent: "center",
+                                            width: "22px",
+                                            height: "22px",
+                                            borderRadius: "50%",
+                                            backgroundColor: cat.active ? cat.color : "#cbd5e1",
+                                            color: "#fff",
+                                            fontSize: "11px",
+                                            boxShadow: cat.active ? `0 2px 6px ${cat.color}40` : "none",
+                                            opacity: cat.active ? 1 : 0.6,
+                                        }}
+                                    >
+                                        {cat.icon}
+                                    </div>
+                                    <span
+                                        style={{
+                                            color: cat.active ? "#1e293b" : "#94a3b8",
+                                            fontWeight: cat.active ? 600 : 400,
+                                            flex: 1,
+                                        }}
+                                    >
+                                        {cat.label}
+                                    </span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Section 3: Reset Button */}
+                    <div style={{ paddingTop: "12px", borderTop: "1px solid rgba(226, 232, 240, 0.8)" }}>
                         <button
                             onClick={resetMap}
                             style={{
                                 width: "100%",
                                 padding: "8px 12px",
-                                fontSize: "13px",
+                                fontSize: "12px",
                                 fontWeight: "600",
-                                color: "#fff",
-                                backgroundColor: "#6c757d",
-                                border: "none",
-                                borderRadius: "6px",
+                                color: "#475569",
+                                backgroundColor: "rgba(241, 245, 249, 0.9)",
+                                border: "1px solid #cbd5e1",
+                                borderRadius: "8px",
                                 cursor: "pointer",
-                                boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
-                                transition: "all 0.2s ease",
+                                transition: "all 0.15s ease",
                                 fontFamily: "system-ui, -apple-system, sans-serif",
                             }}
                             onMouseEnter={(e) => {
-                                e.currentTarget.style.backgroundColor = "#5a6268";
-                                e.currentTarget.style.transform = "translateY(-1px)";
-                                e.currentTarget.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.15)";
+                                e.currentTarget.style.backgroundColor = "#e2e8f0";
+                                e.currentTarget.style.color = "#0f172a";
                             }}
                             onMouseLeave={(e) => {
-                                e.currentTarget.style.backgroundColor = "#6c757d";
-                                e.currentTarget.style.transform = "translateY(0)";
-                                e.currentTarget.style.boxShadow = "0 2px 4px rgba(0, 0, 0, 0.1)";
+                                e.currentTarget.style.backgroundColor = "rgba(241, 245, 249, 0.9)";
+                                e.currentTarget.style.color = "#475569";
                             }}
-                            onMouseDown={(e) => (e.currentTarget.style.transform = "translateY(0) scale(0.98)")}
-                            onMouseUp={(e) => (e.currentTarget.style.transform = "translateY(-1px) scale(1)")}
                         >
                             🔄 Reset View
                         </button>

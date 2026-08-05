@@ -41,7 +41,7 @@ test.describe('Map Application', () => {
     // 2. Use the map instance to find the pixel coordinate of a known location (Alexandria, VA)
     // Alexandria coords from geojson.ts: [-77.046921, 38.804836]
     const pixel = await page.evaluate(() => {
-      // @ts-ignore - mapRef is not exposed globally, but we can find the map instance
+      // @ts-expect-error - mapRef is not exposed globally, but we can find the map instance
       // react-map-gl usually attaches the map instance to the canvas or a parent
       // For testing, we can also just use the coordinate and the 'map' global if we exposed it.
       // Alternatively, we can just click a hardcoded pixel that we know works in the default viewport.
