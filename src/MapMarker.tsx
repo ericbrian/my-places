@@ -19,22 +19,22 @@ const CATEGORY_CONFIG: Record<
 > = {
     Home: {
         color: "#10b981",
-        emoji: "🏠",
+        emoji: "𖠿",
         shadow: "rgba(16, 185, 129, 0.35)",
     },
     Work: {
         color: "#3b82f6",
-        emoji: "💼",
+        emoji: "⛁",
         shadow: "rgba(59, 130, 246, 0.35)",
     },
     Travel: {
         color: "#ec4899",
-        emoji: "✈️",
+        emoji: "✈",
         shadow: "rgba(236, 72, 153, 0.35)",
     },
     Future: {
         color: "#f59e0b",
-        emoji: "🌟",
+        emoji: "☆",
         shadow: "rgba(245, 158, 11, 0.35)",
     },
 };
@@ -122,7 +122,7 @@ export const MapMarker: React.FC<MapMarkerProps> = ({
                 </div>
             )}
 
-            {/* Unicolor Pin (Solid category color pin, white emoticon inside, transparent background) */}
+            {/* Unicolor Pin (Solid category color pin, white icon/emoticon inside, transparent background) */}
             <div
                 style={{
                     position: "relative",
@@ -153,7 +153,7 @@ export const MapMarker: React.FC<MapMarkerProps> = ({
                         strokeWidth="1.5"
                     />
 
-                    {/* White Emoticon Centered inside Unicolor Pin */}
+                    {/* White Icon/Symbol Centered inside Unicolor Pin */}
                     <text
                         x="17"
                         y="16.5"

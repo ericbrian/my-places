@@ -8,7 +8,7 @@ import type { BBox } from "geojson";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { mapboxAccessToken, siteTitle } from "./siteconfig";
 import geoJson from "./geojson";
-import { MapMarker, type MarkerStyleType } from "./MapMarker";
+import { MapMarker } from "./MapMarker";
 
 function MapComponent() {
     const mapRef = useRef<MapRef>(null);
@@ -69,9 +69,6 @@ function MapComponent() {
     const [showHomeLocations, setShowHomeLocations] = useState(true);
     const [showWorkLocations, setShowWorkLocations] = useState(true);
     const [showTravelLocations, setShowTravelLocations] = useState(true);
-
-    // Custom Marker Style Preset State
-    const [markerStyle, setMarkerStyle] = useState<MarkerStyleType>("glass-pin");
 
     const resetMap = () => {
         setViewState(initialViewState);
@@ -287,7 +284,7 @@ function MapComponent() {
                             key={`point-${lng}-${lat}-${props.place}`}
                             longitude={lng}
                             latitude={lat}
-                            anchor={markerStyle === "glass-pin" ? "bottom" : "center"}
+                            anchor="bottom"
                             onClick={(e) => {
                                 e.originalEvent.stopPropagation();
                                 onMarkerClick({
@@ -301,7 +298,6 @@ function MapComponent() {
                                 place={props.place}
                                 localname={props.localname}
                                 placeType={placeType}
-                                styleType={markerStyle}
                                 isSelected={popupInfo?.place === props.place}
                                 onClick={(e) => {
                                     e.stopPropagation();
@@ -495,12 +491,12 @@ function MapComponent() {
                         borderRadius: "16px",
                         fontSize: "13px",
                         fontFamily: "system-ui, -apple-system, sans-serif",
-                        width: "220px",
+                        width: "200px",
                         zIndex: 10,
                     }}
                 >
-                    {/* Section 1: Marker Style Selector */}
-                    <div style={{ marginBottom: "16px" }}>
+                    {/* Category Filter Toggles */}
+                    <div>
                         <div
                             style={{
                                 fontSize: "11px",
@@ -508,52 +504,7 @@ function MapComponent() {
                                 textTransform: "uppercase",
                                 letterSpacing: "0.8px",
                                 color: "#64748b",
-                                marginBottom: "8px",
-                            }}
-                        >
-                            Marker Theme
-                        </div>
-                        <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
-                            {[
-                                { id: "glass-pin" as MarkerStyleType, label: "📍 Unicolor Pins" },
-                                { id: "floating-badge" as MarkerStyleType, label: "🏷️ Floating Emoticons" },
-                                { id: "glowing-dot" as MarkerStyleType, label: "✨ Minimal Dots" },
-                            ].map((preset) => (
-                                <button
-                                    key={preset.id}
-                                    onClick={() => setMarkerStyle(preset.id)}
-                                    style={{
-                                        padding: "7px 10px",
-                                        fontSize: "12px",
-                                        fontWeight: markerStyle === preset.id ? 700 : 500,
-                                        color: markerStyle === preset.id ? "#1e293b" : "#64748b",
-                                        backgroundColor: markerStyle === preset.id ? "#ffffff" : "rgba(241, 245, 249, 0.6)",
-                                        border: markerStyle === preset.id ? "1.5px solid #6366f1" : "1px solid rgba(226, 232, 240, 0.8)",
-                                        borderRadius: "8px",
-                                        cursor: "pointer",
-                                        textAlign: "left",
-                                        boxShadow: markerStyle === preset.id ? "0 2px 8px rgba(99, 102, 241, 0.15)" : "none",
-                                        transition: "all 0.15s ease",
-                                    }}
-                                >
-                                    {preset.label}
-                                </button>
-                            ))}
-                        </div>
-                    </div>
-
-                    <div style={{ height: "1px", background: "rgba(226, 232, 240, 0.8)", margin: "14px 0" }} />
-
-                    {/* Section 2: Category Filter Toggles */}
-                    <div style={{ marginBottom: "16px" }}>
-                        <div
-                            style={{
-                                fontSize: "11px",
-                                fontWeight: "700",
-                                textTransform: "uppercase",
-                                letterSpacing: "0.8px",
-                                color: "#64748b",
-                                marginBottom: "8px",
+                                marginBottom: "10px",
                             }}
                         >
                             Categories
@@ -611,8 +562,8 @@ function MapComponent() {
                         </div>
                     </div>
 
-                    {/* Section 3: Reset Button */}
-                    <div style={{ paddingTop: "12px", borderTop: "1px solid rgba(226, 232, 240, 0.8)" }}>
+                    {/* Reset Button */}
+                    <div style={{ marginTop: "14px", paddingTop: "12px", borderTop: "1px solid rgba(226, 232, 240, 0.8)" }}>
                         <button
                             onClick={resetMap}
                             style={{
