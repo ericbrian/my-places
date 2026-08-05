@@ -20,29 +20,29 @@ const CATEGORY_CONFIG: Record<
     Home: {
         color: "#10b981",
         emoji: "𖠿",
-        shadow: "rgba(16, 185, 129, 0.4)",
+        shadow: "rgba(16, 185, 129, 0.35)",
     },
     Work: {
         color: "#3b82f6",
         emoji: "⛁",
-        shadow: "rgba(59, 130, 246, 0.4)",
+        shadow: "rgba(59, 130, 246, 0.35)",
     },
     Travel: {
         color: "#ec4899",
         emoji: "✈",
-        shadow: "rgba(236, 72, 153, 0.4)",
+        shadow: "rgba(236, 72, 153, 0.35)",
     },
     Future: {
         color: "#f59e0b",
         emoji: "☆",
-        shadow: "rgba(245, 158, 11, 0.4)",
+        shadow: "rgba(245, 158, 11, 0.35)",
     },
 };
 
 const DEFAULT_CONFIG = {
     color: "#6b7280",
     emoji: "📍",
-    shadow: "rgba(107, 114, 128, 0.4)",
+    shadow: "rgba(107, 114, 128, 0.35)",
 };
 
 export const MapMarker: React.FC<MapMarkerProps> = ({
@@ -78,14 +78,14 @@ export const MapMarker: React.FC<MapMarkerProps> = ({
                     style={{
                         position: "absolute",
                         bottom: "100%",
-                        marginBottom: "12px",
-                        padding: "6px 14px",
-                        background: "rgba(15, 23, 42, 0.92)",
+                        marginBottom: "10px",
+                        padding: "6px 12px",
+                        background: "rgba(15, 23, 42, 0.9)",
                         backdropFilter: "blur(12px)",
                         WebkitBackdropFilter: "blur(12px)",
-                        border: "1px solid rgba(255, 255, 255, 0.18)",
-                        borderRadius: "10px",
-                        boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.35)",
+                        border: "1px solid rgba(255, 255, 255, 0.15)",
+                        borderRadius: "8px",
+                        boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.3)",
                         color: "#fff",
                         whiteSpace: "nowrap",
                         pointerEvents: "none",
@@ -93,15 +93,15 @@ export const MapMarker: React.FC<MapMarkerProps> = ({
                         display: "flex",
                         alignItems: "center",
                         gap: "8px",
-                        fontSize: "14px",
+                        fontSize: "13px",
                         fontWeight: 600,
                     }}
                 >
-                    <span style={{ fontSize: "16px", lineHeight: "1" }}>{config.emoji}</span>
+                    <span style={{ fontSize: "14px" }}>{config.emoji}</span>
                     <div style={{ display: "flex", flexDirection: "column" }}>
                         <span>{place}</span>
                         {localname && (
-                            <span style={{ fontSize: "11px", fontWeight: 400, opacity: 0.75, fontStyle: "italic" }}>
+                            <span style={{ fontSize: "11px", fontWeight: 400, opacity: 0.7, fontStyle: "italic" }}>
                                 {localname}
                             </span>
                         )}
@@ -114,15 +114,15 @@ export const MapMarker: React.FC<MapMarkerProps> = ({
                             transform: "translateX(-50%)",
                             width: 0,
                             height: 0,
-                            borderLeft: "6px solid transparent",
-                            borderRight: "6px solid transparent",
-                            borderTop: "6px solid rgba(15, 23, 42, 0.92)",
+                            borderLeft: "5px solid transparent",
+                            borderRight: "5px solid transparent",
+                            borderTop: "5px solid rgba(15, 23, 42, 0.9)",
                         }}
                     />
                 </div>
             )}
 
-            {/* Unicolor Pin with 200%+ Enlarged Icon */}
+            {/* Unicolor Pin (Solid category color pin, white icon/emoticon inside, transparent background) */}
             <div
                 style={{
                     position: "relative",
@@ -131,36 +131,35 @@ export const MapMarker: React.FC<MapMarkerProps> = ({
                     flexDirection: "column",
                     alignItems: "center",
                     transition: "transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1)",
-                    transform: isHovered || isSelected ? "scale(1.2) translateY(-6px)" : "scale(1)",
+                    transform: isHovered || isSelected ? "scale(1.25) translateY(-4px)" : "scale(1)",
                 }}
             >
                 {/* SVG Unicolor Teardrop Pin */}
                 <svg
-                    width="52"
-                    height="68"
-                    viewBox="0 0 52 68"
+                    width="34"
+                    height="44"
+                    viewBox="0 0 34 44"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     style={{
-                        filter: `drop-shadow(0 6px 12px ${config.shadow})`,
+                        filter: `drop-shadow(0 4px 8px ${config.shadow})`,
                     }}
                 >
                     {/* Solid Unicolor Pin Shape */}
                     <path
-                        d="M26 1C12.193 1 1 12.193 1 26c0 17 25 41 25 41s25-24 25-41C51 12.193 39.807 1 26 1z"
+                        d="M17 1C8.163 1 1 8.163 1 17c0 11 16 26 16 26s16-15 16-26C33 8.163 25.837 1 17 1z"
                         fill={config.color}
                         stroke="#ffffff"
-                        strokeWidth="2"
+                        strokeWidth="1.5"
                     />
 
-                    {/* Enlarged White Icon (200%+ size at 28px) Centered inside Unicolor Pin */}
+                    {/* White Icon/Symbol Centered inside Unicolor Pin */}
                     <text
-                        x="26"
-                        y="25"
+                        x="17"
+                        y="16.5"
                         textAnchor="middle"
                         dominantBaseline="central"
-                        fontSize="28"
-                        fontWeight="bold"
+                        fontSize="14"
                         fill="#ffffff"
                         pointerEvents="none"
                     >
